@@ -1,0 +1,24 @@
+[2024-05-22 16:12:15] [INFO]    [OmnipathR] Welcome to OmnipathR!
+[2024-05-22 16:12:15] [TRACE]   [OmnipathR] Reading JSON from `C:\Users\Larissa\AppData\Local\cache\OmnipathR/cache.json` (encoding: UTF-8).
+[2024-05-22 16:12:15] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2024-05-22 16:12:15] [INFO]    [OmnipathR] Initialized cache: `C:\Users\Larissa\AppData\Local\cache\OmnipathR`.
+[2024-05-22 16:12:15] [TRACE]   [OmnipathR] Reading JSON from `D:/R-4.4.0/library/OmnipathR/db/db_def.json` (encoding: UTF-8).
+[2024-05-22 16:12:15] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2024-05-22 16:12:15] [TRACE]   [OmnipathR] Reading JSON from `D:/R-4.4.0/library/OmnipathR/internal/magic_bytes.json` (encoding: UTF-8).
+[2024-05-22 16:12:15] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2024-05-22 16:12:16] [TRACE]   [OmnipathR] Reading JSON from `D:/R-4.4.0/library/OmnipathR/internal/urls.json` (encoding: UTF-8).
+[2024-05-22 16:12:16] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2024-05-22 16:12:16] [TRACE]   [OmnipathR] Reading JSON from `D:/R-4.4.0/library/OmnipathR/internal/id_types.json` (encoding: UTF-8).
+[2024-05-22 16:12:16] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2024-05-22 16:12:29] [INFO]    [OmnipathR] Welcome to OmnipathR!
+[2024-05-22 16:12:29] [TRACE]   [OmnipathR] Reading JSON from `C:\Users\Larissa\AppData\Local\cache\OmnipathR/cache.json` (encoding: UTF-8).
+[2024-05-22 16:12:29] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2024-05-22 16:12:29] [INFO]    [OmnipathR] Initialized cache: `C:\Users\Larissa\AppData\Local\cache\OmnipathR`.
+[2024-05-22 16:12:29] [TRACE]   [OmnipathR] Reading JSON from `D:/R-4.4.0/library/OmnipathR/db/db_def.json` (encoding: UTF-8).
+[2024-05-22 16:12:29] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2024-05-22 16:12:29] [TRACE]   [OmnipathR] Reading JSON from `D:/R-4.4.0/library/OmnipathR/internal/magic_bytes.json` (encoding: UTF-8).
+[2024-05-22 16:12:29] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2024-05-22 16:12:29] [TRACE]   [OmnipathR] Reading JSON from `D:/R-4.4.0/library/OmnipathR/internal/urls.json` (encoding: UTF-8).
+[2024-05-22 16:12:29] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2024-05-22 16:12:29] [TRACE]   [OmnipathR] Reading JSON from `D:/R-4.4.0/library/OmnipathR/internal/id_types.json` (encoding: UTF-8).
+[2024-05-22 16:12:29] [TRACE]   [OmnipathR] JSON validation successful: TRUE
