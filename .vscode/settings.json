@@ -1,4 +1,4 @@
 {
-    "r.rpath.windows": "D:\\R-4.4.0\\bin\\R.exe",
-    "r.rterm.windows": "D:\\R-4.4.0\\bin\\R.exe"
+    "python.autoComplete.extraPaths": [],
+    "python.analysis.extraPaths": []
 }
