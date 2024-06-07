@@ -1,3 +1,7 @@
 omnipathr-log/
 
 .vscode/
+
+.venv/
+
+.conda/
