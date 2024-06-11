@@ -1,0 +1,3 @@
+
+include /scr/LR2TF_py/data/human_dorothea_reg.csv
+include /scr/LR2TF_py/data/mouse_dorothea_reg.csv
