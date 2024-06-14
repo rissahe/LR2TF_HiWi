@@ -25,10 +25,18 @@ devtools::install_github('immunogenomics/presto')
 library(LR2TF)
 library(Seurat)
 library(anndata)
-library(devtools)
 data(bone_marrow_stromal_cell_example, package = "LR2TF")
 seurat_object <- bone_marrow_stromal_cell_example
+head(seurat_object)
+Idents(seurat_object) <- seurat_object$name
+levels(seurat_object)
+Idents(seurat_object)
 
+Idents(seurat_object) <- seurat_object$new_annotation
+sub_object_averages <- AverageExpression(seurat_object, group.by = seurat_object$new_annotation, assay = "RNA") # nolint: line_length_linter.
+as.data.frame(sub_object_averages)
+head(sub_object_averages)
+write.csv(sub_object_averages, file = "R_avg.csv")
 
 LR2TF::convert_seurat_to_anndata(seurat_object, "D:\\studium\\HiWi\\LR2TF\\")
 
