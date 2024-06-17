@@ -27,18 +27,18 @@ library(Seurat)
 library(anndata)
 data(bone_marrow_stromal_cell_example, package = "LR2TF")
 seurat_object <- bone_marrow_stromal_cell_example
-head(seurat_object)
-Idents(seurat_object) <- seurat_object$name
-levels(seurat_object)
-Idents(seurat_object)
+
+seurat_object
 
 Idents(seurat_object) <- seurat_object$new_annotation
-sub_object_averages <- AverageExpression(seurat_object, group.by = seurat_object$new_annotation, assay = "RNA") # nolint: line_length_linter.
-as.data.frame(sub_object_averages)
-head(sub_object_averages)
-write.csv(sub_object_averages, file = "R_avg.csv")
+sub_object.averages <- AverageExpression(seurat_object, group.by = "ident", assay = "RNA") # nolint: line_length_linter.
+as.data.frame(sub_object.averages)
+head(sub_object.averages)
+write.csv(sub_object.averages[["RNA"]], file = "R_avg.csv")
 
 LR2TF::convert_seurat_to_anndata(seurat_object, "D:\\studium\\HiWi\\LR2TF\\")
+
+DefaultAssay(seurat_object) <- "tf_activities"
 
 
 #The file "anndata_object.h5ad" will be saved into the user defined path and can then be used to perform the predictions. Beside the scRNA-seq data file, we also need to define a regulon database in form of a csv file with the coloumns "source", "target" and "weight". Within this package we provide the dorothea databases for human and mouse, downloaded from the decoupleR package. These files also contain the column "confidence" (levels A to D) with information on how well described a transcription factor and target gene interaction is in different resources. We recommend using the confidence levels A and B.
