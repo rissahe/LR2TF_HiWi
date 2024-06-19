@@ -1,5 +1,9 @@
-import numpy as np
+import anndata as ad
 import pandas as pd
+import numpy as np
+import scanpy as sc
+import decoupler as dc
+import os
 #from importlib.resources import files
 
 
@@ -58,12 +62,59 @@ def validate_input_arguments (arguments_list):
     return(arguments_list)
 
 
+def AverageExpression(anndataobject, celltype = None, outpath = None):
+    gene_ids = anndataobject.var.index.values
+    obs = anndataobject[:,gene_ids].X.toarray()
+    sub_object = pd.DataFrame(obs,columns=gene_ids,index= anndataobject.obs[celltype])
+    sub_object = sub_object.groupby(level=0, observed=False).mean()
+    sub_object.T.to_csv(outpath + "average_gene_expression_by_cluster.csv")
+
+    return sub_object.T
+
+
+def tf_activity_analysis (anndataobject, tf_activities = None, arguments_list = None):
+    
+    if (isinstance(anndataobject, str)):
+        anndataobject = ad.read_h5ad(anndataobject)
+
+    arguments_list = validate_input_arguments(arguments_list)
+
+    if not os.path.isdir(arguments_list["out_path"]):
+        os.mkdir(arguments_list["out_path"])
+        tf_path = arguments_list["out_path"] + "TF_results/"
+        os.mkdir(tf_path)
+    else:
+        tf_path = arguments_list["out_path"] + "TF_results/"
+
+    #skipped tf activities part. ignore extra tf data from decoupler
+
+    anndataobject.obs["condition"] = arguments_list["condition"] 
+    anndataobject.obs["cell_type"] = arguments_list["celltype"]
+    anndataobject.obs["comparison_list"] = arguments_list["comparison_list"]
+
+    if not np.isnan(arguments_list["comparison_list"]):
+        if len(arguments_list["comparison_list"]) > 0 & len(anndataobject.obs["comparison_list"]) < 2:
+            arguments_list["comparison_list"] <- np.nan
+            print("Only one condition was found in the data, although a list of comparisons was provided. The analyses are performed only for the present condition!")
+
+    #code for single condition  analysis
+
+    if np.isnan(arguments_list["comparison_list"]):
+        anndataobject.uns["tf_annotation"] = pd.DataFrame({"result_list" : [],
+        "gene_expression_list" : [],
+        "CTR_cluster_list" : [],
+        "intranet_cluster_list" : []})
+
+    #anndataobject_list = split by condition, skipped for now
+    sub_object = anndataobject
+
+    sub_object.uns["Average_Expression"] = AverageExpression(sub_object, celltype = arguments_list["celltype"], outpath= arguments_list["out_path"])
+
+    return(sub_object)
+
+
 #Please edit the following argument list to suit your own data.
 
 #Enter your regulon csv path for reg
 
-arguments = {"out_path" : None, "celltype" : None, "condition" : None, "organism" : None, "comparison_list" : None, "logfc" : None, "pval" : None, "reg" : "/home/larissa/Documents/LR2TF_HiWi/human_dorothea_reg.csv"}
-
-arguments_list = validate_input_arguments(arguments)
-
-print(arguments_list["reg"])
+sub_object = tf_activity_analysis(anndataobject= "LR2TF_test_run/anndata_object.h5ad", arguments_list= {"out_path" : "folder2", "celltype" : "new_annotation", "condition" : "control", "organism" : None, "comparison_list" : None, "logfc" : None, "pval" : None, "reg" : "human_dorothea_reg.csv"})
