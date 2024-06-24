@@ -65,6 +65,7 @@ def validate_input_arguments (arguments_list):
 def AverageExpression(anndataobject, celltype = None, outpath = None):
     gene_ids = anndataobject.var.index.values
     obs = anndataobject[:,gene_ids].X.toarray()
+    obs = np.expm1(obs)
     sub_object = pd.DataFrame(obs,columns=gene_ids,index= anndataobject.obs[celltype])
     sub_object = sub_object.groupby(level=0, observed=False).mean()
     sub_object.T.to_csv(outpath + "average_gene_expression_by_cluster.csv")
