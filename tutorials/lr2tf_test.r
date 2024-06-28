@@ -27,8 +27,9 @@ library(Seurat)
 library(anndata)
 data(bone_marrow_stromal_cell_example, package = "LR2TF")
 seurat_object <- bone_marrow_stromal_cell_example
-#head(seurat_object)
 
+head(seurat_object@assays$RNA@data)
+seurat_object
 #sort(seurat_object@assays$RNA@data, decreasing = TRUE)
 
 
@@ -59,13 +60,13 @@ parameters <- list("out_path" = "/home/larissa/Documents/LR2TF_HiWi/LR2TF_test_s
                    "organism" = "human",
                    "celltype" = "new_annotation", #name of the meta data field defining cell identities
                    "condition" = "protocol", #name of the meta data field defining conditions
-                   "comparison_list" = NA, #list of condition comparison to consider
+                   "comparison_list" = list(c("PMF,MF2", "control")) , #list of condition comparison to consider
                    "logfc" = 0.5,
                    "pval" = 0.05) #thresholds for logfc and pval used in differential transcription factor analysis
 
 
 results <- LR2TF::tf_activity_analysis(seuratobject = seurat_object,
-                                       tf_activities = NA,
+                                       tf_activities = "NA",
                                        arguments_list = parameters)
 
 
