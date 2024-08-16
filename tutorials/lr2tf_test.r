@@ -26,7 +26,35 @@ library(LR2TF)
 library(Seurat)
 library(anndata)
 data(bone_marrow_stromal_cell_example, package = "LR2TF")
-seurat_object <- bone_marrow_stromal_cell_example
+seuratobject <- bone_marrow_stromal_cell_example
+
+
+   Idents(object = seuratobject) <- seuratobject$protocol
+    seuratobject_list <- SplitObject(seuratobject, split.by = "ident")
+    for (name in names(seuratobject_list)) {
+      sub_object <- seuratobject_list[[name]]}
+
+      name <- str_replace_all(name, "[,;.:-]", "_")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 head(seurat_object@assays$RNA@data)
 seurat_object
