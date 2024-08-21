@@ -24,11 +24,23 @@ devtools::install_github('immunogenomics/presto')
 
 library(LR2TF)
 library(Seurat)
-library(anndata)
+Selibrary(anndata)
 data(bone_marrow_stromal_cell_example, package = "LR2TF")
 seuratobject <- bone_marrow_stromal_cell_example
 
+tf_activities <-t(read.csv("decoupler_results.csv", header = TRUE, row.names = 1))
+tf_activities <- CreateAssayObject(data = tf_activities)
+seuratobject[["tf_activities"]] <- tf_activities
+seuratobject_list <- SplitObject(seuratobject, split.by = "protocol")
+sub_object <- seuratobject_list[["PMF,MF2"]]
+seuratobject <- ScaleData(seuratobject)
+seuratobject@assays$tf_activities@scale.data
+Idents(object = seuratobject) <- "tf_annotation"
+marker <- FindAllMarkers(seuratobject, assay = "tf_activities", only.pos = TRUE,
+                                         min.pct = 0, logfc.threshold = 0,
+                                         verbose = FALSE)
 
+print(marker)
    Idents(object = seuratobject) <- seuratobject$protocol
     seuratobject_list <- SplitObject(seuratobject, split.by = "ident")
     for (name in names(seuratobject_list)) {
@@ -37,9 +49,8 @@ seuratobject <- bone_marrow_stromal_cell_example
       name <- str_replace_all(name, "[,;.:-]", "_")
 
 
-
-
-
+b = as.double(5)
+is.double(b)
 
 
 

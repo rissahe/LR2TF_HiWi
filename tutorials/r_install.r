@@ -82,21 +82,21 @@ estimates.to_csv("/home/larissa/Documents/Larissa_HiWi/LR2TF_test/decoupler_resu
 Now, that we have a transcription factor activity matrix, we can continue the analysis with the LR2TF package. In this case we will use our test data for this example. First of all, it is necessary to define the following parameters in form of a list:
 
 ```{r eval = FALSE}
-parameters <- list("out_path" = "/home/larissa/Documents/Larissa_HiWi/LR2TF_test/results",
-                   reg = "/home/larissa/Documents/Larissa_HiWi/LR2TF_test/filterd_regulon.csv",
+parameters <- list("out_path" = "/home/larissa/Documents/LR2TF_HiWi/new_test/",
+                   "reg" = "/home/larissa/Documents/LR2TF_HiWi/LR2TF_test_run/filterd_regulon.csv",
                    "organism" = "human",
-                   "celltype" = "new_annotation", #name of the meta data field defining cell identities
-                   "condition" = "protocol", #name of the meta data field defining conditions
-                   "comparison_list" = list(c("PMF,MF2", "control")), #list of condition comparison to consider
+                   "celltype" = "new_annotation", 
+                   "condition" = "protocol", 
+                   "comparison_list" = list(c("PMF,MF2", "control")), 
                    "logfc" = 0.5,
-                   "pval" = 0.05) #thresholds for logfc and pval used in differential transcription factor analysis
+                   "pval" = 0.05) 
 ```
 
 After defining the necessary parameter the transcription factor activity can be performed by calling:
 
 ```{r, include = TRUE, eval = FALSE}
 results <- LR2TF::tf_activity_analysis(seuratobject = seurat_object,
-                                       tf_activities = "/home/larissa/Documents/Larissa_HiWi/LR2TF_test/decoupler_results.csv",
+                                       tf_activities = "/home/larissa/Documents/LR2TF_HiWi/LR2TF_test_run/decoupler_results.csv",
                                        arguments_list = parameters)
 ```
 
