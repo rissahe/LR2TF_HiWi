@@ -1,0 +1,1647 @@
+,0,1
+0,"('ADNP', 'Fibroblast')","     gene    scores     cluster
+390  ADNP -2.488912  Fibroblast"
+1,"('ADNP', 'Megakaryocyte')","     gene    scores        cluster
+562  ADNP -4.221062  Megakaryocyte"
+2,"('ADNP', 'Myeloid')","     gene    scores  cluster
+739  ADNP -0.909356  Myeloid"
+3,"('AR', 'MSC')","    gene    scores cluster
+105   AR  6.654513     MSC"
+4,"('ARID2', 'Neural')","     gene    scores cluster
+59  ARID2  0.187488  Neural"
+5,"('ARID2', 'MSC')","      gene    scores cluster
+132  ARID2  4.262509     MSC"
+6,"('ARID2', 'Myeloid')","      gene    scores  cluster
+696  ARID2  0.109123  Myeloid"
+7,"('ARNT', 'Neural')","    gene    scores cluster
+70  ARNT -0.699608  Neural"
+8,"('ARNT', 'Megakaryocyte')","     gene    scores        cluster
+518  ARNT -2.043094  Megakaryocyte"
+9,"('ARNT', 'Myeloid')","     gene    scores  cluster
+708  ARNT -0.114319  Myeloid"
+10,"('ASCL1', 'MSC')","      gene    scores cluster
+241  ASCL1 -2.799292     MSC"
+11,"('ASCL1', 'Fibroblast')","      gene    scores     cluster
+373  ASCL1 -1.801573  Fibroblast"
+12,"('ASCL1', 'Megakaryocyte')","      gene   scores        cluster
+580  ASCL1 -4.88794  Megakaryocyte"
+13,"('ASCL1', 'Myeloid')","      gene    scores  cluster
+724  ASCL1 -0.540417  Myeloid"
+14,"('ATF1', 'Neural')","   gene    scores cluster
+4  ATF1  7.428342  Neural"
+15,"('ATF1', 'MSC')","     gene    scores cluster
+199  ATF1  0.062494     MSC"
+16,"('ATF2', 'MSC')","     gene    scores cluster
+103  ATF2  6.846304     MSC"
+17,"('ATF3', 'Neural')","    gene    scores cluster
+69  ATF3 -0.618016  Neural"
+18,"('ATF3', 'Megakaryocyte')","     gene    scores        cluster
+567  ATF3 -4.460838  Megakaryocyte"
+19,"('ATF3', 'Myeloid')","     gene    scores  cluster
+758  ATF3 -1.361436  Myeloid"
+20,"('ATF4', 'Neural')","    gene    scores cluster
+27  ATF4  2.767183  Neural"
+21,"('ATF4', 'MSC')","     gene    scores cluster
+121  ATF4  5.165436     MSC"
+22,"('ATF5', 'MSC')","     gene    scores cluster
+222  ATF5 -1.396413     MSC"
+23,"('ATF5', 'Megakaryocyte')","     gene    scores        cluster
+517  ATF5 -2.010624  Megakaryocyte"
+24,"('ATF5', 'Myeloid')","     gene    scores  cluster
+729  ATF5 -0.706699  Myeloid"
+25,"('ATF6', 'Neural')","    gene    scores cluster
+12  ATF6  4.386871  Neural"
+26,"('ATF6', 'MSC')","     gene   scores cluster
+162  ATF6  2.64629     MSC"
+27,"('ATF7', 'Fibroblast')","     gene    scores     cluster
+360  ATF7 -1.456924  Fibroblast"
+28,"('ATF7', 'Megakaryocyte')","     gene    scores        cluster
+545  ATF7 -3.711538  Megakaryocyte"
+29,"('ATF7', 'Myeloid')","     gene    scores  cluster
+722  ATF7 -0.488454  Myeloid"
+30,"('BACH1', 'Neural')","     gene    scores cluster
+35  BACH1  2.117919  Neural"
+31,"('BACH1', 'MSC')","      gene  scores cluster
+155  BACH1  2.8898     MSC"
+32,"('BACH2', 'Neural')","     gene    scores cluster
+56  BACH2  0.336784  Neural"
+33,"('BACH2', 'Myeloid')","      gene    scores  cluster
+673  BACH2  0.701503  Myeloid"
+34,"('BATF', 'Fibroblast')","     gene    scores     cluster
+411  BATF -3.278079  Fibroblast"
+35,"('BCL11A', 'MSC')","       gene    scores cluster
+159  BCL11A  2.747573     MSC"
+36,"('BCL11A', 'Megakaryocyte')","       gene    scores        cluster
+463  BCL11A  3.461771  Megakaryocyte"
+37,"('BCL11A', 'Myeloid')","       gene    scores  cluster
+661  BCL11A  1.158779  Myeloid"
+38,"('BCL6', 'Neural')","    gene    scores cluster
+62  BCL6 -0.187488  Neural"
+39,"('BHLHE22', 'Neural')","       gene    scores cluster
+80  BHLHE22 -1.873143  Neural"
+40,"('BHLHE22', 'Fibroblast')","        gene    scores     cluster
+400  BHLHE22 -2.825728  Fibroblast"
+41,"('BHLHE40', 'Neural')","       gene    scores cluster
+43  BHLHE40  1.383592  Neural"
+42,"('BHLHE40', 'MSC')","        gene    scores cluster
+192  BHLHE40  0.958957     MSC"
+43,"('BHLHE40', 'Myeloid')","        gene    scores  cluster
+667  BHLHE40  0.779448  Myeloid"
+44,"('BMAL1', 'MSC')","      gene    scores cluster
+248  BMAL1 -3.413455     MSC"
+45,"('BMAL1', 'Fibroblast')","      gene    scores     cluster
+347  BMAL1 -0.959533  Fibroblast"
+46,"('BMAL1', 'Megakaryocyte')","      gene    scores        cluster
+579  BMAL1 -4.815507  Megakaryocyte"
+47,"('BMAL1', 'Myeloid')","      gene    scores  cluster
+751  BMAL1 -1.112012  Myeloid"
+48,"('BRF2', 'MSC')","     gene   scores cluster
+175  BRF2  2.10324     MSC"
+49,"('BRF2', 'Megakaryocyte')","     gene    scores        cluster
+489  BRF2  0.914147  Megakaryocyte"
+50,"('CBX2', 'Megakaryocyte')","     gene    scores        cluster
+585  CBX2 -5.055284  Megakaryocyte"
+51,"('CBX2', 'Myeloid')","     gene    scores  cluster
+744  CBX2 -0.971712  Myeloid"
+52,"('CDX1', 'MSC')","     gene    scores cluster
+265  CDX1 -7.624245     MSC"
+53,"('CDX1', 'Megakaryocyte')","     gene    scores        cluster
+552  CDX1 -3.898863  Megakaryocyte"
+54,"('CDX2', 'Fibroblast')","     gene   scores     cluster
+332  CDX2 -0.19974  Fibroblast"
+55,"('CDX2', 'Megakaryocyte')","     gene    scores        cluster
+561  CDX2 -4.218565  Megakaryocyte"
+56,"('CDX2', 'Myeloid')","     gene    scores  cluster
+761  CDX2 -1.475754  Myeloid"
+57,"('CEBPB', 'Myeloid')","      gene    scores  cluster
+656  CEBPB  1.273098  Myeloid"
+58,"('CEBPD', 'MSC')","      gene    scores cluster
+119  CEBPD  5.301199     MSC"
+59,"('CEBPD', 'Myeloid')","      gene    scores  cluster
+657  CEBPD  1.247116  Myeloid"
+60,"('CEBPE', 'Fibroblast')","      gene    scores     cluster
+339  CEBPE -0.485641  Fibroblast"
+61,"('CEBPE', 'Myeloid')","      gene    scores  cluster
+642  CEBPE  2.717675  Myeloid"
+62,"('CEBPG', 'Fibroblast')","      gene    scores     cluster
+370  CEBPG -1.750659  Fibroblast"
+63,"('CEBPG', 'Megakaryocyte')","      gene    scores        cluster
+601  CEBPG -5.747139  Megakaryocyte"
+64,"('CEBPG', 'Myeloid')","      gene    scores  cluster
+807  CEBPG -2.301969  Myeloid"
+65,"('CEBPZ', 'Neural')","     gene    scores cluster
+25  CEBPZ  2.949463  Neural"
+66,"('CEBPZ', 'Megakaryocyte')","      gene    scores        cluster
+492  CEBPZ  0.751799  Megakaryocyte"
+67,"('CEBPZ', 'Myeloid')","      gene    scores  cluster
+676  CEBPZ  0.566399  Myeloid"
+68,"('CLOCK', 'MSC')","      gene    scores cluster
+238  CLOCK -2.411399     MSC"
+69,"('CLOCK', 'Megakaryocyte')","      gene    scores        cluster
+573  CLOCK -4.700615  Megakaryocyte"
+70,"('CLOCK', 'Myeloid')","      gene    scores  cluster
+728  CLOCK -0.701503  Myeloid"
+71,"('CREB1', 'Neural')","     gene    scores cluster
+50  CREB1  0.822864  Neural"
+72,"('CREB1', 'MSC')","      gene    scores cluster
+157  CREB1  2.861785     MSC"
+73,"('CREB3L1', 'MSC')","        gene    scores cluster
+140  CREB3L1  3.626796     MSC"
+74,"('CREB5', 'MSC')","      gene    scores cluster
+250  CREB5 -3.894011     MSC"
+75,"('CREM', 'MSC')","     gene    scores cluster
+252  CREM -3.917715     MSC"
+76,"('CTCF', 'Fibroblast')","     gene   scores     cluster
+421  CTCF -4.12991  Fibroblast"
+77,"('CTCF', 'Megakaryocyte')","     gene    scores        cluster
+602  CTCF -5.812078  Megakaryocyte"
+78,"('CTCF', 'Myeloid')","     gene    scores  cluster
+809  CTCF -2.369521  Myeloid"
+79,"('CTCFL', 'Fibroblast')","      gene   scores     cluster
+345  CTCFL -0.91841  Fibroblast"
+80,"('CUX1', 'MSC')","     gene    scores cluster
+107  CUX1  6.596329     MSC"
+81,"('CXXC4', 'Neural')","     gene    scores cluster
+16  CXXC4  3.671639  Neural"
+82,"('CXXC4', 'MSC')","      gene    scores cluster
+149  CXXC4  3.338031     MSC"
+83,"('DDIT3', 'Myeloid')","      gene    scores  cluster
+749  DDIT3 -1.065245  Myeloid"
+84,"('DEAF1', 'Neural')","     gene    scores cluster
+46  DEAF1  1.064168  Neural"
+85,"('DEAF1', 'Myeloid')","      gene    scores  cluster
+650  DEAF1  1.621251  Myeloid"
+86,"('DNMT1', 'Fibroblast')","      gene    scores     cluster
+281  DNMT1  3.704973  Fibroblast"
+87,"('DNMT1', 'Megakaryocyte')","      gene    scores        cluster
+461  DNMT1  3.521715  Megakaryocyte"
+88,"('DNMT1', 'Myeloid')","      gene    scores  cluster
+660  DNMT1  1.163975  Myeloid"
+89,"('DUX4', 'Fibroblast')","     gene    scores     cluster
+397  DUX4 -2.784605  Fibroblast"
+90,"('DUX4', 'Megakaryocyte')","     gene    scores        cluster
+613  DUX4 -6.209208  Megakaryocyte"
+91,"('DUX4', 'Myeloid')","     gene    scores  cluster
+764  DUX4 -1.574485  Myeloid"
+92,"('E2F1', 'MSC')","     gene    scores cluster
+226  E2F1 -1.532176     MSC"
+93,"('E2F1', 'Fibroblast')","     gene    scores     cluster
+432  E2F1 -4.642966  Fibroblast"
+94,"('E2F1', 'Megakaryocyte')","     gene    scores        cluster
+597  E2F1 -5.604771  Megakaryocyte"
+95,"('E2F2', 'MSC')","     gene    scores cluster
+211  E2F2 -0.892153     MSC"
+96,"('E2F2', 'Fibroblast')","     gene    scores     cluster
+419  E2F2 -3.949752  Fibroblast"
+97,"('E2F3', 'MSC')","     gene    scores cluster
+262  E2F3 -6.671753     MSC"
+98,"('E2F3', 'Megakaryocyte')","     gene    scores        cluster
+506  E2F3 -1.034035  Megakaryocyte"
+99,"('E2F4', 'Neural')","    gene    scores cluster
+41  E2F4  1.591912  Neural"
+100,"('E2F4', 'Fibroblast')","     gene    scores     cluster
+301  E2F4  2.083558  Fibroblast"
+101,"('E2F4', 'Megakaryocyte')","     gene    scores        cluster
+494  E2F4  0.651892  Megakaryocyte"
+102,"('E2F5', 'Neural')","    gene    scores cluster
+67  E2F5 -0.376712  Neural"
+103,"('E2F5', 'Fibroblast')","     gene    scores     cluster
+312  E2F5  1.147524  Fibroblast"
+104,"('E2F5', 'Megakaryocyte')","     gene    scores        cluster
+478  E2F5  1.556048  Megakaryocyte"
+105,"('E2F6', 'Fibroblast')","     gene    scores     cluster
+368  E2F6 -1.652747  Fibroblast"
+106,"('E2F6', 'Myeloid')","     gene    scores  cluster
+757  E2F6 -1.278294  Myeloid"
+107,"('E2F7', 'MSC')","     gene    scores cluster
+104  E2F7  6.755796     MSC"
+108,"('E2F7', 'Fibroblast')","     gene    scores     cluster
+277  E2F7  4.047664  Fibroblast"
+109,"('EBF1', 'MSC')","     gene    scores cluster
+219  EBF1 -1.282201     MSC"
+110,"('EBF1', 'Fibroblast')","     gene    scores     cluster
+401  EBF1 -2.839435  Fibroblast"
+111,"('EGR1', 'Fibroblast')","     gene    scores     cluster
+387  EGR1 -2.400791  Fibroblast"
+112,"('EGR1', 'Myeloid')","     gene    scores  cluster
+821  EGR1 -3.211325  Myeloid"
+113,"('EHF', 'Neural')","   gene    scores cluster
+53  EHF  0.475664  Neural"
+114,"('EHF', 'MSC')","    gene    scores cluster
+254  EHF -4.096577     MSC"
+115,"('EHF', 'Myeloid')","    gene    scores  cluster
+690  EHF  0.244227  Myeloid"
+116,"('ELF1', 'MSC')","     gene    scores cluster
+148  ELF1  3.355271     MSC"
+117,"('ELF1', 'Myeloid')","     gene   scores  cluster
+658  ELF1  1.24192  Myeloid"
+118,"('ELF3', 'Megakaryocyte')","     gene   scores        cluster
+553  ELF3 -3.92384  Megakaryocyte"
+119,"('ELF3', 'Myeloid')","     gene    scores  cluster
+720  ELF3 -0.426098  Myeloid"
+120,"('ELF5', 'Fibroblast')","     gene    scores     cluster
+294  ELF5  2.892308  Fibroblast"
+121,"('ELF5', 'Megakaryocyte')","     gene    scores        cluster
+455  ELF5  4.036234  Megakaryocyte"
+122,"('ELF5', 'Myeloid')","     gene   scores  cluster
+644  ELF5  2.24481  Myeloid"
+123,"('ELK1', 'MSC')","     gene    scores cluster
+116  ELK1  5.525315     MSC"
+124,"('ELK1', 'Fibroblast')","     gene    scores     cluster
+297  ELK1  2.287214  Fibroblast"
+125,"('ELK1', 'Megakaryocyte')","     gene   scores        cluster
+495  ELK1  0.47206  Megakaryocyte"
+126,"('ELK4', 'MSC')","     gene    scores cluster
+123  ELK4  5.046914     MSC"
+127,"('EOMES', 'Fibroblast')","      gene    scores     cluster
+353  EOMES -1.153398  Fibroblast"
+128,"('EOMES', 'Megakaryocyte')","      gene    scores        cluster
+614  EOMES -6.266654  Megakaryocyte"
+129,"('EOMES', 'Myeloid')","      gene   scores  cluster
+817  EOMES -2.93592  Myeloid"
+130,"('EPAS1', 'Fibroblast')","      gene    scores     cluster
+286  EPAS1  3.352492  Fibroblast"
+131,"('EPAS1', 'Myeloid')","      gene    scores  cluster
+680  EPAS1  0.478061  Myeloid"
+132,"('ERG', 'Neural')","   gene    scores cluster
+61  ERG -0.133672  Neural"
+133,"('ERG', 'Fibroblast')","    gene    scores     cluster
+351  ERG -1.149482  Fibroblast"
+134,"('ERG', 'Megakaryocyte')","    gene    scores        cluster
+554  ERG -3.973793  Megakaryocyte"
+135,"('ERG', 'Myeloid')","    gene    scores  cluster
+746  ERG -0.992497  Myeloid"
+136,"('ESR1', 'Fibroblast')","     gene    scores     cluster
+385  ESR1 -2.289172  Fibroblast"
+137,"('ESR1', 'Megakaryocyte')","     gene    scores        cluster
+637  ESR1 -8.249804  Megakaryocyte"
+138,"('ESR1', 'Myeloid')","     gene    scores  cluster
+819  ESR1 -3.013865  Myeloid"
+139,"('ESR2', 'MSC')","     gene    scores cluster
+108  ESR2  6.456257     MSC"
+140,"('ESR2', 'Myeloid')","     gene    scores  cluster
+678  ESR2  0.545613  Myeloid"
+141,"('ESRRA', 'Neural')","     gene    scores cluster
+55  ESRRA  0.454832  Neural"
+142,"('ESRRA', 'Fibroblast')","      gene    scores     cluster
+327  ESRRA  0.048956  Fibroblast"
+143,"('ESRRA', 'Megakaryocyte')","      gene    scores        cluster
+576  ESRRA -4.778043  Megakaryocyte"
+144,"('ESRRA', 'Myeloid')","      gene    scores  cluster
+795  ESRRA -2.078527  Myeloid"
+145,"('ETS1', 'Fibroblast')","     gene    scores     cluster
+309  ETS1  1.415801  Fibroblast"
+146,"('ETS1', 'Megakaryocyte')","     gene    scores        cluster
+448  ETS1  6.244175  Megakaryocyte"
+147,"('ETS1', 'Myeloid')","     gene   scores  cluster
+674  ETS1  0.69111  Myeloid"
+148,"('ETS2', 'Neural')","    gene    scores cluster
+17  ETS2  3.629975  Neural"
+149,"('ETS2', 'MSC')","     gene    scores cluster
+133  ETS2  4.245269     MSC"
+150,"('ETV1', 'Fibroblast')","     gene    scores     cluster
+342  ETV1 -0.695172  Fibroblast"
+151,"('ETV4', 'MSC')","    gene    scores cluster
+96  ETV4  7.811726     MSC"
+152,"('ETV4', 'Fibroblast')","     gene    scores     cluster
+306  ETV4  1.687995  Fibroblast"
+153,"('ETV6', 'MSC')","     gene    scores cluster
+136  ETV6  4.051323     MSC"
+154,"('ETV6', 'Fibroblast')","     gene    scores     cluster
+307  ETV6  1.566585  Fibroblast"
+155,"('ETV6', 'Megakaryocyte')","     gene    scores        cluster
+469  ETV6  2.749935  Megakaryocyte"
+156,"('ETV6', 'Myeloid')","     gene   scores  cluster
+651  ETV6  1.59527  Myeloid"
+157,"('FLI1', 'Fibroblast')","     gene    scores     cluster
+426  FLI1 -4.290484  Fibroblast"
+158,"('FLI1', 'Megakaryocyte')","     gene    scores        cluster
+544  FLI1 -3.679068  Megakaryocyte"
+159,"('FOS', 'Fibroblast')","    gene    scores     cluster
+425  FOS -4.276777  Fibroblast"
+160,"('FOS', 'Megakaryocyte')","    gene    scores        cluster
+620  FOS -6.848611  Megakaryocyte"
+161,"('FOS', 'Myeloid')","    gene    scores  cluster
+811  FOS -2.473448  Myeloid"
+162,"('FOSB', 'MSC')","     gene   scores cluster
+188  FOSB  1.04731     MSC"
+163,"('FOSL1', 'Megakaryocyte')","      gene    scores        cluster
+592  FOSL1 -5.447418  Megakaryocyte"
+164,"('FOSL1', 'Myeloid')","      gene    scores  cluster
+800  FOSL1 -2.229221  Myeloid"
+165,"('FOSL2', 'Neural')","     gene    scores cluster
+77  FOSL2 -1.765512  Neural"
+166,"('FOSL2', 'Megakaryocyte')","      gene    scores        cluster
+611  FOSL2 -6.069338  Megakaryocyte"
+167,"('FOSL2', 'Myeloid')","      gene    scores  cluster
+796  FOSL2 -2.083724  Myeloid"
+168,"('FOXA1', 'Fibroblast')","      gene    scores     cluster
+443  FOXA1 -6.665819  Fibroblast"
+169,"('FOXA1', 'Megakaryocyte')","      gene    scores        cluster
+635  FOXA1 -7.680335  Megakaryocyte"
+170,"('FOXA1', 'Myeloid')","      gene    scores  cluster
+780  FOXA1 -1.839497  Myeloid"
+171,"('FOXA2', 'Fibroblast')","      gene    scores     cluster
+377  FOXA2 -2.026769  Fibroblast"
+172,"('FOXA2', 'Megakaryocyte')","      gene    scores        cluster
+625  FOXA2 -7.155824  Megakaryocyte"
+173,"('FOXA2', 'Myeloid')","      gene    scores  cluster
+774  FOXA2 -1.787534  Myeloid"
+174,"('FOXD3', 'MSC')","      gene    scores cluster
+172  FOXD3  2.344595     MSC"
+175,"('FOXK1', 'Neural')","     gene    scores cluster
+10  FOXK1  5.230567  Neural"
+176,"('FOXK2', 'Fibroblast')","      gene  scores     cluster
+417  FOXK2 -3.6756  Fibroblast"
+177,"('FOXK2', 'Megakaryocyte')","      gene    scores        cluster
+555  FOXK2 -4.043727  Megakaryocyte"
+178,"('FOXK2', 'Myeloid')","      gene    scores  cluster
+732  FOXK2 -0.737877  Myeloid"
+179,"('FOXL2', 'Neural')","    gene    scores cluster
+6  FOXL2  7.015174  Neural"
+180,"('FOXL2', 'MSC')","      gene    scores cluster
+154  FOXL2  3.016943     MSC"
+181,"('FOXM1', 'MSC')","      gene    scores cluster
+131  FOXM1  4.294833     MSC"
+182,"('FOXM1', 'Fibroblast')","      gene    scores     cluster
+305  FOXM1  1.762408  Fibroblast"
+183,"('FOXO1', 'Fibroblast')","      gene    scores     cluster
+355  FOXO1 -1.276767  Fibroblast"
+184,"('FOXO1', 'Megakaryocyte')","      gene    scores        cluster
+570  FOXO1 -4.550755  Megakaryocyte"
+185,"('FOXO1', 'Myeloid')","      gene    scores  cluster
+725  FOXO1 -0.602773  Myeloid"
+186,"('FOXO3', 'Megakaryocyte')","      gene    scores        cluster
+501  FOXO3 -0.064939  Megakaryocyte"
+187,"('FOXO3', 'Myeloid')","      gene    scores  cluster
+695  FOXO3  0.119515  Myeloid"
+188,"('FOXO4', 'Neural')","    gene    scores cluster
+8  FOXO4  6.468334  Neural"
+189,"('FOXO4', 'Fibroblast')","      gene    scores     cluster
+429  FOXO4 -4.480433  Fibroblast"
+190,"('FOXO4', 'Megakaryocyte')","      gene    scores        cluster
+511  FOXO4 -1.561044  Megakaryocyte"
+191,"('FOXO4', 'Myeloid')","      gene    scores  cluster
+816  FOXO4 -2.748852  Myeloid"
+192,"('FOXP1', 'Neural')","     gene    scores cluster
+33  FOXP1  2.338391  Neural"
+193,"('FOXP1', 'MSC')","      gene    scores cluster
+127  FOXP1  4.635316     MSC"
+194,"('FOXP3', 'MSC')","      gene    scores cluster
+267  FOXP3 -8.777147     MSC"
+195,"('FOXP3', 'Megakaryocyte')","      gene   scores        cluster
+533  FOXP3 -2.86233  Megakaryocyte"
+196,"('FOXP3', 'Myeloid')","      gene    scores  cluster
+792  FOXP3 -2.016172  Myeloid"
+197,"('GABPA', 'MSC')","      gene    scores cluster
+234  GABPA -2.208833     MSC"
+198,"('GABPA', 'Fibroblast')","      gene   scores     cluster
+380  GABPA -2.14818  Fibroblast"
+199,"('GABPA', 'Megakaryocyte')","      gene    scores        cluster
+530  GABPA -2.687493  Megakaryocyte"
+200,"('GATA1', 'MSC')","      gene    scores cluster
+239  GATA1 -2.493287     MSC"
+201,"('GATA1', 'Fibroblast')","      gene    scores     cluster
+408  GATA1 -3.072465  Fibroblast"
+202,"('GATA1', 'Megakaryocyte')","      gene    scores        cluster
+589  GATA1 -5.307549  Megakaryocyte"
+203,"('GATA1', 'Myeloid')","      gene    scores  cluster
+740  GATA1 -0.914552  Myeloid"
+204,"('GATA2', 'Fibroblast')","      gene    scores     cluster
+442  GATA2 -5.894276  Fibroblast"
+205,"('GATA2', 'Megakaryocyte')","      gene    scores        cluster
+633  GATA2 -7.430568  Megakaryocyte"
+206,"('GATA2', 'Myeloid')","      gene    scores  cluster
+798  GATA2 -2.099313  Myeloid"
+207,"('GATA3', 'MSC')","      gene    scores cluster
+206  GATA3 -0.633558     MSC"
+208,"('GATA3', 'Fibroblast')","      gene    scores     cluster
+431  GATA3 -4.617509  Fibroblast"
+209,"('GATA3', 'Megakaryocyte')","      gene    scores        cluster
+631  GATA3 -7.393103  Megakaryocyte"
+210,"('GATA3', 'Myeloid')","      gene    scores  cluster
+769  GATA3 -1.678411  Myeloid"
+211,"('GATA4', 'Megakaryocyte')","      gene    scores        cluster
+563  GATA4 -4.271016  Megakaryocyte"
+212,"('GATA4', 'Myeloid')","      gene    scores  cluster
+778  GATA4 -1.808319  Myeloid"
+213,"('GATA6', 'Neural')","     gene    scores cluster
+82  GATA6 -2.961615  Neural"
+214,"('GATA6', 'Megakaryocyte')","      gene    scores        cluster
+510  GATA6 -1.383709  Megakaryocyte"
+215,"('GATA6', 'Myeloid')","      gene    scores  cluster
+709  GATA6 -0.119515  Myeloid"
+216,"('GFI1', 'Neural')","   gene    scores cluster
+1  GFI1  8.990742  Neural"
+217,"('GFI1', 'MSC')","     gene    scores cluster
+260  GFI1 -5.751585     MSC"
+218,"('GFI1', 'Megakaryocyte')","     gene    scores        cluster
+539  GFI1 -3.501733  Megakaryocyte"
+219,"('GFI1B', 'Neural')","     gene    scores cluster
+30  GFI1B  2.631775  Neural"
+220,"('GLI1', 'MSC')","     gene   scores cluster
+166  GLI1  2.62905     MSC"
+221,"('GLI1', 'Fibroblast')","     gene    scores     cluster
+348  GLI1 -1.006531  Fibroblast"
+222,"('GLI1', 'Myeloid')","     gene    scores  cluster
+681  GLI1  0.415706  Myeloid"
+223,"('GLI3', 'MSC')","     gene   scores cluster
+251  GLI3 -3.91556     MSC"
+224,"('GLI3', 'Myeloid')","     gene    scores  cluster
+719  GLI3 -0.374135  Myeloid"
+225,"('GLYR1', 'MSC')","      gene    scores cluster
+212  GLYR1 -0.952492     MSC"
+226,"('GLYR1', 'Fibroblast')","      gene    scores     cluster
+399  GLYR1 -2.802229  Fibroblast"
+227,"('GLYR1', 'Megakaryocyte')","      gene    scores        cluster
+538  GLYR1 -3.439291  Megakaryocyte"
+228,"('GRHL2', 'Neural')","     gene    scores cluster
+81  GRHL2 -2.227287  Neural"
+229,"('GRHL2', 'Megakaryocyte')","      gene    scores        cluster
+574  GRHL2 -4.730587  Megakaryocyte"
+230,"('GRHL2', 'Myeloid')","      gene    scores  cluster
+743  GRHL2 -0.966515  Myeloid"
+231,"('GTF2B', 'Fibroblast')","      gene    scores     cluster
+422  GTF2B -4.137743  Fibroblast"
+232,"('GTF2B', 'Megakaryocyte')","      gene    scores        cluster
+588  GTF2B -5.307549  Megakaryocyte"
+233,"('HBP1', 'Neural')","    gene    scores cluster
+36  HBP1  2.081463  Neural"
+234,"('HBP1', 'MSC')","     gene    scores cluster
+110  HBP1  6.020955     MSC"
+235,"('HES1', 'MSC')","     gene    scores cluster
+263  HES1 -6.770881     MSC"
+236,"('HHEX', 'Fibroblast')","     gene    scores     cluster
+375  HHEX -1.940607  Fibroblast"
+237,"('HHEX', 'Megakaryocyte')","     gene   scores        cluster
+572  HHEX -4.63068  Megakaryocyte"
+238,"('HHEX', 'Myeloid')","     gene   scores  cluster
+797  HHEX -2.08892  Myeloid"
+239,"('HIC1', 'MSC')","    gene    scores cluster
+99  HIC1  7.682428     MSC"
+240,"('HIC1', 'Fibroblast')","     gene    scores     cluster
+285  HIC1  3.516983  Fibroblast"
+241,"('HIC1', 'Megakaryocyte')","     gene    scores        cluster
+464  HIC1  3.231985  Megakaryocyte"
+242,"('HIC1', 'Myeloid')","     gene    scores  cluster
+647  HIC1  1.943423  Myeloid"
+243,"('HIF1A', 'MSC')","     gene    scores cluster
+94  HIF1A  7.990588     MSC"
+244,"('HIF1A', 'Fibroblast')","      gene    scores     cluster
+288  HIF1A  3.283954  Fibroblast"
+245,"('HINFP', 'Neural')","     gene    scores cluster
+73  HINFP -1.039864  Neural"
+246,"('HINFP', 'Fibroblast')","      gene    scores     cluster
+338  HINFP -0.428853  Fibroblast"
+247,"('HINFP', 'Megakaryocyte')","      gene    scores        cluster
+508  HINFP -1.148928  Megakaryocyte"
+248,"('HIVEP2', 'MSC')","      gene    scores cluster
+87  HIVEP2  8.828867     MSC"
+249,"('HIVEP2', 'Megakaryocyte')","       gene    scores        cluster
+449  HIVEP2  5.240111  Megakaryocyte"
+250,"('HIVEP2', 'Myeloid')","       gene   scores  cluster
+705  HIVEP2 -0.05716  Myeloid"
+251,"('HMBOX1', 'MSC')","       gene    scores cluster
+197  HMBOX1  0.310314     MSC"
+252,"('HMBOX1', 'Fibroblast')","       gene    scores     cluster
+413  HMBOX1 -3.481735  Fibroblast"
+253,"('HMBOX1', 'Megakaryocyte')","       gene    scores        cluster
+607  HMBOX1 -5.867027  Megakaryocyte"
+254,"('HMGA1', 'Neural')","    gene     scores cluster
+0  HMGA1  12.651964  Neural"
+255,"('HMGN3', 'MSC')","      gene    scores cluster
+185  HMGN3  1.379174     MSC"
+256,"('HMGN3', 'Fibroblast')","      gene    scores     cluster
+311  HMGN3  1.196479  Fibroblast"
+257,"('HNF1A', 'Neural')","    gene    scores cluster
+7  HNF1A  7.013438  Neural"
+258,"('HNF1A', 'Megakaryocyte')","      gene   scores        cluster
+578  HNF1A -4.81301  Megakaryocyte"
+259,"('HNF1A', 'Myeloid')","      gene    scores  cluster
+794  HNF1A -2.052546  Myeloid"
+260,"('HNF1B', 'Neural')","     gene   scores cluster
+76  HNF1B -1.58844  Neural"
+261,"('HNF1B', 'Megakaryocyte')","      gene    scores        cluster
+547  HNF1B -3.773979  Megakaryocyte"
+262,"('HNF1B', 'Myeloid')","      gene    scores  cluster
+710  HNF1B -0.150693  Myeloid"
+263,"('HNF4A', 'Fibroblast')","      gene    scores     cluster
+440  HNF4A -5.721951  Fibroblast"
+264,"('HNF4A', 'Megakaryocyte')","      gene   scores        cluster
+617  HNF4A -6.58136  Megakaryocyte"
+265,"('HNF4A', 'Myeloid')","      gene    scores  cluster
+820  HNF4A -3.169755  Myeloid"
+266,"('HNF4G', 'Fibroblast')","      gene    scores     cluster
+396  HNF4G -2.708234  Fibroblast"
+267,"('HNF4G', 'Megakaryocyte')","      gene    scores        cluster
+587  HNF4G -5.227623  Megakaryocyte"
+268,"('HNF4G', 'Myeloid')","      gene    scores  cluster
+766  HNF4G -1.610859  Myeloid"
+269,"('HOXA1', 'Megakaryocyte')","      gene    scores        cluster
+591  HOXA1 -5.412451  Megakaryocyte"
+270,"('HOXA1', 'Myeloid')","      gene    scores  cluster
+770  HOXA1 -1.678411  Myeloid"
+271,"('HOXA10', 'MSC')","       gene    scores cluster
+117  HOXA10  5.445581     MSC"
+272,"('HOXA10', 'Megakaryocyte')","       gene    scores        cluster
+460  HOXA10  3.739012  Megakaryocyte"
+273,"('HOXA10', 'Myeloid')","       gene    scores  cluster
+646  HOXA10  2.021368  Myeloid"
+274,"('HOXA9', 'Neural')","     gene    scores cluster
+79  HOXA9 -1.829744  Neural"
+275,"('HOXA9', 'Fibroblast')","      gene    scores     cluster
+349  HOXA9 -1.035904  Fibroblast"
+276,"('HOXA9', 'Megakaryocyte')","      gene    scores        cluster
+502  HOXA9 -0.419609  Megakaryocyte"
+277,"('HOXB13', 'Fibroblast')","       gene    scores     cluster
+358  HOXB13 -1.364887  Fibroblast"
+278,"('HOXB13', 'Megakaryocyte')","       gene    scores        cluster
+612  HOXB13 -6.199217  Megakaryocyte"
+279,"('HOXB13', 'Myeloid')","       gene    scores  cluster
+731  HOXB13 -0.727485  Myeloid"
+280,"('HOXB7', 'MSC')","      gene    scores cluster
+220  HOXB7 -1.327455     MSC"
+281,"('HSF2', 'MSC')","     gene    scores cluster
+102  HSF2  6.906643     MSC"
+282,"('IKZF1', 'Fibroblast')","      gene    scores     cluster
+376  IKZF1 -2.011103  Fibroblast"
+283,"('IKZF1', 'Megakaryocyte')","      gene    scores        cluster
+564  IKZF1 -4.300988  Megakaryocyte"
+284,"('IKZF1', 'Myeloid')","      gene    scores  cluster
+775  IKZF1 -1.787534  Myeloid"
+285,"('IRF1', 'MSC')","    gene    scores cluster
+92  IRF1  8.175914     MSC"
+286,"('IRF1', 'Megakaryocyte')","     gene    scores        cluster
+490  IRF1  0.881678  Megakaryocyte"
+287,"('IRF1', 'Myeloid')","     gene    scores  cluster
+648  IRF1  1.834301  Myeloid"
+288,"('IRF2', 'Neural')","    gene    scores cluster
+29  IRF2  2.739407  Neural"
+289,"('IRF2', 'MSC')","     gene    scores cluster
+174  IRF2  2.243312     MSC"
+290,"('IRF3', 'Myeloid')","     gene    scores  cluster
+666  IRF3  0.810626  Myeloid"
+291,"('IRF4', 'Fibroblast')","     gene   scores     cluster
+381  IRF4 -2.16972  Fibroblast"
+292,"('IRF4', 'Megakaryocyte')","     gene    scores        cluster
+500  IRF4  0.019981  Megakaryocyte"
+293,"('IRF8', 'Fibroblast')","     gene    scores     cluster
+433  IRF8 -4.691922  Fibroblast"
+294,"('IRF8', 'Megakaryocyte')","     gene    scores        cluster
+568  IRF8 -4.498303  Megakaryocyte"
+295,"('IRF8', 'Myeloid')","     gene    scores  cluster
+752  IRF8 -1.148386  Myeloid"
+296,"('IRF9', 'Neural')","    gene    scores cluster
+42  IRF9  1.451296  Neural"
+297,"('IRF9', 'MSC')","     gene    scores cluster
+184  IRF9  1.433048     MSC"
+298,"('IRF9', 'Megakaryocyte')","     gene    scores        cluster
+493  IRF9  0.666878  Megakaryocyte"
+299,"('IRF9', 'Myeloid')","     gene    scores  cluster
+689  IRF9  0.265012  Myeloid"
+300,"('JUN', 'Neural')","   gene    scores cluster
+48  JUN  0.883624  Neural"
+301,"('JUN', 'MSC')","   gene    scores cluster
+88  JUN  8.410805     MSC"
+302,"('JUNB', 'MSC')","     gene    scores cluster
+160  JUNB  2.678614     MSC"
+303,"('JUNB', 'Fibroblast')","     gene    scores     cluster
+326  JUNB  0.109661  Fibroblast"
+304,"('JUNB', 'Myeloid')","     gene    scores  cluster
+671  JUNB  0.727485  Myeloid"
+305,"('JUND', 'Fibroblast')","     gene    scores     cluster
+292  JUND  2.913848  Fibroblast"
+306,"('KDM5B', 'Fibroblast')","      gene    scores     cluster
+320  KDM5B  0.603135  Fibroblast"
+307,"('KLF1', 'MSC')","     gene    scores cluster
+138  KLF1  4.018998     MSC"
+308,"('KLF1', 'Fibroblast')","     gene    scores     cluster
+329  KLF1 -0.001958  Fibroblast"
+309,"('KLF10', 'Neural')","     gene    scores cluster
+78  KLF10 -1.772455  Neural"
+310,"('KLF13', 'Fibroblast')","      gene   scores     cluster
+287  KLF13  3.28787  Fibroblast"
+311,"('KLF13', 'Myeloid')","      gene    scores  cluster
+653  KLF13  1.527718  Myeloid"
+312,"('KLF2', 'MSC')","     gene    scores cluster
+266  KLF2 -7.706133     MSC"
+313,"('KLF2', 'Megakaryocyte')","     gene    scores        cluster
+551  KLF2 -3.863895  Megakaryocyte"
+314,"('KLF2', 'Myeloid')","     gene    scores  cluster
+804  KLF2 -2.270791  Myeloid"
+315,"('KLF3', 'Fibroblast')","     gene    scores     cluster
+427  KLF3 -4.396229  Fibroblast"
+316,"('KLF3', 'Megakaryocyte')","     gene    scores        cluster
+559  KLF3 -4.171109  Megakaryocyte"
+317,"('KLF3', 'Myeloid')","     gene    scores  cluster
+768  KLF3 -1.642037  Myeloid"
+318,"('KLF4', 'Neural')","    gene    scores cluster
+11  KLF4  4.478878  Neural"
+319,"('KLF4', 'Fibroblast')","     gene    scores     cluster
+325  KLF4  0.137076  Fibroblast"
+320,"('KLF5', 'MSC')","     gene    scores cluster
+183  KLF5  1.478302     MSC"
+321,"('KLF5', 'Fibroblast')","     gene    scores     cluster
+284  KLF5  3.644268  Fibroblast"
+322,"('KLF5', 'Myeloid')","     gene   scores  cluster
+687  KLF5  0.29619  Myeloid"
+323,"('KLF6', 'Neural')","    gene    scores cluster
+72  KLF6 -0.814184  Neural"
+324,"('KLF6', 'Fibroblast')","     gene    scores     cluster
+333  KLF6 -0.203656  Fibroblast"
+325,"('KLF6', 'Megakaryocyte')","     gene    scores        cluster
+593  KLF6 -5.454911  Megakaryocyte"
+326,"('KLF6', 'Myeloid')","     gene    scores  cluster
+726  KLF6 -0.685914  Myeloid"
+327,"('KLF8', 'MSC')","     gene    scores cluster
+253  KLF8 -4.083647     MSC"
+328,"('KLF8', 'Fibroblast')","     gene    scores     cluster
+420  KLF8 -3.975209  Fibroblast"
+329,"('KLF8', 'Megakaryocyte')","     gene    scores        cluster
+505  KLF8 -0.714334  Megakaryocyte"
+330,"('KMT2A', 'Fibroblast')","      gene    scores     cluster
+444  KMT2A -6.936055  Fibroblast"
+331,"('KMT2A', 'Megakaryocyte')","      gene    scores        cluster
+558  KMT2A -4.163616  Megakaryocyte"
+332,"('KMT2B', 'Neural')","     gene   scores cluster
+60  KMT2B -0.11284  Neural"
+333,"('KMT2B', 'MSC')","      gene    scores cluster
+181  KMT2B  1.549415     MSC"
+334,"('KMT2B', 'Megakaryocyte')","      gene    scores        cluster
+488  KMT2B  0.946617  Megakaryocyte"
+335,"('KMT2B', 'Myeloid')","      gene    scores  cluster
+715  KMT2B -0.228638  Myeloid"
+336,"('LEF1', 'Megakaryocyte')","     gene    scores        cluster
+543  LEF1 -3.659086  Megakaryocyte"
+337,"('LYL1', 'MSC')","     gene   scores cluster
+256  LYL1 -4.98011     MSC"
+338,"('LYL1', 'Fibroblast')","     gene    scores     cluster
+361  LYL1 -1.500005  Fibroblast"
+339,"('MAFB', 'MSC')","     gene    scores cluster
+205  MAFB -0.590459     MSC"
+340,"('MAFB', 'Fibroblast')","     gene    scores     cluster
+415  MAFB -3.624686  Fibroblast"
+341,"('MAFB', 'Megakaryocyte')","     gene    scores        cluster
+603  MAFB -5.832059  Megakaryocyte"
+342,"('MAFB', 'Myeloid')","     gene    scores  cluster
+772  MAFB -1.699196  Myeloid"
+343,"('MAFF', 'Fibroblast')","     gene    scores     cluster
+340  MAFF -0.588448  Fibroblast"
+344,"('MAFF', 'Megakaryocyte')","     gene    scores        cluster
+590  MAFF -5.357502  Megakaryocyte"
+345,"('MAFF', 'Myeloid')","     gene    scores  cluster
+748  MAFF -1.060049  Myeloid"
+346,"('MAFG', 'MSC')","     gene    scores cluster
+203  MAFG -0.392203     MSC"
+347,"('MAFG', 'Fibroblast')","     gene   scores     cluster
+366  MAFG -1.60575  Fibroblast"
+348,"('MAFG', 'Megakaryocyte')","     gene    scores        cluster
+596  MAFG -5.587287  Megakaryocyte"
+349,"('MAFG', 'Myeloid')","     gene    scores  cluster
+803  MAFG -2.250006  Myeloid"
+350,"('MAFK', 'Megakaryocyte')","     gene    scores        cluster
+621  MAFK -6.866095  Megakaryocyte"
+351,"('MAFK', 'Myeloid')","     gene    scores  cluster
+783  MAFK -1.865478  Myeloid"
+352,"('MAX', 'MSC')","    gene    scores cluster
+187  MAX  1.159368     MSC"
+353,"('MAX', 'Fibroblast')","    gene    scores     cluster
+300  MAX  2.122723  Fibroblast"
+354,"('MAX', 'Myeloid')","    gene    scores  cluster
+693  MAX  0.129908  Myeloid"
+355,"('MAZ', 'MSC')","    gene    scores cluster
+129  MAZ  4.521104     MSC"
+356,"('MAZ', 'Fibroblast')","    gene    scores     cluster
+298  MAZ  2.255882  Fibroblast"
+357,"('MBD1', 'Fibroblast')","     gene    scores     cluster
+336  MBD1 -0.397521  Fibroblast"
+358,"('MBD2', 'MSC')","     gene    scores cluster
+210  MBD2 -0.840434     MSC"
+359,"('MBD2', 'Megakaryocyte')","     gene    scores        cluster
+537  MBD2 -3.231985  Megakaryocyte"
+360,"('MBD2', 'Myeloid')","     gene   scores  cluster
+762  MBD2 -1.53811  Myeloid"
+361,"('MBD3', 'Neural')","    gene   scores cluster
+58  MBD3  0.19964  Neural"
+362,"('MBD3', 'Myeloid')","     gene    scores  cluster
+790  MBD3 -2.000583  Myeloid"
+363,"('MBD4', 'MSC')","     gene    scores cluster
+100  MBD4  6.984222     MSC"
+364,"('MBD4', 'Fibroblast')","     gene    scores     cluster
+367  MBD4 -1.648831  Fibroblast"
+365,"('MEF2A', 'Neural')","     gene    scores cluster
+45  MEF2A  1.237768  Neural"
+366,"('MEF2A', 'MSC')","      gene    scores cluster
+115  MEF2A  5.639527     MSC"
+367,"('MEF2B', 'MSC')","      gene    scores cluster
+217  MEF2B -1.167988     MSC"
+368,"('MEF2B', 'Fibroblast')","      gene    scores     cluster
+418  MEF2B -3.877298  Fibroblast"
+369,"('MEF2C', 'Neural')","     gene   scores cluster
+54  MEF2C  0.46872  Neural"
+370,"('MEF2C', 'MSC')","      gene    scores cluster
+118  MEF2C  5.303354     MSC"
+371,"('MEF2D', 'Neural')","    gene    scores cluster
+3  MEF2D  7.692214  Neural"
+372,"('MEF2D', 'MSC')","      gene    scores cluster
+171  MEF2D  2.353215     MSC"
+373,"('MEIS1', 'MSC')","      gene    scores cluster
+240  MEIS1 -2.797137     MSC"
+374,"('MEIS1', 'Fibroblast')","      gene    scores     cluster
+364  MEIS1 -1.556794  Fibroblast"
+375,"('MEIS1', 'Megakaryocyte')","      gene    scores        cluster
+582  MEIS1 -4.915414  Megakaryocyte"
+376,"('MEIS2', 'MSC')","      gene   scores cluster
+208  MEIS2 -0.78656     MSC"
+377,"('MEIS2', 'Fibroblast')","      gene    scores     cluster
+430  MEIS2 -4.498057  Fibroblast"
+378,"('MEIS2', 'Megakaryocyte')","      gene    scores        cluster
+575  MEIS2 -4.773047  Megakaryocyte"
+379,"('MEIS2', 'Myeloid')","      gene    scores  cluster
+736  MEIS2 -0.810626  Myeloid"
+380,"('MNT', 'Megakaryocyte')","    gene    scores        cluster
+560  MNT -4.176104  Megakaryocyte"
+381,"('MNT', 'Myeloid')","    gene    scores  cluster
+713  MNT -0.202656  Myeloid"
+382,"('MSX2', 'MSC')","     gene    scores cluster
+204  MSX2 -0.491331     MSC"
+383,"('MSX2', 'Fibroblast')","     gene    scores     cluster
+435  MSX2 -4.877954  Fibroblast"
+384,"('MXI1', 'Neural')","    gene    scores cluster
+47  MXI1  1.020768  Neural"
+385,"('MXI1', 'MSC')","     gene    scores cluster
+176  MXI1  2.092465     MSC"
+386,"('MXI1', 'Myeloid')","     gene    scores  cluster
+662  MXI1  1.148386  Myeloid"
+387,"('MYB', 'MSC')","    gene    scores cluster
+144  MYB  3.600936     MSC"
+388,"('MYB', 'Fibroblast')","    gene    scores     cluster
+291  MYB  2.953013  Fibroblast"
+389,"('MYB', 'Megakaryocyte')","    gene    scores        cluster
+475  MYB  2.152992  Megakaryocyte"
+390,"('MYB', 'Myeloid')","    gene    scores  cluster
+641  MYB  3.143773  Myeloid"
+391,"('MYBL1', 'Neural')","    gene    scores cluster
+2  MYBL1  8.035942  Neural"
+392,"('MYBL1', 'MSC')","      gene  scores cluster
+194  MYBL1  0.5215     MSC"
+393,"('MYBL1', 'Myeloid')","      gene    scores  cluster
+777  MYBL1 -1.803123  Myeloid"
+394,"('MYBL2', 'Fibroblast')","      gene    scores     cluster
+323  MYBL2  0.352482  Fibroblast"
+395,"('MYBL2', 'Myeloid')","      gene    scores  cluster
+788  MYBL2 -1.964208  Myeloid"
+396,"('MYC', 'Fibroblast')","    gene    scores     cluster
+279  MYC  3.851841  Fibroblast"
+397,"('MYC', 'Megakaryocyte')","    gene    scores        cluster
+445  MYC  8.144901  Megakaryocyte"
+398,"('MYC', 'Myeloid')","    gene    scores  cluster
+703  MYC -0.025982  Myeloid"
+399,"('MYNN', 'Neural')","    gene    scores cluster
+18  MYNN  3.376519  Neural"
+400,"('MYNN', 'Myeloid')","     gene   scores  cluster
+659  MYNN  1.20035  Myeloid"
+401,"('MYOD1', 'Megakaryocyte')","      gene    scores        cluster
+628  MYOD1 -7.260726  Megakaryocyte"
+402,"('MYOD1', 'Myeloid')","      gene    scores  cluster
+812  MYOD1 -2.515018  Myeloid"
+403,"('NANOG', 'Fibroblast')","      gene    scores     cluster
+391  NANOG -2.528076  Fibroblast"
+404,"('NANOG', 'Megakaryocyte')","      gene    scores        cluster
+626  NANOG -7.168313  Megakaryocyte"
+405,"('NANOG', 'Myeloid')","      gene  scores  cluster
+737  NANOG  -0.847  Myeloid"
+406,"('NCOA1', 'MSC')","      gene   scores cluster
+231  NCOA1 -2.08169     MSC"
+407,"('NCOA1', 'Fibroblast')","      gene    scores     cluster
+379  NCOA1 -2.040477  Fibroblast"
+408,"('NCOA1', 'Megakaryocyte')","      gene    scores        cluster
+514  NCOA1 -1.733383  Megakaryocyte"
+409,"('NCOA1', 'Myeloid')","      gene    scores  cluster
+753  NCOA1 -1.189957  Myeloid"
+410,"('NCOA2', 'MSC')","      gene    scores cluster
+207  NCOA2 -0.754236     MSC"
+411,"('NCOA2', 'Fibroblast')","      gene   scores     cluster
+343  NCOA2 -0.69713  Fibroblast"
+412,"('NCOA2', 'Megakaryocyte')","      gene    scores        cluster
+540  NCOA2 -3.549189  Megakaryocyte"
+413,"('NCOA2', 'Myeloid')","      gene    scores  cluster
+750  NCOA2 -1.091227  Myeloid"
+414,"('NCOA3', 'Megakaryocyte')","      gene    scores        cluster
+595  NCOA3 -5.517353  Megakaryocyte"
+415,"('NCOA3', 'Myeloid')","      gene    scores  cluster
+810  NCOA3 -2.463055  Myeloid"
+416,"('NEUROD1', 'Neural')","       gene    scores cluster
+63  NEUROD1 -0.192696  Neural"
+417,"('NEUROD1', 'Megakaryocyte')","        gene   scores        cluster
+521  NEUROD1 -2.19795  Megakaryocyte"
+418,"('NEUROD1', 'Myeloid')","        gene    scores  cluster
+698  NEUROD1  0.083141  Myeloid"
+419,"('NFATC1', 'MSC')","       gene    scores cluster
+189  NFATC1  0.991281     MSC"
+420,"('NFATC1', 'Megakaryocyte')","       gene    scores        cluster
+473  NFATC1  2.302852  Megakaryocyte"
+421,"('NFATC1', 'Myeloid')","       gene    scores  cluster
+652  NFATC1  1.532914  Myeloid"
+422,"('NFE2', 'MSC')","     gene    scores cluster
+237  NFE2 -2.370455     MSC"
+423,"('NFE2', 'Fibroblast')","     gene    scores     cluster
+389  NFE2 -2.441914  Fibroblast"
+424,"('NFE2', 'Megakaryocyte')","     gene   scores        cluster
+566  NFE2 -4.44835  Megakaryocyte"
+425,"('NFE2', 'Myeloid')","     gene    scores  cluster
+714  NFE2 -0.202656  Myeloid"
+426,"('NFE2L1', 'MSC')","       gene    scores cluster
+215  NFE2L1 -1.129198     MSC"
+427,"('NFE2L1', 'Megakaryocyte')","       gene   scores        cluster
+548  NFE2L1 -3.82643  Megakaryocyte"
+428,"('NFE2L1', 'Myeloid')","       gene    scores  cluster
+787  NFE2L1 -1.953816  Myeloid"
+429,"('NFE2L2', 'Neural')","      gene    scores cluster
+22  NFE2L2  3.135215  Neural"
+430,"('NFE2L2', 'MSC')","       gene    scores cluster
+193  NFE2L2  0.756391     MSC"
+431,"('NFE2L2', 'Fibroblast')","       gene    scores     cluster
+314  NFE2L2  1.024155  Fibroblast"
+432,"('NFIA', 'MSC')","     gene    scores cluster
+216  NFIA -1.165833     MSC"
+433,"('NFIA', 'Fibroblast')","     gene    scores     cluster
+313  NFIA  1.043737  Fibroblast"
+434,"('NFIA', 'Myeloid')","     gene    scores  cluster
+734  NFIA -0.769055  Myeloid"
+435,"('NFIC', 'MSC')","     gene    scores cluster
+113  NFIC  5.809769     MSC"
+436,"('NFKB1', 'Megakaryocyte')","      gene    scores        cluster
+466  NFKB1  3.192022  Megakaryocyte"
+437,"('NFKB2', 'Fibroblast')","      gene    scores     cluster
+439  NFKB2 -5.598583  Fibroblast"
+438,"('NFKB2', 'Megakaryocyte')","      gene    scores        cluster
+515  NFKB2 -1.780839  Megakaryocyte"
+439,"('NFKB2', 'Myeloid')","      gene    scores  cluster
+694  NFKB2  0.119515  Myeloid"
+440,"('NFYA', 'Neural')","    gene    scores cluster
+31  NFYA  2.388735  Neural"
+441,"('NFYA', 'Megakaryocyte')","     gene    scores        cluster
+481  NFYA  1.413681  Megakaryocyte"
+442,"('NFYA', 'Myeloid')","     gene    scores  cluster
+688  NFYA  0.270209  Myeloid"
+443,"('NFYB', 'Neural')","    gene    scores cluster
+13  NFYB  4.372983  Neural"
+444,"('NFYB', 'Megakaryocyte')","     gene    scores        cluster
+479  NFYB  1.493607  Megakaryocyte"
+445,"('NFYC', 'Neural')","   gene    scores cluster
+9  NFYC  6.211406  Neural"
+446,"('NFYC', 'MSC')","     gene    scores cluster
+163  NFYC  2.644135     MSC"
+447,"('NME2', 'Fibroblast')","     gene    scores     cluster
+372  NME2 -1.801573  Fibroblast"
+448,"('NME2', 'Megakaryocyte')","     gene    scores        cluster
+604  NME2 -5.847045  Megakaryocyte"
+449,"('NME2', 'Myeloid')","     gene    scores  cluster
+813  NME2 -2.525411  Myeloid"
+450,"('NR1H2', 'MSC')","     gene   scores cluster
+93  NR1H2  8.09187     MSC"
+451,"('NR1I2', 'MSC')","      gene    scores cluster
+137  NR1I2  4.023308     MSC"
+452,"('NR1I2', 'Fibroblast')","      gene    scores     cluster
+308  NR1I2  1.503922  Fibroblast"
+453,"('NR2C2', 'Fibroblast')","      gene    scores     cluster
+282  NR2C2  3.703015  Fibroblast"
+454,"('NR2C2', 'Megakaryocyte')","      gene    scores        cluster
+484  NR2C2  1.213868  Megakaryocyte"
+455,"('NR2F1', 'MSC')","      gene   scores cluster
+245  NR2F1 -3.14624     MSC"
+456,"('NR2F1', 'Fibroblast')","      gene    scores     cluster
+356  NR2F1 -1.280683  Fibroblast"
+457,"('NR2F1', 'Megakaryocyte')","      gene    scores        cluster
+565  NR2F1 -4.388406  Megakaryocyte"
+458,"('NR2F1', 'Myeloid')","      gene    scores  cluster
+785  NR2F1 -1.917442  Myeloid"
+459,"('NR2F2', 'Fibroblast')","      gene    scores     cluster
+335  NR2F2 -0.364231  Fibroblast"
+460,"('NR2F2', 'Megakaryocyte')","      gene    scores        cluster
+557  NR2F2 -4.136141  Megakaryocyte"
+461,"('NR2F2', 'Myeloid')","      gene    scores  cluster
+745  NR2F2 -0.976908  Myeloid"
+462,"('NR2F6', 'Fibroblast')","      gene    scores     cluster
+414  NR2F6 -3.501318  Fibroblast"
+463,"('NR2F6', 'Megakaryocyte')","      gene    scores        cluster
+610  NR2F6 -6.029375  Megakaryocyte"
+464,"('NR2F6', 'Myeloid')","      gene    scores  cluster
+755  NR2F6 -1.226331  Myeloid"
+465,"('NR3C1', 'Neural')","     gene    scores cluster
+75  NR3C1 -1.355816  Neural"
+466,"('NR3C1', 'Megakaryocyte')","      gene    scores        cluster
+606  NR3C1 -5.862031  Megakaryocyte"
+467,"('NR3C1', 'Myeloid')","      gene    scores  cluster
+767  NR3C1 -1.610859  Myeloid"
+468,"('NR4A1', 'MSC')","      gene    scores cluster
+201  NR4A1 -0.303849     MSC"
+469,"('NR4A1', 'Fibroblast')","      gene    scores     cluster
+341  NR4A1 -0.640342  Fibroblast"
+470,"('NR4A1', 'Megakaryocyte')","      gene    scores        cluster
+526  NR4A1 -2.510158  Megakaryocyte"
+471,"('NR5A1', 'Myeloid')","      gene    scores  cluster
+733  NR5A1 -0.743074  Myeloid"
+472,"('NR5A2', 'MSC')","      gene    scores cluster
+223  NR5A2 -1.450287     MSC"
+473,"('NR5A2', 'Fibroblast')","      gene   scores     cluster
+406  NR5A2 -2.97847  Fibroblast"
+474,"('NR5A2', 'Megakaryocyte')","      gene    scores        cluster
+535  NR5A2 -3.074632  Megakaryocyte"
+475,"('NR5A2', 'Myeloid')","      gene    scores  cluster
+789  NR5A2 -1.979797  Myeloid"
+476,"('NRF1', 'Neural')","    gene    scores cluster
+37  NRF1  1.999871  Neural"
+477,"('NRF1', 'Myeloid')","     gene   scores  cluster
+645  NRF1  2.14608  Myeloid"
+478,"('ONECUT1', 'Fibroblast')","        gene    scores     cluster
+402  ONECUT1 -2.859018  Fibroblast"
+479,"('ONECUT1', 'Megakaryocyte')","        gene    scores        cluster
+627  ONECUT1 -7.248238  Megakaryocyte"
+480,"('ONECUT1', 'Myeloid')","        gene    scores  cluster
+781  ONECUT1 -1.844693  Myeloid"
+481,"('OTX2', 'Megakaryocyte')","     gene   scores        cluster
+616  OTX2 -6.47396  Megakaryocyte"
+482,"('OTX2', 'Myeloid')","     gene    scores  cluster
+773  OTX2 -1.714785  Myeloid"
+483,"('PAX2', 'Megakaryocyte')","     gene    scores        cluster
+536  PAX2 -3.174538  Megakaryocyte"
+484,"('PAX5', 'MSC')","     gene    scores cluster
+182  PAX5  1.517091     MSC"
+485,"('PAX5', 'Megakaryocyte')","     gene    scores        cluster
+453  PAX5  4.468331  Megakaryocyte"
+486,"('PAX5', 'Myeloid')","     gene    scores  cluster
+665  PAX5  0.961319  Myeloid"
+487,"('PAX6', 'MSC')","     gene    scores cluster
+130  PAX6  4.434906     MSC"
+488,"('PAX6', 'Fibroblast')","     gene    scores     cluster
+269  PAX6  5.694536  Fibroblast"
+489,"('PAX6', 'Megakaryocyte')","     gene    scores        cluster
+468  PAX6  2.792395  Megakaryocyte"
+490,"('PAX8', 'Fibroblast')","     gene    scores     cluster
+365  PAX8 -1.570501  Fibroblast"
+491,"('PAX8', 'Megakaryocyte')","     gene    scores        cluster
+605  PAX8 -5.857036  Megakaryocyte"
+492,"('PAX8', 'Myeloid')","     gene    scores  cluster
+759  PAX8 -1.387417  Myeloid"
+493,"('PBX2', 'Fibroblast')","     gene    scores     cluster
+371  PBX2 -1.758492  Fibroblast"
+494,"('PBX2', 'Megakaryocyte')","     gene    scores        cluster
+546  PBX2 -3.756495  Megakaryocyte"
+495,"('PBX2', 'Myeloid')","     gene    scores  cluster
+701  PBX2 -0.015589  Myeloid"
+496,"('PBX3', 'MSC')","     gene    scores cluster
+141  PBX3  3.620331     MSC"
+497,"('PBX3', 'Fibroblast')","     gene    scores     cluster
+271  PBX3  5.475214  Fibroblast"
+498,"('PCGF2', 'Fibroblast')","      gene    scores     cluster
+428  PCGF2 -4.476517  Fibroblast"
+499,"('PCGF2', 'Megakaryocyte')","      gene    scores        cluster
+527  PCGF2 -2.532637  Megakaryocyte"
+500,"('PDX1', 'MSC')","     gene    scores cluster
+214  PDX1 -1.062395     MSC"
+501,"('PDX1', 'Fibroblast')","     gene    scores     cluster
+398  PDX1 -2.790479  Fibroblast"
+502,"('PDX1', 'Megakaryocyte')","     gene    scores        cluster
+609  PDX1 -6.019384  Megakaryocyte"
+503,"('PDX1', 'Myeloid')","     gene    scores  cluster
+779  PDX1 -1.813515  Myeloid"
+504,"('PGR', 'Neural')","   gene    scores cluster
+52  PGR  0.618016  Neural"
+505,"('PGR', 'Megakaryocyte')","    gene    scores        cluster
+622  PGR -7.055918  Megakaryocyte"
+506,"('PGR', 'Myeloid')","    gene    scores  cluster
+754  PGR -1.215939  Myeloid"
+507,"('PIN1', 'MSC')","     gene    scores cluster
+264  PIN1 -6.900178     MSC"
+508,"('PIN1', 'Myeloid')","     gene    scores  cluster
+808  PIN1 -2.359129  Myeloid"
+509,"('PITX1', 'Neural')","     gene    scores cluster
+84  PITX1 -7.430078  Neural"
+510,"('PITX1', 'MSC')","      gene    scores cluster
+244  PITX1 -3.062196     MSC"
+511,"('PKNOX1', 'MSC')","       gene   scores cluster
+255  PKNOX1 -4.97149     MSC"
+512,"('PKNOX1', 'Megakaryocyte')","       gene    scores        cluster
+534  PKNOX1 -2.957241  Megakaryocyte"
+513,"('POU2F1', 'Fibroblast')","       gene    scores     cluster
+369  POU2F1 -1.672329  Fibroblast"
+514,"('POU2F1', 'Megakaryocyte')","       gene    scores        cluster
+525  POU2F1 -2.502665  Megakaryocyte"
+515,"('POU2F1', 'Myeloid')","       gene    scores  cluster
+721  POU2F1 -0.457276  Myeloid"
+516,"('POU2F2', 'MSC')","       gene    scores cluster
+209  POU2F2 -0.810265     MSC"
+517,"('POU2F2', 'Fibroblast')","       gene    scores     cluster
+395  POU2F2 -2.706275  Fibroblast"
+518,"('POU4F2', 'MSC')","       gene    scores cluster
+213  POU4F2 -0.963267     MSC"
+519,"('POU4F2', 'Fibroblast')","       gene    scores     cluster
+378  POU4F2 -2.028728  Fibroblast"
+520,"('POU4F2', 'Megakaryocyte')","       gene    scores        cluster
+618  POU4F2 -6.606337  Megakaryocyte"
+521,"('POU4F2', 'Myeloid')","       gene    scores  cluster
+791  POU4F2 -2.005779  Myeloid"
+522,"('POU5F1', 'Fibroblast')","       gene    scores     cluster
+392  POU5F1 -2.559408  Fibroblast"
+523,"('POU5F1', 'Megakaryocyte')","       gene    scores        cluster
+632  POU5F1 -7.410587  Megakaryocyte"
+524,"('POU5F1', 'Myeloid')","       gene   scores  cluster
+716  POU5F1 -0.25462  Myeloid"
+525,"('PPARA', 'Fibroblast')","      gene    scores     cluster
+359  PPARA -1.394261  Fibroblast"
+526,"('PPARA', 'Megakaryocyte')","      gene    scores        cluster
+600  PPARA -5.747139  Megakaryocyte"
+527,"('PPARA', 'Myeloid')","      gene    scores  cluster
+730  PPARA -0.706699  Myeloid"
+528,"('PPARD', 'MSC')","      gene    scores cluster
+151  PPARD  3.113916     MSC"
+529,"('PPARD', 'Megakaryocyte')","      gene   scores        cluster
+486  PPARD  0.99657  Megakaryocyte"
+530,"('PPARD', 'Myeloid')","      gene    scores  cluster
+697  PPARD  0.088337  Myeloid"
+531,"('PPARG', 'Neural')","     gene    scores cluster
+24  PPARG  2.963351  Neural"
+532,"('PRDM1', 'Myeloid')","      gene   scores  cluster
+806  PRDM1 -2.28638  Myeloid"
+533,"('PRDM14', 'Fibroblast')","       gene    scores     cluster
+407  PRDM14 -3.029384  Fibroblast"
+534,"('PRDM14', 'Megakaryocyte')","       gene    scores        cluster
+636  PRDM14 -8.162385  Megakaryocyte"
+535,"('PRDM14', 'Myeloid')","       gene    scores  cluster
+818  PRDM14 -3.013865  Myeloid"
+536,"('PROX1', 'Fibroblast')","      gene    scores     cluster
+303  PROX1  1.858361  Fibroblast"
+537,"('RARA', 'Neural')","    gene    scores cluster
+14  RARA  4.305279  Neural"
+538,"('RARA', 'MSC')","     gene    scores cluster
+178  RARA  2.047211     MSC"
+539,"('RARA', 'Myeloid')","     gene    scores  cluster
+643  RARA  2.405895  Myeloid"
+540,"('RARB', 'Neural')","    gene    scores cluster
+28  RARB  2.753295  Neural"
+541,"('RARB', 'MSC')","     gene    scores cluster
+173  RARB  2.279947     MSC"
+542,"('RARB', 'Myeloid')","     gene    scores  cluster
+640  RARB  3.226914  Myeloid"
+543,"('RARG', 'Neural')","    gene    scores cluster
+39  RARG  1.828007  Neural"
+544,"('RARG', 'MSC')","     gene    scores cluster
+145  RARG  3.577232     MSC"
+545,"('RARG', 'Myeloid')","     gene    scores  cluster
+639  RARG  3.507515  Myeloid"
+546,"('RBPJ', 'Fibroblast')","     gene    scores     cluster
+394  RBPJ -2.682777  Fibroblast"
+547,"('RBPJ', 'Megakaryocyte')","     gene    scores        cluster
+499  RBPJ  0.059944  Megakaryocyte"
+548,"('REL', 'MSC')","    gene    scores cluster
+147  REL  3.359581     MSC"
+549,"('RELB', 'Fibroblast')","     gene    scores     cluster
+404  RELB -2.917764  Fibroblast"
+550,"('RELB', 'Megakaryocyte')","     gene    scores        cluster
+509  RELB -1.376216  Megakaryocyte"
+551,"('REST', 'Neural')","    gene    scores cluster
+51  REST  0.701344  Neural"
+552,"('REST', 'MSC')","     gene    scores cluster
+146  REST  3.430695     MSC"
+553,"('RFX2', 'MSC')","     gene    scores cluster
+242  RFX2 -2.874715     MSC"
+554,"('RFX2', 'Megakaryocyte')","     gene    scores        cluster
+519  RFX2 -2.085554  Megakaryocyte"
+555,"('RFX2', 'Myeloid')","     gene    scores  cluster
+802  RFX2 -2.239613  Myeloid"
+556,"('RFX5', 'MSC')","     gene    scores cluster
+112  RFX5  5.967081     MSC"
+557,"('RFX5', 'Megakaryocyte')","     gene    scores        cluster
+456  RFX5  4.011258  Megakaryocyte"
+558,"('RUNX1', 'Fibroblast')","      gene    scores     cluster
+438  RUNX1 -5.457591  Fibroblast"
+559,"('RUNX1', 'Megakaryocyte')","      gene    scores        cluster
+542  RUNX1 -3.619124  Megakaryocyte"
+560,"('RUNX2', 'Neural')","     gene  scores cluster
+74  RUNX2 -1.0416  Neural"
+561,"('RUNX2', 'Megakaryocyte')","      gene    scores        cluster
+630  RUNX2 -7.355638  Megakaryocyte"
+562,"('RUNX2', 'Myeloid')","      gene    scores  cluster
+765  RUNX2 -1.605662  Myeloid"
+563,"('RUNX3', 'MSC')","      gene   scores cluster
+243  RUNX3 -2.89842     MSC"
+564,"('RUNX3', 'Fibroblast')","      gene    scores     cluster
+393  RUNX3 -2.596615  Fibroblast"
+565,"('RXRA', 'MSC')","     gene    scores cluster
+122  RXRA  5.124492     MSC"
+566,"('RXRA', 'Fibroblast')","     gene   scores     cluster
+289  RXRA  3.19975  Fibroblast"
+567,"('SATB1', 'Fibroblast')","      gene    scores     cluster
+363  SATB1 -1.529379  Fibroblast"
+568,"('SATB1', 'Megakaryocyte')","      gene    scores        cluster
+556  SATB1 -4.098676  Megakaryocyte"
+569,"('SATB1', 'Myeloid')","      gene    scores  cluster
+711  SATB1 -0.161086  Myeloid"
+570,"('SETDB1', 'MSC')","       gene    scores cluster
+249  SETDB1 -3.717304     MSC"
+571,"('SETDB1', 'Fibroblast')","       gene    scores     cluster
+386  SETDB1 -2.349877  Fibroblast"
+572,"('SETDB1', 'Megakaryocyte')","       gene    scores        cluster
+581  SETDB1 -4.890438  Megakaryocyte"
+573,"('SETDB1', 'Myeloid')","       gene    scores  cluster
+784  SETDB1 -1.870675  Myeloid"
+574,"('SIX2', 'Fibroblast')","     gene    scores     cluster
+409  SIX2 -3.162544  Fibroblast"
+575,"('SIX2', 'Megakaryocyte')","     gene    scores        cluster
+619  SIX2 -6.736216  Megakaryocyte"
+576,"('SIX2', 'Myeloid')","     gene    scores  cluster
+793  SIX2 -2.036957  Myeloid"
+577,"('SIX5', 'MSC')","     gene    scores cluster
+143  SIX5  3.609556     MSC"
+578,"('SIX5', 'Fibroblast')","     gene    scores     cluster
+270  SIX5  5.672996  Fibroblast"
+579,"('SIX5', 'Megakaryocyte')","     gene    scores        cluster
+458  SIX5  3.946318  Megakaryocyte"
+580,"('SIX5', 'Myeloid')","     gene    scores  cluster
+675  SIX5  0.628755  Myeloid"
+581,"('SMAD1', 'MSC')","      gene    scores cluster
+135  SMAD1  4.053478     MSC"
+582,"('SMAD1', 'Fibroblast')","      gene   scores     cluster
+295  SMAD1  2.57899  Fibroblast"
+583,"('SMAD3', 'MSC')","     gene    scores cluster
+97  SMAD3  7.792331     MSC"
+584,"('SMAD3', 'Fibroblast')","      gene    scores     cluster
+299  SMAD3  2.195177  Fibroblast"
+585,"('SMAD5', 'MSC')","      gene    scores cluster
+153  SMAD5  3.032027     MSC"
+586,"('SMAD5', 'Fibroblast')","      gene    scores     cluster
+272  SMAD5  5.130566  Fibroblast"
+587,"('SMAD5', 'Megakaryocyte')","      gene    scores        cluster
+446  SMAD5  6.736216  Megakaryocyte"
+588,"('SMAD5', 'Myeloid')","      gene    scores  cluster
+654  SMAD5  1.428988  Myeloid"
+589,"('SNAI1', 'MSC')","      gene    scores cluster
+179  SNAI1  1.678713     MSC"
+590,"('SNAI1', 'Fibroblast')","      gene    scores     cluster
+319  SNAI1  0.638383  Fibroblast"
+591,"('SNAI2', 'Neural')","     gene    scores cluster
+64  SNAI2 -0.309008  Neural"
+592,"('SNAI2', 'Megakaryocyte')","      gene    scores        cluster
+550  SNAI2 -3.853905  Megakaryocyte"
+593,"('SNAPC4', 'MSC')","       gene  scores cluster
+227  SNAPC4 -1.5645     MSC"
+594,"('SNAPC4', 'Fibroblast')","       gene    scores     cluster
+344  SNAPC4 -0.820499  Fibroblast"
+595,"('SNAPC4', 'Megakaryocyte')","       gene    scores        cluster
+531  SNAPC4 -2.732451  Megakaryocyte"
+596,"('SOX11', 'Fibroblast')","      gene    scores     cluster
+412  SOX11 -3.328993  Fibroblast"
+597,"('SOX11', 'Megakaryocyte')","      gene    scores        cluster
+594  SOX11 -5.504865  Megakaryocyte"
+598,"('SOX11', 'Myeloid')","      gene   scores  cluster
+776  SOX11 -1.79273  Myeloid"
+599,"('SOX13', 'Neural')","     gene   scores cluster
+71  SOX13 -0.76384  Neural"
+600,"('SOX13', 'Fibroblast')","      gene    scores     cluster
+346  SOX13 -0.957575  Fibroblast"
+601,"('SOX13', 'Megakaryocyte')","      gene    scores        cluster
+608  SOX13 -5.899497  Megakaryocyte"
+602,"('SOX13', 'Myeloid')","      gene    scores  cluster
+771  SOX13 -1.688804  Myeloid"
+603,"('SOX2', 'MSC')","     gene    scores cluster
+202  SOX2 -0.368498     MSC"
+604,"('SOX2', 'Fibroblast')","     gene    scores     cluster
+436  SOX2 -4.895578  Fibroblast"
+605,"('SOX2', 'Megakaryocyte')","     gene    scores        cluster
+629  SOX2 -7.318173  Megakaryocyte"
+606,"('SOX2', 'Myeloid')","     gene   scores  cluster
+782  SOX2 -1.84989  Myeloid"
+607,"('SOX4', 'MSC')","     gene    scores cluster
+261  SOX4 -6.201972     MSC"
+608,"('SOX4', 'Megakaryocyte')","     gene    scores        cluster
+549  SOX4 -3.828928  Megakaryocyte"
+609,"('SOX4', 'Myeloid')","     gene    scores  cluster
+741  SOX4 -0.935337  Myeloid"
+610,"('SOX6', 'Megakaryocyte')","     gene    scores        cluster
+512  SOX6 -1.606002  Megakaryocyte"
+611,"('SOX9', 'Neural')","    gene    scores cluster
+19  SOX9  3.364367  Neural"
+612,"('SOX9', 'MSC')","     gene    scores cluster
+170  SOX9  2.454498     MSC"
+613,"('SP1', 'MSC')","   gene    scores cluster
+95  SP1  7.923784     MSC"
+614,"('SP1', 'Fibroblast')","    gene    scores     cluster
+315  SP1  1.004573  Fibroblast"
+615,"('SP2', 'Neural')","   gene    scores cluster
+38  SP2  1.904391  Neural"
+616,"('SP2', 'Megakaryocyte')","    gene    scores        cluster
+491  SP2  0.849208  Megakaryocyte"
+617,"('SP2', 'Myeloid')","    gene    scores  cluster
+669  SP2  0.737877  Myeloid"
+618,"('SP3', 'MSC')","    gene    scores cluster
+134  SP3  4.191395     MSC"
+619,"('SP3', 'Fibroblast')","    gene    scores     cluster
+273  SP3  4.417769  Fibroblast"
+620,"('SP4', 'MSC')","    gene    scores cluster
+101  SP4  6.958362     MSC"
+621,"('SPDEF', 'MSC')","      gene    scores cluster
+259  SPDEF -5.288269     MSC"
+622,"('SPDEF', 'Fibroblast')","      gene    scores     cluster
+434  SPDEF -4.697797  Fibroblast"
+623,"('SPDEF', 'Myeloid')","      gene    scores  cluster
+799  SPDEF -2.172061  Myeloid"
+624,"('SPI1', 'Neural')","    gene    scores cluster
+26  SPI1  2.864399  Neural"
+625,"('SPI1', 'MSC')","     gene    scores cluster
+190  SPI1  0.991281     MSC"
+626,"('SPI1', 'Megakaryocyte')","     gene    scores        cluster
+462  SPI1  3.519217  Megakaryocyte"
+627,"('SPI1', 'Myeloid')","     gene    scores  cluster
+638  SPI1  3.595853  Myeloid"
+628,"('SPIB', 'MSC')","     gene    scores cluster
+200  SPIB -0.144382     MSC"
+629,"('SPIB', 'Fibroblast')","     gene    scores     cluster
+382  SPIB -2.187344  Fibroblast"
+630,"('SPIB', 'Megakaryocyte')","     gene    scores        cluster
+520  SPIB -2.162982  Megakaryocyte"
+631,"('SPIB', 'Myeloid')","     gene    scores  cluster
+699  SPIB  0.077945  Myeloid"
+632,"('SREBF1', 'MSC')","       gene    scores cluster
+198  SREBF1  0.077579     MSC"
+633,"('SREBF1', 'Megakaryocyte')","       gene    scores        cluster
+487  SREBF1  0.984082  Megakaryocyte"
+634,"('SREBF1', 'Myeloid')","       gene    scores  cluster
+670  SREBF1  0.727485  Myeloid"
+635,"('SREBF2', 'MSC')","       gene    scores cluster
+257  SREBF2 -5.178366     MSC"
+636,"('SREBF2', 'Megakaryocyte')","       gene   scores        cluster
+522  SREBF2 -2.42274  Megakaryocyte"
+637,"('SRF', 'MSC')","    gene    scores cluster
+128  SRF  4.574978     MSC"
+638,"('SRF', 'Fibroblast')","    gene    scores     cluster
+296  SRF  2.528076  Fibroblast"
+639,"('STAT1', 'Neural')","     gene    scores cluster
+40  STAT1  1.645728  Neural"
+640,"('STAT2', 'Megakaryocyte')","      gene    scores        cluster
+459  STAT2  3.861398  Megakaryocyte"
+641,"('STAT3', 'MSC')","     gene   scores cluster
+86  STAT3  8.92153     MSC"
+642,"('STAT5A', 'MSC')","       gene    scores cluster
+142  STAT5A  3.611711     MSC"
+643,"('STAT5A', 'Megakaryocyte')","       gene    scores        cluster
+452  STAT5A  4.568238  Megakaryocyte"
+644,"('STAT5A', 'Myeloid')","       gene   scores  cluster
+655  STAT5A  1.29908  Myeloid"
+645,"('STAT5B', 'Fibroblast')","       gene    scores     cluster
+330  STAT5B -0.023499  Fibroblast"
+646,"('STAT6', 'MSC')","      gene    scores cluster
+124  STAT6  4.982265     MSC"
+647,"('TAL1', 'MSC')","     gene    scores cluster
+233  TAL1 -2.208833     MSC"
+648,"('TAL1', 'Fibroblast')","     gene    scores     cluster
+441  TAL1 -5.876652  Fibroblast"
+649,"('TAL1', 'Megakaryocyte')","     gene    scores        cluster
+577  TAL1 -4.793028  Megakaryocyte"
+650,"('TAL1', 'Myeloid')","     gene    scores  cluster
+718  TAL1 -0.374135  Myeloid"
+651,"('TBP', 'MSC')","    gene    scores cluster
+125  TBP  4.671951     MSC"
+652,"('TBP', 'Fibroblast')","    gene    scores     cluster
+302  TBP  1.913192  Fibroblast"
+653,"('TBP', 'Myeloid')","    gene    scores  cluster
+692  TBP  0.166282  Myeloid"
+654,"('TBX21', 'Neural')","     gene    scores cluster
+57  TBX21  0.249984  Neural"
+655,"('TBX21', 'Fibroblast')","      gene    scores     cluster
+424  TBX21 -4.241529  Fibroblast"
+656,"('TCF3', 'MSC')","     gene    scores cluster
+224  TCF3 -1.463217     MSC"
+657,"('TCF3', 'Fibroblast')","     gene    scores     cluster
+403  TCF3 -2.866851  Fibroblast"
+658,"('TCF4', 'MSC')","    gene    scores cluster
+98  TCF4  7.747077     MSC"
+659,"('TCF4', 'Fibroblast')","     gene    scores     cluster
+317  TCF4  0.726504  Fibroblast"
+660,"('TCF7', 'Myeloid')","     gene  scores  cluster
+700  TCF7     0.0  Myeloid"
+661,"('TCF7L2', 'Fibroblast')","       gene    scores     cluster
+337  TCF7L2 -0.403396  Fibroblast"
+662,"('TCF7L2', 'Megakaryocyte')","       gene    scores        cluster
+586  TCF7L2 -5.060279  Megakaryocyte"
+663,"('TCF7L2', 'Myeloid')","       gene    scores  cluster
+756  TCF7L2 -1.278294  Myeloid"
+664,"('TEAD1', 'Neural')","     gene    scores cluster
+68  TEAD1 -0.524272  Neural"
+665,"('TEAD1', 'Megakaryocyte')","      gene    scores        cluster
+623  TEAD1 -7.068406  Megakaryocyte"
+666,"('TEAD1', 'Myeloid')","      gene    scores  cluster
+801  TEAD1 -2.239613  Myeloid"
+667,"('TEAD2', 'MSC')","      gene    scores cluster
+114  TEAD2  5.656767     MSC"
+668,"('TEAD2', 'Fibroblast')","      gene    scores     cluster
+324  TEAD2  0.268278  Fibroblast"
+669,"('TEAD2', 'Megakaryocyte')","      gene  scores        cluster
+450  TEAD2  5.1452  Megakaryocyte"
+670,"('TEAD2', 'Myeloid')","      gene   scores  cluster
+668  TEAD2  0.74827  Myeloid"
+671,"('TEAD4', 'Megakaryocyte')","      gene    scores        cluster
+624  TEAD4 -7.125852  Megakaryocyte"
+672,"('TEAD4', 'Myeloid')","      gene    scores  cluster
+805  TEAD4 -2.281184  Myeloid"
+673,"('TERF1', 'MSC')","      gene    scores cluster
+246  TERF1 -3.176409     MSC"
+674,"('TERF1', 'Fibroblast')","      gene    scores     cluster
+423  TERF1 -4.178865  Fibroblast"
+675,"('TERF1', 'Megakaryocyte')","      gene    scores        cluster
+513  TERF1 -1.628481  Megakaryocyte"
+676,"('TERF2', 'MSC')","      gene    scores cluster
+228  TERF2 -1.588205     MSC"
+677,"('TERF2', 'Fibroblast')","      gene    scores     cluster
+437  TERF2 -5.191271  Fibroblast"
+678,"('TERF2', 'Megakaryocyte')","      gene    scores        cluster
+528  TERF2 -2.582591  Megakaryocyte"
+679,"('TFAP2A', 'Neural')","      gene    scores cluster
+23  TFAP2A  3.043207  Neural"
+680,"('TFAP2A', 'MSC')","       gene    scores cluster
+111  TFAP2A  6.020955     MSC"
+681,"('TFAP2C', 'Fibroblast')","       gene    scores     cluster
+416  TFAP2C -3.659934  Fibroblast"
+682,"('TFAP2C', 'Megakaryocyte')","       gene    scores        cluster
+634  TFAP2C -7.498005  Megakaryocyte"
+683,"('TFAP2C', 'Myeloid')","       gene    scores  cluster
+742  TFAP2C -0.961319  Myeloid"
+684,"('TFAP4', 'Fibroblast')","      gene    scores     cluster
+410  TFAP4 -3.229123  Fibroblast"
+685,"('TFAP4', 'Megakaryocyte')","      gene  scores        cluster
+584  TFAP4 -5.0378  Megakaryocyte"
+686,"('TFAP4', 'Myeloid')","      gene    scores  cluster
+712  TFAP4 -0.171479  Myeloid"
+687,"('TFCP2', 'MSC')","      gene    scores cluster
+221  TFCP2 -1.327455     MSC"
+688,"('TFCP2', 'Fibroblast')","      gene    scores     cluster
+321  TFCP2  0.434727  Fibroblast"
+689,"('TFDP1', 'Neural')","     gene    scores cluster
+15  TFDP1  4.138623  Neural"
+690,"('TFDP1', 'Myeloid')","      gene    scores  cluster
+691  TFDP1  0.171479  Myeloid"
+691,"('TGIF2', 'Neural')","     gene    scores cluster
+44  TGIF2  1.296792  Neural"
+692,"('TGIF2', 'MSC')","      gene   scores cluster
+177  TGIF2  2.07738     MSC"
+693,"('TGIF2', 'Megakaryocyte')","      gene    scores        cluster
+498  TGIF2  0.177335  Megakaryocyte"
+694,"('TGIF2', 'Myeloid')","      gene    scores  cluster
+683  TGIF2  0.384528  Myeloid"
+695,"('THAP1', 'MSC')","      gene    scores cluster
+232  THAP1 -2.142029     MSC"
+696,"('THAP1', 'Fibroblast')","      gene    scores     cluster
+383  THAP1 -2.199094  Fibroblast"
+697,"('THAP1', 'Megakaryocyte')","      gene    scores        cluster
+504  THAP1 -0.604436  Megakaryocyte"
+698,"('TP53', 'Neural')","    gene    scores cluster
+49  TP53  0.854112  Neural"
+699,"('TP53', 'MSC')","     gene    scores cluster
+106  TP53  6.611414     MSC"
+700,"('TP63', 'Megakaryocyte')","     gene    scores        cluster
+598  TP63 -5.677204  Megakaryocyte"
+701,"('TP63', 'Myeloid')","     gene    scores  cluster
+814  TP63 -2.561785  Myeloid"
+702,"('TP73', 'MSC')","     gene    scores cluster
+218  TP73 -1.277891     MSC"
+703,"('TP73', 'Megakaryocyte')","     gene   scores        cluster
+569  TP73 -4.52328  Megakaryocyte"
+704,"('TP73', 'Myeloid')","     gene    scores  cluster
+717  TP73 -0.280601  Myeloid"
+705,"('TWIST1', 'Neural')","      gene    scores cluster
+65  TWIST1 -0.336784  Neural"
+706,"('TWIST2', 'MSC')","       gene    scores cluster
+161  TWIST2  2.654909     MSC"
+707,"('TWIST2', 'Fibroblast')","       gene   scores     cluster
+293  TWIST2  2.91189  Fibroblast"
+708,"('USF1', 'MSC')","    gene    scores cluster
+89  USF1  8.253492     MSC"
+709,"('USF1', 'Fibroblast')","     gene    scores     cluster
+318  USF1  0.701047  Fibroblast"
+710,"('USF1', 'Megakaryocyte')","     gene    scores        cluster
+480  USF1  1.421174  Megakaryocyte"
+711,"('USF2', 'MSC')","    gene    scores cluster
+90  USF2  8.227633     MSC"
+712,"('USF2', 'Megakaryocyte')","     gene    scores        cluster
+470  USF2  2.622553  Megakaryocyte"
+713,"('VDR', 'MSC')","    gene    scores cluster
+152  VDR  3.111761     MSC"
+714,"('VDR', 'Fibroblast')","    gene    scores     cluster
+275  VDR  4.239571  Fibroblast"
+715,"('VDR', 'Megakaryocyte')","    gene    scores        cluster
+467  VDR  3.022181  Megakaryocyte"
+716,"('VDR', 'Myeloid')","    gene    scores  cluster
+649  VDR  1.787534  Myeloid"
+717,"('WT1', 'MSC')","    gene    scores cluster
+165  WT1  2.635515     MSC"
+718,"('WT1', 'Fibroblast')","    gene    scores     cluster
+322  WT1  0.377939  Fibroblast"
+719,"('WT1', 'Megakaryocyte')","    gene    scores        cluster
+496  WT1  0.377148  Megakaryocyte"
+720,"('XBP1', 'Fibroblast')","     gene    scores     cluster
+350  XBP1 -1.059403  Fibroblast"
+721,"('XBP1', 'Megakaryocyte')","     gene    scores        cluster
+615  XBP1 -6.299124  Megakaryocyte"
+722,"('XBP1', 'Myeloid')","     gene    scores  cluster
+815  XBP1 -2.712478  Myeloid"
+723,"('YBX1', 'Megakaryocyte')","     gene    scores        cluster
+485  YBX1  1.024045  Megakaryocyte"
+724,"('YY1', 'Neural')","   gene    scores cluster
+32  YY1  2.381791  Neural"
+725,"('YY1', 'MSC')","    gene   scores cluster
+139  YY1  3.66774     MSC"
+726,"('ZBED1', 'MSC')","      gene    scores cluster
+120  ZBED1  5.225775     MSC"
+727,"('ZBED1', 'Fibroblast')","      gene    scores     cluster
+290  ZBED1  2.992177  Fibroblast"
+728,"('ZBED1', 'Megakaryocyte')","      gene    scores        cluster
+447  ZBED1  6.436495  Megakaryocyte"
+729,"('ZBED1', 'Myeloid')","      gene    scores  cluster
+682  ZBED1  0.400117  Myeloid"
+730,"('ZBTB11', 'MSC')","       gene   scores cluster
+230  ZBTB11 -1.83387     MSC"
+731,"('ZBTB11', 'Fibroblast')","       gene    scores     cluster
+405  ZBTB11 -2.929514  Fibroblast"
+732,"('ZBTB11', 'Myeloid')","       gene    scores  cluster
+747  ZBTB11 -1.028871  Myeloid"
+733,"('ZBTB16', 'Fibroblast')","       gene    scores     cluster
+268  ZBTB16  5.884485  Fibroblast"
+734,"('ZBTB16', 'Megakaryocyte')","       gene    scores        cluster
+465  ZBTB16  3.202013  Megakaryocyte"
+735,"('ZBTB16', 'Myeloid')","       gene   scores  cluster
+677  ZBTB16  0.55081  Myeloid"
+736,"('ZBTB2', 'MSC')","      gene    scores cluster
+126  ZBTB2  4.641781     MSC"
+737,"('ZBTB2', 'Fibroblast')","      gene    scores     cluster
+280  ZBTB2  3.763721  Fibroblast"
+738,"('ZBTB2', 'Megakaryocyte')","      gene    scores        cluster
+483  ZBTB2  1.313774  Megakaryocyte"
+739,"('ZBTB33', 'MSC')","       gene   scores cluster
+150  ZBTB33  3.13331     MSC"
+740,"('ZBTB33', 'Fibroblast')","       gene    scores     cluster
+283  ZBTB33  3.657976  Fibroblast"
+741,"('ZBTB33', 'Megakaryocyte')","       gene    scores        cluster
+451  ZBTB33  4.753066  Megakaryocyte"
+742,"('ZBTB33', 'Myeloid')","       gene    scores  cluster
+702  ZBTB33 -0.020785  Myeloid"
+743,"('ZBTB7A', 'Fibroblast')","       gene    scores     cluster
+328  ZBTB7A  0.041123  Fibroblast"
+744,"('ZBTB7A', 'Megakaryocyte')","       gene    scores        cluster
+532  ZBTB7A -2.857334  Megakaryocyte"
+745,"('ZBTB7A', 'Myeloid')","       gene    scores  cluster
+704  ZBTB7A -0.051963  Myeloid"
+746,"('ZC3H8', 'MSC')","      gene    scores cluster
+167  ZC3H8  2.555781     MSC"
+747,"('ZC3H8', 'Fibroblast')","      gene    scores     cluster
+278  ZC3H8  3.994792  Fibroblast"
+748,"('ZC3H8', 'Myeloid')","      gene    scores  cluster
+663  ZC3H8  1.075638  Myeloid"
+749,"('ZEB1', 'MSC')","     gene    scores cluster
+158  ZEB1  2.775587     MSC"
+750,"('ZEB1', 'Myeloid')","     gene    scores  cluster
+679  ZEB1  0.483258  Myeloid"
+751,"('ZEB2', 'Fibroblast')","     gene    scores     cluster
+357  ZEB2 -1.349221  Fibroblast"
+752,"('ZEB2', 'Megakaryocyte')","     gene    scores        cluster
+523  ZEB2 -2.440223  Megakaryocyte"
+753,"('ZEB2', 'Myeloid')","     gene    scores  cluster
+723  ZEB2 -0.540417  Myeloid"
+754,"('ZFX', 'MSC')","    gene    scores cluster
+191  ZFX  0.978351     MSC"
+755,"('ZFX', 'Fibroblast')","    gene    scores     cluster
+316  ZFX  0.781334  Fibroblast"
+756,"('ZFX', 'Megakaryocyte')","    gene    scores        cluster
+457  ZFX  3.958807  Megakaryocyte"
+757,"('ZFX', 'Myeloid')","    gene   scores  cluster
+664  ZFX  1.04446  Myeloid"
+758,"('ZHX1', 'MSC')","    gene    scores cluster
+91  ZHX1  8.178069     MSC"
+759,"('ZHX1', 'Fibroblast')","     gene    scores     cluster
+310  ZHX1  1.370762  Fibroblast"
+760,"('ZHX1', 'Myeloid')","     gene    scores  cluster
+686  ZHX1  0.337761  Myeloid"
+761,"('ZHX2', 'Neural')","    gene    scores cluster
+34  ZHX2  2.163055  Neural"
+762,"('ZHX2', 'MSC')","     gene    scores cluster
+169  ZHX2  2.488977     MSC"
+763,"('ZKSCAN1', 'MSC')","        gene   scores cluster
+180  ZKSCAN1  1.59467     MSC"
+764,"('ZKSCAN1', 'Fibroblast')","        gene    scores     cluster
+331  ZKSCAN1 -0.140993  Fibroblast"
+765,"('ZKSCAN1', 'Megakaryocyte')","        gene    scores        cluster
+497  ZKSCAN1  0.334688  Megakaryocyte"
+766,"('ZNF143', 'MSC')","       gene    scores cluster
+225  ZNF143 -1.530021     MSC"
+767,"('ZNF143', 'Fibroblast')","       gene    scores     cluster
+374  ZNF143 -1.868153  Fibroblast"
+768,"('ZNF143', 'Megakaryocyte')","       gene    scores        cluster
+571  ZNF143 -4.600708  Megakaryocyte"
+769,"('ZNF143', 'Myeloid')","       gene    scores  cluster
+735  ZNF143 -0.800233  Myeloid"
+770,"('ZNF165', 'MSC')","       gene    scores cluster
+196  ZNF165  0.362033     MSC"
+771,"('ZNF165', 'Fibroblast')","       gene    scores     cluster
+274  ZNF165  4.282652  Fibroblast"
+772,"('ZNF165', 'Megakaryocyte')","       gene    scores        cluster
+482  ZNF165  1.381212  Megakaryocyte"
+773,"('ZNF175', 'Fibroblast')","       gene    scores     cluster
+362  ZNF175 -1.517629  Fibroblast"
+774,"('ZNF175', 'Myeloid')","       gene    scores  cluster
+727  ZNF175 -0.696307  Myeloid"
+775,"('ZNF197', 'MSC')","       gene    scores cluster
+247  ZNF197 -3.348806     MSC"
+776,"('ZNF197', 'Fibroblast')","       gene    scores     cluster
+384  ZNF197 -2.255882  Fibroblast"
+777,"('ZNF197', 'Megakaryocyte')","       gene  scores        cluster
+524  ZNF197 -2.4652  Megakaryocyte"
+778,"('ZNF207', 'MSC')","       gene   scores cluster
+164  ZNF207  2.63767     MSC"
+779,"('ZNF207', 'Megakaryocyte')","       gene    scores        cluster
+454  ZNF207  4.460838  Megakaryocyte"
+780,"('ZNF207', 'Myeloid')","       gene    scores  cluster
+672  ZNF207  0.711896  Myeloid"
+781,"('ZNF217', 'Megakaryocyte')","       gene    scores        cluster
+503  ZNF217 -0.599441  Megakaryocyte"
+782,"('ZNF217', 'Myeloid')","       gene    scores  cluster
+786  ZNF217 -1.943423  Myeloid"
+783,"('ZNF24', 'Neural')","     gene    scores cluster
+66  ZNF24 -0.371504  Neural"
+784,"('ZNF24', 'Megakaryocyte')","      gene    scores        cluster
+507  ZNF24 -1.143933  Megakaryocyte"
+785,"('ZNF263', 'MSC')","       gene    scores cluster
+229  ZNF263 -1.754137     MSC"
+786,"('ZNF263', 'Fibroblast')","       gene    scores     cluster
+352  ZNF263 -1.149482  Fibroblast"
+787,"('ZNF263', 'Megakaryocyte')","       gene    scores        cluster
+516  ZNF263 -1.850773  Megakaryocyte"
+788,"('ZNF274', 'MSC')","       gene   scores cluster
+258  ZNF274 -5.23224     MSC"
+789,"('ZNF274', 'Megakaryocyte')","       gene    scores        cluster
+541  ZNF274 -3.574166  Megakaryocyte"
+790,"('ZNF274', 'Myeloid')","       gene    scores  cluster
+760  ZNF274 -1.465362  Myeloid"
+791,"('ZNF318', 'MSC')","       gene   scores cluster
+109  ZNF318  6.31403     MSC"
+792,"('ZNF382', 'Neural')","      gene    scores cluster
+85  ZNF382 -7.707838  Neural"
+793,"('ZNF382', 'MSC')","       gene    scores cluster
+236  ZNF382 -2.314426     MSC"
+794,"('ZNF384', 'Neural')","      gene    scores cluster
+20  ZNF384  3.326175  Neural"
+795,"('ZNF384', 'MSC')","       gene    scores cluster
+156  ZNF384  2.874715     MSC"
+796,"('ZNF584', 'Neural')","      gene    scores cluster
+83  ZNF584 -3.591783  Neural"
+797,"('ZNF584', 'Myeloid')","       gene    scores  cluster
+706  ZNF584 -0.093534  Myeloid"
+798,"('ZNF589', 'Fibroblast')","       gene    scores     cluster
+276  ZNF589  4.088787  Fibroblast"
+799,"('ZNF589', 'Megakaryocyte')","       gene    scores        cluster
+472  ZNF589  2.305349  Megakaryocyte"
+800,"('ZNF592', 'Megakaryocyte')","       gene    scores        cluster
+476  ZNF592  1.968164  Megakaryocyte"
+801,"('ZNF639', 'Neural')","      gene    scores cluster
+21  ZNF639  3.199447  Neural"
+802,"('ZNF639', 'Megakaryocyte')","       gene    scores        cluster
+477  ZNF639  1.815806  Megakaryocyte"
+803,"('ZNF644', 'Fibroblast')","       gene    scores     cluster
+334  ZNF644 -0.203656  Fibroblast"
+804,"('ZNF644', 'Myeloid')","       gene    scores  cluster
+707  ZNF644 -0.109123  Myeloid"
+805,"('ZNF740', 'Neural')","     gene    scores cluster
+5  ZNF740  7.133222  Neural"
+806,"('ZNF740', 'MSC')","       gene    scores cluster
+186  ZNF740  1.249876     MSC"
+807,"('ZNF750', 'Fibroblast')","       gene    scores     cluster
+388  ZNF750 -2.428207  Fibroblast"
+808,"('ZNF750', 'Megakaryocyte')","       gene    scores        cluster
+599  ZNF750 -5.697185  Megakaryocyte"
+809,"('ZNF750', 'Myeloid')","       gene    scores  cluster
+763  ZNF750 -1.564092  Myeloid"
+810,"('ZNF766', 'MSC')","       gene    scores cluster
+235  ZNF766 -2.310116     MSC"
+811,"('ZNF766', 'Fibroblast')","       gene    scores     cluster
+354  ZNF766 -1.174939  Fibroblast"
+812,"('ZNF766', 'Megakaryocyte')","       gene    scores        cluster
+529  ZNF766 -2.622553  Megakaryocyte"
+813,"('ZNF766', 'Myeloid')","       gene    scores  cluster
+738  ZNF766 -0.862589  Myeloid"
+814,"('ZNF83', 'MSC')","      gene    scores cluster
+195  ZNF83  0.405132     MSC"
+815,"('ZNF83', 'Megakaryocyte')","      gene    scores        cluster
+474  ZNF83  2.167978  Megakaryocyte"
+816,"('ZNF83', 'Myeloid')","      gene    scores  cluster
+685  ZNF83  0.363742  Myeloid"
+817,"('ZNF92', 'Megakaryocyte')","      gene    scores        cluster
+583  ZNF92 -5.022814  Megakaryocyte"
+818,"('ZNF92', 'Myeloid')","      gene    scores  cluster
+822  ZNF92 -3.315251  Myeloid"
+819,"('ZZZ3', 'MSC')","     gene    scores cluster
+168  ZZZ3  2.536387     MSC"
+820,"('ZZZ3', 'Fibroblast')","     gene    scores     cluster
+304  ZZZ3  1.813322  Fibroblast"
+821,"('ZZZ3', 'Megakaryocyte')","     gene    scores        cluster
+471  ZZZ3  2.502665  Megakaryocyte"
+822,"('ZZZ3', 'Myeloid')","     gene    scores  cluster
+684  ZZZ3  0.368939  Myeloid"
