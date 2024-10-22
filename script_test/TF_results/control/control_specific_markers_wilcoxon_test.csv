@@ -1,4 +1,4 @@
-group,names,scores,logfoldchanges,pvals,pvals_adj,tag,log_fc_tag
+cluster,gene,scores,logfoldchanges,pvals,pvals_adj,tag,log_fc_tag
 Neural,HMGA1,12.651964,9.731596,1.0911224990394889e-36,3.917129771551765e-34,***,***
 Neural,GFI1,8.990742,0.15918322,2.4556832981567187e-19,8.815903040382621e-17,***,*
 Neural,MYBL1,8.035942,0.6419919,9.28629429875491e-16,3.333779653253013e-13,***,**
