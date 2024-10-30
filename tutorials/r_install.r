@@ -1,25 +1,25 @@
-if (!require("BiocManager", quietly = TRUE))
-  install.packages("BiocManager")
+#if (!require("BiocManager", quietly = TRUE))
+#  install.packages("BiocManager")
 
-BiocManager::install("ComplexHeatmap")
-BiocManager::install("OmnipathR")
-BiocManager::install("dorothea")
-BiocManager::install("viper")
-BiocManager::install("scran")
+#BiocManager::install("ComplexHeatmap")
+#BiocManager::install("OmnipathR")
+#BiocManager::install("dorothea")
+#BiocManager::install("viper")
+#BiocManager::install("scran")
 
-install.packages("devtools")
-install.packages("rcompanion")
-install.packages("Seurat")
-install.packages("anndata")
+#install.packages("devtools")
+#install.packages("rcompanion")
+#install.packages("Seurat")
+#install.packages("anndata")
 
 
-anndata::install_anndata()
-remotes::install_github("cellgeni/sceasy")
+#anndata::install_anndata()
+#remotes::install_github("cellgeni/sceasy")
 
 #pandoc/VignetteBuilder is necessary for vignettes. install knitr?
 # install.packages("pandoc") is not correct
 
-remotes::install_github("CostaLab/LR2TF", build_vignettes = FALSE)
+#remotes::install_github("CostaLab/LR2TF", build_vignettes = FALSE)
 
 library(Seurat)
 library(LR2TF)
@@ -41,7 +41,7 @@ library(LR2TF)
 library(Seurat)
 
 #load own dataset:
-seurat_object <- readRDS("/path/to/seurat_object.Rds")
+#seurat_object <- readRDS("/path/to/seurat_object.Rds")
 
 #test dataset from package:
 data(bone_marrow_stromal_cell_example, package = "LR2TF")
@@ -88,7 +88,7 @@ parameters <- list("out_path" = "/home/larissa/Documents/LR2TF_HiWi/new_test/",
                    "celltype" = "new_annotation", 
                    "condition" = "protocol", 
                    "comparison_list" = list(c("PMF,MF2", "control")), 
-                   "logfc" = 0.5,
+                   "logfc" = 0.0,
                    "pval" = 0.05) 
 ```
 

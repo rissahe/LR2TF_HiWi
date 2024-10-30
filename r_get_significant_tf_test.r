@@ -4,10 +4,12 @@ library(Seurat)
 library(dplyr)
 library(tidyr)
 library(tibble)
+library(maditr)
 data(bone_marrow_stromal_cell_example, package = "LR2TF")
 seuratobject <- bone_marrow_stromal_cell_example
 
-
+pval <- 0.05
+log2fc <- 0
 tf_activities <- t(read.csv("decoupler_results.csv", header = TRUE, row.names = 1))
 tf_acticities <- CreateAssayObject(data = tf_activities)
 seuratobject[["tf_activities"]] <- tf_acticities
@@ -15,6 +17,12 @@ seuratobject[["tf_activities"]] <- tf_acticities
 DefaultAssay(object = seuratobject) <- "tf_activities"
 seuratobject <- ScaleData(seuratobject)
 seuratobject[['tf_annotation']] <- Idents(object = seuratobject)
+I
+
+Idents(object = seuratobject) <- "protocol"
+seuratobject_list <- SplitObject(seuratobject, split.by ="protocol")
+seuratobject <- seuratobject_list[[1]]
+
 Idents(object = seuratobject) <- "tf_annotation"
 
   number_of_clusters = length(levels(Idents(seuratobject)))
@@ -71,8 +79,8 @@ Idents(object = seuratobject) <- "tf_annotation"
 
 
 
-  col.num <- which(colnames(viper_scores_df) %in% rownames(tag_mapping))
-  viper_scores_df <- viper_scores_df[, sort(c(col.num))]
+  #col.num <- which(colnames(viper_scores_df) %in% rownames(tag_mapping))
+  #viper_scores_df <- viper_scores_df[, sort(c(col.num))]
 
   viper_scores_clusters <- viper_scores_df %>%
     data.frame() %>%
@@ -84,6 +92,7 @@ Idents(object = seuratobject) <- "tf_annotation"
     group_by(tf, cell_type) %>%
     summarise(avg = mean(activity),
               std = sd(activity))
+print(summarized_viper_scores, n=300)
 
   summarized_viper_scores_df <- summarized_viper_scores %>%
     dplyr::select(-std) %>%
@@ -107,8 +116,7 @@ Idents(object = seuratobject) <- "tf_annotation"
     data.frame(row.names = 1, check.names = FALSE)
   tf_scores <- t(summarized_viper_scores_df_all)
   write.csv(tf_scores, file = paste0('variable_tf_test.csv'))
-
-
+  
 test <- c(-0.116, 1.06, -0.783, -0.759, -0.0925)
 test_var <- var(test)
 #even this is different from the var(avg) in the variable tf function
