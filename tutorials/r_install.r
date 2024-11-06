@@ -73,7 +73,7 @@ reg = pd.read_csv("/home/larissa/Documents/Larissa_HiWi/LR2TF_test/filterd_regul
 
 dc.run_ulm( mat=ann_data, net=reg, source='source', target='target', weight='weight', verbose=True, use_raw=False)
 
-estimates =ann_data.obsm['ulm_estimate']
+estimates =ann_data.obs['ulm_estimate']
 estimates.to_csv("/home/larissa/Documents/Larissa_HiWi/LR2TF_test/decoupler_results.csv")
 
 ```
@@ -87,7 +87,7 @@ parameters <- list("out_path" = "/home/larissa/Documents/LR2TF_HiWi/new_test/",
                    "organism" = "human",
                    "celltype" = "new_annotation", 
                    "condition" = "protocol", 
-                   "comparison_list" = list(c("PMF,MF2", "control")), 
+                   "comparison_list" = NA, 
                    "logfc" = 0.0,
                    "pval" = 0.05) 
 ```
