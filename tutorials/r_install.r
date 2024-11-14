@@ -115,8 +115,8 @@ The "results" object contains the results of the performed analyses, consisting 
 
 The last step is to combine previous results from ligand receptor interaction analyses (e.g. CellPhoneDB) with the transcription factor results. (In the case of the test data the ligand-receptor interactions are provided within the CrossTalkeR package.)
 ```{r, include = TRUE, eval = FALSE}
-table_ctr <- read.csv("/home/larissa/Documents/Larissa_HiWi/LR2TF_test/control_lr_results.csv", row.names = 1)
-table_exp <- read.csv("/home/larissa/Documents/Larissa_HiWi/LR2TF_test/PMF,MF2_lr_results.csv", row.names = 1)
+table_ctr <- read.csv("/home/larissa/Documents/Larissa_HiWi/LR2TF_test_run/CTR_LR.csv", row.names = 1)
+table_exp <- read.csv("/home/larissa/Documents/Larissa_HiWi/LR2TF_test_run/EXP_LR.csv", row.names = 1)
 
 ctr_inptu <- LR2TF::combine_LR_and_TF(results@CTR_input_condition[["control"]], table_ctr, parameters$out_path, "control")
 exp_input <- LR2TF::combine_LR_and_TF(results@CTR_input_condition[["PMF_MF2"]], table_exp, parameters$out_path, "PMF_MF2")
@@ -127,3 +127,6 @@ exp_file <- "/home/larissa/Documents/Larissa_HiWi/LR2TF_test/PMF,MF2_lr_results.
 ctr_inptu <- LR2TF::combine_LR_and_TF(results@CTR_input_condition[["control"]], ctr_file, parameters$out_path, "control")
 exp_input <- LR2TF::combine_LR_and_TF(results@CTR_input_condition[["PMF_MF2"]], exp_file, parameters$out_path, "PMF_MF2")
 ```
+
+
+
