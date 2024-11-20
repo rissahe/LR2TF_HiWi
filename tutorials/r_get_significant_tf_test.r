@@ -5,8 +5,23 @@ library(dplyr)
 library(tidyr)
 library(tibble)
 library(maditr)
+
+TF_object <- readRDS("LR2TF_test_run/results/TF_results/result_TF_object.RDS")
+TF_object@intracellular_network_condition
+TF_object@intracellular_network_cluster
+
 data(bone_marrow_stromal_cell_example, package = "LR2TF")
 seuratobject <- bone_marrow_stromal_cell_example
+
+DefaultAssay(object = seuratobject) <- "tf_activities"
+seuratobject <- ScaleData(seuratobject)
+
+Idents(object = seuratobject) <- protocol
+seuratobject[['tf_condition']] <- Idents(object = seuratobject)
+Idents(object = seuratobject) <- new_annotation
+seuratobject[['tf_annotation']] <- Idents(object = seuratobject)
+
+levels(seuratobject@meta.data$tf_annotation)
 
 pval <- 0.05
 log2fc <- 0
