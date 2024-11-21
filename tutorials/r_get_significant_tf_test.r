@@ -10,8 +10,12 @@ TF_object <- readRDS("LR2TF_test_run/results/TF_results/result_TF_object.RDS")
 TF_object@intracellular_network_condition
 TF_object@intracellular_network_cluster
 
+
+
 data(bone_marrow_stromal_cell_example, package = "LR2TF")
 seuratobject <- bone_marrow_stromal_cell_example
+
+seuratobject@meta.data
 
 DefaultAssay(object = seuratobject) <- "tf_activities"
 seuratobject <- ScaleData(seuratobject)
@@ -135,3 +139,5 @@ print(summarized_viper_scores, n=300)
 test <- c(-0.116, 1.06, -0.783, -0.759, -0.0925)
 test_var <- var(test)
 #even this is different from the var(avg) in the variable tf function
+
+

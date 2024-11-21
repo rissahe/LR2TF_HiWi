@@ -87,7 +87,7 @@ parameters <- list("out_path" = "/home/larissa/Documents/LR2TF_HiWi/new_test/",
                    "organism" = "human",
                    "celltype" = "new_annotation", 
                    "condition" = "protocol", 
-                   "comparison_list" = NA, 
+                   "comparison_list" = list(c("PMF,MF2", "control")), 
                    "logfc" = 0.0,
                    "pval" = 0.05) 
 ```

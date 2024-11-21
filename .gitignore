@@ -7,3 +7,7 @@ new_test/
 .conda/
 
 /script_test/tf.pickle
+
+recept_regulon.csv
+
+tf_l_r.csv
