@@ -141,3 +141,6 @@ test_var <- var(test)
 #even this is different from the var(avg) in the variable tf function
 
 
+############################################################################################################
+ligands <- load(file='ligands_human.rda')
+str(ligands)
