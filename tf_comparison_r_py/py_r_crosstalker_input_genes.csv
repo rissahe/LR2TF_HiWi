@@ -1,4 +1,10 @@
 source_py,target_py,gene_A,gene_B,type_gene_A_py,type_gene_B_py,MeanLR_py,source_r,target_r,type_gene_A_r,type_gene_B_r,MeanLR_r
+Fibroblast,Fibroblast,ITGB1,ZBTB16,Receptor,Transcription Factor,0.6181837916374207,Neural,Neural,Receptor,Transcription Factor,-0.534139487788903
+Fibroblast,Fibroblast,ITGB1,ZBTB16,Receptor,Transcription Factor,0.6181837916374207,Megakaryocyte,Megakaryocyte,Receptor,Transcription Factor,0.542982853713702
+Fibroblast,Fibroblast,MET,ZBTB16,Receptor,Transcription Factor,0.6181837916374207,Neural,Neural,Receptor,Transcription Factor,-0.534139487788903
+Fibroblast,Fibroblast,MET,ZBTB16,Receptor,Transcription Factor,0.6181837916374207,Megakaryocyte,Megakaryocyte,Receptor,Transcription Factor,0.542982853713702
+Fibroblast,Fibroblast,PDGFRB,ZBTB16,Receptor,Transcription Factor,0.6181837916374207,Neural,Neural,Receptor,Transcription Factor,-0.534139487788903
+Fibroblast,Fibroblast,PDGFRB,ZBTB16,Receptor,Transcription Factor,0.6181837916374207,Megakaryocyte,Megakaryocyte,Receptor,Transcription Factor,0.542982853713702
 Fibroblast,Fibroblast,TNFRSF14,SMAD5,Receptor,Transcription Factor,0.5110338926315308,Neural,Neural,Receptor,Transcription Factor,-0.920873938190747
 Fibroblast,Fibroblast,ITGB1,SP3,Receptor,Transcription Factor,0.5012659430503845,Fibroblast,Fibroblast,Receptor,Transcription Factor,0.50126592672831
 Fibroblast,Fibroblast,ITGB1,ZC3H8,Receptor,Transcription Factor,0.3925460278987884,Fibroblast,Fibroblast,Receptor,Transcription Factor,0.392546033004998
