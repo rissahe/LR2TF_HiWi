@@ -1,7 +1,5 @@
 source,target,gene_A,gene_B,type_gene_A,type_gene_B,MeanLR
-Neural,Neural,N,MYBL1,Receptor,Transcription Factor,0.029891783371567726
-Neural,Neural,C,MYBL1,Receptor,Transcription Factor,0.029891783371567726
-Neural,Neural,L,MYBL1,Receptor,Transcription Factor,0.029891783371567726
+Neural,Neural,NCL,MYBL1,Receptor,Transcription Factor,0.029891783371567726
 Neural,Neural,ABL1,MEF2D,Receptor,Transcription Factor,0.17135825753211975
 Neural,Neural,ADRB2,MEF2D,Receptor,Transcription Factor,0.17135825753211975
 Neural,Neural,AGTR1,MEF2D,Receptor,Transcription Factor,0.17135825753211975
@@ -108,10 +106,7 @@ Neural,Neural,TGFBR1,MEF2D,Receptor,Transcription Factor,0.17135825753211975
 Neural,Neural,TNK2,MEF2D,Receptor,Transcription Factor,0.17135825753211975
 Neural,Neural,WNK1,MEF2D,Receptor,Transcription Factor,0.17135825753211975
 Neural,Neural,ZNF740,ANP32B,Transcription_Factor,Ligand,0.5653319954872131
-Neural,Neural,C,NFYC,Receptor,Transcription Factor,0.18765081465244293
-Neural,Neural,D,NFYC,Receptor,Transcription Factor,0.18765081465244293
-Neural,Neural,K,NFYC,Receptor,Transcription Factor,0.18765081465244293
-Neural,Neural,2,NFYC,Receptor,Transcription Factor,0.18765081465244293
+Neural,Neural,CDK2,NFYC,Receptor,Transcription Factor,0.18765081465244293
 Neural,Neural,CDK2,NFYB,Receptor,Transcription Factor,0.394877552986145
 Neural,Neural,CIITA,NFYB,Receptor,Transcription Factor,0.394877552986145
 Neural,Neural,RARA,ANP32B,Transcription_Factor,Ligand,0.29651522636413574
@@ -274,11 +269,7 @@ MSC,MSC,USF2,NPTN,Transcription_Factor,Ligand,1.1549665927886963
 MSC,MSC,USF2,TGFB1,Transcription_Factor,Ligand,1.1549665927886963
 MSC,MSC,USF2,THBS1,Transcription_Factor,Ligand,1.1549665927886963
 MSC,MSC,USF2,YBX1,Transcription_Factor,Ligand,1.1549665927886963
-MSC,MSC,G,USF2,Receptor,Transcription Factor,1.1549665927886963
-MSC,MSC,S,USF2,Receptor,Transcription Factor,1.1549665927886963
-MSC,MSC,K,USF2,Receptor,Transcription Factor,1.1549665927886963
-MSC,MSC,3,USF2,Receptor,Transcription Factor,1.1549665927886963
-MSC,MSC,B,USF2,Receptor,Transcription Factor,1.1549665927886963
+MSC,MSC,GSK3B,USF2,Receptor,Transcription Factor,1.1549665927886963
 MSC,MSC,ZHX1,ANXA2,Transcription_Factor,Ligand,1.1397864818572998
 MSC,MSC,ZHX1,CIRBP,Transcription_Factor,Ligand,1.1397864818572998
 MSC,MSC,ZHX1,EPOR,Transcription_Factor,Ligand,1.1397864818572998
@@ -929,11 +920,7 @@ MSC,MSC,SRC,TCF4,Receptor,Transcription Factor,1.025650978088379
 MSC,MSC,TBK1,TCF4,Receptor,Transcription Factor,1.025650978088379
 MSC,MSC,TNK2,TCF4,Receptor,Transcription Factor,1.025650978088379
 MSC,MSC,MBD4,TF,Transcription_Factor,Ligand,0.9692772030830383
-MSC,MSC,P,MBD4,Receptor,Transcription Factor,0.9692772030830383
-MSC,MSC,R,MBD4,Receptor,Transcription Factor,0.9692772030830383
-MSC,MSC,K,MBD4,Receptor,Transcription Factor,0.9692772030830383
-MSC,MSC,C,MBD4,Receptor,Transcription Factor,0.9692772030830383
-MSC,MSC,A,MBD4,Receptor,Transcription Factor,0.9692772030830383
+MSC,MSC,PRKCA,MBD4,Receptor,Transcription Factor,0.9692772030830383
 MSC,MSC,SP4,ANP32B,Transcription_Factor,Ligand,0.9696235060691833
 MSC,MSC,SP4,ANXA2,Transcription_Factor,Ligand,0.9696235060691833
 MSC,MSC,SP4,APOE,Transcription_Factor,Ligand,0.9696235060691833
@@ -943,11 +930,7 @@ MSC,MSC,SP4,LTBP3,Transcription_Factor,Ligand,0.9696235060691833
 MSC,MSC,SP4,MFGE8,Transcription_Factor,Ligand,0.9696235060691833
 MSC,MSC,SP4,SOCS2,Transcription_Factor,Ligand,0.9696235060691833
 MSC,MSC,SP4,THBS1,Transcription_Factor,Ligand,0.9696235060691833
-MSC,MSC,P,SP4,Receptor,Transcription Factor,0.9696235060691833
-MSC,MSC,R,SP4,Receptor,Transcription Factor,0.9696235060691833
-MSC,MSC,K,SP4,Receptor,Transcription Factor,0.9696235060691833
-MSC,MSC,C,SP4,Receptor,Transcription Factor,0.9696235060691833
-MSC,MSC,B,SP4,Receptor,Transcription Factor,0.9696235060691833
+MSC,MSC,PRKCB,SP4,Receptor,Transcription Factor,0.9696235060691833
 MSC,MSC,TP53,AIMP1,Transcription_Factor,Ligand,0.8877512216567993
 MSC,MSC,TP53,ANXA2,Transcription_Factor,Ligand,0.8877512216567993
 MSC,MSC,TP53,BMP4,Transcription_Factor,Ligand,0.8877512216567993
@@ -1327,11 +1310,7 @@ MSC,MSC,RFX5,HLA-F,Transcription_Factor,Ligand,0.7584894895553589
 MSC,MSC,RFX5,PCNA,Transcription_Factor,Ligand,0.7584894895553589
 MSC,MSC,RFX5,TFRC,Transcription_Factor,Ligand,0.7584894895553589
 MSC,MSC,RFX5,TLN1,Transcription_Factor,Ligand,0.7584894895553589
-MSC,MSC,C,RFX5,Receptor,Transcription Factor,0.7584894895553589
-MSC,MSC,I,RFX5,Receptor,Transcription Factor,0.7584894895553589
-MSC,MSC,I,RFX5,Receptor,Transcription Factor,0.7584894895553589
-MSC,MSC,T,RFX5,Receptor,Transcription Factor,0.7584894895553589
-MSC,MSC,A,RFX5,Receptor,Transcription Factor,0.7584894895553589
+MSC,MSC,CIITA,RFX5,Receptor,Transcription Factor,0.7584894895553589
 MSC,MSC,NFIC,ANXA1,Transcription_Factor,Ligand,0.7914763689041138
 MSC,MSC,NFIC,ANXA2,Transcription_Factor,Ligand,0.7914763689041138
 MSC,MSC,NFIC,CCL2,Transcription_Factor,Ligand,0.7914763689041138
@@ -2188,17 +2167,9 @@ MSC,MSC,MAPK1,SREBF2,Receptor,Transcription Factor,-0.7084258198738098
 MSC,MSC,MAPK3,SREBF2,Receptor,Transcription Factor,-0.7084258198738098
 MSC,MSC,PRKAA1,SREBF2,Receptor,Transcription Factor,-0.7084258198738098
 MSC,MSC,ZNF274,TFRC,Transcription_Factor,Ligand,-0.7124515175819397
-MSC,MSC,N,ZNF274,Receptor,Transcription Factor,-0.7124515175819397
-MSC,MSC,G,ZNF274,Receptor,Transcription Factor,-0.7124515175819397
-MSC,MSC,F,ZNF274,Receptor,Transcription Factor,-0.7124515175819397
-MSC,MSC,R,ZNF274,Receptor,Transcription Factor,-0.7124515175819397
+MSC,MSC,NGFR,ZNF274,Receptor,Transcription Factor,-0.7124515175819397
 MSC,MSC,SPDEF,PLAUR,Transcription_Factor,Ligand,-0.11419253796339035
-MSC,MSC,C,SPDEF,Receptor,Transcription Factor,-0.11419253796339035
-MSC,MSC,D,SPDEF,Receptor,Transcription Factor,-0.11419253796339035
-MSC,MSC,K,SPDEF,Receptor,Transcription Factor,-0.11419253796339035
-MSC,MSC,1,SPDEF,Receptor,Transcription Factor,-0.11419253796339035
-MSC,MSC,1,SPDEF,Receptor,Transcription Factor,-0.11419253796339035
-MSC,MSC,A,SPDEF,Receptor,Transcription Factor,-0.11419253796339035
+MSC,MSC,CDK11A,SPDEF,Receptor,Transcription Factor,-0.11419253796339035
 MSC,MSC,AURKA,SOX4,Receptor,Transcription Factor,-0.02949398383498192
 MSC,MSC,BIRC2,SOX4,Receptor,Transcription Factor,-0.02949398383498192
 MSC,MSC,BIRC3,SOX4,Receptor,Transcription Factor,-0.02949398383498192
@@ -2974,18 +2945,9 @@ Fibroblast,Fibroblast,ABL1,TBX21,Receptor,Transcription Factor,-0.41145557165145
 Fibroblast,Fibroblast,RPS6KA3,TBX21,Receptor,Transcription Factor,-0.41145557165145874
 Fibroblast,Fibroblast,PCGF2,SNCA,Transcription_Factor,Ligand,-0.4053315818309784
 Fibroblast,Fibroblast,PCGF2,VCAN,Transcription_Factor,Ligand,-0.4053315818309784
-Fibroblast,Fibroblast,C,SPDEF,Receptor,Transcription Factor,-0.06415220350027084
-Fibroblast,Fibroblast,D,SPDEF,Receptor,Transcription Factor,-0.06415220350027084
-Fibroblast,Fibroblast,K,SPDEF,Receptor,Transcription Factor,-0.06415220350027084
-Fibroblast,Fibroblast,1,SPDEF,Receptor,Transcription Factor,-0.06415220350027084
-Fibroblast,Fibroblast,1,SPDEF,Receptor,Transcription Factor,-0.06415220350027084
-Fibroblast,Fibroblast,A,SPDEF,Receptor,Transcription Factor,-0.06415220350027084
+Fibroblast,Fibroblast,CDK11A,SPDEF,Receptor,Transcription Factor,-0.06415220350027084
 Fibroblast,Fibroblast,MSX2,SPP1,Transcription_Factor,Ligand,0.09368041902780533
-Fibroblast,Fibroblast,P,MSX2,Receptor,Transcription Factor,0.09368041902780533
-Fibroblast,Fibroblast,R,MSX2,Receptor,Transcription Factor,0.09368041902780533
-Fibroblast,Fibroblast,K,MSX2,Receptor,Transcription Factor,0.09368041902780533
-Fibroblast,Fibroblast,C,MSX2,Receptor,Transcription Factor,0.09368041902780533
-Fibroblast,Fibroblast,B,MSX2,Receptor,Transcription Factor,0.09368041902780533
+Fibroblast,Fibroblast,PRKCB,MSX2,Receptor,Transcription Factor,0.09368041902780533
 Fibroblast,Fibroblast,SOX2,ALCAM,Transcription_Factor,Ligand,-0.49915236234664917
 Fibroblast,Fibroblast,SOX2,ANXA1,Transcription_Factor,Ligand,-0.49915236234664917
 Fibroblast,Fibroblast,SOX2,COL12A1,Transcription_Factor,Ligand,-0.49915236234664917
@@ -4008,21 +3970,11 @@ Megakaryocyte,Megakaryocyte,RFX5,HLA-DRB1,Transcription_Factor,Ligand,0.64035844
 Megakaryocyte,Megakaryocyte,RFX5,HLA-E,Transcription_Factor,Ligand,0.6403584480285645
 Megakaryocyte,Megakaryocyte,RFX5,HLA-F,Transcription_Factor,Ligand,0.6403584480285645
 Megakaryocyte,Megakaryocyte,RFX5,TLN1,Transcription_Factor,Ligand,0.6403584480285645
-Megakaryocyte,Megakaryocyte,C,RFX5,Receptor,Transcription Factor,0.6403584480285645
-Megakaryocyte,Megakaryocyte,I,RFX5,Receptor,Transcription Factor,0.6403584480285645
-Megakaryocyte,Megakaryocyte,I,RFX5,Receptor,Transcription Factor,0.6403584480285645
-Megakaryocyte,Megakaryocyte,T,RFX5,Receptor,Transcription Factor,0.6403584480285645
-Megakaryocyte,Megakaryocyte,A,RFX5,Receptor,Transcription Factor,0.6403584480285645
+Megakaryocyte,Megakaryocyte,CIITA,RFX5,Receptor,Transcription Factor,0.6403584480285645
 Megakaryocyte,Megakaryocyte,ZFX,ANP32B,Transcription_Factor,Ligand,0.6038243770599365
 Megakaryocyte,Megakaryocyte,ZFX,CIRBP,Transcription_Factor,Ligand,0.6038243770599365
 Megakaryocyte,Megakaryocyte,ZFX,HSPA8,Transcription_Factor,Ligand,0.6038243770599365
-Megakaryocyte,Megakaryocyte,C,ZFX,Receptor,Transcription Factor,0.6038243770599365
-Megakaryocyte,Megakaryocyte,S,ZFX,Receptor,Transcription Factor,0.6038243770599365
-Megakaryocyte,Megakaryocyte,N,ZFX,Receptor,Transcription Factor,0.6038243770599365
-Megakaryocyte,Megakaryocyte,K,ZFX,Receptor,Transcription Factor,0.6038243770599365
-Megakaryocyte,Megakaryocyte,2,ZFX,Receptor,Transcription Factor,0.6038243770599365
-Megakaryocyte,Megakaryocyte,A,ZFX,Receptor,Transcription Factor,0.6038243770599365
-Megakaryocyte,Megakaryocyte,2,ZFX,Receptor,Transcription Factor,0.6038243770599365
+Megakaryocyte,Megakaryocyte,CSNK2A2,ZFX,Receptor,Transcription Factor,0.6038243770599365
 Megakaryocyte,Megakaryocyte,SIX5,ANXA2,Transcription_Factor,Ligand,0.6023984551429749
 Megakaryocyte,Megakaryocyte,SIX5,CIRBP,Transcription_Factor,Ligand,0.6023984551429749
 Megakaryocyte,Megakaryocyte,SIX5,HDGF,Transcription_Factor,Ligand,0.6023984551429749
@@ -4036,11 +3988,7 @@ Megakaryocyte,Megakaryocyte,JAK1,STAT2,Receptor,Transcription Factor,0.433046281
 Megakaryocyte,Megakaryocyte,JAK2,STAT2,Receptor,Transcription Factor,0.43304628133773804
 Megakaryocyte,Megakaryocyte,JAK3,STAT2,Receptor,Transcription Factor,0.43304628133773804
 Megakaryocyte,Megakaryocyte,PTPRG,STAT2,Receptor,Transcription Factor,0.43304628133773804
-Megakaryocyte,Megakaryocyte,G,NFE2L1,Receptor,Transcription Factor,-0.5354735255241394
-Megakaryocyte,Megakaryocyte,S,NFE2L1,Receptor,Transcription Factor,-0.5354735255241394
-Megakaryocyte,Megakaryocyte,K,NFE2L1,Receptor,Transcription Factor,-0.5354735255241394
-Megakaryocyte,Megakaryocyte,3,NFE2L1,Receptor,Transcription Factor,-0.5354735255241394
-Megakaryocyte,Megakaryocyte,B,NFE2L1,Receptor,Transcription Factor,-0.5354735255241394
+Megakaryocyte,Megakaryocyte,GSK3B,NFE2L1,Receptor,Transcription Factor,-0.5354735255241394
 Megakaryocyte,Megakaryocyte,AURKA,SOX4,Receptor,Transcription Factor,-0.23979975283145905
 Megakaryocyte,Megakaryocyte,BIRC2,SOX4,Receptor,Transcription Factor,-0.23979975283145905
 Megakaryocyte,Megakaryocyte,BIRC3,SOX4,Receptor,Transcription Factor,-0.23979975283145905
@@ -4076,11 +4024,7 @@ Megakaryocyte,Megakaryocyte,TGFBR1,SNAI2,Receptor,Transcription Factor,-0.591717
 Megakaryocyte,Megakaryocyte,TNK2,SNAI2,Receptor,Transcription Factor,-0.5917170643806458
 Megakaryocyte,Megakaryocyte,SATB1,ALCAM,Transcription_Factor,Ligand,-0.5995144248008728
 Megakaryocyte,Megakaryocyte,SATB1,BST2,Transcription_Factor,Ligand,-0.5995144248008728
-Megakaryocyte,Megakaryocyte,C,SATB1,Receptor,Transcription Factor,-0.5995144248008728
-Megakaryocyte,Megakaryocyte,A,SATB1,Receptor,Transcription Factor,-0.5995144248008728
-Megakaryocyte,Megakaryocyte,S,SATB1,Receptor,Transcription Factor,-0.5995144248008728
-Megakaryocyte,Megakaryocyte,P,SATB1,Receptor,Transcription Factor,-0.5995144248008728
-Megakaryocyte,Megakaryocyte,6,SATB1,Receptor,Transcription Factor,-0.5995144248008728
+Megakaryocyte,Megakaryocyte,CASP6,SATB1,Receptor,Transcription Factor,-0.5995144248008728
 Megakaryocyte,Megakaryocyte,NR2F2,ANXA2,Transcription_Factor,Ligand,-0.6273648142814636
 Megakaryocyte,Megakaryocyte,NR2F2,CIRBP,Transcription_Factor,Ligand,-0.6273648142814636
 Megakaryocyte,Megakaryocyte,NR2F2,FYN,Transcription_Factor,Ligand,-0.6273648142814636
@@ -4091,11 +4035,7 @@ Megakaryocyte,Megakaryocyte,MNT,ANXA2,Transcription_Factor,Ligand,-0.66138732433
 Megakaryocyte,Megakaryocyte,MNT,CIRBP,Transcription_Factor,Ligand,-0.6613873243331909
 Megakaryocyte,Megakaryocyte,MNT,IL16,Transcription_Factor,Ligand,-0.6613873243331909
 Megakaryocyte,Megakaryocyte,NFE2,FYN,Transcription_Factor,Ligand,-0.6600812673568726
-Megakaryocyte,Megakaryocyte,M,NFE2,Receptor,Transcription Factor,-0.6600812673568726
-Megakaryocyte,Megakaryocyte,A,NFE2,Receptor,Transcription Factor,-0.6600812673568726
-Megakaryocyte,Megakaryocyte,P,NFE2,Receptor,Transcription Factor,-0.6600812673568726
-Megakaryocyte,Megakaryocyte,K,NFE2,Receptor,Transcription Factor,-0.6600812673568726
-Megakaryocyte,Megakaryocyte,8,NFE2,Receptor,Transcription Factor,-0.6600812673568726
+Megakaryocyte,Megakaryocyte,MAPK8,NFE2,Receptor,Transcription Factor,-0.6600812673568726
 Megakaryocyte,Megakaryocyte,TP73,FYN,Transcription_Factor,Ligand,-0.6386314630508423
 Megakaryocyte,Megakaryocyte,ABL1,TP73,Receptor,Transcription Factor,-0.6386314630508423
 Megakaryocyte,Megakaryocyte,ACVR1,TP73,Receptor,Transcription Factor,-0.6386314630508423
@@ -4394,11 +4334,7 @@ Megakaryocyte,Megakaryocyte,TRIO,TAL1,Receptor,Transcription Factor,-0.719771087
 Megakaryocyte,Megakaryocyte,ZAP70,TAL1,Receptor,Transcription Factor,-0.7197710871696472
 Megakaryocyte,Megakaryocyte,MEIS1,FYN,Transcription_Factor,Ligand,-0.691413402557373
 Megakaryocyte,Megakaryocyte,MEIS1,PF4,Transcription_Factor,Ligand,-0.691413402557373
-Megakaryocyte,Megakaryocyte,H,MEIS1,Receptor,Transcription Factor,-0.691413402557373
-Megakaryocyte,Megakaryocyte,M,MEIS1,Receptor,Transcription Factor,-0.691413402557373
-Megakaryocyte,Megakaryocyte,G,MEIS1,Receptor,Transcription Factor,-0.691413402557373
-Megakaryocyte,Megakaryocyte,B,MEIS1,Receptor,Transcription Factor,-0.691413402557373
-Megakaryocyte,Megakaryocyte,1,MEIS1,Receptor,Transcription Factor,-0.691413402557373
+Megakaryocyte,Megakaryocyte,HMGB1,MEIS1,Receptor,Transcription Factor,-0.691413402557373
 Megakaryocyte,Megakaryocyte,ZNF92,ALCAM,Transcription_Factor,Ligand,-0.7431644797325134
 Megakaryocyte,Megakaryocyte,TFAP4,SORL1,Transcription_Factor,Ligand,-0.8032019734382629
 Megakaryocyte,Megakaryocyte,CDK2,TFAP4,Receptor,Transcription Factor,-0.8032019734382629
@@ -4540,12 +4476,7 @@ Megakaryocyte,Megakaryocyte,TNK2,TP63,Receptor,Transcription Factor,-0.854095101
 Megakaryocyte,Megakaryocyte,TYR,TP63,Receptor,Transcription Factor,-0.8540951013565063
 Megakaryocyte,Megakaryocyte,NME2,ALCAM,Transcription_Factor,Ligand,-0.7993595004081726
 Megakaryocyte,Megakaryocyte,NME2,FYN,Transcription_Factor,Ligand,-0.7993595004081726
-Megakaryocyte,Megakaryocyte,P,NME2,Receptor,Transcription Factor,-0.7993595004081726
-Megakaryocyte,Megakaryocyte,R,NME2,Receptor,Transcription Factor,-0.7993595004081726
-Megakaryocyte,Megakaryocyte,K,NME2,Receptor,Transcription Factor,-0.7993595004081726
-Megakaryocyte,Megakaryocyte,A,NME2,Receptor,Transcription Factor,-0.7993595004081726
-Megakaryocyte,Megakaryocyte,C,NME2,Receptor,Transcription Factor,-0.7993595004081726
-Megakaryocyte,Megakaryocyte,B,NME2,Receptor,Transcription Factor,-0.7993595004081726
+Megakaryocyte,Megakaryocyte,PRKACB,NME2,Receptor,Transcription Factor,-0.7993595004081726
 Megakaryocyte,Megakaryocyte,ABL1,PAX8,Receptor,Transcription Factor,-0.7301649451255798
 Megakaryocyte,Megakaryocyte,ACVR1,PAX8,Receptor,Transcription Factor,-0.7301649451255798
 Megakaryocyte,Megakaryocyte,BCR,PAX8,Receptor,Transcription Factor,-0.7301649451255798
@@ -4665,11 +4596,7 @@ Megakaryocyte,Megakaryocyte,MAFK,ALCAM,Transcription_Factor,Ligand,-0.9741205573
 Megakaryocyte,Megakaryocyte,MAFK,ANXA2,Transcription_Factor,Ligand,-0.974120557308197
 Megakaryocyte,Megakaryocyte,MAFK,FYN,Transcription_Factor,Ligand,-0.974120557308197
 Megakaryocyte,Megakaryocyte,MAFK,SORL1,Transcription_Factor,Ligand,-0.974120557308197
-Megakaryocyte,Megakaryocyte,H,MAFK,Receptor,Transcription Factor,-0.974120557308197
-Megakaryocyte,Megakaryocyte,D,MAFK,Receptor,Transcription Factor,-0.974120557308197
-Megakaryocyte,Megakaryocyte,A,MAFK,Receptor,Transcription Factor,-0.974120557308197
-Megakaryocyte,Megakaryocyte,C,MAFK,Receptor,Transcription Factor,-0.974120557308197
-Megakaryocyte,Megakaryocyte,3,MAFK,Receptor,Transcription Factor,-0.974120557308197
+Megakaryocyte,Megakaryocyte,HDAC3,MAFK,Receptor,Transcription Factor,-0.974120557308197
 Megakaryocyte,Megakaryocyte,PGR,ANXA2,Transcription_Factor,Ligand,-1.0484991073608398
 Megakaryocyte,Megakaryocyte,TEAD1,ALCAM,Transcription_Factor,Ligand,-1.022687315940857
 Megakaryocyte,Megakaryocyte,TEAD1,ANXA1,Transcription_Factor,Ligand,-1.022687315940857

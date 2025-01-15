@@ -997,11 +997,7 @@ MSC,MSC,SP4,MFGE8,Transcription_Factor,Ligand,0.8129507303237915
 MSC,MSC,SP4,SOCS2,Transcription_Factor,Ligand,0.8129507303237915
 MSC,MSC,SP4,THBS1,Transcription_Factor,Ligand,0.8129507303237915
 MSC,MSC,SP4,TYK2,Transcription_Factor,Ligand,0.8129507303237915
-MSC,MSC,P,SP4,Receptor,Transcription Factor,0.8129507303237915
-MSC,MSC,R,SP4,Receptor,Transcription Factor,0.8129507303237915
-MSC,MSC,K,SP4,Receptor,Transcription Factor,0.8129507303237915
-MSC,MSC,C,SP4,Receptor,Transcription Factor,0.8129507303237915
-MSC,MSC,B,SP4,Receptor,Transcription Factor,0.8129507303237915
+MSC,MSC,PRKCB,SP4,Receptor,Transcription Factor,0.8129507303237915
 MSC,MSC,ZHX1,ANXA2,Transcription_Factor,Ligand,0.7907685041427612
 MSC,MSC,ZHX1,CIRBP,Transcription_Factor,Ligand,0.7907685041427612
 MSC,MSC,ZHX1,EPOR,Transcription_Factor,Ligand,0.7907685041427612
@@ -2119,13 +2115,7 @@ Megakaryocyte,Megakaryocyte,VRK1,SRF,Receptor,Transcription Factor,0.66387480497
 Megakaryocyte,Megakaryocyte,ZFX,ANP32B,Transcription_Factor,Ligand,0.7336539030075073
 Megakaryocyte,Megakaryocyte,ZFX,CIRBP,Transcription_Factor,Ligand,0.7336539030075073
 Megakaryocyte,Megakaryocyte,ZFX,HSPA8,Transcription_Factor,Ligand,0.7336539030075073
-Megakaryocyte,Megakaryocyte,C,ZFX,Receptor,Transcription Factor,0.7336539030075073
-Megakaryocyte,Megakaryocyte,S,ZFX,Receptor,Transcription Factor,0.7336539030075073
-Megakaryocyte,Megakaryocyte,N,ZFX,Receptor,Transcription Factor,0.7336539030075073
-Megakaryocyte,Megakaryocyte,K,ZFX,Receptor,Transcription Factor,0.7336539030075073
-Megakaryocyte,Megakaryocyte,2,ZFX,Receptor,Transcription Factor,0.7336539030075073
-Megakaryocyte,Megakaryocyte,A,ZFX,Receptor,Transcription Factor,0.7336539030075073
-Megakaryocyte,Megakaryocyte,2,ZFX,Receptor,Transcription Factor,0.7336539030075073
+Megakaryocyte,Megakaryocyte,CSNK2A2,ZFX,Receptor,Transcription Factor,0.7336539030075073
 Megakaryocyte,Megakaryocyte,ZNF207,ANP32B,Transcription_Factor,Ligand,0.7530838251113892
 Megakaryocyte,Megakaryocyte,ZNF207,CD48,Transcription_Factor,Ligand,0.7530838251113892
 Megakaryocyte,Megakaryocyte,ZNF207,CIRBP,Transcription_Factor,Ligand,0.7530838251113892

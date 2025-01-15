@@ -1,12 +1,178 @@
 source,target,gene_A,gene_B,type_gene_A,type_gene_B,MeanLR
-Fibroblast,Fibroblast,INSR,TAL1,Receptor,Transcription Factor,-0.7351583242416382
-Fibroblast,Fibroblast,ITGB1,TAL1,Receptor,Transcription Factor,-0.7351583242416382
-Fibroblast,Fibroblast,TAL1,ANGPT1,Transcription_Factor,Ligand,-0.7351583242416382
-Fibroblast,Fibroblast,TAL1,CALR,Transcription_Factor,Ligand,-0.7351583242416382
-Fibroblast,Fibroblast,TAL1,DLK1,Transcription_Factor,Ligand,-0.7351583242416382
-Fibroblast,Fibroblast,TAL1,ETV5,Transcription_Factor,Ligand,-0.7351583242416382
-Fibroblast,Fibroblast,TAL1,VCAM1,Transcription_Factor,Ligand,-0.7351583242416382
-Fibroblast,Fibroblast,TAL1,VWF,Transcription_Factor,Ligand,-0.7351583242416382
+Fibroblast,Fibroblast,INSR,TFDP1,Receptor,Transcription Factor,0.11213170737028122
+Fibroblast,Fibroblast,INSR,IKZF1,Receptor,Transcription Factor,-0.891200840473175
+Fibroblast,Fibroblast,ITGB1,IKZF1,Receptor,Transcription Factor,-0.891200840473175
+Fibroblast,Fibroblast,ITGB1,PDX1,Receptor,Transcription Factor,-0.03611721843481064
+Fibroblast,Fibroblast,INSR,GATA2,Receptor,Transcription Factor,-0.6503286957740784
+Fibroblast,Fibroblast,ITGB1,GATA2,Receptor,Transcription Factor,-0.6503286957740784
+Fibroblast,Fibroblast,ITGB1,ETV1,Receptor,Transcription Factor,-0.5369467735290527
+Fibroblast,Fibroblast,DIP2A,PAX8,Receptor,Transcription Factor,-0.1922643929719925
+Fibroblast,Fibroblast,INSR,PAX8,Receptor,Transcription Factor,-0.1922643929719925
+Fibroblast,Fibroblast,INSR,CREM,Receptor,Transcription Factor,-0.2709766626358032
+Fibroblast,Fibroblast,ITGB1,CREM,Receptor,Transcription Factor,-0.2709766626358032
+Fibroblast,Fibroblast,MYLK,CREM,Receptor,Transcription Factor,-0.2709766626358032
+Fibroblast,Fibroblast,ITGB1,ARNT,Receptor,Transcription Factor,-0.07942766696214676
+Fibroblast,Fibroblast,CXCR4,STAT5B,Receptor,Transcription Factor,-0.7573807239532471
+Fibroblast,Fibroblast,FGFR1,STAT5B,Receptor,Transcription Factor,-0.7573807239532471
+Fibroblast,Fibroblast,INSR,STAT5B,Receptor,Transcription Factor,-0.7573807239532471
+Fibroblast,Fibroblast,INSR,FOXA2,Receptor,Transcription Factor,-0.2102249264717102
+Fibroblast,Fibroblast,ITGB1,FOXA2,Receptor,Transcription Factor,-0.2102249264717102
+Fibroblast,Fibroblast,DIP2A,XBP1,Receptor,Transcription Factor,-0.38197869062423706
+Fibroblast,Fibroblast,INSR,XBP1,Receptor,Transcription Factor,-0.38197869062423706
+Fibroblast,Fibroblast,INSR,POU5F1,Receptor,Transcription Factor,-0.26052960753440857
+Fibroblast,Fibroblast,ITGB1,POU5F1,Receptor,Transcription Factor,-0.26052960753440857
+Fibroblast,Fibroblast,DIP2A,MYOD1,Receptor,Transcription Factor,-0.3373999297618866
+Fibroblast,Fibroblast,INSR,MYOD1,Receptor,Transcription Factor,-0.3373999297618866
+Fibroblast,Fibroblast,DIP2A,RUNX2,Receptor,Transcription Factor,-0.24661901593208313
+Fibroblast,Fibroblast,INSR,RUNX2,Receptor,Transcription Factor,-0.24661901593208313
+Fibroblast,Fibroblast,ITGB1,RUNX2,Receptor,Transcription Factor,-0.24661901593208313
+Fibroblast,Fibroblast,ITGB1,EGR1,Receptor,Transcription Factor,-0.6004867553710938
+Fibroblast,Fibroblast,DIP2A,TEAD4,Receptor,Transcription Factor,-0.2570194602012634
+Fibroblast,Fibroblast,INSR,TEAD4,Receptor,Transcription Factor,-0.2570194602012634
+Fibroblast,Fibroblast,ITGB1,TEAD4,Receptor,Transcription Factor,-0.2570194602012634
+Fibroblast,Fibroblast,DIP2A,TEAD1,Receptor,Transcription Factor,-0.2538185715675354
+Fibroblast,Fibroblast,INSR,TEAD1,Receptor,Transcription Factor,-0.2538185715675354
+Fibroblast,Fibroblast,ITGB1,TEAD1,Receptor,Transcription Factor,-0.2538185715675354
+Fibroblast,Fibroblast,INSR,SOX2,Receptor,Transcription Factor,-0.43840256333351135
+Fibroblast,Fibroblast,ITGB1,SOX2,Receptor,Transcription Factor,-0.43840256333351135
+Fibroblast,Fibroblast,INSR,NR4A1,Receptor,Transcription Factor,-0.5857762694358826
+Fibroblast,Fibroblast,ITGB1,NR4A1,Receptor,Transcription Factor,-0.5857762694358826
+Fibroblast,Fibroblast,ITGB1,SRF,Receptor,Transcription Factor,-0.1891244798898697
+Fibroblast,Fibroblast,INSR,SP3,Receptor,Transcription Factor,-0.3901917338371277
+Fibroblast,Fibroblast,ITGB1,SP3,Receptor,Transcription Factor,-0.3901917338371277
+Fibroblast,Fibroblast,ITGB1,MAX,Receptor,Transcription Factor,-0.3345505893230438
+Fibroblast,Fibroblast,FGFR1,SMAD1,Receptor,Transcription Factor,-0.5004812479019165
+Fibroblast,Fibroblast,INSR,SMAD1,Receptor,Transcription Factor,-0.5004812479019165
+Fibroblast,Fibroblast,ITGB1,SMAD1,Receptor,Transcription Factor,-0.5004812479019165
+Fibroblast,Fibroblast,TNFRSF14,SMAD1,Receptor,Transcription Factor,-0.5004812479019165
+Fibroblast,Fibroblast,ITGB1,SNAI1,Receptor,Transcription Factor,0.13188034296035767
+Fibroblast,Fibroblast,ITGB1,HIF1A,Receptor,Transcription Factor,-0.652160108089447
+Fibroblast,Fibroblast,ITGB1,ZC3H8,Receptor,Transcription Factor,0.017960650846362114
+Fibroblast,Fibroblast,INSR,GATA1,Receptor,Transcription Factor,-0.7343478798866272
+Fibroblast,Fibroblast,ITGB1,GATA1,Receptor,Transcription Factor,-0.7343478798866272
+Fibroblast,Fibroblast,TNFRSF14,GATA1,Receptor,Transcription Factor,-0.7343478798866272
+Fibroblast,Fibroblast,USF2,CALR,Transcription_Factor,Ligand,-0.5739314556121826
+Fibroblast,Fibroblast,USF2,LTBP3,Transcription_Factor,Ligand,-0.5739314556121826
+Fibroblast,Fibroblast,USF2,TGFB1,Transcription_Factor,Ligand,-0.5739314556121826
+Fibroblast,Fibroblast,PPARD,VEGFA,Transcription_Factor,Ligand,0.008777040988206863
+Fibroblast,Fibroblast,IKZF1,VEGFA,Transcription_Factor,Ligand,-0.891200840473175
+Fibroblast,Fibroblast,MAFG,ANGPT1,Transcription_Factor,Ligand,-0.4323597252368927
+Fibroblast,Fibroblast,SOX10,ETV5,Transcription_Factor,Ligand,-0.5952693819999695
+Fibroblast,Fibroblast,ZBTB7A,LTBP3,Transcription_Factor,Ligand,-0.4113508462905884
+Fibroblast,Fibroblast,ZBTB7A,VEGFA,Transcription_Factor,Ligand,-0.4113508462905884
+Fibroblast,Fibroblast,ERG,ANGPT1,Transcription_Factor,Ligand,-0.15310904383659363
+Fibroblast,Fibroblast,ERG,VWF,Transcription_Factor,Ligand,-0.15310904383659363
+Fibroblast,Fibroblast,MNT,LTBP3,Transcription_Factor,Ligand,-0.5401297807693481
+Fibroblast,Fibroblast,MNT,VEGFA,Transcription_Factor,Ligand,-0.5401297807693481
+Fibroblast,Fibroblast,SREBF2,VEGFA,Transcription_Factor,Ligand,-0.3112131655216217
+Fibroblast,Fibroblast,GATA2,ADM,Transcription_Factor,Ligand,-0.6503286957740784
+Fibroblast,Fibroblast,GATA2,ANGPT1,Transcription_Factor,Ligand,-0.6503286957740784
+Fibroblast,Fibroblast,GATA2,BDNF,Transcription_Factor,Ligand,-0.6503286957740784
+Fibroblast,Fibroblast,GATA2,CLEC11A,Transcription_Factor,Ligand,-0.6503286957740784
+Fibroblast,Fibroblast,GATA2,FAM3C,Transcription_Factor,Ligand,-0.6503286957740784
+Fibroblast,Fibroblast,GATA2,ICAM4,Transcription_Factor,Ligand,-0.6503286957740784
+Fibroblast,Fibroblast,GATA2,LAMB1,Transcription_Factor,Ligand,-0.6503286957740784
+Fibroblast,Fibroblast,GATA2,NID1,Transcription_Factor,Ligand,-0.6503286957740784
+Fibroblast,Fibroblast,GATA2,RARRES1,Transcription_Factor,Ligand,-0.6503286957740784
+Fibroblast,Fibroblast,GATA2,VCAM1,Transcription_Factor,Ligand,-0.6503286957740784
+Fibroblast,Fibroblast,GATA2,VEGFA,Transcription_Factor,Ligand,-0.6503286957740784
+Fibroblast,Fibroblast,GATA2,VWF,Transcription_Factor,Ligand,-0.6503286957740784
+Fibroblast,Fibroblast,MYBL2,LAMB1,Transcription_Factor,Ligand,-0.44732820987701416
+Fibroblast,Fibroblast,MEIS1,ANGPT1,Transcription_Factor,Ligand,-0.37758442759513855
+Fibroblast,Fibroblast,GATA6,LAMB1,Transcription_Factor,Ligand,-0.2582375109195709
+Fibroblast,Fibroblast,GATA6,LGALS3,Transcription_Factor,Ligand,-0.2582375109195709
+Fibroblast,Fibroblast,GATA6,VWF,Transcription_Factor,Ligand,-0.2582375109195709
+Fibroblast,Fibroblast,CEBPG,ETV5,Transcription_Factor,Ligand,-0.2488006055355072
+Fibroblast,Fibroblast,CEBPG,LAMB1,Transcription_Factor,Ligand,-0.2488006055355072
+Fibroblast,Fibroblast,HNF1B,LAMB1,Transcription_Factor,Ligand,-0.25054800510406494
+Fibroblast,Fibroblast,NCOA2,ANGPT1,Transcription_Factor,Ligand,-0.31638216972351074
+Fibroblast,Fibroblast,PGR,ANGPT1,Transcription_Factor,Ligand,-0.18475307524204254
+Fibroblast,Fibroblast,PGR,VEGFA,Transcription_Factor,Ligand,-0.18475307524204254
+Fibroblast,Fibroblast,RUNX1,ANGPT1,Transcription_Factor,Ligand,-0.5572454929351807
+Fibroblast,Fibroblast,RUNX1,CLEC2D,Transcription_Factor,Ligand,-0.5572454929351807
+Fibroblast,Fibroblast,RUNX1,ETV5,Transcription_Factor,Ligand,-0.5572454929351807
+Fibroblast,Fibroblast,RUNX1,LAMB1,Transcription_Factor,Ligand,-0.5572454929351807
+Fibroblast,Fibroblast,RUNX1,LGALS3,Transcription_Factor,Ligand,-0.5572454929351807
+Fibroblast,Fibroblast,RUNX1,MYL9,Transcription_Factor,Ligand,-0.5572454929351807
+Fibroblast,Fibroblast,RUNX1,VEGFA,Transcription_Factor,Ligand,-0.5572454929351807
+Fibroblast,Fibroblast,NANOG,ANGPT1,Transcription_Factor,Ligand,-0.4549182057380676
+Fibroblast,Fibroblast,NANOG,ETV5,Transcription_Factor,Ligand,-0.4549182057380676
+Fibroblast,Fibroblast,NANOG,LAMB1,Transcription_Factor,Ligand,-0.4549182057380676
+Fibroblast,Fibroblast,SIX2,ANGPT1,Transcription_Factor,Ligand,-0.16077768802642822
+Fibroblast,Fibroblast,SIX2,ETV5,Transcription_Factor,Ligand,-0.16077768802642822
+Fibroblast,Fibroblast,GABPA,LTBP3,Transcription_Factor,Ligand,-0.2765747308731079
+Fibroblast,Fibroblast,HNF4G,LTBP3,Transcription_Factor,Ligand,-0.5475224256515503
+Fibroblast,Fibroblast,MAF,LTBP3,Transcription_Factor,Ligand,-0.7032271027565002
+Fibroblast,Fibroblast,ARNT,ANGPT1,Transcription_Factor,Ligand,-0.07942766696214676
+Fibroblast,Fibroblast,ARNT,VEGFA,Transcription_Factor,Ligand,-0.07942766696214676
+Fibroblast,Fibroblast,CBX2,ETV5,Transcription_Factor,Ligand,-0.09177441895008087
+Fibroblast,Fibroblast,RELB,LGALS1,Transcription_Factor,Ligand,-0.6020873785018921
+Fibroblast,Fibroblast,RELB,VCAM1,Transcription_Factor,Ligand,-0.6020873785018921
+Fibroblast,Fibroblast,KLF6,LGALS3,Transcription_Factor,Ligand,-0.5664411783218384
+Fibroblast,Fibroblast,CDX2,LGALS3,Transcription_Factor,Ligand,-0.26801392436027527
+Fibroblast,Fibroblast,HNF4A,ADM,Transcription_Factor,Ligand,-0.7976582646369934
+Fibroblast,Fibroblast,HNF4A,ARF6,Transcription_Factor,Ligand,-0.7976582646369934
+Fibroblast,Fibroblast,HNF4A,CALR,Transcription_Factor,Ligand,-0.7976582646369934
+Fibroblast,Fibroblast,HNF4A,CLEC2D,Transcription_Factor,Ligand,-0.7976582646369934
+Fibroblast,Fibroblast,HNF4A,DLK1,Transcription_Factor,Ligand,-0.7976582646369934
+Fibroblast,Fibroblast,HNF4A,ETV5,Transcription_Factor,Ligand,-0.7976582646369934
+Fibroblast,Fibroblast,HNF4A,FAM3C,Transcription_Factor,Ligand,-0.7976582646369934
+Fibroblast,Fibroblast,HNF4A,LAMB1,Transcription_Factor,Ligand,-0.7976582646369934
+Fibroblast,Fibroblast,HNF4A,LAMB2,Transcription_Factor,Ligand,-0.7976582646369934
+Fibroblast,Fibroblast,HNF4A,LGALS1,Transcription_Factor,Ligand,-0.7976582646369934
+Fibroblast,Fibroblast,HNF4A,LGALS3,Transcription_Factor,Ligand,-0.7976582646369934
+Fibroblast,Fibroblast,HNF4A,LGALS3BP,Transcription_Factor,Ligand,-0.7976582646369934
+Fibroblast,Fibroblast,HNF4A,LTBP3,Transcription_Factor,Ligand,-0.7976582646369934
+Fibroblast,Fibroblast,HNF4A,MIF,Transcription_Factor,Ligand,-0.7976582646369934
+Fibroblast,Fibroblast,HNF4A,MYL9,Transcription_Factor,Ligand,-0.7976582646369934
+Fibroblast,Fibroblast,HNF4A,NID1,Transcription_Factor,Ligand,-0.7976582646369934
+Fibroblast,Fibroblast,HNF4A,RARRES1,Transcription_Factor,Ligand,-0.7976582646369934
+Fibroblast,Fibroblast,HNF4A,VCAM1,Transcription_Factor,Ligand,-0.7976582646369934
+Fibroblast,Fibroblast,HNF4A,VEGFA,Transcription_Factor,Ligand,-0.7976582646369934
+Fibroblast,Fibroblast,HNF4A,VWF,Transcription_Factor,Ligand,-0.7976582646369934
+Fibroblast,Fibroblast,XBP1,ANGPT1,Transcription_Factor,Ligand,-0.38197869062423706
+Fibroblast,Fibroblast,XBP1,VEGFA,Transcription_Factor,Ligand,-0.38197869062423706
+Fibroblast,Fibroblast,FOSL2,LAMB1,Transcription_Factor,Ligand,-0.28264421224594116
+Fibroblast,Fibroblast,FOSL2,TGFB1,Transcription_Factor,Ligand,-0.28264421224594116
+Fibroblast,Fibroblast,KLF9,LTBP3,Transcription_Factor,Ligand,-0.2567515969276428
+Fibroblast,Fibroblast,KLF9,VEGFA,Transcription_Factor,Ligand,-0.2567515969276428
+Fibroblast,Fibroblast,GATA3,ANGPT1,Transcription_Factor,Ligand,-0.48084601759910583
+Fibroblast,Fibroblast,GATA3,CLEC2D,Transcription_Factor,Ligand,-0.48084601759910583
+Fibroblast,Fibroblast,GATA3,DLK1,Transcription_Factor,Ligand,-0.48084601759910583
+Fibroblast,Fibroblast,GATA3,ETV5,Transcription_Factor,Ligand,-0.48084601759910583
+Fibroblast,Fibroblast,GATA3,FAM3C,Transcription_Factor,Ligand,-0.48084601759910583
+Fibroblast,Fibroblast,GATA3,ICAM4,Transcription_Factor,Ligand,-0.48084601759910583
+Fibroblast,Fibroblast,GATA3,LAMB1,Transcription_Factor,Ligand,-0.48084601759910583
+Fibroblast,Fibroblast,GATA3,LAMB2,Transcription_Factor,Ligand,-0.48084601759910583
+Fibroblast,Fibroblast,GATA3,LGALS3,Transcription_Factor,Ligand,-0.48084601759910583
+Fibroblast,Fibroblast,GATA3,RARRES1,Transcription_Factor,Ligand,-0.48084601759910583
+Fibroblast,Fibroblast,GATA3,TGFB1,Transcription_Factor,Ligand,-0.48084601759910583
+Fibroblast,Fibroblast,GATA3,VEGFA,Transcription_Factor,Ligand,-0.48084601759910583
+Fibroblast,Fibroblast,GATA3,VWF,Transcription_Factor,Ligand,-0.48084601759910583
+Fibroblast,Fibroblast,POU5F1,ANGPT1,Transcription_Factor,Ligand,-0.26052960753440857
+Fibroblast,Fibroblast,POU5F1,ETV5,Transcription_Factor,Ligand,-0.26052960753440857
+Fibroblast,Fibroblast,POU5F1,LAMB1,Transcription_Factor,Ligand,-0.26052960753440857
+Fibroblast,Fibroblast,DUX4,ANGPT1,Transcription_Factor,Ligand,-0.20721234381198883
+Fibroblast,Fibroblast,DUX4,POSTN,Transcription_Factor,Ligand,-0.20721234381198883
+Fibroblast,Fibroblast,CLOCK,VWF,Transcription_Factor,Ligand,-0.2989250421524048
+Fibroblast,Fibroblast,CEBPA,ADM,Transcription_Factor,Ligand,-1.0203425884246826
+Fibroblast,Fibroblast,CEBPA,ANGPT1,Transcription_Factor,Ligand,-1.0203425884246826
+Fibroblast,Fibroblast,CEBPA,ARF6,Transcription_Factor,Ligand,-1.0203425884246826
+Fibroblast,Fibroblast,CEBPA,CLEC2D,Transcription_Factor,Ligand,-1.0203425884246826
+Fibroblast,Fibroblast,CEBPA,DLK1,Transcription_Factor,Ligand,-1.0203425884246826
+Fibroblast,Fibroblast,CEBPA,ETV5,Transcription_Factor,Ligand,-1.0203425884246826
+Fibroblast,Fibroblast,CEBPA,HLA-DMB,Transcription_Factor,Ligand,-1.0203425884246826
+Fibroblast,Fibroblast,CEBPA,HSPA8,Transcription_Factor,Ligand,-1.0203425884246826
+Fibroblast,Fibroblast,CEBPA,LAMB1,Transcription_Factor,Ligand,-1.0203425884246826
+Fibroblast,Fibroblast,CEBPA,LGALS3,Transcription_Factor,Ligand,-1.0203425884246826
+Fibroblast,Fibroblast,CEBPA,LGALS3BP,Transcription_Factor,Ligand,-1.0203425884246826
+Fibroblast,Fibroblast,CEBPA,MFGE8,Transcription_Factor,Ligand,-1.0203425884246826
+Fibroblast,Fibroblast,CEBPA,MIF,Transcription_Factor,Ligand,-1.0203425884246826
+Fibroblast,Fibroblast,CEBPA,NID1,Transcription_Factor,Ligand,-1.0203425884246826
+Fibroblast,Fibroblast,CEBPA,RARRES1,Transcription_Factor,Ligand,-1.0203425884246826
+Fibroblast,Fibroblast,CEBPA,TGFB1,Transcription_Factor,Ligand,-1.0203425884246826
+Fibroblast,Fibroblast,CEBPA,VEGFA,Transcription_Factor,Ligand,-1.0203425884246826
+Fibroblast,Fibroblast,CEBPA,VWF,Transcription_Factor,Ligand,-1.0203425884246826
 Fibroblast,Fibroblast,TFAP2C,ANGPT1,Transcription_Factor,Ligand,-0.7235671281814575
 Fibroblast,Fibroblast,TFAP2C,BDNF,Transcription_Factor,Ligand,-0.7235671281814575
 Fibroblast,Fibroblast,TFAP2C,CALR,Transcription_Factor,Ligand,-0.7235671281814575
@@ -30,159 +196,202 @@ Fibroblast,Fibroblast,TFAP2C,POSTN,Transcription_Factor,Ligand,-0.72356712818145
 Fibroblast,Fibroblast,TFAP2C,RARRES1,Transcription_Factor,Ligand,-0.7235671281814575
 Fibroblast,Fibroblast,TFAP2C,VEGFA,Transcription_Factor,Ligand,-0.7235671281814575
 Fibroblast,Fibroblast,TFAP2C,VWF,Transcription_Factor,Ligand,-0.7235671281814575
-MSC,MSC,ITGB1,SRF,Receptor,Transcription Factor,1.2202036380767822
-MSC,MSC,BMPR2,TP53,Receptor,Transcription Factor,1.060274362564087
-MSC,MSC,ERBB2,TP53,Receptor,Transcription Factor,1.060274362564087
-MSC,MSC,FGFR1,TP53,Receptor,Transcription Factor,1.060274362564087
-MSC,MSC,FZD5,TP53,Receptor,Transcription Factor,1.060274362564087
-MSC,MSC,INSR,TP53,Receptor,Transcription Factor,1.060274362564087
-MSC,MSC,ITGB1,TP53,Receptor,Transcription Factor,1.060274362564087
-MSC,MSC,LPP,TP53,Receptor,Transcription Factor,1.060274362564087
-MSC,MSC,NCL,TP53,Receptor,Transcription Factor,1.060274362564087
-MSC,MSC,PDGFRB,TP53,Receptor,Transcription Factor,1.060274362564087
-MSC,MSC,TGFBR2,TP53,Receptor,Transcription Factor,1.060274362564087
-MSC,MSC,BMPR2,SP1,Receptor,Transcription Factor,0.9723134636878967
-MSC,MSC,ERBB2,SP1,Receptor,Transcription Factor,0.9723134636878967
-MSC,MSC,FGFR1,SP1,Receptor,Transcription Factor,0.9723134636878967
-MSC,MSC,INSR,SP1,Receptor,Transcription Factor,0.9723134636878967
-MSC,MSC,ITGB1,SP1,Receptor,Transcription Factor,0.9723134636878967
-MSC,MSC,LPP,SP1,Receptor,Transcription Factor,0.9723134636878967
-MSC,MSC,NTRK2,SP1,Receptor,Transcription Factor,0.9723134636878967
-MSC,MSC,PDGFRB,SP1,Receptor,Transcription Factor,0.9723134636878967
-MSC,MSC,TGFBR2,SP1,Receptor,Transcription Factor,0.9723134636878967
-MSC,MSC,ITGB1,ZHX1,Receptor,Transcription Factor,0.7907685041427612
-MSC,MSC,FZD5,SNAI1,Receptor,Transcription Factor,0.6337460875511169
-MSC,MSC,ITGB1,SNAI1,Receptor,Transcription Factor,0.6337460875511169
-MSC,MSC,INSR,SP3,Receptor,Transcription Factor,0.6670423150062561
-MSC,MSC,ITGB1,SP3,Receptor,Transcription Factor,0.6670423150062561
-MSC,MSC,TGFBR2,SP3,Receptor,Transcription Factor,0.6670423150062561
-MSC,MSC,ERBB2,RELA,Receptor,Transcription Factor,0.6981157064437866
-MSC,MSC,FGFR1,RELA,Receptor,Transcription Factor,0.6981157064437866
-MSC,MSC,INSR,RELA,Receptor,Transcription Factor,0.6981157064437866
-MSC,MSC,ITGB1,RELA,Receptor,Transcription Factor,0.6981157064437866
-MSC,MSC,LPP,RELA,Receptor,Transcription Factor,0.6981157064437866
-MSC,MSC,NTRK2,RELA,Receptor,Transcription Factor,0.6981157064437866
-MSC,MSC,PDGFRB,RELA,Receptor,Transcription Factor,0.6981157064437866
-MSC,MSC,TGFBR2,RELA,Receptor,Transcription Factor,0.6981157064437866
-MSC,MSC,ITGB1,YY1,Receptor,Transcription Factor,0.5151918530464172
-MSC,MSC,SRF,MYL9,Transcription_Factor,Ligand,1.2202036380767822
-MSC,MSC,SRF,TLN1,Transcription_Factor,Ligand,1.2202036380767822
-MSC,MSC,SRF,VCL,Transcription_Factor,Ligand,1.2202036380767822
-MSC,MSC,STAT3,ANXA1,Transcription_Factor,Ligand,1.2648683786392212
-MSC,MSC,STAT3,CCL2,Transcription_Factor,Ligand,1.2648683786392212
-MSC,MSC,STAT3,FBLN1,Transcription_Factor,Ligand,1.2648683786392212
-MSC,MSC,STAT3,HGF,Transcription_Factor,Ligand,1.2648683786392212
-MSC,MSC,STAT3,HP,Transcription_Factor,Ligand,1.2648683786392212
-MSC,MSC,STAT3,LGALS3BP,Transcription_Factor,Ligand,1.2648683786392212
-MSC,MSC,STAT3,PGF,Transcription_Factor,Ligand,1.2648683786392212
-MSC,MSC,STAT3,TGFB1,Transcription_Factor,Ligand,1.2648683786392212
-MSC,MSC,STAT3,TNC,Transcription_Factor,Ligand,1.2648683786392212
-MSC,MSC,STAT3,VEGFA,Transcription_Factor,Ligand,1.2648683786392212
-MSC,MSC,STAT3,VEGFB,Transcription_Factor,Ligand,1.2648683786392212
-MSC,MSC,TP53,CALR,Transcription_Factor,Ligand,1.060274362564087
-MSC,MSC,TP53,COL6A3,Transcription_Factor,Ligand,1.060274362564087
-MSC,MSC,TP53,CSF1,Transcription_Factor,Ligand,1.060274362564087
-MSC,MSC,TP53,CXCL12,Transcription_Factor,Ligand,1.060274362564087
-MSC,MSC,TP53,FAM3C,Transcription_Factor,Ligand,1.060274362564087
-MSC,MSC,TP53,FBLN1,Transcription_Factor,Ligand,1.060274362564087
-MSC,MSC,TP53,FST,Transcription_Factor,Ligand,1.060274362564087
-MSC,MSC,TP53,HGF,Transcription_Factor,Ligand,1.060274362564087
-MSC,MSC,TP53,HLA-B,Transcription_Factor,Ligand,1.060274362564087
-MSC,MSC,TP53,IGF2,Transcription_Factor,Ligand,1.060274362564087
-MSC,MSC,TP53,MIF,Transcription_Factor,Ligand,1.060274362564087
-MSC,MSC,TP53,PDGFC,Transcription_Factor,Ligand,1.060274362564087
-MSC,MSC,TP53,PGF,Transcription_Factor,Ligand,1.060274362564087
-MSC,MSC,TP53,SPARC,Transcription_Factor,Ligand,1.060274362564087
-MSC,MSC,TP53,TGFB1,Transcription_Factor,Ligand,1.060274362564087
-MSC,MSC,TP53,THBS1,Transcription_Factor,Ligand,1.060274362564087
-MSC,MSC,TP53,THBS2,Transcription_Factor,Ligand,1.060274362564087
-MSC,MSC,TP53,VCAN,Transcription_Factor,Ligand,1.060274362564087
-MSC,MSC,TP53,VEGFA,Transcription_Factor,Ligand,1.060274362564087
-MSC,MSC,TP53,VWF,Transcription_Factor,Ligand,1.060274362564087
-MSC,MSC,SP1,APOE,Transcription_Factor,Ligand,0.9723134636878967
-MSC,MSC,SP1,CCL2,Transcription_Factor,Ligand,0.9723134636878967
-MSC,MSC,SP1,FBLN1,Transcription_Factor,Ligand,0.9723134636878967
-MSC,MSC,SP1,HGF,Transcription_Factor,Ligand,0.9723134636878967
-MSC,MSC,SP1,IGF2,Transcription_Factor,Ligand,0.9723134636878967
-MSC,MSC,SP1,LTBP3,Transcription_Factor,Ligand,0.9723134636878967
-MSC,MSC,SP1,MIF,Transcription_Factor,Ligand,0.9723134636878967
-MSC,MSC,SP1,PDGFC,Transcription_Factor,Ligand,0.9723134636878967
-MSC,MSC,SP1,RETN,Transcription_Factor,Ligand,0.9723134636878967
-MSC,MSC,SP1,SPARC,Transcription_Factor,Ligand,0.9723134636878967
-MSC,MSC,SP1,SPP1,Transcription_Factor,Ligand,0.9723134636878967
-MSC,MSC,SP1,TF,Transcription_Factor,Ligand,0.9723134636878967
-MSC,MSC,SP1,TGFB1,Transcription_Factor,Ligand,0.9723134636878967
-MSC,MSC,SP1,TNC,Transcription_Factor,Ligand,0.9723134636878967
-MSC,MSC,SP1,VEGFA,Transcription_Factor,Ligand,0.9723134636878967
-MSC,MSC,SP1,VEGFB,Transcription_Factor,Ligand,0.9723134636878967
-MSC,MSC,SP4,APOE,Transcription_Factor,Ligand,0.8129507303237915
-MSC,MSC,SP4,LTBP3,Transcription_Factor,Ligand,0.8129507303237915
-MSC,MSC,SP4,MFGE8,Transcription_Factor,Ligand,0.8129507303237915
-MSC,MSC,SP4,THBS1,Transcription_Factor,Ligand,0.8129507303237915
-MSC,MSC,ZHX1,LTBP3,Transcription_Factor,Ligand,0.7907685041427612
-MSC,MSC,ZHX1,VCL,Transcription_Factor,Ligand,0.7907685041427612
-MSC,MSC,SNAI1,CCL2,Transcription_Factor,Ligand,0.6337460875511169
-MSC,MSC,SNAI1,THBS1,Transcription_Factor,Ligand,0.6337460875511169
-MSC,MSC,SP3,FBLN1,Transcription_Factor,Ligand,0.6670423150062561
-MSC,MSC,SP3,HGF,Transcription_Factor,Ligand,0.6670423150062561
-MSC,MSC,SP3,TGFB1,Transcription_Factor,Ligand,0.6670423150062561
-MSC,MSC,SP3,TNC,Transcription_Factor,Ligand,0.6670423150062561
-MSC,MSC,SP3,VEGFA,Transcription_Factor,Ligand,0.6670423150062561
-MSC,MSC,RARG,MIF,Transcription_Factor,Ligand,0.35776981711387634
-MSC,MSC,RARG,SERPINF1,Transcription_Factor,Ligand,0.35776981711387634
-MSC,MSC,RELA,CCL2,Transcription_Factor,Ligand,0.6981157064437866
-MSC,MSC,RELA,CSF1,Transcription_Factor,Ligand,0.6981157064437866
-MSC,MSC,RELA,CXCL12,Transcription_Factor,Ligand,0.6981157064437866
-MSC,MSC,RELA,CXCL2,Transcription_Factor,Ligand,0.6981157064437866
-MSC,MSC,RELA,FGF7,Transcription_Factor,Ligand,0.6981157064437866
-MSC,MSC,RELA,FST,Transcription_Factor,Ligand,0.6981157064437866
-MSC,MSC,RELA,MIF,Transcription_Factor,Ligand,0.6981157064437866
-MSC,MSC,RELA,TF,Transcription_Factor,Ligand,0.6981157064437866
-MSC,MSC,RELA,TFF3,Transcription_Factor,Ligand,0.6981157064437866
-MSC,MSC,RELA,TNC,Transcription_Factor,Ligand,0.6981157064437866
-MSC,MSC,RELA,VCAM1,Transcription_Factor,Ligand,0.6981157064437866
-MSC,MSC,RELA,VEGFA,Transcription_Factor,Ligand,0.6981157064437866
-MSC,MSC,RELA,VWF,Transcription_Factor,Ligand,0.6981157064437866
-MSC,MSC,WT1,IGF2,Transcription_Factor,Ligand,0.4097135066986084
-MSC,MSC,WT1,MDK,Transcription_Factor,Ligand,0.4097135066986084
-MSC,MSC,WT1,TGFB1,Transcription_Factor,Ligand,0.4097135066986084
-MSC,MSC,WT1,THBS1,Transcription_Factor,Ligand,0.4097135066986084
-MSC,MSC,WT1,VEGFA,Transcription_Factor,Ligand,0.4097135066986084
-MSC,MSC,WT1,VEGFB,Transcription_Factor,Ligand,0.4097135066986084
-MSC,MSC,YY1,CALR,Transcription_Factor,Ligand,0.5151918530464172
-MSC,MSC,YY1,HLA-DRA,Transcription_Factor,Ligand,0.5151918530464172
-MSC,MSC,YY1,TF,Transcription_Factor,Ligand,0.5151918530464172
-MSC,MSC,YY1,THBS1,Transcription_Factor,Ligand,0.5151918530464172
-MSC,MSC,YY1,VCL,Transcription_Factor,Ligand,0.5151918530464172
-MSC,MSC,YY1,VEGFA,Transcription_Factor,Ligand,0.5151918530464172
-MSC,MSC,YY1,VEGFB,Transcription_Factor,Ligand,0.5151918530464172
-MSC,MSC,YY1,VWF,Transcription_Factor,Ligand,0.5151918530464172
-Megakaryocyte,Megakaryocyte,TNFRSF14,SMAD5,Receptor,Transcription Factor,0.9929921627044678
+Fibroblast,Fibroblast,MYOD1,ETV5,Transcription_Factor,Ligand,-0.3373999297618866
+Fibroblast,Fibroblast,RUNX2,ANGPT1,Transcription_Factor,Ligand,-0.24661901593208313
+Fibroblast,Fibroblast,RUNX2,LGALS3,Transcription_Factor,Ligand,-0.24661901593208313
+Fibroblast,Fibroblast,RUNX2,VEGFA,Transcription_Factor,Ligand,-0.24661901593208313
+Fibroblast,Fibroblast,CDX1,POSTN,Transcription_Factor,Ligand,-0.09030614793300629
+Fibroblast,Fibroblast,EGR1,ADM,Transcription_Factor,Ligand,-0.6004867553710938
+Fibroblast,Fibroblast,EGR1,ANGPT1,Transcription_Factor,Ligand,-0.6004867553710938
+Fibroblast,Fibroblast,EGR1,BDNF,Transcription_Factor,Ligand,-0.6004867553710938
+Fibroblast,Fibroblast,EGR1,CALR,Transcription_Factor,Ligand,-0.6004867553710938
+Fibroblast,Fibroblast,EGR1,CLEC11A,Transcription_Factor,Ligand,-0.6004867553710938
+Fibroblast,Fibroblast,EGR1,DLK1,Transcription_Factor,Ligand,-0.6004867553710938
+Fibroblast,Fibroblast,EGR1,ETV5,Transcription_Factor,Ligand,-0.6004867553710938
+Fibroblast,Fibroblast,EGR1,FAM3C,Transcription_Factor,Ligand,-0.6004867553710938
+Fibroblast,Fibroblast,EGR1,GAL,Transcription_Factor,Ligand,-0.6004867553710938
+Fibroblast,Fibroblast,EGR1,HSPA8,Transcription_Factor,Ligand,-0.6004867553710938
+Fibroblast,Fibroblast,EGR1,LAMB1,Transcription_Factor,Ligand,-0.6004867553710938
+Fibroblast,Fibroblast,EGR1,LAMB2,Transcription_Factor,Ligand,-0.6004867553710938
+Fibroblast,Fibroblast,EGR1,LGALS1,Transcription_Factor,Ligand,-0.6004867553710938
+Fibroblast,Fibroblast,EGR1,LGALS3,Transcription_Factor,Ligand,-0.6004867553710938
+Fibroblast,Fibroblast,EGR1,LGALS3BP,Transcription_Factor,Ligand,-0.6004867553710938
+Fibroblast,Fibroblast,EGR1,LTBP3,Transcription_Factor,Ligand,-0.6004867553710938
+Fibroblast,Fibroblast,EGR1,MFGE8,Transcription_Factor,Ligand,-0.6004867553710938
+Fibroblast,Fibroblast,EGR1,MIF,Transcription_Factor,Ligand,-0.6004867553710938
+Fibroblast,Fibroblast,EGR1,MYL9,Transcription_Factor,Ligand,-0.6004867553710938
+Fibroblast,Fibroblast,EGR1,NID1,Transcription_Factor,Ligand,-0.6004867553710938
+Fibroblast,Fibroblast,EGR1,TGFB1,Transcription_Factor,Ligand,-0.6004867553710938
+Fibroblast,Fibroblast,EGR1,VCAM1,Transcription_Factor,Ligand,-0.6004867553710938
+Fibroblast,Fibroblast,EGR1,VEGFA,Transcription_Factor,Ligand,-0.6004867553710938
+Fibroblast,Fibroblast,EGR1,VWF,Transcription_Factor,Ligand,-0.6004867553710938
+Fibroblast,Fibroblast,ESR1,HLA-DMB,Transcription_Factor,Ligand,-0.5749771595001221
+Fibroblast,Fibroblast,ESR1,LAMB1,Transcription_Factor,Ligand,-0.5749771595001221
+Fibroblast,Fibroblast,ESR1,LAMB2,Transcription_Factor,Ligand,-0.5749771595001221
+Fibroblast,Fibroblast,ESR1,LGALS3,Transcription_Factor,Ligand,-0.5749771595001221
+Fibroblast,Fibroblast,ESR1,LTBP3,Transcription_Factor,Ligand,-0.5749771595001221
+Fibroblast,Fibroblast,ESR1,MFGE8,Transcription_Factor,Ligand,-0.5749771595001221
+Fibroblast,Fibroblast,ESR1,RARRES1,Transcription_Factor,Ligand,-0.5749771595001221
+Fibroblast,Fibroblast,ESR1,VEGFA,Transcription_Factor,Ligand,-0.5749771595001221
+Fibroblast,Fibroblast,ESR1,VWF,Transcription_Factor,Ligand,-0.5749771595001221
+Fibroblast,Fibroblast,OTX2,LAMB1,Transcription_Factor,Ligand,-0.17652224004268646
+Fibroblast,Fibroblast,TEAD4,VEGFA,Transcription_Factor,Ligand,-0.2570194602012634
+Fibroblast,Fibroblast,NCOA3,ANGPT1,Transcription_Factor,Ligand,-0.23245461285114288
+Fibroblast,Fibroblast,SNAI2,LTBP3,Transcription_Factor,Ligand,-0.3315542936325073
+Fibroblast,Fibroblast,CTCF,ADM,Transcription_Factor,Ligand,-0.614758312702179
+Fibroblast,Fibroblast,CTCF,ANGPT1,Transcription_Factor,Ligand,-0.614758312702179
+Fibroblast,Fibroblast,CTCF,ARF6,Transcription_Factor,Ligand,-0.614758312702179
+Fibroblast,Fibroblast,CTCF,BDNF,Transcription_Factor,Ligand,-0.614758312702179
+Fibroblast,Fibroblast,CTCF,CALR,Transcription_Factor,Ligand,-0.614758312702179
+Fibroblast,Fibroblast,CTCF,CLEC11A,Transcription_Factor,Ligand,-0.614758312702179
+Fibroblast,Fibroblast,CTCF,DLK1,Transcription_Factor,Ligand,-0.614758312702179
+Fibroblast,Fibroblast,CTCF,ETV5,Transcription_Factor,Ligand,-0.614758312702179
+Fibroblast,Fibroblast,CTCF,FAM3C,Transcription_Factor,Ligand,-0.614758312702179
+Fibroblast,Fibroblast,CTCF,HLA-DMB,Transcription_Factor,Ligand,-0.614758312702179
+Fibroblast,Fibroblast,CTCF,LAMB1,Transcription_Factor,Ligand,-0.614758312702179
+Fibroblast,Fibroblast,CTCF,LAMB2,Transcription_Factor,Ligand,-0.614758312702179
+Fibroblast,Fibroblast,CTCF,LGALS1,Transcription_Factor,Ligand,-0.614758312702179
+Fibroblast,Fibroblast,CTCF,LGALS3,Transcription_Factor,Ligand,-0.614758312702179
+Fibroblast,Fibroblast,CTCF,LGALS3BP,Transcription_Factor,Ligand,-0.614758312702179
+Fibroblast,Fibroblast,CTCF,LGALS9,Transcription_Factor,Ligand,-0.614758312702179
+Fibroblast,Fibroblast,CTCF,LTBP3,Transcription_Factor,Ligand,-0.614758312702179
+Fibroblast,Fibroblast,CTCF,MFGE8,Transcription_Factor,Ligand,-0.614758312702179
+Fibroblast,Fibroblast,CTCF,MIF,Transcription_Factor,Ligand,-0.614758312702179
+Fibroblast,Fibroblast,CTCF,MYL9,Transcription_Factor,Ligand,-0.614758312702179
+Fibroblast,Fibroblast,CTCF,NID1,Transcription_Factor,Ligand,-0.614758312702179
+Fibroblast,Fibroblast,CTCF,POSTN,Transcription_Factor,Ligand,-0.614758312702179
+Fibroblast,Fibroblast,CTCF,RARRES1,Transcription_Factor,Ligand,-0.614758312702179
+Fibroblast,Fibroblast,CTCF,TGFB1,Transcription_Factor,Ligand,-0.614758312702179
+Fibroblast,Fibroblast,CTCF,VCAM1,Transcription_Factor,Ligand,-0.614758312702179
+Fibroblast,Fibroblast,CTCF,VEGFA,Transcription_Factor,Ligand,-0.614758312702179
+Fibroblast,Fibroblast,CTCF,VWF,Transcription_Factor,Ligand,-0.614758312702179
+Fibroblast,Fibroblast,TEAD1,ANGPT1,Transcription_Factor,Ligand,-0.2538185715675354
+Fibroblast,Fibroblast,TEAD1,VEGFA,Transcription_Factor,Ligand,-0.2538185715675354
+Fibroblast,Fibroblast,SOX2,ADM,Transcription_Factor,Ligand,-0.43840256333351135
+Fibroblast,Fibroblast,SOX2,ANGPT1,Transcription_Factor,Ligand,-0.43840256333351135
+Fibroblast,Fibroblast,SOX2,ARF6,Transcription_Factor,Ligand,-0.43840256333351135
+Fibroblast,Fibroblast,SOX2,ETV5,Transcription_Factor,Ligand,-0.43840256333351135
+Fibroblast,Fibroblast,ZNF750,LAMB1,Transcription_Factor,Ligand,-0.45605599880218506
+Fibroblast,Fibroblast,HNF1A,VEGFA,Transcription_Factor,Ligand,-0.2511586546897888
+Fibroblast,Fibroblast,PRDM14,ANGPT1,Transcription_Factor,Ligand,-0.4814698100090027
+Fibroblast,Fibroblast,PRDM14,ARF6,Transcription_Factor,Ligand,-0.4814698100090027
+Fibroblast,Fibroblast,PRDM14,LAMB1,Transcription_Factor,Ligand,-0.4814698100090027
+Fibroblast,Fibroblast,PRDM14,LGALS3,Transcription_Factor,Ligand,-0.4814698100090027
+Fibroblast,Fibroblast,PRDM14,MFGE8,Transcription_Factor,Ligand,-0.4814698100090027
+Fibroblast,Fibroblast,NR4A1,ANGPT1,Transcription_Factor,Ligand,-0.5857762694358826
+Fibroblast,Fibroblast,E2F7,BDNF,Transcription_Factor,Ligand,-0.4281362295150757
+Fibroblast,Fibroblast,E2F7,HSPA8,Transcription_Factor,Ligand,-0.4281362295150757
+Fibroblast,Fibroblast,E2F7,LGALS1,Transcription_Factor,Ligand,-0.4281362295150757
+Fibroblast,Fibroblast,SRF,ETV5,Transcription_Factor,Ligand,-0.1891244798898697
+Fibroblast,Fibroblast,SRF,MYL9,Transcription_Factor,Ligand,-0.1891244798898697
+Fibroblast,Fibroblast,ETV4,VEGFA,Transcription_Factor,Ligand,-0.2902029752731323
+Fibroblast,Fibroblast,NR1H4,VEGFA,Transcription_Factor,Ligand,0.04770515859127045
+Fibroblast,Fibroblast,SP3,TGFB1,Transcription_Factor,Ligand,-0.3901917338371277
+Fibroblast,Fibroblast,SP3,VEGFA,Transcription_Factor,Ligand,-0.3901917338371277
+Fibroblast,Fibroblast,TWIST2,POSTN,Transcription_Factor,Ligand,0.052809879183769226
+Fibroblast,Fibroblast,NR1H2,ETV5,Transcription_Factor,Ligand,-0.5703539252281189
+Fibroblast,Fibroblast,NR1H2,LTBP3,Transcription_Factor,Ligand,-0.5703539252281189
+Fibroblast,Fibroblast,NR1H2,VEGFA,Transcription_Factor,Ligand,-0.5703539252281189
+Fibroblast,Fibroblast,SMAD1,ANGPT1,Transcription_Factor,Ligand,-0.5004812479019165
+Fibroblast,Fibroblast,SMAD1,VEGFA,Transcription_Factor,Ligand,-0.5004812479019165
+Fibroblast,Fibroblast,HIF1A,ADM,Transcription_Factor,Ligand,-0.652160108089447
+Fibroblast,Fibroblast,HIF1A,ANGPT1,Transcription_Factor,Ligand,-0.652160108089447
+Fibroblast,Fibroblast,HIF1A,LGALS1,Transcription_Factor,Ligand,-0.652160108089447
+Fibroblast,Fibroblast,HIF1A,MIF,Transcription_Factor,Ligand,-0.652160108089447
+Fibroblast,Fibroblast,HIF1A,VEGFA,Transcription_Factor,Ligand,-0.652160108089447
+Fibroblast,Fibroblast,THAP1,LTBP3,Transcription_Factor,Ligand,-0.16385382413864136
+Fibroblast,Fibroblast,GATA1,ANGPT1,Transcription_Factor,Ligand,-0.7343478798866272
+Fibroblast,Fibroblast,HIC1,VEGFA,Transcription_Factor,Ligand,-0.14671438932418823
+MSC,MSC,ERBB2,MYC,Receptor,Transcription Factor,-0.6941042542457581
+MSC,MSC,FGFR1,MYC,Receptor,Transcription Factor,-0.6941042542457581
+MSC,MSC,FZD5,MYC,Receptor,Transcription Factor,-0.6941042542457581
+MSC,MSC,INSR,MYC,Receptor,Transcription Factor,-0.6941042542457581
+MSC,MSC,ITGB1,MYC,Receptor,Transcription Factor,-0.6941042542457581
+MSC,MSC,LPP,MYC,Receptor,Transcription Factor,-0.6941042542457581
+MSC,MSC,TGFBR2,MYC,Receptor,Transcription Factor,-0.6941042542457581
+MSC,MSC,TGFBR2,FOXP3,Receptor,Transcription Factor,0.18567898869514465
+MSC,MSC,CD40,GATA1,Receptor,Transcription Factor,-0.5667440891265869
+MSC,MSC,ERBB2,GATA1,Receptor,Transcription Factor,-0.5667440891265869
+MSC,MSC,INSR,GATA1,Receptor,Transcription Factor,-0.5667440891265869
+MSC,MSC,ITGB1,GATA1,Receptor,Transcription Factor,-0.5667440891265869
+MSC,MSC,NTRK2,GATA1,Receptor,Transcription Factor,-0.5667440891265869
+MSC,MSC,PDGFRB,GATA1,Receptor,Transcription Factor,-0.5667440891265869
+MSC,MSC,TGFBR2,GATA1,Receptor,Transcription Factor,-0.5667440891265869
+MSC,MSC,TNFRSF14,GATA1,Receptor,Transcription Factor,-0.5667440891265869
+MSC,MSC,NGFR,ZNF274,Receptor,Transcription Factor,-0.6238870024681091
+MSC,MSC,KLF3,PDGFC,Transcription_Factor,Ligand,1.0168192386627197
+MSC,MSC,MYC,CALR,Transcription_Factor,Ligand,-0.6941042542457581
+MSC,MSC,MYC,CCL14,Transcription_Factor,Ligand,-0.6941042542457581
+MSC,MSC,MYC,CXCL2,Transcription_Factor,Ligand,-0.6941042542457581
+MSC,MSC,MYC,HLA-B,Transcription_Factor,Ligand,-0.6941042542457581
+MSC,MSC,MYC,HLA-DPB1,Transcription_Factor,Ligand,-0.6941042542457581
+MSC,MSC,MYC,LAMB2,Transcription_Factor,Ligand,-0.6941042542457581
+MSC,MSC,MYC,LGALS1,Transcription_Factor,Ligand,-0.6941042542457581
+MSC,MSC,MYC,NID1,Transcription_Factor,Ligand,-0.6941042542457581
+MSC,MSC,MYC,TGFB1,Transcription_Factor,Ligand,-0.6941042542457581
+MSC,MSC,MYC,THBS1,Transcription_Factor,Ligand,-0.6941042542457581
+MSC,MSC,MYC,VEGFA,Transcription_Factor,Ligand,-0.6941042542457581
+MSC,MSC,GATA1,ANGPT1,Transcription_Factor,Ligand,-0.5667440891265869
+MSC,MSC,GATA1,VCL,Transcription_Factor,Ligand,-0.5667440891265869
+MSC,MSC,PKNOX1,VCL,Transcription_Factor,Ligand,0.1668722927570343
+Megakaryocyte,Megakaryocyte,INSR,NRF1,Receptor,Transcription Factor,0.33544841408729553
+Megakaryocyte,Megakaryocyte,ITGB1,NRF1,Receptor,Transcription Factor,0.33544841408729553
+Megakaryocyte,Megakaryocyte,ITGB1,CREB3,Receptor,Transcription Factor,0.1913500428199768
 Megakaryocyte,Megakaryocyte,ITGB1,SRF,Receptor,Transcription Factor,0.6638748049736023
-Megakaryocyte,Megakaryocyte,DIP2A,TEAD2,Receptor,Transcription Factor,0.7210466861724854
-Megakaryocyte,Megakaryocyte,INSR,TEAD2,Receptor,Transcription Factor,0.7210466861724854
-Megakaryocyte,Megakaryocyte,ITGB1,TEAD2,Receptor,Transcription Factor,0.7210466861724854
-Megakaryocyte,Megakaryocyte,ITGB1,TCF7L2,Receptor,Transcription Factor,-0.6574234366416931
-Megakaryocyte,Megakaryocyte,ITGB1,PDX1,Receptor,Transcription Factor,-0.7225472927093506
-Megakaryocyte,Megakaryocyte,INSR,POU5F1,Receptor,Transcription Factor,-0.693924069404602
-Megakaryocyte,Megakaryocyte,ITGB1,POU5F1,Receptor,Transcription Factor,-0.693924069404602
-Megakaryocyte,Megakaryocyte,INSR,SOX2,Receptor,Transcription Factor,-0.7619516253471375
-Megakaryocyte,Megakaryocyte,ITGB1,SOX2,Receptor,Transcription Factor,-0.7619516253471375
+Megakaryocyte,Megakaryocyte,ITGB1,CEBPD,Receptor,Transcription Factor,0.08961142599582672
+Megakaryocyte,Megakaryocyte,ITGB1,KLF1,Receptor,Transcription Factor,-0.49008750915527344
+Megakaryocyte,Megakaryocyte,INSR,SP1,Receptor,Transcription Factor,-0.05895485728979111
+Megakaryocyte,Megakaryocyte,ITGB1,SP1,Receptor,Transcription Factor,-0.05895485728979111
+Megakaryocyte,Megakaryocyte,CXCR4,STAT2,Receptor,Transcription Factor,-0.524497389793396
+Megakaryocyte,Megakaryocyte,INSR,TBP,Receptor,Transcription Factor,0.16936931014060974
+Megakaryocyte,Megakaryocyte,MYLK,TBP,Receptor,Transcription Factor,0.16936931014060974
+Megakaryocyte,Megakaryocyte,FCGR2A,FOXO3,Receptor,Transcription Factor,-0.4707617163658142
+Megakaryocyte,Megakaryocyte,INSR,FOXO3,Receptor,Transcription Factor,-0.4707617163658142
+Megakaryocyte,Megakaryocyte,ITGB1,FOXO3,Receptor,Transcription Factor,-0.4707617163658142
+Megakaryocyte,Megakaryocyte,ITGB1,IRF2,Receptor,Transcription Factor,-0.5238602161407471
+Megakaryocyte,Megakaryocyte,ITGB1,SNAI1,Receptor,Transcription Factor,0.11103112995624542
+Megakaryocyte,Megakaryocyte,ITGB1,ZHX1,Receptor,Transcription Factor,0.015784962102770805
+Megakaryocyte,Megakaryocyte,ITGB1,HIF1A,Receptor,Transcription Factor,0.023218363523483276
+Megakaryocyte,Megakaryocyte,INSR,SMAD1,Receptor,Transcription Factor,0.5073639154434204
+Megakaryocyte,Megakaryocyte,ITGB1,SMAD1,Receptor,Transcription Factor,0.5073639154434204
+Megakaryocyte,Megakaryocyte,TNFRSF14,SMAD1,Receptor,Transcription Factor,0.5073639154434204
+Megakaryocyte,Megakaryocyte,INSR,TFDP1,Receptor,Transcription Factor,0.1059429943561554
 Megakaryocyte,Megakaryocyte,DIP2A,PAX8,Receptor,Transcription Factor,-0.7750712633132935
 Megakaryocyte,Megakaryocyte,INSR,PAX8,Receptor,Transcription Factor,-0.7750712633132935
-Megakaryocyte,Megakaryocyte,DIP2A,RUNX2,Receptor,Transcription Factor,-0.8117421269416809
-Megakaryocyte,Megakaryocyte,INSR,RUNX2,Receptor,Transcription Factor,-0.8117421269416809
-Megakaryocyte,Megakaryocyte,ITGB1,RUNX2,Receptor,Transcription Factor,-0.8117421269416809
 Megakaryocyte,Megakaryocyte,INSR,TWIST1,Receptor,Transcription Factor,-0.8214194774627686
 Megakaryocyte,Megakaryocyte,ITGB1,TWIST1,Receptor,Transcription Factor,-0.8214194774627686
+Megakaryocyte,Megakaryocyte,INSR,SOX2,Receptor,Transcription Factor,-0.7619516253471375
+Megakaryocyte,Megakaryocyte,ITGB1,SOX2,Receptor,Transcription Factor,-0.7619516253471375
+Megakaryocyte,Megakaryocyte,ITGB1,PDX1,Receptor,Transcription Factor,-0.7225472927093506
+Megakaryocyte,Megakaryocyte,INSR,TFCP2,Receptor,Transcription Factor,-0.36512404680252075
+Megakaryocyte,Megakaryocyte,ITGB1,TFCP2,Receptor,Transcription Factor,-0.36512404680252075
+Megakaryocyte,Megakaryocyte,INSR,ZBTB16,Receptor,Transcription Factor,-0.1346876621246338
+Megakaryocyte,Megakaryocyte,ITGB1,ZBTB16,Receptor,Transcription Factor,-0.1346876621246338
+Megakaryocyte,Megakaryocyte,INSR,HMGA1,Receptor,Transcription Factor,-0.08810790628194809
+Megakaryocyte,Megakaryocyte,ITGB1,HMGA1,Receptor,Transcription Factor,-0.08810790628194809
+Megakaryocyte,Megakaryocyte,INSR,STAT4,Receptor,Transcription Factor,-0.1674051284790039
+Megakaryocyte,Megakaryocyte,ITGB1,STAT4,Receptor,Transcription Factor,-0.1674051284790039
 Megakaryocyte,Megakaryocyte,REL,CCL5,Transcription_Factor,Ligand,1.1035431623458862
 Megakaryocyte,Megakaryocyte,REL,CXCL3,Transcription_Factor,Ligand,1.1035431623458862
-Megakaryocyte,Megakaryocyte,ZBED1,CALR,Transcription_Factor,Ligand,0.9816436767578125
-Megakaryocyte,Megakaryocyte,ZBED1,SOCS2,Transcription_Factor,Ligand,0.9816436767578125
-Megakaryocyte,Megakaryocyte,SMAD5,MFGE8,Transcription_Factor,Ligand,0.9929921627044678
-Megakaryocyte,Megakaryocyte,SMAD5,TLN1,Transcription_Factor,Ligand,0.9929921627044678
-Megakaryocyte,Megakaryocyte,PAX6,PDGFC,Transcription_Factor,Ligand,0.751244843006134
-Megakaryocyte,Megakaryocyte,PAX6,SPARC,Transcription_Factor,Ligand,0.751244843006134
+Megakaryocyte,Megakaryocyte,KLF13,CCL5,Transcription_Factor,Ligand,0.6202170848846436
+Megakaryocyte,Megakaryocyte,KLF13,VCL,Transcription_Factor,Ligand,0.6202170848846436
+Megakaryocyte,Megakaryocyte,CREB3,ACTR2,Transcription_Factor,Ligand,0.1913500428199768
+Megakaryocyte,Megakaryocyte,SRF,MYL9,Transcription_Factor,Ligand,0.6638748049736023
+Megakaryocyte,Megakaryocyte,SRF,TLN1,Transcription_Factor,Ligand,0.6638748049736023
+Megakaryocyte,Megakaryocyte,SRF,VCL,Transcription_Factor,Ligand,0.6638748049736023
+Megakaryocyte,Megakaryocyte,USF2,CALR,Transcription_Factor,Ligand,0.39948442578315735
+Megakaryocyte,Megakaryocyte,USF2,PF4,Transcription_Factor,Ligand,0.39948442578315735
+Megakaryocyte,Megakaryocyte,USF2,TGFB1,Transcription_Factor,Ligand,0.39948442578315735
+Megakaryocyte,Megakaryocyte,USF2,THBS1,Transcription_Factor,Ligand,0.39948442578315735
+Megakaryocyte,Megakaryocyte,CEBPD,CCL5,Transcription_Factor,Ligand,0.08961142599582672
+Megakaryocyte,Megakaryocyte,CEBPD,VCL,Transcription_Factor,Ligand,0.08961142599582672
+Megakaryocyte,Megakaryocyte,SP1,CCL5,Transcription_Factor,Ligand,-0.05895485728979111
+Megakaryocyte,Megakaryocyte,SP1,CD99,Transcription_Factor,Ligand,-0.05895485728979111
+Megakaryocyte,Megakaryocyte,SP1,MIF,Transcription_Factor,Ligand,-0.05895485728979111
+Megakaryocyte,Megakaryocyte,SP1,PDGFC,Transcription_Factor,Ligand,-0.05895485728979111
+Megakaryocyte,Megakaryocyte,SP1,SPARC,Transcription_Factor,Ligand,-0.05895485728979111
+Megakaryocyte,Megakaryocyte,SP1,TGFB1,Transcription_Factor,Ligand,-0.05895485728979111
+Megakaryocyte,Megakaryocyte,SP1,VEGFB,Transcription_Factor,Ligand,-0.05895485728979111
 Megakaryocyte,Megakaryocyte,VDR,CALR,Transcription_Factor,Ligand,0.8537036776542664
 Megakaryocyte,Megakaryocyte,VDR,CLEC11A,Transcription_Factor,Ligand,0.8537036776542664
 Megakaryocyte,Megakaryocyte,VDR,EFNB1,Transcription_Factor,Ligand,0.8537036776542664
@@ -191,86 +400,524 @@ Megakaryocyte,Megakaryocyte,VDR,PDGFC,Transcription_Factor,Ligand,0.853703677654
 Megakaryocyte,Megakaryocyte,VDR,S100A4,Transcription_Factor,Ligand,0.8537036776542664
 Megakaryocyte,Megakaryocyte,VDR,SPON2,Transcription_Factor,Ligand,0.8537036776542664
 Megakaryocyte,Megakaryocyte,VDR,TGFB1,Transcription_Factor,Ligand,0.8537036776542664
-Megakaryocyte,Megakaryocyte,SRF,MYL9,Transcription_Factor,Ligand,0.6638748049736023
-Megakaryocyte,Megakaryocyte,SRF,TLN1,Transcription_Factor,Ligand,0.6638748049736023
-Megakaryocyte,Megakaryocyte,SRF,VCL,Transcription_Factor,Ligand,0.6638748049736023
-Megakaryocyte,Megakaryocyte,TEAD2,SPARC,Transcription_Factor,Ligand,0.7210466861724854
-Megakaryocyte,Megakaryocyte,TCF7L2,PDGFC,Transcription_Factor,Ligand,-0.6574234366416931
-Megakaryocyte,Megakaryocyte,POU5F1,LAMB1,Transcription_Factor,Ligand,-0.693924069404602
+Megakaryocyte,Megakaryocyte,STAT2,LGALS3BP,Transcription_Factor,Ligand,-0.524497389793396
+Megakaryocyte,Megakaryocyte,TBP,PPBP,Transcription_Factor,Ligand,0.16936931014060974
+Megakaryocyte,Megakaryocyte,TBP,THBS1,Transcription_Factor,Ligand,0.16936931014060974
+Megakaryocyte,Megakaryocyte,BACH2,CLEC2D,Transcription_Factor,Ligand,0.49700233340263367
+Megakaryocyte,Megakaryocyte,FOXO3,TGFB1,Transcription_Factor,Ligand,-0.4707617163658142
+Megakaryocyte,Megakaryocyte,FOXO3,VEGFB,Transcription_Factor,Ligand,-0.4707617163658142
+Megakaryocyte,Megakaryocyte,MYNN,GPI,Transcription_Factor,Ligand,0.19307860732078552
+Megakaryocyte,Megakaryocyte,MYNN,SOCS2,Transcription_Factor,Ligand,0.19307860732078552
+Megakaryocyte,Megakaryocyte,IRF2,SOCS2,Transcription_Factor,Ligand,-0.5238602161407471
+Megakaryocyte,Megakaryocyte,SNAI1,CCL5,Transcription_Factor,Ligand,0.11103112995624542
+Megakaryocyte,Megakaryocyte,SNAI1,THBS1,Transcription_Factor,Ligand,0.11103112995624542
+Megakaryocyte,Megakaryocyte,ZHX1,VCL,Transcription_Factor,Ligand,0.015784962102770805
+Megakaryocyte,Megakaryocyte,HIF1A,CCL5,Transcription_Factor,Ligand,0.023218363523483276
+Megakaryocyte,Megakaryocyte,HIF1A,LGALS1,Transcription_Factor,Ligand,0.023218363523483276
+Megakaryocyte,Megakaryocyte,HIF1A,MIF,Transcription_Factor,Ligand,0.023218363523483276
+Megakaryocyte,Megakaryocyte,HIF1A,S100A4,Transcription_Factor,Ligand,0.023218363523483276
+Megakaryocyte,Megakaryocyte,HIF1A,VEGFB,Transcription_Factor,Ligand,0.023218363523483276
+Megakaryocyte,Megakaryocyte,SMAD1,PDGFC,Transcription_Factor,Ligand,0.5073639154434204
+Megakaryocyte,Megakaryocyte,SMAD1,VCL,Transcription_Factor,Ligand,0.5073639154434204
+Megakaryocyte,Megakaryocyte,ZHX2,LAMB1,Transcription_Factor,Ligand,0.3436267077922821
+Megakaryocyte,Megakaryocyte,IRF1,CCL5,Transcription_Factor,Ligand,-0.19974449276924133
+Megakaryocyte,Megakaryocyte,IRF1,FAM3C,Transcription_Factor,Ligand,-0.19974449276924133
+Megakaryocyte,Megakaryocyte,IRF1,PDGFC,Transcription_Factor,Ligand,-0.19974449276924133
+Megakaryocyte,Megakaryocyte,IRF1,SOCS2,Transcription_Factor,Ligand,-0.19974449276924133
+Megakaryocyte,Megakaryocyte,TWIST1,LAMB1,Transcription_Factor,Ligand,-0.8214194774627686
+Megakaryocyte,Megakaryocyte,TWIST1,PDGFC,Transcription_Factor,Ligand,-0.8214194774627686
+Megakaryocyte,Megakaryocyte,ERG,SNCA,Transcription_Factor,Ligand,-0.6179836392402649
+Megakaryocyte,Megakaryocyte,ERG,SOCS2,Transcription_Factor,Ligand,-0.6179836392402649
+Megakaryocyte,Megakaryocyte,ERG,VWF,Transcription_Factor,Ligand,-0.6179836392402649
 Megakaryocyte,Megakaryocyte,SOX2,LMAN1,Transcription_Factor,Ligand,-0.7619516253471375
 Megakaryocyte,Megakaryocyte,SOX2,SEMA7A,Transcription_Factor,Ligand,-0.7619516253471375
 Megakaryocyte,Megakaryocyte,SOX2,SOCS2,Transcription_Factor,Ligand,-0.7619516253471375
 Megakaryocyte,Megakaryocyte,SOX2,THBS1,Transcription_Factor,Ligand,-0.7619516253471375
-Megakaryocyte,Megakaryocyte,TFAP2C,ACTR2,Transcription_Factor,Ligand,-0.7161756753921509
-Megakaryocyte,Megakaryocyte,TFAP2C,ARPC5,Transcription_Factor,Ligand,-0.7161756753921509
-Megakaryocyte,Megakaryocyte,TFAP2C,BDNF,Transcription_Factor,Ligand,-0.7161756753921509
-Megakaryocyte,Megakaryocyte,TFAP2C,CALR,Transcription_Factor,Ligand,-0.7161756753921509
-Megakaryocyte,Megakaryocyte,TFAP2C,CCL28,Transcription_Factor,Ligand,-0.7161756753921509
-Megakaryocyte,Megakaryocyte,TFAP2C,CLEC11A,Transcription_Factor,Ligand,-0.7161756753921509
-Megakaryocyte,Megakaryocyte,TFAP2C,CLEC2D,Transcription_Factor,Ligand,-0.7161756753921509
-Megakaryocyte,Megakaryocyte,TFAP2C,COL6A3,Transcription_Factor,Ligand,-0.7161756753921509
-Megakaryocyte,Megakaryocyte,TFAP2C,DLK1,Transcription_Factor,Ligand,-0.7161756753921509
-Megakaryocyte,Megakaryocyte,TFAP2C,EFNB1,Transcription_Factor,Ligand,-0.7161756753921509
-Megakaryocyte,Megakaryocyte,TFAP2C,FAM3C,Transcription_Factor,Ligand,-0.7161756753921509
-Megakaryocyte,Megakaryocyte,TFAP2C,LAMB1,Transcription_Factor,Ligand,-0.7161756753921509
-Megakaryocyte,Megakaryocyte,TFAP2C,LGALS1,Transcription_Factor,Ligand,-0.7161756753921509
-Megakaryocyte,Megakaryocyte,TFAP2C,LGALS3BP,Transcription_Factor,Ligand,-0.7161756753921509
-Megakaryocyte,Megakaryocyte,TFAP2C,LGALS9,Transcription_Factor,Ligand,-0.7161756753921509
-Megakaryocyte,Megakaryocyte,TFAP2C,LMAN1,Transcription_Factor,Ligand,-0.7161756753921509
-Megakaryocyte,Megakaryocyte,TFAP2C,MFGE8,Transcription_Factor,Ligand,-0.7161756753921509
-Megakaryocyte,Megakaryocyte,TFAP2C,MIF,Transcription_Factor,Ligand,-0.7161756753921509
-Megakaryocyte,Megakaryocyte,TFAP2C,PDGFC,Transcription_Factor,Ligand,-0.7161756753921509
-Megakaryocyte,Megakaryocyte,TFAP2C,POSTN,Transcription_Factor,Ligand,-0.7161756753921509
-Megakaryocyte,Megakaryocyte,TFAP2C,S100A12,Transcription_Factor,Ligand,-0.7161756753921509
-Megakaryocyte,Megakaryocyte,TFAP2C,S100A4,Transcription_Factor,Ligand,-0.7161756753921509
-Megakaryocyte,Megakaryocyte,TFAP2C,SEMA7A,Transcription_Factor,Ligand,-0.7161756753921509
-Megakaryocyte,Megakaryocyte,TFAP2C,SOCS2,Transcription_Factor,Ligand,-0.7161756753921509
-Megakaryocyte,Megakaryocyte,TFAP2C,SPARC,Transcription_Factor,Ligand,-0.7161756753921509
-Megakaryocyte,Megakaryocyte,TFAP2C,SPON2,Transcription_Factor,Ligand,-0.7161756753921509
-Megakaryocyte,Megakaryocyte,TFAP2C,THBS1,Transcription_Factor,Ligand,-0.7161756753921509
-Megakaryocyte,Megakaryocyte,TFAP2C,TLN1,Transcription_Factor,Ligand,-0.7161756753921509
-Megakaryocyte,Megakaryocyte,TFAP2C,VCL,Transcription_Factor,Ligand,-0.7161756753921509
-Megakaryocyte,Megakaryocyte,TFAP2C,VEGFB,Transcription_Factor,Ligand,-0.7161756753921509
-Megakaryocyte,Megakaryocyte,TFAP2C,VWF,Transcription_Factor,Ligand,-0.7161756753921509
+Megakaryocyte,Megakaryocyte,DUX4,POSTN,Transcription_Factor,Ligand,-0.6580220460891724
+Megakaryocyte,Megakaryocyte,DUX4,VCL,Transcription_Factor,Ligand,-0.6580220460891724
+Megakaryocyte,Megakaryocyte,TBX21,FAM3C,Transcription_Factor,Ligand,-0.0113936522975564
+Megakaryocyte,Megakaryocyte,TBX21,VCL,Transcription_Factor,Ligand,-0.0113936522975564
 Megakaryocyte,Megakaryocyte,OTX2,LAMB1,Transcription_Factor,Ligand,-0.8324347734451294
 Megakaryocyte,Megakaryocyte,OTX2,PDGFC,Transcription_Factor,Ligand,-0.8324347734451294
-Megakaryocyte,Megakaryocyte,RUNX2,PDGFC,Transcription_Factor,Ligand,-0.8117421269416809
-Megakaryocyte,Megakaryocyte,TWIST1,LAMB1,Transcription_Factor,Ligand,-0.8214194774627686
-Megakaryocyte,Megakaryocyte,TWIST1,PDGFC,Transcription_Factor,Ligand,-0.8214194774627686
 Megakaryocyte,Megakaryocyte,ONECUT1,PDGFC,Transcription_Factor,Ligand,-0.8798055052757263
-Myeloid,Myeloid,RARG,MIF,Transcription_Factor,Ligand,1.8569709062576294
-Myeloid,Myeloid,RARG,S100A8,Transcription_Factor,Ligand,1.8569709062576294
-Myeloid,Myeloid,RARG,S100A9,Transcription_Factor,Ligand,1.8569709062576294
-Myeloid,Myeloid,RARB,MIF,Transcription_Factor,Ligand,1.6456725597381592
-Myeloid,Myeloid,RARB,S100A8,Transcription_Factor,Ligand,1.6456725597381592
-Myeloid,Myeloid,RARB,S100A9,Transcription_Factor,Ligand,1.6456725597381592
-Myeloid,Myeloid,TFAP2A,POMC,Transcription_Factor,Ligand,-0.6872886419296265
-Myeloid,Myeloid,TAL1,S100A12,Transcription_Factor,Ligand,-0.7969076037406921
-Myeloid,Myeloid,TAL1,TCN1,Transcription_Factor,Ligand,-0.7969076037406921
-Myeloid,Myeloid,TFAP2C,ACTR2,Transcription_Factor,Ligand,-1.1054459810256958
-Myeloid,Myeloid,TFAP2C,CD59,Transcription_Factor,Ligand,-1.1054459810256958
-Myeloid,Myeloid,TFAP2C,CLEC11A,Transcription_Factor,Ligand,-1.1054459810256958
-Myeloid,Myeloid,TFAP2C,GRN,Transcription_Factor,Ligand,-1.1054459810256958
-Myeloid,Myeloid,TFAP2C,LGALS3BP,Transcription_Factor,Ligand,-1.1054459810256958
-Myeloid,Myeloid,TFAP2C,MIF,Transcription_Factor,Ligand,-1.1054459810256958
-Myeloid,Myeloid,TFAP2C,S100A12,Transcription_Factor,Ligand,-1.1054459810256958
-Myeloid,Myeloid,TFAP2C,S100A8,Transcription_Factor,Ligand,-1.1054459810256958
-Myeloid,Myeloid,TFAP2C,S100A9,Transcription_Factor,Ligand,-1.1054459810256958
-Neural,Neural,CXCR4,STAT2,Receptor,Transcription Factor,0.571102499961853
+Megakaryocyte,Megakaryocyte,NFAT5,LTB,Transcription_Factor,Ligand,0.6883853077888489
+Megakaryocyte,Megakaryocyte,NFAT5,S100A4,Transcription_Factor,Ligand,0.6883853077888489
+Megakaryocyte,Megakaryocyte,E2F4,ARPC5,Transcription_Factor,Ligand,0.003543380880728364
+Megakaryocyte,Megakaryocyte,E2F4,CALR,Transcription_Factor,Ligand,0.003543380880728364
+Megakaryocyte,Megakaryocyte,E2F4,CD99,Transcription_Factor,Ligand,0.003543380880728364
+Megakaryocyte,Megakaryocyte,E2F4,CLEC2D,Transcription_Factor,Ligand,0.003543380880728364
+Megakaryocyte,Megakaryocyte,E2F4,LGALS1,Transcription_Factor,Ligand,0.003543380880728364
+Megakaryocyte,Megakaryocyte,E2F4,MIF,Transcription_Factor,Ligand,0.003543380880728364
+Megakaryocyte,Megakaryocyte,E2F4,SEMA7A,Transcription_Factor,Ligand,0.003543380880728364
+Megakaryocyte,Megakaryocyte,E2F4,SOCS2,Transcription_Factor,Ligand,0.003543380880728364
+Megakaryocyte,Megakaryocyte,E2F4,TLN1,Transcription_Factor,Ligand,0.003543380880728364
+Megakaryocyte,Megakaryocyte,E2F4,VCL,Transcription_Factor,Ligand,0.003543380880728364
+Megakaryocyte,Megakaryocyte,STAT4,S100A4,Transcription_Factor,Ligand,-0.1674051284790039
+Megakaryocyte,Megakaryocyte,CDX1,POSTN,Transcription_Factor,Ligand,-0.005436907988041639
+Megakaryocyte,Megakaryocyte,FLI1,PDGFC,Transcription_Factor,Ligand,0.1346883624792099
+Megakaryocyte,Megakaryocyte,FLI1,PF4,Transcription_Factor,Ligand,0.1346883624792099
+Neural,Neural,ITGB1,KLF1,Receptor,Transcription Factor,0.6018638610839844
+Neural,Neural,PTPRF,KLF1,Receptor,Transcription Factor,0.6018638610839844
+Neural,Neural,ITGB1,HIF1A,Receptor,Transcription Factor,0.1933659017086029
+Neural,Neural,PTPRF,HIF1A,Receptor,Transcription Factor,0.1933659017086029
+Neural,Neural,ITGB1,CEBPD,Receptor,Transcription Factor,0.3196430206298828
+Neural,Neural,PTPRF,CEBPD,Receptor,Transcription Factor,0.3196430206298828
 Neural,Neural,ITGB1,STAT4,Receptor,Transcription Factor,0.5971266031265259
 Neural,Neural,PTPRF,STAT4,Receptor,Transcription Factor,0.5971266031265259
-Neural,Neural,ITGB1,PAX3,Receptor,Transcription Factor,0.3672803044319153
-Neural,Neural,PTPRF,PAX3,Receptor,Transcription Factor,0.3672803044319153
 Neural,Neural,ITGA1,STAT5A,Receptor,Transcription Factor,0.32850053906440735
-Neural,Neural,STAT2,CXCL8,Transcription_Factor,Ligand,0.571102499961853
+Neural,Neural,ITGB1,IRF2,Receptor,Transcription Factor,0.5827659964561462
+Neural,Neural,PTPRF,IRF2,Receptor,Transcription Factor,0.5827659964561462
+Neural,Neural,ITGB1,USF1,Receptor,Transcription Factor,-0.031002508476376534
+Neural,Neural,PTPRF,USF1,Receptor,Transcription Factor,-0.031002508476376534
+Neural,Neural,MYLK,TBP,Receptor,Transcription Factor,0.14089033007621765
+Neural,Neural,ITGB1,TEAD2,Receptor,Transcription Factor,-0.287343829870224
+Neural,Neural,PTPRF,TEAD2,Receptor,Transcription Factor,-0.287343829870224
+Neural,Neural,ITGB1,YBX1,Receptor,Transcription Factor,-0.007777186576277018
+Neural,Neural,PTPRF,YBX1,Receptor,Transcription Factor,-0.007777186576277018
+Neural,Neural,THBD,YBX1,Receptor,Transcription Factor,-0.007777186576277018
+Neural,Neural,MYLK,ELK1,Receptor,Transcription Factor,-0.22613152861595154
+Neural,Neural,PTPRF,ELK1,Receptor,Transcription Factor,-0.22613152861595154
+Neural,Neural,ITGB1,IKZF1,Receptor,Transcription Factor,0.5059983730316162
+Neural,Neural,PTPRF,IKZF1,Receptor,Transcription Factor,0.5059983730316162
+Neural,Neural,ITGB1,ATF1,Receptor,Transcription Factor,0.5237246751785278
+Neural,Neural,MYLK,ATF1,Receptor,Transcription Factor,0.5237246751785278
+Neural,Neural,PTPRF,ATF1,Receptor,Transcription Factor,0.5237246751785278
+Neural,Neural,ITGB1,EPAS1,Receptor,Transcription Factor,0.3846798539161682
+Neural,Neural,PTPRF,EPAS1,Receptor,Transcription Factor,0.3846798539161682
+Neural,Neural,ITGB1,SP1,Receptor,Transcription Factor,-0.10413441807031631
+Neural,Neural,LPP,SP1,Receptor,Transcription Factor,-0.10413441807031631
+Neural,Neural,PTPRF,SP1,Receptor,Transcription Factor,-0.10413441807031631
+Neural,Neural,ITGB1,SMAD1,Receptor,Transcription Factor,0.029667390510439873
+Neural,Neural,LPP,SMAD1,Receptor,Transcription Factor,0.029667390510439873
+Neural,Neural,PTPRF,SMAD1,Receptor,Transcription Factor,0.029667390510439873
+Neural,Neural,ITGB1,MYC,Receptor,Transcription Factor,-0.10373963415622711
+Neural,Neural,LPP,MYC,Receptor,Transcription Factor,-0.10373963415622711
+Neural,Neural,PTPRF,MYC,Receptor,Transcription Factor,-0.10373963415622711
+Neural,Neural,CXCR4,STAT1,Receptor,Transcription Factor,0.16567373275756836
+Neural,Neural,ITGA1,STAT1,Receptor,Transcription Factor,0.16567373275756836
+Neural,Neural,ITGB1,STAT1,Receptor,Transcription Factor,0.16567373275756836
+Neural,Neural,PTPRF,STAT1,Receptor,Transcription Factor,0.16567373275756836
+Neural,Neural,ITGB1,ZHX1,Receptor,Transcription Factor,-0.21459868550300598
+Neural,Neural,PTPRF,ZHX1,Receptor,Transcription Factor,-0.21459868550300598
+Neural,Neural,ITGB1,NRF1,Receptor,Transcription Factor,0.18460747599601746
+Neural,Neural,PTPRF,NRF1,Receptor,Transcription Factor,0.18460747599601746
+Neural,Neural,ITGB1,ATF4,Receptor,Transcription Factor,0.21556131541728973
+Neural,Neural,PTPRF,ATF4,Receptor,Transcription Factor,0.21556131541728973
+Neural,Neural,ITGB1,ZBTB16,Receptor,Transcription Factor,0.018604228273034096
+Neural,Neural,PTPRF,ZBTB16,Receptor,Transcription Factor,0.018604228273034096
+Neural,Neural,ITGB1,POU2F1,Receptor,Transcription Factor,-0.10670367628335953
+Neural,Neural,PTPRF,POU2F1,Receptor,Transcription Factor,-0.10670367628335953
+Neural,Neural,ITGB1,RBPJ,Receptor,Transcription Factor,-0.15313731133937836
+Neural,Neural,PTPRF,RBPJ,Receptor,Transcription Factor,-0.15313731133937836
+Neural,Neural,ITGB1,ARNT,Receptor,Transcription Factor,-0.05487752705812454
+Neural,Neural,PTPRF,ARNT,Receptor,Transcription Factor,-0.05487752705812454
+Neural,Neural,ITGB1,TP73,Receptor,Transcription Factor,-0.040717657655477524
+Neural,Neural,PTPRF,TP73,Receptor,Transcription Factor,-0.040717657655477524
+Neural,Neural,ITGB1,FOXO1,Receptor,Transcription Factor,0.01940583810210228
+Neural,Neural,PTPRF,FOXO1,Receptor,Transcription Factor,0.01940583810210228
+Neural,Neural,ITGB1,ASCL1,Receptor,Transcription Factor,0.19033955037593842
+Neural,Neural,PTPRF,ASCL1,Receptor,Transcription Factor,0.19033955037593842
+Neural,Neural,ITGB1,GATA2,Receptor,Transcription Factor,0.1747426986694336
+Neural,Neural,PTPRF,GATA2,Receptor,Transcription Factor,0.1747426986694336
+Neural,Neural,ITGB1,RUNX2,Receptor,Transcription Factor,-0.08175324648618698
+Neural,Neural,PTPRF,RUNX2,Receptor,Transcription Factor,-0.08175324648618698
+Neural,Neural,ITGB1,SPIB,Receptor,Transcription Factor,-0.011525130830705166
+Neural,Neural,PTPRF,SPIB,Receptor,Transcription Factor,-0.011525130830705166
+Neural,Neural,ITGB1,TP63,Receptor,Transcription Factor,-0.12924757599830627
+Neural,Neural,PTPRF,TP63,Receptor,Transcription Factor,-0.12924757599830627
+Neural,Neural,ITGB1,NR4A1,Receptor,Transcription Factor,-0.17850621044635773
+Neural,Neural,PTPRF,NR4A1,Receptor,Transcription Factor,-0.17850621044635773
+Neural,Neural,ITGB1,TAL1,Receptor,Transcription Factor,0.07780630141496658
+Neural,Neural,PTPRF,TAL1,Receptor,Transcription Factor,0.07780630141496658
+Neural,Neural,ITGB1,POU5F1,Receptor,Transcription Factor,-0.15505988895893097
+Neural,Neural,PTPRF,POU5F1,Receptor,Transcription Factor,-0.15505988895893097
+Neural,Neural,ITGB1,TEAD4,Receptor,Transcription Factor,-0.18751788139343262
+Neural,Neural,PTPRF,TEAD4,Receptor,Transcription Factor,-0.18751788139343262
+Neural,Neural,ITGB1,TEAD1,Receptor,Transcription Factor,-0.29618239402770996
+Neural,Neural,PTPRF,TEAD1,Receptor,Transcription Factor,-0.29618239402770996
+Neural,Neural,ITGB1,TERF1,Receptor,Transcription Factor,-0.16264794766902924
+Neural,Neural,PTPRF,TERF1,Receptor,Transcription Factor,-0.16264794766902924
+Neural,Neural,ITGB1,FOXA2,Receptor,Transcription Factor,-0.15159311890602112
+Neural,Neural,PTPRF,FOXA2,Receptor,Transcription Factor,-0.15159311890602112
+Neural,Neural,ITGB1,PIN1,Receptor,Transcription Factor,-0.018981369212269783
+Neural,Neural,PTPRF,PIN1,Receptor,Transcription Factor,-0.018981369212269783
+Neural,Neural,ITGB1,SOX2,Receptor,Transcription Factor,0.01709126867353916
+Neural,Neural,PTPRF,SOX2,Receptor,Transcription Factor,0.01709126867353916
+Neural,Neural,ITGB1,PDX1,Receptor,Transcription Factor,-0.11764788627624512
+Neural,Neural,PTPRF,PDX1,Receptor,Transcription Factor,-0.11764788627624512
+Neural,Neural,NCL,MYBL1,Receptor,Transcription Factor,-0.09517069905996323
+Neural,Neural,ITGB1,SNAI1,Receptor,Transcription Factor,-0.2690775394439697
+Neural,Neural,PTPRF,SNAI1,Receptor,Transcription Factor,-0.2690775394439697
+Neural,Neural,ITGB1,SRF,Receptor,Transcription Factor,-0.5713078379631042
+Neural,Neural,PTPRF,SRF,Receptor,Transcription Factor,-0.5713078379631042
+Neural,Neural,ITGB1,FOSB,Receptor,Transcription Factor,-0.14406640827655792
+Neural,Neural,PTPRF,FOSB,Receptor,Transcription Factor,-0.14406640827655792
+Neural,Neural,ITGB1,HSF1,Receptor,Transcription Factor,0.21933235228061676
+Neural,Neural,PTPRF,HSF1,Receptor,Transcription Factor,0.21933235228061676
+Neural,Neural,CD44,JUN,Receptor,Transcription Factor,-0.20240916311740875
+Neural,Neural,ITGB1,JUN,Receptor,Transcription Factor,-0.20240916311740875
+Neural,Neural,MYLK,JUN,Receptor,Transcription Factor,-0.20240916311740875
+Neural,Neural,PTPRF,JUN,Receptor,Transcription Factor,-0.20240916311740875
+Neural,Neural,MYLK,NFATC1,Receptor,Transcription Factor,-0.3898167610168457
+Neural,Neural,ITGB1,MITF,Receptor,Transcription Factor,0.46988746523857117
+Neural,Neural,PTPRF,MITF,Receptor,Transcription Factor,0.46988746523857117
+Neural,Neural,ITGB1,TP53,Receptor,Transcription Factor,-0.10695820301771164
+Neural,Neural,LPP,TP53,Receptor,Transcription Factor,-0.10695820301771164
+Neural,Neural,MYLK,TP53,Receptor,Transcription Factor,-0.10695820301771164
+Neural,Neural,NCL,TP53,Receptor,Transcription Factor,-0.10695820301771164
+Neural,Neural,PTPRF,TP53,Receptor,Transcription Factor,-0.10695820301771164
+Neural,Neural,ITGB1,IRF3,Receptor,Transcription Factor,0.11436746269464493
+Neural,Neural,LPP,IRF3,Receptor,Transcription Factor,0.11436746269464493
+Neural,Neural,PTPRF,IRF3,Receptor,Transcription Factor,0.11436746269464493
+Neural,Neural,ITGB1,YY1,Receptor,Transcription Factor,-0.011382692493498325
+Neural,Neural,PTPRF,YY1,Receptor,Transcription Factor,-0.011382692493498325
+Neural,Neural,ITGB1,MEF2C,Receptor,Transcription Factor,-0.20131458342075348
+Neural,Neural,PTPRF,MEF2C,Receptor,Transcription Factor,-0.20131458342075348
+Neural,Neural,ITGB1,CREB1,Receptor,Transcription Factor,-0.09136684238910675
+Neural,Neural,LPP,CREB1,Receptor,Transcription Factor,-0.09136684238910675
+Neural,Neural,MYLK,CREB1,Receptor,Transcription Factor,-0.09136684238910675
+Neural,Neural,PTPRF,CREB1,Receptor,Transcription Factor,-0.09136684238910675
+Neural,Neural,ITGB1,MYB,Receptor,Transcription Factor,-0.2908427119255066
+Neural,Neural,NCL,MYB,Receptor,Transcription Factor,-0.2908427119255066
+Neural,Neural,PTPRF,MYB,Receptor,Transcription Factor,-0.2908427119255066
+Neural,Neural,KLF1,GDF15,Transcription_Factor,Ligand,0.6018638610839844
+Neural,Neural,KLF1,LTBP3,Transcription_Factor,Ligand,0.6018638610839844
+Neural,Neural,IRF9,CXCL8,Transcription_Factor,Ligand,0.6435275673866272
+Neural,Neural,IRF9,GDF15,Transcription_Factor,Ligand,0.6435275673866272
+Neural,Neural,USF2,CALR,Transcription_Factor,Ligand,0.1322944462299347
+Neural,Neural,USF2,GDF15,Transcription_Factor,Ligand,0.1322944462299347
+Neural,Neural,USF2,LTBP3,Transcription_Factor,Ligand,0.1322944462299347
+Neural,Neural,ZBED1,CALR,Transcription_Factor,Ligand,-0.263046532869339
+Neural,Neural,ZBED1,GDF15,Transcription_Factor,Ligand,-0.263046532869339
+Neural,Neural,HIF1A,ADM,Transcription_Factor,Ligand,0.1933659017086029
+Neural,Neural,HIF1A,MIF,Transcription_Factor,Ligand,0.1933659017086029
+Neural,Neural,HIF1A,TF,Transcription_Factor,Ligand,0.1933659017086029
+Neural,Neural,CEBPD,GDF15,Transcription_Factor,Ligand,0.3196430206298828
+Neural,Neural,CEBPD,TF,Transcription_Factor,Ligand,0.3196430206298828
+Neural,Neural,CEBPD,VCL,Transcription_Factor,Ligand,0.3196430206298828
 Neural,Neural,ZNF318,GDF15,Transcription_Factor,Ligand,0.3758322298526764
-Neural,Neural,ZNF83,GDF15,Transcription_Factor,Ligand,0.33136826753616333
 Neural,Neural,STAT5A,IL16,Transcription_Factor,Ligand,0.32850053906440735
+Neural,Neural,IRF2,GDF15,Transcription_Factor,Ligand,0.5827659964561462
+Neural,Neural,IRF2,LTBP3,Transcription_Factor,Ligand,0.5827659964561462
+Neural,Neural,VDR,BAG6,Transcription_Factor,Ligand,-0.044603291898965836
+Neural,Neural,VDR,CALR,Transcription_Factor,Ligand,-0.044603291898965836
+Neural,Neural,VDR,CLEC11A,Transcription_Factor,Ligand,-0.044603291898965836
+Neural,Neural,VDR,CXCL8,Transcription_Factor,Ligand,-0.044603291898965836
+Neural,Neural,VDR,EFNB1,Transcription_Factor,Ligand,-0.044603291898965836
+Neural,Neural,VDR,GDF15,Transcription_Factor,Ligand,-0.044603291898965836
+Neural,Neural,VDR,LGALS9,Transcription_Factor,Ligand,-0.044603291898965836
+Neural,Neural,SMAD5,BAG6,Transcription_Factor,Ligand,-0.3889021873474121
+Neural,Neural,KLF13,GDF15,Transcription_Factor,Ligand,0.24037671089172363
+Neural,Neural,KLF13,VCL,Transcription_Factor,Ligand,0.24037671089172363
+Neural,Neural,USF1,LTBP3,Transcription_Factor,Ligand,-0.031002508476376534
+Neural,Neural,NFE2L2,CXCL8,Transcription_Factor,Ligand,0.4988877475261688
+Neural,Neural,NFE2L2,GDF15,Transcription_Factor,Ligand,0.4988877475261688
+Neural,Neural,E2F5,GDF15,Transcription_Factor,Ligand,0.4660300314426422
+Neural,Neural,GFI1B,GDF15,Transcription_Factor,Ligand,0.5509322881698608
+Neural,Neural,GFI1B,LTBP3,Transcription_Factor,Ligand,0.5509322881698608
+Neural,Neural,GFI1B,VCL,Transcription_Factor,Ligand,0.5509322881698608
+Neural,Neural,ZBTB33,GDF15,Transcription_Factor,Ligand,-0.16752152144908905
+Neural,Neural,NFE2,GDF15,Transcription_Factor,Ligand,0.6458896994590759
+Neural,Neural,NFE2,VCL,Transcription_Factor,Ligand,0.6458896994590759
+Neural,Neural,SOX6,GDF15,Transcription_Factor,Ligand,0.5168416500091553
+Neural,Neural,SOX6,NMU,Transcription_Factor,Ligand,0.5168416500091553
+Neural,Neural,SOX6,VCL,Transcription_Factor,Ligand,0.5168416500091553
+Neural,Neural,FOXK2,GDF15,Transcription_Factor,Ligand,0.6198009848594666
+Neural,Neural,FOXK2,NMU,Transcription_Factor,Ligand,0.6198009848594666
+Neural,Neural,TBP,GDF15,Transcription_Factor,Ligand,0.14089033007621765
+Neural,Neural,TBP,LTBP3,Transcription_Factor,Ligand,0.14089033007621765
+Neural,Neural,ZNF83,GDF15,Transcription_Factor,Ligand,0.33136826753616333
+Neural,Neural,ELK1,BAG6,Transcription_Factor,Ligand,-0.22613152861595154
+Neural,Neural,ELK1,COPA,Transcription_Factor,Ligand,-0.22613152861595154
+Neural,Neural,IKZF1,VCL,Transcription_Factor,Ligand,0.5059983730316162
+Neural,Neural,ATF1,COPA,Transcription_Factor,Ligand,0.5237246751785278
+Neural,Neural,ATF1,GDF15,Transcription_Factor,Ligand,0.5237246751785278
+Neural,Neural,ATF1,HLA-G,Transcription_Factor,Ligand,0.5237246751785278
+Neural,Neural,HBP1,GDF15,Transcription_Factor,Ligand,0.4573674201965332
+Neural,Neural,HBP1,LTBP3,Transcription_Factor,Ligand,0.4573674201965332
+Neural,Neural,HBP1,MIF,Transcription_Factor,Ligand,0.4573674201965332
+Neural,Neural,EPAS1,PGF,Transcription_Factor,Ligand,0.3846798539161682
+Neural,Neural,SP1,GDF15,Transcription_Factor,Ligand,-0.10413441807031631
+Neural,Neural,SP1,HLA-G,Transcription_Factor,Ligand,-0.10413441807031631
+Neural,Neural,SP1,LTBP3,Transcription_Factor,Ligand,-0.10413441807031631
+Neural,Neural,SP1,MIF,Transcription_Factor,Ligand,-0.10413441807031631
+Neural,Neural,SP1,TF,Transcription_Factor,Ligand,-0.10413441807031631
+Neural,Neural,STAT3,CXCL8,Transcription_Factor,Ligand,-0.1399492472410202
+Neural,Neural,STAT3,PGF,Transcription_Factor,Ligand,-0.1399492472410202
+Neural,Neural,SMAD1,CXCL8,Transcription_Factor,Ligand,0.029667390510439873
+Neural,Neural,SMAD1,GDF15,Transcription_Factor,Ligand,0.029667390510439873
+Neural,Neural,SMAD1,VCL,Transcription_Factor,Ligand,0.029667390510439873
+Neural,Neural,SREBF1,GDF15,Transcription_Factor,Ligand,0.10936623811721802
+Neural,Neural,MYC,CALR,Transcription_Factor,Ligand,-0.10373963415622711
+Neural,Neural,MYC,HLA-A,Transcription_Factor,Ligand,-0.10373963415622711
+Neural,Neural,MYC,HLA-G,Transcription_Factor,Ligand,-0.10373963415622711
+Neural,Neural,MYC,IL16,Transcription_Factor,Ligand,-0.10373963415622711
+Neural,Neural,RFX5,HLA-DQA1,Transcription_Factor,Ligand,0.019074734300374985
+Neural,Neural,MYNN,LTBP3,Transcription_Factor,Ligand,0.33748888969421387
+Neural,Neural,BHLHE40,GDF15,Transcription_Factor,Ligand,0.2902621328830719
+Neural,Neural,BACH1,GDF15,Transcription_Factor,Ligand,0.25617924332618713
+Neural,Neural,BACH1,LTBP3,Transcription_Factor,Ligand,0.25617924332618713
 Neural,Neural,TFDP1,GDF15,Transcription_Factor,Ligand,0.28429850935935974
-Neural,Neural,ZNF584,GDF15,Transcription_Factor,Ligand,0.2551175653934479
+Neural,Neural,STAT1,ADM,Transcription_Factor,Ligand,0.16567373275756836
+Neural,Neural,STAT1,BAG6,Transcription_Factor,Ligand,0.16567373275756836
+Neural,Neural,STAT1,COPA,Transcription_Factor,Ligand,0.16567373275756836
+Neural,Neural,STAT1,CXCL8,Transcription_Factor,Ligand,0.16567373275756836
+Neural,Neural,STAT1,EFNB1,Transcription_Factor,Ligand,0.16567373275756836
+Neural,Neural,STAT1,FGF7,Transcription_Factor,Ligand,0.16567373275756836
+Neural,Neural,STAT1,GDF15,Transcription_Factor,Ligand,0.16567373275756836
+Neural,Neural,STAT1,IL16,Transcription_Factor,Ligand,0.16567373275756836
+Neural,Neural,STAT1,LGALS3,Transcription_Factor,Ligand,0.16567373275756836
+Neural,Neural,STAT1,LTBP3,Transcription_Factor,Ligand,0.16567373275756836
+Neural,Neural,STAT1,MIF,Transcription_Factor,Ligand,0.16567373275756836
+Neural,Neural,STAT1,SNCA,Transcription_Factor,Ligand,0.16567373275756836
+Neural,Neural,STAT1,TNFSF13B,Transcription_Factor,Ligand,0.16567373275756836
+Neural,Neural,STAT1,VCL,Transcription_Factor,Ligand,0.16567373275756836
+Neural,Neural,ZHX1,GDF15,Transcription_Factor,Ligand,-0.21459868550300598
+Neural,Neural,ZHX1,LTBP3,Transcription_Factor,Ligand,-0.21459868550300598
+Neural,Neural,ZHX1,VCL,Transcription_Factor,Ligand,-0.21459868550300598
+Neural,Neural,NRF1,LTBP3,Transcription_Factor,Ligand,0.18460747599601746
+Neural,Neural,ATF4,CXCL8,Transcription_Factor,Ligand,0.21556131541728973
+Neural,Neural,KLF5,GDF15,Transcription_Factor,Ligand,-0.11286669224500656
+Neural,Neural,KLF5,LGALS3,Transcription_Factor,Ligand,-0.11286669224500656
+Neural,Neural,KLF5,LTBP3,Transcription_Factor,Ligand,-0.11286669224500656
+Neural,Neural,MAF,LTBP3,Transcription_Factor,Ligand,-0.11180182546377182
+Neural,Neural,TWIST2,GDF15,Transcription_Factor,Ligand,-0.16218729317188263
+Neural,Neural,TCF3,LTBP3,Transcription_Factor,Ligand,-0.08090829104185104
+Neural,Neural,POU2F1,CXCL8,Transcription_Factor,Ligand,-0.10670367628335953
+Neural,Neural,MEIS2,VCL,Transcription_Factor,Ligand,0.16797621548175812
+Neural,Neural,NR2F6,GDF15,Transcription_Factor,Ligand,0.0362931527197361
+Neural,Neural,BCL6,IL16,Transcription_Factor,Ligand,-0.23424707353115082
+Neural,Neural,GLYR1,COPA,Transcription_Factor,Ligand,0.19215628504753113
+Neural,Neural,GATA6,LGALS3,Transcription_Factor,Ligand,-0.24828936159610748
+Neural,Neural,GATA6,VCL,Transcription_Factor,Ligand,-0.24828936159610748
+Neural,Neural,RBPJ,IL16,Transcription_Factor,Ligand,-0.15313731133937836
+Neural,Neural,RELB,LMAN1,Transcription_Factor,Ligand,-0.10242673009634018
+Neural,Neural,FOXA1,ADM,Transcription_Factor,Ligand,0.40545061230659485
+Neural,Neural,FOXA1,COL6A3,Transcription_Factor,Ligand,0.40545061230659485
+Neural,Neural,FOXA1,COPA,Transcription_Factor,Ligand,0.40545061230659485
+Neural,Neural,FOXA1,CXCL8,Transcription_Factor,Ligand,0.40545061230659485
+Neural,Neural,FOXA1,EFNB1,Transcription_Factor,Ligand,0.40545061230659485
+Neural,Neural,FOXA1,FGF7,Transcription_Factor,Ligand,0.40545061230659485
+Neural,Neural,FOXA1,GDF15,Transcription_Factor,Ligand,0.40545061230659485
+Neural,Neural,FOXA1,HLA-DQA1,Transcription_Factor,Ligand,0.40545061230659485
+Neural,Neural,FOXA1,IL16,Transcription_Factor,Ligand,0.40545061230659485
+Neural,Neural,FOXA1,LGALS3,Transcription_Factor,Ligand,0.40545061230659485
+Neural,Neural,FOXA1,LGALS9,Transcription_Factor,Ligand,0.40545061230659485
+Neural,Neural,FOXA1,LMAN1,Transcription_Factor,Ligand,0.40545061230659485
+Neural,Neural,FOXA1,LTBP3,Transcription_Factor,Ligand,0.40545061230659485
+Neural,Neural,FOXA1,PGF,Transcription_Factor,Ligand,0.40545061230659485
+Neural,Neural,FOXA1,SEMA7A,Transcription_Factor,Ligand,0.40545061230659485
+Neural,Neural,FOXA1,SFRP2,Transcription_Factor,Ligand,0.40545061230659485
+Neural,Neural,FOXA1,SNCA,Transcription_Factor,Ligand,0.40545061230659485
+Neural,Neural,FOXA1,TF,Transcription_Factor,Ligand,0.40545061230659485
+Neural,Neural,FOXA1,TNFSF13B,Transcription_Factor,Ligand,0.40545061230659485
+Neural,Neural,FOXA1,VCL,Transcription_Factor,Ligand,0.40545061230659485
+Neural,Neural,FOXO1,IL16,Transcription_Factor,Ligand,0.01940583810210228
+Neural,Neural,FOXO1,VCL,Transcription_Factor,Ligand,0.01940583810210228
+Neural,Neural,TFAP2C,CALR,Transcription_Factor,Ligand,0.3098166286945343
+Neural,Neural,TFAP2C,CLEC11A,Transcription_Factor,Ligand,0.3098166286945343
+Neural,Neural,TFAP2C,COL6A3,Transcription_Factor,Ligand,0.3098166286945343
+Neural,Neural,TFAP2C,EFNB1,Transcription_Factor,Ligand,0.3098166286945343
+Neural,Neural,TFAP2C,FGF7,Transcription_Factor,Ligand,0.3098166286945343
+Neural,Neural,TFAP2C,GDF15,Transcription_Factor,Ligand,0.3098166286945343
+Neural,Neural,TFAP2C,IL16,Transcription_Factor,Ligand,0.3098166286945343
+Neural,Neural,TFAP2C,LGALS3,Transcription_Factor,Ligand,0.3098166286945343
+Neural,Neural,TFAP2C,LGALS9,Transcription_Factor,Ligand,0.3098166286945343
+Neural,Neural,TFAP2C,LMAN1,Transcription_Factor,Ligand,0.3098166286945343
+Neural,Neural,TFAP2C,LTBP3,Transcription_Factor,Ligand,0.3098166286945343
+Neural,Neural,TFAP2C,MIF,Transcription_Factor,Ligand,0.3098166286945343
+Neural,Neural,TFAP2C,NMU,Transcription_Factor,Ligand,0.3098166286945343
+Neural,Neural,TFAP2C,PGF,Transcription_Factor,Ligand,0.3098166286945343
+Neural,Neural,TFAP2C,SEMA7A,Transcription_Factor,Ligand,0.3098166286945343
+Neural,Neural,TFAP2C,SFRP2,Transcription_Factor,Ligand,0.3098166286945343
+Neural,Neural,TFAP2C,VCL,Transcription_Factor,Ligand,0.3098166286945343
+Neural,Neural,ZNF92,GDF15,Transcription_Factor,Ligand,-0.06166526675224304
+Neural,Neural,GATA2,ADM,Transcription_Factor,Ligand,0.1747426986694336
+Neural,Neural,GATA2,CLEC11A,Transcription_Factor,Ligand,0.1747426986694336
+Neural,Neural,GATA2,COL6A3,Transcription_Factor,Ligand,0.1747426986694336
+Neural,Neural,GATA2,CXCL8,Transcription_Factor,Ligand,0.1747426986694336
+Neural,Neural,GATA2,GDF15,Transcription_Factor,Ligand,0.1747426986694336
+Neural,Neural,GATA2,ICAM4,Transcription_Factor,Ligand,0.1747426986694336
+Neural,Neural,GATA2,IL16,Transcription_Factor,Ligand,0.1747426986694336
+Neural,Neural,GATA2,SNCA,Transcription_Factor,Ligand,0.1747426986694336
+Neural,Neural,GATA2,VCL,Transcription_Factor,Ligand,0.1747426986694336
+Neural,Neural,RUNX2,LGALS3,Transcription_Factor,Ligand,-0.08175324648618698
+Neural,Neural,TBX21,VCL,Transcription_Factor,Ligand,-0.11757141351699829
+Neural,Neural,SPIB,IL16,Transcription_Factor,Ligand,-0.011525130830705166
+Neural,Neural,SPIB,VCL,Transcription_Factor,Ligand,-0.011525130830705166
+Neural,Neural,HNF4G,GDF15,Transcription_Factor,Ligand,-0.13181723654270172
+Neural,Neural,HNF4G,LTBP3,Transcription_Factor,Ligand,-0.13181723654270172
+Neural,Neural,HNF4G,PGF,Transcription_Factor,Ligand,-0.13181723654270172
+Neural,Neural,XBP1,CXCL8,Transcription_Factor,Ligand,-0.04613146558403969
+Neural,Neural,BATF,IL16,Transcription_Factor,Ligand,-0.14515531063079834
+Neural,Neural,ERG,CXCL8,Transcription_Factor,Ligand,-0.10907638818025589
+Neural,Neural,ERG,SNCA,Transcription_Factor,Ligand,-0.10907638818025589
+Neural,Neural,NR2F1,TF,Transcription_Factor,Ligand,0.04272853955626488
 Neural,Neural,SNAI2,LTBP3,Transcription_Factor,Ligand,-0.2856537699699402
+Neural,Neural,MBD3,LTBP3,Transcription_Factor,Ligand,-0.3767894208431244
+Neural,Neural,TFAP4,GDF15,Transcription_Factor,Ligand,-0.03237805515527725
+Neural,Neural,TFAP4,PGF,Transcription_Factor,Ligand,-0.03237805515527725
+Neural,Neural,GATA4,NPPA,Transcription_Factor,Ligand,-0.1275140941143036
+Neural,Neural,NR3C1,VCL,Transcription_Factor,Ligand,-0.2892772853374481
+Neural,Neural,IRF4,IL16,Transcription_Factor,Ligand,-0.1918790638446808
+Neural,Neural,HNF4A,ADM,Transcription_Factor,Ligand,0.21494798362255096
+Neural,Neural,HNF4A,CALR,Transcription_Factor,Ligand,0.21494798362255096
+Neural,Neural,HNF4A,EFNB1,Transcription_Factor,Ligand,0.21494798362255096
+Neural,Neural,HNF4A,GDF15,Transcription_Factor,Ligand,0.21494798362255096
+Neural,Neural,HNF4A,LGALS3,Transcription_Factor,Ligand,0.21494798362255096
+Neural,Neural,HNF4A,LTBP3,Transcription_Factor,Ligand,0.21494798362255096
+Neural,Neural,HNF4A,MIF,Transcription_Factor,Ligand,0.21494798362255096
+Neural,Neural,HNF4A,PGF,Transcription_Factor,Ligand,0.21494798362255096
+Neural,Neural,HNF4A,SEMA7A,Transcription_Factor,Ligand,0.21494798362255096
+Neural,Neural,HNF4A,SNCA,Transcription_Factor,Ligand,0.21494798362255096
+Neural,Neural,HNF4A,TF,Transcription_Factor,Ligand,0.21494798362255096
+Neural,Neural,HNF4A,VCL,Transcription_Factor,Ligand,0.21494798362255096
+Neural,Neural,HNF1B,VCL,Transcription_Factor,Ligand,-0.3950614333152771
+Neural,Neural,TERF2,IL16,Transcription_Factor,Ligand,-0.020473754033446312
+Neural,Neural,NR4A1,IL16,Transcription_Factor,Ligand,-0.17850621044635773
+Neural,Neural,NR4A1,VCL,Transcription_Factor,Ligand,-0.17850621044635773
+Neural,Neural,ESR1,COL6A3,Transcription_Factor,Ligand,-0.08777669817209244
+Neural,Neural,ESR1,CXCL8,Transcription_Factor,Ligand,-0.08777669817209244
+Neural,Neural,ESR1,EFNB1,Transcription_Factor,Ligand,-0.08777669817209244
+Neural,Neural,ESR1,GDF15,Transcription_Factor,Ligand,-0.08777669817209244
+Neural,Neural,ESR1,IL16,Transcription_Factor,Ligand,-0.08777669817209244
+Neural,Neural,ESR1,LGALS3,Transcription_Factor,Ligand,-0.08777669817209244
+Neural,Neural,ESR1,LTBP3,Transcription_Factor,Ligand,-0.08777669817209244
+Neural,Neural,ESR1,PGF,Transcription_Factor,Ligand,-0.08777669817209244
+Neural,Neural,ESR1,TF,Transcription_Factor,Ligand,-0.08777669817209244
+Neural,Neural,ESR1,VCL,Transcription_Factor,Ligand,-0.08777669817209244
+Neural,Neural,TAL1,CALR,Transcription_Factor,Ligand,0.07780630141496658
+Neural,Neural,TAL1,COL6A3,Transcription_Factor,Ligand,0.07780630141496658
+Neural,Neural,TAL1,CXCL8,Transcription_Factor,Ligand,0.07780630141496658
+Neural,Neural,TAL1,IL16,Transcription_Factor,Ligand,0.07780630141496658
+Neural,Neural,TAL1,SEMA7A,Transcription_Factor,Ligand,0.07780630141496658
+Neural,Neural,TAL1,SNCA,Transcription_Factor,Ligand,0.07780630141496658
+Neural,Neural,TAL1,TNFSF13B,Transcription_Factor,Ligand,0.07780630141496658
+Neural,Neural,TAL1,VCL,Transcription_Factor,Ligand,0.07780630141496658
+Neural,Neural,MEIS1,VCL,Transcription_Factor,Ligand,-0.0180650781840086
 Neural,Neural,POU2F2,SEMA7A,Transcription_Factor,Ligand,-0.28158143162727356
+Neural,Neural,RUNX1,COL6A3,Transcription_Factor,Ligand,-0.03605605289340019
+Neural,Neural,RUNX1,IL16,Transcription_Factor,Ligand,-0.03605605289340019
+Neural,Neural,RUNX1,LGALS3,Transcription_Factor,Ligand,-0.03605605289340019
+Neural,Neural,RUNX1,SEMA7A,Transcription_Factor,Ligand,-0.03605605289340019
+Neural,Neural,RUNX1,VCL,Transcription_Factor,Ligand,-0.03605605289340019
+Neural,Neural,EBF1,IL16,Transcription_Factor,Ligand,-0.19030778110027313
+Neural,Neural,RUNX3,IL16,Transcription_Factor,Ligand,-0.22293709218502045
+Neural,Neural,CDX2,LGALS3,Transcription_Factor,Ligand,-0.4093914031982422
+Neural,Neural,CTCF,ADM,Transcription_Factor,Ligand,0.16302509605884552
+Neural,Neural,CTCF,CALR,Transcription_Factor,Ligand,0.16302509605884552
+Neural,Neural,CTCF,CLEC11A,Transcription_Factor,Ligand,0.16302509605884552
+Neural,Neural,CTCF,COL6A3,Transcription_Factor,Ligand,0.16302509605884552
+Neural,Neural,CTCF,COPA,Transcription_Factor,Ligand,0.16302509605884552
+Neural,Neural,CTCF,CXCL8,Transcription_Factor,Ligand,0.16302509605884552
+Neural,Neural,CTCF,EFNB1,Transcription_Factor,Ligand,0.16302509605884552
+Neural,Neural,CTCF,FGF7,Transcription_Factor,Ligand,0.16302509605884552
+Neural,Neural,CTCF,GDF15,Transcription_Factor,Ligand,0.16302509605884552
+Neural,Neural,CTCF,HLA-DQA1,Transcription_Factor,Ligand,0.16302509605884552
+Neural,Neural,CTCF,HLA-G,Transcription_Factor,Ligand,0.16302509605884552
+Neural,Neural,CTCF,IL16,Transcription_Factor,Ligand,0.16302509605884552
+Neural,Neural,CTCF,LGALS3,Transcription_Factor,Ligand,0.16302509605884552
+Neural,Neural,CTCF,LGALS9,Transcription_Factor,Ligand,0.16302509605884552
+Neural,Neural,CTCF,LTBP3,Transcription_Factor,Ligand,0.16302509605884552
+Neural,Neural,CTCF,MIF,Transcription_Factor,Ligand,0.16302509605884552
+Neural,Neural,CTCF,NMU,Transcription_Factor,Ligand,0.16302509605884552
+Neural,Neural,CTCF,PGF,Transcription_Factor,Ligand,0.16302509605884552
+Neural,Neural,CTCF,SEMA7A,Transcription_Factor,Ligand,0.16302509605884552
+Neural,Neural,CTCF,SFRP2,Transcription_Factor,Ligand,0.16302509605884552
+Neural,Neural,CTCF,SNCA,Transcription_Factor,Ligand,0.16302509605884552
+Neural,Neural,CTCF,TF,Transcription_Factor,Ligand,0.16302509605884552
+Neural,Neural,CTCF,TNFSF13B,Transcription_Factor,Ligand,0.16302509605884552
+Neural,Neural,CTCF,VCL,Transcription_Factor,Ligand,0.16302509605884552
+Neural,Neural,TEAD4,VCL,Transcription_Factor,Ligand,-0.18751788139343262
+Neural,Neural,CEBPG,VCL,Transcription_Factor,Ligand,-0.1790531575679779
 Neural,Neural,PROX1,EFNB1,Transcription_Factor,Ligand,-0.521087110042572
+Neural,Neural,GTF2B,VCL,Transcription_Factor,Ligand,-0.16597804427146912
+Neural,Neural,GATA3,COL6A3,Transcription_Factor,Ligand,0.14249642193317413
+Neural,Neural,GATA3,ICAM4,Transcription_Factor,Ligand,0.14249642193317413
+Neural,Neural,GATA3,IL16,Transcription_Factor,Ligand,0.14249642193317413
+Neural,Neural,GATA3,LGALS3,Transcription_Factor,Ligand,0.14249642193317413
+Neural,Neural,GATA3,PGF,Transcription_Factor,Ligand,0.14249642193317413
+Neural,Neural,GATA3,SFRP2,Transcription_Factor,Ligand,0.14249642193317413
+Neural,Neural,GATA3,SNCA,Transcription_Factor,Ligand,0.14249642193317413
+Neural,Neural,GATA3,VCL,Transcription_Factor,Ligand,0.14249642193317413
+Neural,Neural,EOMES,EFNB1,Transcription_Factor,Ligand,-0.12190282344818115
+Neural,Neural,PRDM14,BAG6,Transcription_Factor,Ligand,-0.04104610159993172
+Neural,Neural,PRDM14,COL6A3,Transcription_Factor,Ligand,-0.04104610159993172
+Neural,Neural,PRDM14,EFNB1,Transcription_Factor,Ligand,-0.04104610159993172
+Neural,Neural,PRDM14,IL16,Transcription_Factor,Ligand,-0.04104610159993172
+Neural,Neural,PRDM14,LGALS3,Transcription_Factor,Ligand,-0.04104610159993172
+Neural,Neural,PRDM14,NMU,Transcription_Factor,Ligand,-0.04104610159993172
+Neural,Neural,PRDM14,SFRP2,Transcription_Factor,Ligand,-0.04104610159993172
+Neural,Neural,PRDM14,SNCA,Transcription_Factor,Ligand,-0.04104610159993172
+Neural,Neural,SOX2,ADM,Transcription_Factor,Ligand,0.01709126867353916
+Neural,Neural,SOX2,CXCL8,Transcription_Factor,Ligand,0.01709126867353916
+Neural,Neural,SOX2,LMAN1,Transcription_Factor,Ligand,0.01709126867353916
+Neural,Neural,SOX2,SEMA7A,Transcription_Factor,Ligand,0.01709126867353916
+Neural,Neural,PAX2,SFRP2,Transcription_Factor,Ligand,0.09030992537736893
+Neural,Neural,SNAI1,CXCL8,Transcription_Factor,Ligand,-0.2690775394439697
+Neural,Neural,SRF,VCL,Transcription_Factor,Ligand,-0.5713078379631042
+Neural,Neural,CREB5,CXCL8,Transcription_Factor,Ligand,0.05954904481768608
+Neural,Neural,FOSB,CXCL8,Transcription_Factor,Ligand,-0.14406640827655792
+Neural,Neural,E2F4,ADM,Transcription_Factor,Ligand,-0.15124879777431488
+Neural,Neural,E2F4,CALR,Transcription_Factor,Ligand,-0.15124879777431488
+Neural,Neural,E2F4,FGF7,Transcription_Factor,Ligand,-0.15124879777431488
+Neural,Neural,E2F4,LGALS3,Transcription_Factor,Ligand,-0.15124879777431488
+Neural,Neural,E2F4,MIF,Transcription_Factor,Ligand,-0.15124879777431488
+Neural,Neural,E2F4,SEMA7A,Transcription_Factor,Ligand,-0.15124879777431488
+Neural,Neural,E2F4,VCL,Transcription_Factor,Ligand,-0.15124879777431488
+Neural,Neural,HSF1,HLA-G,Transcription_Factor,Ligand,0.21933235228061676
+Neural,Neural,ATF6,CALR,Transcription_Factor,Ligand,-0.12300542742013931
+Neural,Neural,JUN,CXCL8,Transcription_Factor,Ligand,-0.20240916311740875
+Neural,Neural,JUN,FGF7,Transcription_Factor,Ligand,-0.20240916311740875
+Neural,Neural,JUN,LGALS3,Transcription_Factor,Ligand,-0.20240916311740875
+Neural,Neural,JUN,NPPA,Transcription_Factor,Ligand,-0.20240916311740875
+Neural,Neural,JUN,VCL,Transcription_Factor,Ligand,-0.20240916311740875
+Neural,Neural,FOXP1,COPA,Transcription_Factor,Ligand,0.14050649106502533
+Neural,Neural,FOXP1,GDF15,Transcription_Factor,Ligand,0.14050649106502533
+Neural,Neural,FOXP1,LGALS3,Transcription_Factor,Ligand,0.14050649106502533
+Neural,Neural,FOXP1,SNCA,Transcription_Factor,Ligand,0.14050649106502533
+Neural,Neural,FOXP1,VCL,Transcription_Factor,Ligand,0.14050649106502533
+Neural,Neural,ETV4,CXCL8,Transcription_Factor,Ligand,-0.4055800139904022
+Neural,Neural,ETV4,GDF15,Transcription_Factor,Ligand,-0.4055800139904022
+Neural,Neural,MITF,ADM,Transcription_Factor,Ligand,0.46988746523857117
+Neural,Neural,MITF,CALR,Transcription_Factor,Ligand,0.46988746523857117
+Neural,Neural,MITF,CXCL8,Transcription_Factor,Ligand,0.46988746523857117
+Neural,Neural,MITF,GDF15,Transcription_Factor,Ligand,0.46988746523857117
+Neural,Neural,MITF,HLA-G,Transcription_Factor,Ligand,0.46988746523857117
+Neural,Neural,MITF,IL16,Transcription_Factor,Ligand,0.46988746523857117
+Neural,Neural,MITF,LGALS3,Transcription_Factor,Ligand,0.46988746523857117
+Neural,Neural,MITF,LTBP3,Transcription_Factor,Ligand,0.46988746523857117
+Neural,Neural,MITF,MIF,Transcription_Factor,Ligand,0.46988746523857117
+Neural,Neural,MITF,SEMA7A,Transcription_Factor,Ligand,0.46988746523857117
+Neural,Neural,MITF,SNCA,Transcription_Factor,Ligand,0.46988746523857117
+Neural,Neural,MITF,TF,Transcription_Factor,Ligand,0.46988746523857117
+Neural,Neural,TP53,CALR,Transcription_Factor,Ligand,-0.10695820301771164
+Neural,Neural,TP53,COL6A3,Transcription_Factor,Ligand,-0.10695820301771164
+Neural,Neural,TP53,CXCL8,Transcription_Factor,Ligand,-0.10695820301771164
+Neural,Neural,TP53,GDF15,Transcription_Factor,Ligand,-0.10695820301771164
+Neural,Neural,TP53,LGALS3,Transcription_Factor,Ligand,-0.10695820301771164
+Neural,Neural,TP53,MIF,Transcription_Factor,Ligand,-0.10695820301771164
+Neural,Neural,TP53,PGF,Transcription_Factor,Ligand,-0.10695820301771164
+Neural,Neural,TP53,SNCA,Transcription_Factor,Ligand,-0.10695820301771164
+Neural,Neural,IRF3,CALR,Transcription_Factor,Ligand,0.11436746269464493
+Neural,Neural,YY1,CALR,Transcription_Factor,Ligand,-0.011382692493498325
+Neural,Neural,YY1,TF,Transcription_Factor,Ligand,-0.011382692493498325
+Neural,Neural,YY1,VCL,Transcription_Factor,Ligand,-0.011382692493498325
+Neural,Neural,MBD4,TF,Transcription_Factor,Ligand,-0.13432364165782928
+Neural,Neural,CREB1,HLA-G,Transcription_Factor,Ligand,-0.09136684238910675
+Neural,Neural,CREB1,TF,Transcription_Factor,Ligand,-0.09136684238910675
+Neural,Neural,NFYB,GDF15,Transcription_Factor,Ligand,0.03711649030447006
+Neural,Neural,E2F7,COL6A3,Transcription_Factor,Ligand,-0.3821253776550293
+Neural,Neural,E2F7,IL16,Transcription_Factor,Ligand,-0.3821253776550293
+Neural,Neural,E2F7,VCL,Transcription_Factor,Ligand,-0.3821253776550293
+Neural,Neural,RARG,MIF,Transcription_Factor,Ligand,-0.3474545180797577
+Neural,Neural,MYB,IL16,Transcription_Factor,Ligand,-0.2908427119255066
+Neural,Neural,MYB,NMU,Transcription_Factor,Ligand,-0.2908427119255066
+Neural,Neural,MYB,TF,Transcription_Factor,Ligand,-0.2908427119255066
+Neural,Neural,MNT,IL16,Transcription_Factor,Ligand,0.08275444805622101
+Neural,Neural,MNT,LTBP3,Transcription_Factor,Ligand,0.08275444805622101
+Neural,Neural,ADNP,GDF15,Transcription_Factor,Ligand,0.3377811312675476
+Neural,Neural,ADNP,VCL,Transcription_Factor,Ligand,0.3377811312675476
 Neural,Neural,SEMA7A,ITGA1,Ligand,Receptor,0.140391794326036
 Neural,Neural,HLA-A,APLP2,Ligand,Receptor,1.43488263594856
 Neural,Neural,CD55,CR1,Ligand,Receptor,0.327104455615061
