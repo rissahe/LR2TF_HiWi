@@ -9,8 +9,11 @@ library(maditr)
 TF_object <- readRDS("LR2TF_test_run/results/TF_results/result_TF_object.RDS")
 TF_object@intracellular_network_condition
 TF_object@intracellular_network_cluster
+avg_gene_expr_ctrl <- TF_object@average_gene_expression$control_average_expression
 
-
+head(avg_gene_expr_ctrl, 10)
+avg_gene_expr_ctrl["IKZF1",]
+write.csv(avg_gene_expr_ctrl, file = paste0('r_avg_expr_ctrl.csv'))
 
 data(bone_marrow_stromal_cell_example, package = "LR2TF")
 seuratobject <- bone_marrow_stromal_cell_example
