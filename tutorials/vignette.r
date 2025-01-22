@@ -31,6 +31,11 @@ results <- LR2TF::tf_activity_analysis(seuratobject = seurat_object,
 7. intracellular_network_condition -> for each condition a table with receptor-transcription factor and transcription factor-target gene interactions based on condition specific transcription factors
 8. intracellular_network_cluster -> for each condition a table with receptor-transcription factor and transcription factor-target gene interactions based on cluster specific transcription factors
 
+write.csv(results@CTR_input_condition[["control"]], "R_ctr_input_wo_exp_ctr_tables.csv")
+
+write.csv(results@intracellular_network_condition[["control"]], "R_intra_network_ctrl.csv")
+write.csv(results@intracellular_network_condition[["PMF_MF2"]], "R_intra_network_PMF.csv")
+
 
 table_ctr <- read.csv("/home/larissa/Documents/LR2TF_HiWi/LR2TF_test_run/CTR_LR.csv")
 table_exp <- read.csv("/home/larissa/Documents/LR2TF_HiWi/LR2TF_test_run/EXP_LR.csv")

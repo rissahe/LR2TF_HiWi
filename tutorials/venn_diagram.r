@@ -1,0 +1,380 @@
+#install.packages('VennDiagram')
+library(VennDiagram)
+
+#########
+#CTRL
+#########
+
+csv1 <- read.csv("R_CRT_no_negative_score.csv")
+row.names(csv1) <- NULL
+csv1 <- csv1[c(1:587),]
+
+#csv1 <- read.csv("R_ctr_input_wo_exp_ctr_tables.csv")
+#csv1 <- results@CTR_input_condition[["control"]]
+
+csv1 <- csv1[c("source", "gene_A", "gene_B")]
+
+csv1_list =list()
+for (i in 1:nrow(csv1)) {
+    row <- paste(csv1[i, ], collapse = ",")
+    csv1_list <- append(csv1_list, row)
+}
+
+head(csv1_list)
+SET1 <- csv1_list
+
+
+csv2 <- read.csv("script_test/CrossTalkeR_input_control.csv")
+row.names(csv2) <- NULL
+csv2 <- csv2[c(1:260),]
+#csv2 <- read.csv("py_ctr_input_wo_ctr_exp_tables.csv")
+
+csv2 <- csv2[c("source", "gene_A", "gene_B")]
+
+
+csv2_list =list()
+for (i in 1:nrow(csv2)) {
+    row <- paste(csv2[i, ], collapse = ",")
+    csv2_list <- append(csv2_list, row)
+}
+
+head(csv2_list)
+SET2 <- csv2_list
+
+v <- venn.diagram(
+  x = list(SET1, SET2),
+  category.names = c("Set R" , "Set PY "),
+  filename = NULL,
+  output = TRUE)
+
+
+grid.newpage()
+grid.draw(v)
+
+
+#v[[5]]$label  <- paste(setdiff(SET1, intersect(SET1,SET2)), collapse="\n") 
+#v[[6]]$label <- paste(setdiff(SET2, intersect(SET1,SET2)), collapse="\n")
+
+
+setdiff1 <- t(as.data.frame(setdiff(SET1, intersect(SET1, SET2))))
+setdiff2 <- t(as.data.frame(setdiff(SET2, intersect(SET1, SET2))))
+
+write.csv(setdiff1, "R_unique_genes_filtered_w_LR_table_no_neg_score_CTRL.csv", row.names = FALSE)
+write.csv(setdiff2, "Py_unique_genes_filtered_w_LR_table_no_neg_score_CTRL.csv", row.names = FALSE)
+
+
+grid.newpage()
+grid.draw(v)
+
+pdf("venn_diagram_PY_R_CTR_input_filtered_with_LR_table_no_neg_score_CTRL.pdf")
+grid.draw(v)
+dev.off()
+
+################
+
+#PMF
+####################
+
+csv1 <- read.csv("R_CRT_no_negative_score_PMF.csv")
+row.names(csv1) <- NULL
+csv1 <- csv1[c(1:623),]
+
+#csv1 <- read.csv("R_ctr_input_wo_exp_ctr_tables.csv")
+#csv1 <- results@CTR_input_condition[["control"]]
+
+csv1 <- csv1[c("source", "gene_A", "gene_B")]
+
+csv1_list =list()
+for (i in 1:nrow(csv1)) {
+    row <- paste(csv1[i, ], collapse = ",")
+    csv1_list <- append(csv1_list, row)
+}
+
+head(csv1_list)
+SET1 <- csv1_list
+
+
+csv2 <- read.csv("script_test/CrossTalkeR_input_PMF_MF2.csv")
+row.names(csv2) <- NULL
+csv2 <- csv2[c(1:327),]
+#csv2 <- read.csv("py_ctr_input_wo_ctr_exp_tables.csv")
+
+csv2 <- csv2[c("source", "gene_A", "gene_B")]
+
+
+csv2_list =list()
+for (i in 1:nrow(csv2)) {
+    row <- paste(csv2[i, ], collapse = ",")
+    csv2_list <- append(csv2_list, row)
+}
+
+head(csv2_list)
+SET2 <- csv2_list
+
+v <- venn.diagram(
+  x = list(SET1, SET2),
+  category.names = c("Set R" , "Set PY "),
+  filename = NULL,
+  output = TRUE)
+
+
+grid.newpage()
+grid.draw(v)
+
+
+#v[[5]]$label  <- paste(setdiff(SET1, intersect(SET1,SET2)), collapse="\n") 
+#v[[6]]$label <- paste(setdiff(SET2, intersect(SET1,SET2)), collapse="\n")
+
+
+setdiff1 <- t(as.data.frame(setdiff(SET1, intersect(SET1, SET2))))
+setdiff2 <- t(as.data.frame(setdiff(SET2, intersect(SET1, SET2))))
+
+write.csv(setdiff1, "R_unique_genes_filtered_w_LR_table_no_neg_score_PMF.csv", row.names = FALSE)
+write.csv(setdiff2, "Py_unique_genes_filtered_w_LR_table_no_neg_score_PMF.csv", row.names = FALSE)
+
+
+grid.newpage()
+grid.draw(v)
+
+pdf("venn_diagram_PY_R_CTR_input_filtered_with_LR_table_no_neg_score_PMF.pdf")
+grid.draw(v)
+dev.off()
+
+########################################################
+#type gene = TF
+#CTRL
+################
+
+csv1 <- read.csv("LR2TF_test_run/results/TF_results/control/significant_condition_tf_results_control.csv")
+
+csv1 <- csv1[c("gene", "cluster")]
+
+csv1_list =list()
+for (i in 1:nrow(csv1)) {
+    row <- paste(csv1[i, ], collapse = ",")
+    csv1_list <- append(csv1_list, row)
+}
+
+head(csv1_list)
+SET1 <- csv1_list
+
+csv2 <- read.csv("script_test/TF_results/control/significant_condition_tf_results_control.csv")
+
+csv2 <- csv2[c("gene", "cluster")]
+
+csv2_list =list()
+for (i in 1:nrow(csv2)) {
+    row <- paste(csv2[i, ], collapse = ",")
+    csv2_list <- append(csv2_list, row)
+}
+
+head(csv2_list)
+SET2 <- csv2_list
+
+v <- venn.diagram(
+  x = list(SET1, SET2),
+  category.names = c("Set R" , "Set PY "),
+  filename = NULL,
+  output = TRUE)
+
+
+grid.newpage()
+grid.draw(v)
+
+
+#v[[5]]$label  <- paste(setdiff(SET1, intersect(SET1,SET2)), collapse="\n") 
+#v[[6]]$label <- paste(setdiff(SET2, intersect(SET1,SET2)), collapse="\n")
+
+
+setdiff1 <- t(as.data.frame(setdiff(SET1, intersect(SET1, SET2))))
+setdiff2 <- t(as.data.frame(setdiff(SET2, intersect(SET1, SET2))))
+
+#also no negative z score and filtered via LR table
+write.csv(setdiff1, "R_set_diff_only_TF_ctrl.csv", row.names = FALSE)
+write.csv(setdiff2, "PY_set_diff_only_TF_ctrl.csv", row.names = FALSE)
+
+
+grid.newpage()
+grid.draw(v)
+
+pdf("venn_diagram_PY_R_set_diff_only_TF_ctrl.pdf")
+grid.draw(v)
+dev.off()
+########################################################
+#type =TF
+#PMF.MF2
+#####################
+
+csv1 <- read.csv("LR2TF_test_run/results/TF_results/PMF_MF2/significant_condition_tf_results_PMF_MF2.csv")
+
+csv1 <- csv1[c("gene", "cluster")]
+
+csv1_list =list()
+for (i in 1:nrow(csv1)) {
+    row <- paste(csv1[i, ], collapse = ",")
+    csv1_list <- append(csv1_list, row)
+}
+
+head(csv1_list)
+SET1 <- csv1_list
+
+
+csv2 <- read.csv("script_test/TF_results/PMF_MF2/significant_condition_tf_results_PMF,MF2.csv")
+
+csv2 <- csv2[c("gene", "cluster")]
+
+csv2_list =list()
+for (i in 1:nrow(csv2)) {
+    row <- paste(csv2[i, ], collapse = ",")
+    csv2_list <- append(csv2_list, row)
+}
+
+head(csv2_list)
+SET2 <- csv2_list
+
+v <- venn.diagram(
+  x = list(SET1, SET2),
+  category.names = c("Set R" , "Set PY "),
+  filename = NULL,
+  output = TRUE)
+
+
+grid.newpage()
+grid.draw(v)
+
+
+#v[[5]]$label  <- paste(setdiff(SET1, intersect(SET1,SET2)), collapse="\n") 
+#v[[6]]$label <- paste(setdiff(SET2, intersect(SET1,SET2)), collapse="\n")
+
+
+setdiff1 <- t(as.data.frame(setdiff(SET1, intersect(SET1, SET2))))
+setdiff2 <- t(as.data.frame(setdiff(SET2, intersect(SET1, SET2))))
+
+#also no negative z score and filtered via LR table
+write.csv(setdiff1, "R_set_diff_only_TF_PMF.csv", row.names = FALSE)
+write.csv(setdiff2, "PY_set_diff_only_TF_PMF.csv", row.names = FALSE)
+
+
+grid.newpage()
+grid.draw(v)
+
+pdf("venn_diagram_PY_R_set_diff_only_TF_PMF.pdf")
+grid.draw(v)
+dev.off()
+
+##########################################################
+#intracellular network
+
+####
+
+csv1 <- read.csv("R_intra_network_ctrl.csv")
+row.names(csv1) <- NULL
+
+csv1_list =list()
+for (i in 1:nrow(csv1)) {
+  row <- paste(csv1[i, ], collapse = ",")
+  csv1_list <- append(csv1_list, row)
+}
+
+head(csv1_list)
+SET1 <- csv1_list
+
+csv2 <- read.csv("py_intra_network_ctrl.csv")
+row.names(csv2) <- NULL
+
+csv2_list =list()
+for (i in 1:nrow(csv2)) {
+    row <- paste(csv2[i, ], collapse = ",")
+    csv2_list <- append(csv2_list, row)
+}
+
+SET2 <- csv2_list
+
+v <- venn.diagram(
+  x = list(SET1, SET2),
+  category.names = c("Set R" , "Set PY "),
+  filename = NULL,
+  output = TRUE)
+
+
+grid.newpage()
+grid.draw(v)
+
+
+#v[[5]]$label  <- paste(setdiff(SET1, intersect(SET1,SET2)), collapse="\n") 
+#v[[6]]$label <- paste(setdiff(SET2, intersect(SET1,SET2)), collapse="\n")
+
+
+setdiff1 <- t(as.data.frame(setdiff(SET1, intersect(SET1, SET2))))
+setdiff2 <- t(as.data.frame(setdiff(SET2, intersect(SET1, SET2))))
+
+#also no negative z score and filtered via LR table
+write.csv(setdiff1, "R_set_diff_intra_network_ctrl.csv", row.names = FALSE)
+write.csv(setdiff2, "PY_set_diff_intra_network_ctrl.csv", row.names = FALSE)
+
+
+grid.newpage()
+grid.draw(v)
+
+pdf("venn_diagram_PY_R_intra_network_diff_ctrl.pdf")
+grid.draw(v)
+dev.off()
+
+####################################################################################
+#intra network
+#PMF MF2
+########
+
+
+csv1 <- read.csv("R_intra_network_PMF.csv")
+row.names(csv2) <- NULL
+
+csv1_list =list()
+for (i in 1:nrow(csv1)) {
+    row <- paste(csv1[i, ], collapse = ",")
+    csv1_list <- append(csv1_list, row)
+}
+
+head(csv1_list)
+SET1 <- csv1_list
+
+csv2 <- read.csv("py_intra_network_PMF.csv")
+row.names(csv2) <- NULL
+
+csv2_list =list()
+for (i in 1:nrow(csv2)) {
+    row <- paste(csv2[i, ], collapse = ",")
+    csv2_list <- append(csv2_list, row)
+}
+
+SET2 <- csv2_list
+
+v <- venn.diagram(
+  x = list(SET1, SET2),
+  category.names = c("Set R" , "Set PY "),
+  filename = NULL,
+  output = TRUE)
+
+
+grid.newpage()
+grid.draw(v)
+
+
+#v[[5]]$label  <- paste(setdiff(SET1, intersect(SET1,SET2)), collapse="\n") 
+#v[[6]]$label <- paste(setdiff(SET2, intersect(SET1,SET2)), collapse="\n")
+
+
+setdiff1 <- t(as.data.frame(setdiff(SET1, intersect(SET1, SET2))))
+setdiff2 <- t(as.data.frame(setdiff(SET2, intersect(SET1, SET2))))
+
+#also no negative z score and filtered via LR table
+write.csv(setdiff1, "R_set_diff_intra_network_PMF.csv", row.names = FALSE)
+write.csv(setdiff2, "PY_set_diff_intra_network_PMF.csv", row.names = FALSE)
+
+
+grid.newpage()
+grid.draw(v)
+
+pdf("venn_diagram_PY_R_intra_network_diff_PMF.pdf")
+grid.draw(v)
+dev.off()
