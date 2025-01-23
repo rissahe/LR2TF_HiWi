@@ -14,7 +14,7 @@ csv1 <- csv1[c(1:587),]
 
 csv1 <- csv1[c("source", "gene_A", "gene_B")]
 
-csv1_list =list()
+csv1_list <- list()
 for (i in 1:nrow(csv1)) {
     row <- paste(csv1[i, ], collapse = ",")
     csv1_list <- append(csv1_list, row)
@@ -32,7 +32,7 @@ csv2 <- csv2[c(1:260),]
 csv2 <- csv2[c("source", "gene_A", "gene_B")]
 
 
-csv2_list =list()
+csv2_list <- list()
 for (i in 1:nrow(csv2)) {
     row <- paste(csv2[i, ], collapse = ",")
     csv2_list <- append(csv2_list, row)
@@ -84,7 +84,7 @@ csv1 <- csv1[c(1:623),]
 
 csv1 <- csv1[c("source", "gene_A", "gene_B")]
 
-csv1_list =list()
+csv1_list <- list()
 for (i in 1:nrow(csv1)) {
     row <- paste(csv1[i, ], collapse = ",")
     csv1_list <- append(csv1_list, row)
@@ -102,7 +102,7 @@ csv2 <- csv2[c(1:327),]
 csv2 <- csv2[c("source", "gene_A", "gene_B")]
 
 
-csv2_list =list()
+csv2_list <- list()
 for (i in 1:nrow(csv2)) {
     row <- paste(csv2[i, ], collapse = ",")
     csv2_list <- append(csv2_list, row)
@@ -146,10 +146,12 @@ dev.off()
 ################
 
 csv1 <- read.csv("LR2TF_test_run/results/TF_results/control/significant_condition_tf_results_control.csv")
+colnames(csv1)
+csv1 <- csv1[csv1$z_score > 0,]
 
 csv1 <- csv1[c("gene", "cluster")]
 
-csv1_list =list()
+csv1_list <- list()
 for (i in 1:nrow(csv1)) {
     row <- paste(csv1[i, ], collapse = ",")
     csv1_list <- append(csv1_list, row)
@@ -162,7 +164,7 @@ csv2 <- read.csv("script_test/TF_results/control/significant_condition_tf_result
 
 csv2 <- csv2[c("gene", "cluster")]
 
-csv2_list =list()
+csv2_list <- list()
 for (i in 1:nrow(csv2)) {
     row <- paste(csv2[i, ], collapse = ",")
     csv2_list <- append(csv2_list, row)
@@ -197,7 +199,7 @@ write.csv(setdiff2, "PY_set_diff_only_TF_ctrl.csv", row.names = FALSE)
 grid.newpage()
 grid.draw(v)
 
-pdf("venn_diagram_PY_R_set_diff_only_TF_ctrl.pdf")
+pdf("venn_diagram_PY_R_significant_TF_condition_ctrl.pdf")
 grid.draw(v)
 dev.off()
 ########################################################
@@ -206,10 +208,10 @@ dev.off()
 #####################
 
 csv1 <- read.csv("LR2TF_test_run/results/TF_results/PMF_MF2/significant_condition_tf_results_PMF_MF2.csv")
-
+csv1 <- csv1[csv1$z_score > 0,]
 csv1 <- csv1[c("gene", "cluster")]
 
-csv1_list =list()
+csv1_list <- list()
 for (i in 1:nrow(csv1)) {
     row <- paste(csv1[i, ], collapse = ",")
     csv1_list <- append(csv1_list, row)
@@ -223,7 +225,7 @@ csv2 <- read.csv("script_test/TF_results/PMF_MF2/significant_condition_tf_result
 
 csv2 <- csv2[c("gene", "cluster")]
 
-csv2_list =list()
+csv2_list <- list()
 for (i in 1:nrow(csv2)) {
     row <- paste(csv2[i, ], collapse = ",")
     csv2_list <- append(csv2_list, row)
@@ -264,58 +266,49 @@ dev.off()
 
 ##########################################################
 #intracellular network
-
+#ctrl
 ####
+library(VennDiagram)
+library(data.table) # Faster CSV reading and manipulation
 
-csv1 <- read.csv("R_intra_network_ctrl.csv")
-row.names(csv1) <- NULL
+# Read CSVs with `fread` for better performance
+csv1 <- fread("R_intra_network_ctrl.csv")
+csv2 <- fread("py_intra_network_ctrl.csv")
+head(csv1)
+head(csv2)
+csv1 <- csv1[, !c("V1","TF_Score")]
+csv2 <- csv2[, !c("V1","TF_Score")]
 
-csv1_list =list()
-for (i in 1:nrow(csv1)) {
-  row <- paste(csv1[i, ], collapse = ",")
-  csv1_list <- append(csv1_list, row)
-}
-
-head(csv1_list)
-SET1 <- csv1_list
-
-csv2 <- read.csv("py_intra_network_ctrl.csv")
-row.names(csv2) <- NULL
-
-csv2_list =list()
-for (i in 1:nrow(csv2)) {
-    row <- paste(csv2[i, ], collapse = ",")
-    csv2_list <- append(csv2_list, row)
-}
-
+# Convert rows into concatenated strings efficiently
+csv1_list <- apply(csv1, 1, paste, collapse = ",")
+csv2_list <- apply(csv2, 1, paste, collapse = ",")
+head(csv1_list, n=500)
+head(csv2_list)
+# Define sets
+SET1 <- csv1_list # Using `unique` to remove duplicates if needed
 SET2 <- csv2_list
 
+# Create Venn diagram
 v <- venn.diagram(
   x = list(SET1, SET2),
-  category.names = c("Set R" , "Set PY "),
+  category.names = c("Set R", "Set PY"),
   filename = NULL,
-  output = TRUE)
+  output = TRUE
+)
 
-
+# Draw Venn diagram
 grid.newpage()
 grid.draw(v)
 
+# Compute set differences
+setdiff1 <- setdiff(SET1, SET2)
+setdiff2 <- setdiff(SET2, SET1)
 
-#v[[5]]$label  <- paste(setdiff(SET1, intersect(SET1,SET2)), collapse="\n") 
-#v[[6]]$label <- paste(setdiff(SET2, intersect(SET1,SET2)), collapse="\n")
+# Write set differences to CSV files
+fwrite(data.table(setdiff1), "R_set_diff_intra_network_ctrl.csv", col.names = FALSE)
+fwrite(data.table(setdiff2), "PY_set_diff_intra_network_ctrl.csv", col.names = FALSE)
 
-
-setdiff1 <- t(as.data.frame(setdiff(SET1, intersect(SET1, SET2))))
-setdiff2 <- t(as.data.frame(setdiff(SET2, intersect(SET1, SET2))))
-
-#also no negative z score and filtered via LR table
-write.csv(setdiff1, "R_set_diff_intra_network_ctrl.csv", row.names = FALSE)
-write.csv(setdiff2, "PY_set_diff_intra_network_ctrl.csv", row.names = FALSE)
-
-
-grid.newpage()
-grid.draw(v)
-
+# Save Venn diagram to PDF
 pdf("venn_diagram_PY_R_intra_network_diff_ctrl.pdf")
 grid.draw(v)
 dev.off()
@@ -326,55 +319,43 @@ dev.off()
 ########
 
 
-csv1 <- read.csv("R_intra_network_PMF.csv")
-row.names(csv2) <- NULL
 
-csv1_list =list()
-for (i in 1:nrow(csv1)) {
-    row <- paste(csv1[i, ], collapse = ",")
-    csv1_list <- append(csv1_list, row)
-}
+# Read CSVs with `fread` for better performance
+csv1 <- fread("R_intra_network_PMF.csv")
+csv2 <- fread("py_intra_network_PMF.csv")
 
-head(csv1_list)
-SET1 <- csv1_list
+csv1 <- csv1[, !c("V1","TF_Score")]
+csv2 <- csv2[, !c("V1","TF_Score")]
 
-csv2 <- read.csv("py_intra_network_PMF.csv")
-row.names(csv2) <- NULL
+# Convert rows into concatenated strings efficiently
+csv1_list <- apply(csv1, 1, paste, collapse = ",")
+csv2_list <- apply(csv2, 1, paste, collapse = ",")
 
-csv2_list =list()
-for (i in 1:nrow(csv2)) {
-    row <- paste(csv2[i, ], collapse = ",")
-    csv2_list <- append(csv2_list, row)
-}
-
+# Define sets
+SET1 <- csv1_list # Using `unique` to remove duplicates if needed
 SET2 <- csv2_list
 
+# Create Venn diagram
 v <- venn.diagram(
   x = list(SET1, SET2),
-  category.names = c("Set R" , "Set PY "),
+  category.names = c("Set R", "Set PY"),
   filename = NULL,
-  output = TRUE)
+  output = TRUE
+)
 
-
+# Draw Venn diagram
 grid.newpage()
 grid.draw(v)
 
+# Compute set differences
+setdiff1 <- setdiff(SET1, SET2)
+setdiff2 <- setdiff(SET2, SET1)
 
-#v[[5]]$label  <- paste(setdiff(SET1, intersect(SET1,SET2)), collapse="\n") 
-#v[[6]]$label <- paste(setdiff(SET2, intersect(SET1,SET2)), collapse="\n")
+# Write set differences to CSV files
+fwrite(data.table(setdiff1), "R_set_diff_intra_network_PMF.csv", col.names = FALSE)
+fwrite(data.table(setdiff2), "PY_set_diff_intra_network_PMF.csv", col.names = FALSE)
 
-
-setdiff1 <- t(as.data.frame(setdiff(SET1, intersect(SET1, SET2))))
-setdiff2 <- t(as.data.frame(setdiff(SET2, intersect(SET1, SET2))))
-
-#also no negative z score and filtered via LR table
-write.csv(setdiff1, "R_set_diff_intra_network_PMF.csv", row.names = FALSE)
-write.csv(setdiff2, "PY_set_diff_intra_network_PMF.csv", row.names = FALSE)
-
-
-grid.newpage()
-grid.draw(v)
-
+# Save Venn diagram to PDF
 pdf("venn_diagram_PY_R_intra_network_diff_PMF.pdf")
 grid.draw(v)
 dev.off()
