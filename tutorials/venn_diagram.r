@@ -1,4 +1,4 @@
-#install.packages('VennDiagram')
+install.packages('VennDiagram')
 library(VennDiagram)
 
 #########
@@ -22,7 +22,7 @@ for (i in 1:nrow(csv1)) {
 
 head(csv1_list)
 SET1 <- csv1_list
-
+length(csv1_list)
 
 csv2 <- read.csv("script_test/CrossTalkeR_input_control.csv")
 row.names(csv2) <- NULL
@@ -156,7 +156,7 @@ for (i in 1:nrow(csv1)) {
     row <- paste(csv1[i, ], collapse = ",")
     csv1_list <- append(csv1_list, row)
 }
-
+length(csv1_list)
 head(csv1_list)
 SET1 <- csv1_list
 
@@ -169,7 +169,7 @@ for (i in 1:nrow(csv2)) {
     row <- paste(csv2[i, ], collapse = ",")
     csv2_list <- append(csv2_list, row)
 }
-
+length(csv2_list)
 head(csv2_list)
 SET2 <- csv2_list
 
@@ -216,7 +216,7 @@ for (i in 1:nrow(csv1)) {
     row <- paste(csv1[i, ], collapse = ",")
     csv1_list <- append(csv1_list, row)
 }
-
+length(csv1_list)
 head(csv1_list)
 SET1 <- csv1_list
 
@@ -230,7 +230,7 @@ for (i in 1:nrow(csv2)) {
     row <- paste(csv2[i, ], collapse = ",")
     csv2_list <- append(csv2_list, row)
 }
-
+length(csv2_list)
 head(csv2_list)
 SET2 <- csv2_list
 
@@ -269,9 +269,8 @@ dev.off()
 #ctrl
 ####
 library(VennDiagram)
-library(data.table) # Faster CSV reading and manipulation
+library(data.table) 
 
-# Read CSVs with `fread` for better performance
 csv1 <- fread("R_intra_network_ctrl.csv")
 csv2 <- fread("py_intra_network_ctrl.csv")
 head(csv1)
@@ -279,16 +278,15 @@ head(csv2)
 csv1 <- csv1[, !c("V1","TF_Score")]
 csv2 <- csv2[, !c("V1","TF_Score")]
 
-# Convert rows into concatenated strings efficiently
 csv1_list <- apply(csv1, 1, paste, collapse = ",")
 csv2_list <- apply(csv2, 1, paste, collapse = ",")
 head(csv1_list, n=500)
 head(csv2_list)
-# Define sets
-SET1 <- csv1_list # Using `unique` to remove duplicates if needed
+
+SET1 <- csv1_list 
 SET2 <- csv2_list
 
-# Create Venn diagram
+
 v <- venn.diagram(
   x = list(SET1, SET2),
   category.names = c("Set R", "Set PY"),
@@ -296,19 +294,15 @@ v <- venn.diagram(
   output = TRUE
 )
 
-# Draw Venn diagram
 grid.newpage()
 grid.draw(v)
 
-# Compute set differences
 setdiff1 <- setdiff(SET1, SET2)
 setdiff2 <- setdiff(SET2, SET1)
 
-# Write set differences to CSV files
 fwrite(data.table(setdiff1), "R_set_diff_intra_network_ctrl.csv", col.names = FALSE)
 fwrite(data.table(setdiff2), "PY_set_diff_intra_network_ctrl.csv", col.names = FALSE)
 
-# Save Venn diagram to PDF
 pdf("venn_diagram_PY_R_intra_network_diff_ctrl.pdf")
 grid.draw(v)
 dev.off()
@@ -318,24 +312,19 @@ dev.off()
 #PMF MF2
 ########
 
-
-
-# Read CSVs with `fread` for better performance
 csv1 <- fread("R_intra_network_PMF.csv")
 csv2 <- fread("py_intra_network_PMF.csv")
 
 csv1 <- csv1[, !c("V1","TF_Score")]
 csv2 <- csv2[, !c("V1","TF_Score")]
 
-# Convert rows into concatenated strings efficiently
 csv1_list <- apply(csv1, 1, paste, collapse = ",")
 csv2_list <- apply(csv2, 1, paste, collapse = ",")
 
-# Define sets
-SET1 <- csv1_list # Using `unique` to remove duplicates if needed
+SET1 <- csv1_list 
 SET2 <- csv2_list
 
-# Create Venn diagram
+
 v <- venn.diagram(
   x = list(SET1, SET2),
   category.names = c("Set R", "Set PY"),
@@ -343,19 +332,19 @@ v <- venn.diagram(
   output = TRUE
 )
 
-# Draw Venn diagram
+
 grid.newpage()
 grid.draw(v)
 
-# Compute set differences
+
 setdiff1 <- setdiff(SET1, SET2)
 setdiff2 <- setdiff(SET2, SET1)
 
-# Write set differences to CSV files
+
 fwrite(data.table(setdiff1), "R_set_diff_intra_network_PMF.csv", col.names = FALSE)
 fwrite(data.table(setdiff2), "PY_set_diff_intra_network_PMF.csv", col.names = FALSE)
 
-# Save Venn diagram to PDF
+
 pdf("venn_diagram_PY_R_intra_network_diff_PMF.pdf")
 grid.draw(v)
 dev.off()
