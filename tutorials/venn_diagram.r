@@ -59,14 +59,14 @@ grid.draw(v)
 setdiff1 <- t(as.data.frame(setdiff(SET1, intersect(SET1, SET2))))
 setdiff2 <- t(as.data.frame(setdiff(SET2, intersect(SET1, SET2))))
 
-write.csv(setdiff1, "R_unique_genes_filtered_w_LR_table_no_neg_score_CTRL.csv", row.names = FALSE)
-write.csv(setdiff2, "Py_unique_genes_filtered_w_LR_table_no_neg_score_CTRL.csv", row.names = FALSE)
+write.csv(setdiff1, "Venn_Diagrams_and_csvs/R_unique_genes_filtered_w_LR_table_no_neg_score_CTRL.csv", row.names = FALSE)
+write.csv(setdiff2, "Venn_Diagrams_and_csvs/Py_unique_genes_filtered_w_LR_table_no_neg_score_CTRL.csv", row.names = FALSE)
 
 
 grid.newpage()
 grid.draw(v)
 
-pdf("venn_diagram_PY_R_CTR_input_filtered_with_LR_table_no_neg_score_CTRL.pdf")
+pdf("Venn_Diagrams_and_csvs/venn_diagram_PY_R_CTR_input_filtered_with_LR_table_no_neg_score_CTRL.pdf")
 grid.draw(v)
 dev.off()
 
@@ -129,14 +129,14 @@ grid.draw(v)
 setdiff1 <- t(as.data.frame(setdiff(SET1, intersect(SET1, SET2))))
 setdiff2 <- t(as.data.frame(setdiff(SET2, intersect(SET1, SET2))))
 
-write.csv(setdiff1, "R_unique_genes_filtered_w_LR_table_no_neg_score_PMF.csv", row.names = FALSE)
-write.csv(setdiff2, "Py_unique_genes_filtered_w_LR_table_no_neg_score_PMF.csv", row.names = FALSE)
+write.csv(setdiff1, "Venn_Diagrams_and_csvs/R_unique_genes_filtered_w_LR_table_no_neg_score_PMF.csv", row.names = FALSE)
+write.csv(setdiff2, "Venn_Diagrams_and_csvs/Py_unique_genes_filtered_w_LR_table_no_neg_score_PMF.csv", row.names = FALSE)
 
 
 grid.newpage()
 grid.draw(v)
 
-pdf("venn_diagram_PY_R_CTR_input_filtered_with_LR_table_no_neg_score_PMF.pdf")
+pdf("Venn_Diagrams_and_csvs/venn_diagram_PY_R_CTR_input_filtered_with_LR_table_no_neg_score_PMF.pdf")
 grid.draw(v)
 dev.off()
 
@@ -192,14 +192,14 @@ setdiff1 <- t(as.data.frame(setdiff(SET1, intersect(SET1, SET2))))
 setdiff2 <- t(as.data.frame(setdiff(SET2, intersect(SET1, SET2))))
 
 #also no negative z score and filtered via LR table
-write.csv(setdiff1, "R_set_diff_only_TF_ctrl.csv", row.names = FALSE)
-write.csv(setdiff2, "PY_set_diff_only_TF_ctrl.csv", row.names = FALSE)
+write.csv(setdiff1, "Venn_Diagrams_and_csvs/R_set_diff_only_TF_ctrl.csv", row.names = FALSE)
+write.csv(setdiff2, "Venn_Diagrams_and_csvs/PY_set_diff_only_TF_ctrl.csv", row.names = FALSE)
 
 
 grid.newpage()
 grid.draw(v)
 
-pdf("venn_diagram_PY_R_significant_TF_condition_ctrl.pdf")
+pdf("Venn_Diagrams_and_csvs/venn_diagram_PY_R_significant_TF_condition_ctrl.pdf")
 grid.draw(v)
 dev.off()
 ########################################################
@@ -253,14 +253,14 @@ setdiff1 <- t(as.data.frame(setdiff(SET1, intersect(SET1, SET2))))
 setdiff2 <- t(as.data.frame(setdiff(SET2, intersect(SET1, SET2))))
 
 #also no negative z score and filtered via LR table
-write.csv(setdiff1, "R_set_diff_only_TF_PMF.csv", row.names = FALSE)
-write.csv(setdiff2, "PY_set_diff_only_TF_PMF.csv", row.names = FALSE)
+write.csv(setdiff1, "Venn_Diagrams_and_csvs/R_set_diff_only_TF_PMF.csv", row.names = FALSE)
+write.csv(setdiff2, "Venn_Diagrams_and_csvs/PY_set_diff_only_TF_PMF.csv", row.names = FALSE)
 
 
 grid.newpage()
 grid.draw(v)
 
-pdf("venn_diagram_PY_R_set_diff_only_TF_PMF.pdf")
+pdf("Venn_Diagrams_and_csvs/venn_diagram_PY_R_set_diff_only_TF_PMF.pdf")
 grid.draw(v)
 dev.off()
 
@@ -300,10 +300,10 @@ grid.draw(v)
 setdiff1 <- setdiff(SET1, SET2)
 setdiff2 <- setdiff(SET2, SET1)
 
-fwrite(data.table(setdiff1), "R_set_diff_intra_network_ctrl.csv", col.names = FALSE)
-fwrite(data.table(setdiff2), "PY_set_diff_intra_network_ctrl.csv", col.names = FALSE)
+fwrite(data.table(setdiff1), "Venn_Diagrams_and_csvs/R_set_diff_intra_network_ctrl.csv", col.names = FALSE)
+fwrite(data.table(setdiff2), "Venn_Diagrams_and_csvs/PY_set_diff_intra_network_ctrl.csv", col.names = FALSE)
 
-pdf("venn_diagram_PY_R_intra_network_diff_ctrl.pdf")
+pdf("Venn_Diagrams_and_csvs/venn_diagram_PY_R_intra_network_diff_ctrl.pdf")
 grid.draw(v)
 dev.off()
 
@@ -341,10 +341,10 @@ setdiff1 <- setdiff(SET1, SET2)
 setdiff2 <- setdiff(SET2, SET1)
 
 
-fwrite(data.table(setdiff1), "R_set_diff_intra_network_PMF.csv", col.names = FALSE)
-fwrite(data.table(setdiff2), "PY_set_diff_intra_network_PMF.csv", col.names = FALSE)
+fwrite(data.table(setdiff1), "Venn_Diagrams_and_csvs/R_set_diff_intra_network_PMF.csv", col.names = FALSE)
+fwrite(data.table(setdiff2), "Venn_Diagrams_and_csvs/PY_set_diff_intra_network_PMF.csv", col.names = FALSE)
 
 
-pdf("venn_diagram_PY_R_intra_network_diff_PMF.pdf")
+pdf("Venn_Diagrams_and_csvs/venn_diagram_PY_R_intra_network_diff_PMF.pdf")
 grid.draw(v)
 dev.off()
