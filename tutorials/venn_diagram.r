@@ -60,15 +60,15 @@ setdiff1 <- t(as.data.frame(setdiff(SET1, intersect(SET1, SET2))))
 setdiff2 <- t(as.data.frame(setdiff(SET2, intersect(SET1, SET2))))
 
 #genes_filtered_w_LR_table_no_neg_score
-write.csv(setdiff1, "Venn_Diagrams_and_csvs/R_unique_CTRL_scipy_no_scale_diff_adjust.csv", row.names = FALSE)
-write.csv(setdiff2, "Venn_Diagrams_and_csvs/Py_unique_CTRL_scipy_no_scale_diff_adjust.csv", row.names = FALSE)
+write.csv(setdiff1, "Venn_Diagrams_and_csvs/R_unique_CTRL_decoupler_scaled.csv", row.names = FALSE)
+write.csv(setdiff2, "Venn_Diagrams_and_csvs/Py_unique_CTRL_decoupler_scaled.csv", row.names = FALSE)
 
 
 grid.newpage()
 grid.draw(v)
 
 #filtered_with_LR_table_no_neg_score_
-pdf("Venn_Diagrams_and_csvs/venn_diagram_PY_R_CTR_input_CTRL_scipy_no_scale_diff_adjust.pdf")
+pdf("Venn_Diagrams_and_csvs/venn_diagram_PY_R_CTR_input_CTRL_condition_scale_decoupler.pdf")
 grid.draw(v)
 dev.off()
 
@@ -131,14 +131,14 @@ grid.draw(v)
 setdiff1 <- t(as.data.frame(setdiff(SET1, intersect(SET1, SET2))))
 setdiff2 <- t(as.data.frame(setdiff(SET2, intersect(SET1, SET2))))
 
-write.csv(setdiff1, "Venn_Diagrams_and_csvs/R_unique_PMF_scipy_no_scale_diff_adjust.csv", row.names = FALSE)
-write.csv(setdiff2, "Venn_Diagrams_and_csvs/Py_unique_PMF_scipy_no_scale_diff_adjust.csv", row.names = FALSE)
+write.csv(setdiff1, "Venn_Diagrams_and_csvs/R_unique_PMF_decoupler_scaled.csv", row.names = FALSE)
+write.csv(setdiff2, "Venn_Diagrams_and_csvs/Py_unique_PMF_decoupler_scaled.csv", row.names = FALSE)
 
 
 grid.newpage()
 grid.draw(v)
 
-pdf("Venn_Diagrams_and_csvs/venn_diagram_PY_R_CTR_input_PMF_scipy_no_scale_diff_adjust.pdf")
+pdf("Venn_Diagrams_and_csvs/venn_diagram_PY_R_CTR_input_PMF_decoupler_scaled.pdf")
 grid.draw(v)
 dev.off()
 
@@ -194,14 +194,14 @@ setdiff1 <- t(as.data.frame(setdiff(SET1, intersect(SET1, SET2))))
 setdiff2 <- t(as.data.frame(setdiff(SET2, intersect(SET1, SET2))))
 
 #also no negative z score and filtered via LR table
-write.csv(setdiff1, "Venn_Diagrams_and_csvs/R_set_diff_only_TF_ctrl_scipy_no_scale_diff_adjust.csv", row.names = FALSE)
-write.csv(setdiff2, "Venn_Diagrams_and_csvs/PY_set_diff_only_TF_ctrl_scipy_no_scale_diff_adjust.csv", row.names = FALSE)
+write.csv(setdiff1, "Venn_Diagrams_and_csvs/R_set_diff_only_TF_ctrl_decoupler_scaled.csv", row.names = FALSE)
+write.csv(setdiff2, "Venn_Diagrams_and_csvs/PY_set_diff_only_TF_ctrl_decoupler_scaled.csv", row.names = FALSE)
 
 
 grid.newpage()
 grid.draw(v)
 
-pdf("Venn_Diagrams_and_csvs/venn_diagram_PY_R_significant_TF_condition_ctrl_scipy_no_scale_diff_adjust.pdf")
+pdf("Venn_Diagrams_and_csvs/venn_diagram_PY_R_significant_TF_condition_ctrl_decoupler_scaled.pdf")
 grid.draw(v)
 dev.off()
 ########################################################
@@ -255,14 +255,14 @@ setdiff1 <- t(as.data.frame(setdiff(SET1, intersect(SET1, SET2))))
 setdiff2 <- t(as.data.frame(setdiff(SET2, intersect(SET1, SET2))))
 
 #also no negative z score and filtered via LR table
-write.csv(setdiff1, "Venn_Diagrams_and_csvs/R_significant_TF_condition_PMF_scipy_no_scale_diff_adjust.csv", row.names = FALSE)
-write.csv(setdiff2, "Venn_Diagrams_and_csvs/PY_significant_TF_condition_PMF_scipy_no_scale_diff_adjust.csv", row.names = FALSE)
+write.csv(setdiff1, "Venn_Diagrams_and_csvs/R_significant_TF_condition_PMF_scipy_decoupler_scaled.csv", row.names = FALSE)
+write.csv(setdiff2, "Venn_Diagrams_and_csvs/PY_significant_TF_condition_PMF_scipy_decoupler_scaled.csv", row.names = FALSE)
 
 
 grid.newpage()
 grid.draw(v)
 
-pdf("Venn_Diagrams_and_csvs/venn_diagram_PY_R_set_diff_only_TF_PMF_scipy_no_scale_diff adjust.pdf")
+pdf("Venn_Diagrams_and_csvs/venn_diagram_PY_R_set_diff_only_TF_PMF_decoupler_scaled.pdf")
 grid.draw(v)
 dev.off()
 
@@ -302,10 +302,10 @@ grid.draw(v)
 setdiff1 <- setdiff(SET1, SET2)
 setdiff2 <- setdiff(SET2, SET1)
 
-fwrite(data.table(setdiff1), "Venn_Diagrams_and_csvs/R_set_diff_intra_network_ctrl_condition_scale_scipy.csv", col.names = FALSE)
-fwrite(data.table(setdiff2), "Venn_Diagrams_and_csvs/PY_set_diff_intra_network_ctrl_condition_scale_scipy.csv", col.names = FALSE)
+fwrite(data.table(setdiff1), "Venn_Diagrams_and_csvs/R_set_diff_intra_network_ctrl_decoupler_scaled.csv", col.names = FALSE)
+fwrite(data.table(setdiff2), "Venn_Diagrams_and_csvs/PY_set_diff_intra_network_ctrl_decoupler_scaled.csv", col.names = FALSE)
 
-pdf("Venn_Diagrams_and_csvs/venn_diagram_PY_R_intra_network_diff_ctrl_condition_scale_scipy.pdf")
+pdf("Venn_Diagrams_and_csvs/venn_diagram_PY_R_intra_network_diff_ctrl_decoupler_scaled.pdf")
 grid.draw(v)
 dev.off()
 
@@ -343,10 +343,10 @@ setdiff1 <- setdiff(SET1, SET2)
 setdiff2 <- setdiff(SET2, SET1)
 
 
-fwrite(data.table(setdiff1), "Venn_Diagrams_and_csvs/R_set_diff_intra_network_PMF_condition_scale_scipy.csv", col.names = FALSE)
-fwrite(data.table(setdiff2), "Venn_Diagrams_and_csvs/PY_set_diff_intra_network_PMF_condition_scale_scipy.csv", col.names = FALSE)
+fwrite(data.table(setdiff1), "Venn_Diagrams_and_csvs/R_set_diff_intra_network_PMF_decoupler_scaled.csv", col.names = FALSE)
+fwrite(data.table(setdiff2), "Venn_Diagrams_and_csvs/PY_set_diff_intra_network_PMF_decoupler_scaled.csv", col.names = FALSE)
 
 
-pdf("Venn_Diagrams_and_csvs/venn_diagram_PY_R_intra_network_diff_PMF_condition_scale_scipy.pdf")
+pdf("Venn_Diagrams_and_csvs/venn_diagram_PY_R_intra_network_diff_PMF_decoupler_scaled.pdf")
 grid.draw(v)
 dev.off()
