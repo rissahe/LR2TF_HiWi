@@ -213,6 +213,8 @@ Unnamed: 0,source,target,gene_A,gene_B,type_gene_A,type_gene_B,MeanLR
 7231.0,Neural,Neural,LRP6,JUN,Receptor,Transcription Factor,0.026779544
 7320.0,Neural,Neural,PTPRF,JUN,Receptor,Transcription Factor,0.026779544
 7528.0,Neural,Neural,PTPRF,RBPJ,Receptor,Transcription Factor,0.06188414
+7546.0,Neural,Neural,test,TLN1,Receptor,Transcription_Factor,0.13186443
+7548.0,Neural,Neural,ruby+dia,idk,Receptor,Transcription,0.13186443
 3435.0,Neural,Neural,HBP1,BMP4,Transcription_Factor,Ligand,0.1409316
 3437.0,Neural,Neural,HBP1,LAMC1,Transcription_Factor,Ligand,0.1409316
 3441.0,Neural,Neural,BACH1,CD99,Transcription_Factor,Ligand,0.17674801
@@ -313,6 +315,9 @@ Unnamed: 0,source,target,gene_A,gene_B,type_gene_A,type_gene_B,MeanLR
 7375.0,Neural,Neural,ZNF143,LAMC1,Transcription_Factor,Ligand,0.4926047
 7453.0,Neural,Neural,RBPJ,LAMC1,Transcription_Factor,Ligand,0.06188414
 7541.0,Neural,Neural,FOXP1,LAMC1,Transcription_Factor,Ligand,0.13186443
+,Neural,Neural,LGALS9,ruby,Ligand,Receptor,0.173903322764713
+,Neural,Neural,LGALS9,dia,Ligand,Receptor,0.173903322764713
+,Neural,Neural,LGALS9,test_test2,Ligand,Receptor,0.173903322764713
 ,Megakaryocyte,Megakaryocyte,LGALS9,PTPRC,Ligand,Receptor,0.173903322764713
 ,Megakaryocyte,Megakaryocyte,LGALS9,CD47,Ligand,Receptor,0.178258534972786
 ,Megakaryocyte,Megakaryocyte,LGALS9,HAVCR2,Ligand,Receptor,0.123144835155697

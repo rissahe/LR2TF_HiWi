@@ -1,5 +1,7 @@
 "source","target","gene_A","gene_B","type_gene_A","type_gene_B","MeanLR"
-"Neural","Neural","LGALS9","ITGB1_MYLK","Ligand","Receptor",0.173903322764713
+"Neural","Neural","LGALS9","ruby","Ligand","Receptor",0.173903322764713
+"Neural","Neural","LGALS9","dia","Ligand","Receptor",0.173903322764713
+"Neural","Neural","LGALS9","test_test2","Ligand","Receptor",0.173903322764713
 "Megakaryocyte","Megakaryocyte","LGALS9","PTPRC","Ligand","Receptor",0.173903322764713
 "Megakaryocyte","Megakaryocyte","LGALS9","CD47","Ligand","Receptor",0.178258534972786
 "Megakaryocyte","Megakaryocyte","LGALS9","HAVCR2","Ligand","Receptor",0.123144835155697

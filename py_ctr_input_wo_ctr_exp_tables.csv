@@ -7542,6 +7542,9 @@
 7540,Neural,Neural,FOXP1,ARF4,Transcription_Factor,Ligand,0.13186443
 7541,Neural,Neural,FOXP1,LAMC1,Transcription_Factor,Ligand,0.13186443
 7542,Neural,Neural,FOXP1,NRP1,Transcription_Factor,Ligand,0.13186443
-7543,Neural,Neural,FOXP1,RLF,Transcription_Factor,Ligand,0.13186443
+7543,Neural,Neural,c,RLF,Transcription_Factor,Ligand,0.13186443
 7544,Neural,Neural,FOXP1,SNCA,Transcription_Factor,Ligand,0.13186443
 7545,Neural,Neural,FOXP1,TLN1,Transcription_Factor,Ligand,0.13186443
+7546,Neural,Neural,test,TLN1,Receptor,Transcription_Factor,0.13186443
+7547,Neural,Neural,FOXP1,test2,Transcription_Factor,Ligand,0.13186443
+7548,Neural,Neural,ruby+dia,idk,Receptor,Transcription,0.13186443
