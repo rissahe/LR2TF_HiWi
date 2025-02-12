@@ -26,7 +26,7 @@ length(csv1_list)
 
 csv2 <- read.csv("script_test/CrossTalkeR_input_control.csv")
 row.names(csv2) <- NULL
-csv2 <- csv2[c(1:260),]
+csv2 <- csv2[c(1:314),]
 #csv2 <- read.csv("py_ctr_input_wo_ctr_exp_tables.csv")
 
 csv2 <- csv2[c("source", "gene_A", "gene_B")]
@@ -68,7 +68,7 @@ grid.newpage()
 grid.draw(v)
 
 #filtered_with_LR_table_no_neg_score_
-pdf("Venn_Diagrams_and_csvs/venn_diagram_PY_R_CTR_input_CTRL_condition_scale_decoupler.pdf")
+pdf("Venn_Diagrams_and_csvs/venn_diagram_PY_R_CTR_input_CTRL_decoupler_scaled.pdf")
 grid.draw(v)
 dev.off()
 
@@ -177,7 +177,7 @@ SET2 <- csv2_list
 
 v <- venn.diagram(
   x = list(SET1, SET2),
-  category.names = c("Set R" , "Set PY "),
+  category.names = c("Set R", "Set PY "),
   filename = NULL,
   output = TRUE)
 
