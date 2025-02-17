@@ -5,9 +5,11 @@ library(VennDiagram)
 #CTRL
 #########
 
-csv1 <- read.csv("R_CRT_no_negative_score.csv")
-row.names(csv1) <- NULL
-csv1 <- csv1[c(1:587),]
+csv1 <- read.csv("new_test\\CrossTalkeR_input_control.csv")
+#row.names(csv1) <- NULL
+csv1 <- csv1[c(1:702),]
+csv1 <- csv1[csv1$MeanLR > 0,]
+
 
 #csv1 <- read.csv("R_ctr_input_wo_exp_ctr_tables.csv")
 #csv1 <- results@CTR_input_condition[["control"]]
@@ -60,15 +62,15 @@ setdiff1 <- t(as.data.frame(setdiff(SET1, intersect(SET1, SET2))))
 setdiff2 <- t(as.data.frame(setdiff(SET2, intersect(SET1, SET2))))
 
 #genes_filtered_w_LR_table_no_neg_score
-write.csv(setdiff1, "Venn_Diagrams_and_csvs/R_unique_CTRL_decoupler_scaled.csv", row.names = FALSE)
-write.csv(setdiff2, "Venn_Diagrams_and_csvs/Py_unique_CTRL_decoupler_scaled.csv", row.names = FALSE)
+write.csv(setdiff1, "Venn_Diagrams_and_csvs/R_unique_CTRL_decoupler_scaled_new.csv", row.names = FALSE)
+write.csv(setdiff2, "Venn_Diagrams_and_csvs/Py_unique_CTRL_decoupler_scaled_new.csv", row.names = FALSE)
 
 
 grid.newpage()
 grid.draw(v)
 
 #filtered_with_LR_table_no_neg_score_
-pdf("Venn_Diagrams_and_csvs/venn_diagram_PY_R_CTR_input_CTRL_decoupler_scaled.pdf")
+pdf("Venn_Diagrams_and_csvs/venn_diagram_PY_R_CTR_input_CTRL_decoupler_scaled_new.pdf")
 grid.draw(v)
 dev.off()
 
@@ -273,16 +275,18 @@ dev.off()
 library(VennDiagram)
 library(data.table) 
 
-csv1 <- fread("R_intra_network_ctrl.csv")
+#csv1 <- fread("R_intra_network_ctrl.csv")
+csv1 <- results@intracellular_network_condition[["control"]]
 csv2 <- fread("py_intra_network_ctrl.csv")
 head(csv1)
 head(csv2)
-csv1 <- csv1[, !c("V1","TF_Score")]
+#csv1 <- csv1[, !c("V1","TF_Score")]
+csv1$TF_Score <- NULL
 csv2 <- csv2[, !c("V1","TF_Score")]
 
 csv1_list <- apply(csv1, 1, paste, collapse = ",")
 csv2_list <- apply(csv2, 1, paste, collapse = ",")
-head(csv1_list, n=500)
+head(csv1_list, n=50)
 head(csv2_list)
 
 SET1 <- csv1_list 
@@ -302,10 +306,10 @@ grid.draw(v)
 setdiff1 <- setdiff(SET1, SET2)
 setdiff2 <- setdiff(SET2, SET1)
 
-fwrite(data.table(setdiff1), "Venn_Diagrams_and_csvs/R_set_diff_intra_network_ctrl_decoupler_scaled.csv", col.names = FALSE)
-fwrite(data.table(setdiff2), "Venn_Diagrams_and_csvs/PY_set_diff_intra_network_ctrl_decoupler_scaled.csv", col.names = FALSE)
+fwrite(data.table(setdiff1), "Venn_Diagrams_and_csvs/R_set_diff_intra_network_ctrl_decoupler_scaled_new.csv", col.names = FALSE)
+fwrite(data.table(setdiff2), "Venn_Diagrams_and_csvs/PY_set_diff_intra_network_ctrl_decoupler_scaled_new.csv", col.names = FALSE)
 
-pdf("Venn_Diagrams_and_csvs/venn_diagram_PY_R_intra_network_diff_ctrl_decoupler_scaled.pdf")
+pdf("Venn_Diagrams_and_csvs/venn_diagram_PY_R_intra_network_diff_ctrl_decoupler_scaled_new.pdf")
 grid.draw(v)
 dev.off()
 
