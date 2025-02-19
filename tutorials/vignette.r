@@ -1,6 +1,7 @@
 library(LR2TF)
 library(Seurat)
-
+library(devtools)
+install_github("CostaLab/LR2TF@dev_cleanup")
 
 #test dataset from package:
 data(bone_marrow_stromal_cell_example, package = "LR2TF")
@@ -110,6 +111,9 @@ ctr_inptu <- LR2TF::combine_LR_and_TF(results@CTR_input_condition[["control"]], 
 exp_input <- LR2TF::combine_LR_and_TF(results@CTR_input_condition[["PMF_MF2"]], exp_file, parameters$out_path, "PMF_MF2")
 
 library(dplyr)
+library(tibble)
+library(tidyr)
+
 
   tf_table <- results@CTR_input_condition[["control"]]
   lr_table <- table_ctr
@@ -139,5 +143,5 @@ library(dplyr)
   
   intra_connections$all_pair <- NULL
   complete_interactions <- rbind(intra_connections, lr_table)
-  }
-  write.csv(complete_interactions, paste0("new_test\\CrossTalkeR_input_control.csv"), row.names = FALSE)
+  
+  write.csv(complete_interactions, paste0("new_test/CrossTalkeR_input_control.csv"), row.names = FALSE)
