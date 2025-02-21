@@ -9,18 +9,21 @@
 
 #install.packages("devtools")
 #install.packages("rcompanion")
-#install.packages("Seurat")
+install.packages("spatstat.utils")
 #install.packages("anndata")
 
-
+remove.packages("spatstat.utils")
 #anndata::install_anndata()
 #remotes::install_github("cellgeni/sceasy")
 
 #pandoc/VignetteBuilder is necessary for vignettes. install knitr?
 # install.packages("pandoc") is not correct
 
-#remotes::install_github("CostaLab/LR2TF", build_vignettes = FALSE)
 
+install.packages("xfun")
+
+remotes::install_github("CostaLab/LR2TF", build_vignettes = FALSE)
+   
 library(Seurat)
 library(LR2TF)
 library(Exact)

@@ -1,7 +1,10 @@
 library(LR2TF)
+library(SeuratObject)
 library(Seurat)
-library(devtools)
-install_github("CostaLab/LR2TF@dev_cleanup")
+
+#library(devtools)
+
+#remotes::install_github("CostaLab/LR2TF@dev_cleanup")
 
 #test dataset from package:
 data(bone_marrow_stromal_cell_example, package = "LR2TF")

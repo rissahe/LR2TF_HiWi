@@ -5,7 +5,7 @@ library(VennDiagram)
 #CTRL
 #########
 
-csv1 <- read.csv("new_test/CrossTalkeR_input_control.csv")
+csv1 <- read.csv("new_test\\CrossTalkeR_input_control.csv")
 #row.names(csv1) <- NULL
 csv1 <- csv1[c(1:702),]
 csv1 <- csv1[csv1$MeanLR > 0,]
@@ -28,7 +28,7 @@ length(csv1_list)
 
 csv2 <- read.csv("script_test/CrossTalkeR_input_control.csv")
 row.names(csv2) <- NULL
-csv2 <- csv2[c(1:342),]
+csv2 <- csv2[c(1:282),]
 #csv2 <- read.csv("py_ctr_input_wo_ctr_exp_tables.csv")
 
 csv2 <- csv2[c("source", "gene_A", "gene_B")]
@@ -62,15 +62,15 @@ setdiff1 <- t(as.data.frame(setdiff(SET1, intersect(SET1, SET2))))
 setdiff2 <- t(as.data.frame(setdiff(SET2, intersect(SET1, SET2))))
 
 #genes_filtered_w_LR_table_no_neg_score
-write.csv(setdiff1, "Venn_Diagrams_and_csvs/R_unique_CTRL_decoupler_scaled_new.csv", row.names = FALSE)
-write.csv(setdiff2, "Venn_Diagrams_and_csvs/Py_unique_CTRL_decoupler_scaled_new.csv", row.names = FALSE)
+write.csv(setdiff1, "Venn_Diagrams_and_csvs/R_unique_CTRL_decoupler_unscaled.csv", row.names = FALSE)
+write.csv(setdiff2, "Venn_Diagrams_and_csvs/Py_unique_CTRL_decoupler_unscaled.csv", row.names = FALSE)
 
 
 grid.newpage()
 grid.draw(v)
 
 #filtered_with_LR_table_no_neg_score_
-pdf("Venn_Diagrams_and_csvs/venn_diagram_PY_R_CTR_input_CTRL_decoupler_scaled_new.pdf")
+pdf("Venn_Diagrams_and_csvs/venn_diagram_PY_R_CTR_input_CTRL_decoupler_unscaled.pdf")
 grid.draw(v)
 dev.off()
 
