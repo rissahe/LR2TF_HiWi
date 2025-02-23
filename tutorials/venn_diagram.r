@@ -145,6 +145,83 @@ grid.draw(v)
 dev.off()
 
 ########################################################
+#CRT input cluster control
+
+csv1 <- read.csv("new_test\\CrossTalkeR_input_control_cluster.csv")
+#row.names(csv1) <- NULL
+csv1 <- csv1[c(1:785),]
+csv1 <- csv1[csv1$MeanLR > 0,]
+
+
+#csv1 <- read.csv("R_ctr_input_wo_exp_ctr_tables.csv")
+#csv1 <- results@CTR_input_condition[["control"]]
+
+csv1 <- csv1[c("source", "gene_A", "gene_B")]
+
+csv1_list <- list()
+for (i in 1:nrow(csv1)) {
+    row <- paste(csv1[i, ], collapse = ",")
+    csv1_list <- append(csv1_list, row)
+}
+
+head(csv1_list)
+SET1 <- csv1_list
+length(csv1_list)
+
+csv2 <- read.csv("script_test/CrossTalkeR_input_control_cluster.csv")
+row.names(csv2) <- NULL
+csv2 <- csv2[c(1:1097),]
+csv2 <- csv2[csv2$MeanLR > 0,]
+
+#csv2 <- read.csv("py_ctr_input_wo_ctr_exp_tables.csv")
+
+csv2 <- csv2[c("source", "gene_A", "gene_B")]
+
+
+csv2_list <- list()
+for (i in 1:nrow(csv2)) {
+    row <- paste(csv2[i, ], collapse = ",")
+    csv2_list <- append(csv2_list, row)
+}
+
+head(csv2_list)
+SET2 <- csv2_list
+
+v <- venn.diagram(
+  x = list(SET1, SET2),
+  category.names = c("Set R" , "Set PY "),
+  filename = NULL,
+  output = TRUE)
+
+
+grid.newpage()
+grid.draw(v)
+
+
+#v[[5]]$label  <- paste(setdiff(SET1, intersect(SET1,SET2)), collapse="\n") 
+#v[[6]]$label <- paste(setdiff(SET2, intersect(SET1,SET2)), collapse="\n")
+
+
+setdiff1 <- t(as.data.frame(setdiff(SET1, intersect(SET1, SET2))))
+setdiff2 <- t(as.data.frame(setdiff(SET2, intersect(SET1, SET2))))
+
+#genes_filtered_w_LR_table_no_neg_score
+write.csv(setdiff1, "Venn_Diagrams_and_csvs/R_unique_CTRL_decoupler_CRT_cluster_control.csv", row.names = FALSE)
+write.csv(setdiff2, "Venn_Diagrams_and_csvs/Py_unique_CTRL_decoupler_CRT_cluster_control.csv", row.names = FALSE)
+
+
+grid.newpage()
+grid.draw(v)
+
+#filtered_with_LR_table_no_neg_score_
+pdf("Venn_Diagrams_and_csvs/venn_diagram_PY_R_CTR_input_CTRL_decoupler_CRT_cluster_control.pdf")
+grid.draw(v)
+dev.off()
+
+
+
+
+##############################################################
 #type gene = TF
 #CTRL
 ################

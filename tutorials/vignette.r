@@ -1,5 +1,5 @@
 library(LR2TF)
-library(SeuratObject)
+#library(SeuratObject)
 library(Seurat)
 
 #library(devtools)
@@ -48,11 +48,9 @@ table_exp <- read.csv("/home/larissa/Documents/LR2TF_HiWi/LR2TF_test_run/EXP_LR.
 ctr_inptu <- LR2TF::combine_LR_and_TF(results@CTR_input_condition[["control"]], table_ctr, parameters$out_path, "control")
 exp_input <- LR2TF::combine_LR_and_TF(results@CTR_input_condition[["PMF_MF2"]], table_exp, parameters$out_path, "PMF_MF2")
 
-ctr_file <- "/home/larissa/Documents/Larissa_HiWi/LR2TF_test/control_lr_results.csv"
-exp_file <- "/home/larissa/Documents/Larissa_HiWi/LR2TF_test/PMF,MF2_lr_results.csv"
 
-ctr_inptu <- LR2TF::combine_LR_and_TF(results@CTR_input_condition[["control"]], ctr_file, parameters$out_path, "control")
-exp_input <- LR2TF::combine_LR_and_TF(results@CTR_input_condition[["PMF_MF2"]], exp_file, parameters$out_path, "PMF_MF2")
+ctr_input_cluster <- LR2TF::combine_LR_and_TF(results@CTR_input_cluster[["control"]], table_ctr, parameters$out_path, "control_cluster")
+exp_input_cluster <- LR2TF::combine_LR_and_TF(results@CTR_input_cluster[["PMF_MF2"]], table_exp, parameters$out_path, "PMF_MF2_cluster")
 
 ```
 ########################
@@ -60,7 +58,6 @@ exp_input <- LR2TF::combine_LR_and_TF(results@CTR_input_condition[["PMF_MF2"]], 
 
 library(LR2TF)
 library(Seurat)
-library(dplyr)
 
 #test dataset from package:
 data(bone_marrow_stromal_cell_example, package = "LR2TF")
@@ -107,17 +104,17 @@ table_exp <- read.csv("LR2TF_test_run\\EXP_LR.csv")
 ctr_inptu <- LR2TF::combine_LR_and_TF(results@CTR_input_condition[["control"]], table_ctr, parameters$out_path, "control")
 exp_input <- LR2TF::combine_LR_and_TF(results@CTR_input_condition[["PMF_MF2"]], table_exp, parameters$out_path, "PMF_MF2")
 
-ctr_file <- "/home/larissa/Documents/Larissa_HiWi/LR2TF_test/control_lr_results.csv"
-exp_file <- "/home/larissa/Documents/Larissa_HiWi/LR2TF_test/PMF,MF2_lr_results.csv"
+ctr_input_cluster <- LR2TF::combine_LR_and_TF(results@CTR_input_cluster[["control"]], table_ctr, parameters$out_path, "control_cluster")
+exp_input_cluster <- LR2TF::combine_LR_and_TF(results@CTR_input_cluster[["PMF_MF2"]], table_exp, parameters$out_path, "PMF_MF2_cluster")
 
-ctr_inptu <- LR2TF::combine_LR_and_TF(results@CTR_input_condition[["control"]], ctr_file, parameters$out_path, "control")
-exp_input <- LR2TF::combine_LR_and_TF(results@CTR_input_condition[["PMF_MF2"]], exp_file, parameters$out_path, "PMF_MF2")
+```
+
 
 library(dplyr)
 library(tibble)
 library(tidyr)
 
-
+#condition
   tf_table <- results@CTR_input_condition[["control"]]
   lr_table <- table_ctr
   intra_connections <- tf_table[NULL, ]
@@ -148,3 +145,38 @@ library(tidyr)
   complete_interactions <- rbind(intra_connections, lr_table)
   
   write.csv(complete_interactions, paste0("new_test/CrossTalkeR_input_control.csv"), row.names = FALSE)
+
+#cluster
+
+
+  tf_table <- results@CTR_input_cluster[["control"]]
+  #print(tf_table)
+  lr_table <- table_ctr
+  intra_connections <- tf_table[NULL, ]
+  for (celltype in unique(append(lr_table$source, lr_table$target))) {
+    lr_filtered_ligands <- lr_table[lr_table$source == celltype, ]
+    lr_filtered_receptors <- lr_table[lr_table$target == celltype, ]
+    lr_ligands <- unique(lr_filtered_ligands$gene_A)
+    lr_receptors <- unique(lr_filtered_receptors$gene_B)
+    print(celltype)
+    print(lr_receptors)
+    tf_table_receptors <- tf_table[tf_table$target == celltype & tf_table$type_gene_A == "Receptor", ]
+    tf_table_ligands <- tf_table[tf_table$source == celltype & tf_table$type_gene_B == "Ligand", ]
+    tf_receptor_interactions <- tf_table_receptors %>%
+      filter(gene_A %in% lr_receptors)
+    tf_ligand_interactions <- tf_table_ligands %>%
+      filter(gene_B %in% lr_ligands)
+    intra_connections <- rbind(intra_connections, tf_receptor_interactions, tf_ligand_interactions)
+  }
+  intra_connections$all_pair <- paste0(
+    intra_connections$source, "/",
+    intra_connections$gene_A, "/",
+    intra_connections$target, "/",
+    intra_connections$gene_B
+  )
+  intra_connections <- intra_connections[!duplicated(intra_connections$all_pair), ]
+  
+  intra_connections$all_pair <- NULL
+  complete_interactions <- rbind(intra_connections, lr_table)
+  
+  write.csv(complete_interactions, paste0("new_test/CrossTalkeR_input_control_cluster.csv"), row.names = FALSE)
