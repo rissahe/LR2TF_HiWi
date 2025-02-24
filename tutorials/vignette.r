@@ -2,9 +2,8 @@ library(LR2TF)
 #library(SeuratObject)
 library(Seurat)
 
-#library(devtools)
+#remotes::install_github("CostaLab/LR2TF", ref="dev_cleanup")
 
-#remotes::install_github("CostaLab/LR2TF@dev_cleanup")
 
 #test dataset from package:
 data(bone_marrow_stromal_cell_example, package = "LR2TF")
@@ -22,18 +21,18 @@ parameters <- list("out_path" = "/home/larissa/Documents/LR2TF_HiWi/new_test/",
 
 
 
-results <- LR2TF::tf_activity_analysis(seuratobject = seurat_object,
+results <- LR2TF::IntraTalker_analysis(seuratobject = seurat_object,
                                        tf_activities = "/home/larissa/Documents/LR2TF_HiWi/LR2TF_test_run/decoupler_results.csv",
                                        arguments_list = parameters)
 
-1. tf_activities_condition -> tables with condition significant transcription factors for each compared condition
-2. tf_activities_cluster -> tables with cluster specific transcription factors for all conditions in the data
-3. average_gene_expression -> matrices for each condition with average gene expressions
-4. regulon -> regulon used for the analysis as specified by the user
-5. CTR_input_condition -> for each condition a table with receptor-transcription factor and transcription factor-ligand interactions based on condition specific transcription factors (input for CrossTalker)
-6. CTR_input_cluster -> for each condition a table with receptor-transcription factor and transcription factor-ligand interactions based on cluster specific transcription factors (input for CrossTalker)
-7. intracellular_network_condition -> for each condition a table with receptor-transcription factor and transcription factor-target gene interactions based on condition specific transcription factors
-8. intracellular_network_cluster -> for each condition a table with receptor-transcription factor and transcription factor-target gene interactions based on cluster specific transcription factors
+#1. tf_activities_condition -> tables with condition significant transcription factors for each compared condition
+#2. tf_activities_cluster -> tables with cluster specific transcription factors for all conditions in the data
+#3. average_gene_expression -> matrices for each condition with average gene expressions
+#4. regulon -> regulon used for the analysis as specified by the user
+#5. CTR_input_condition -> for each condition a table with receptor-transcription factor and transcription factor-ligand interactions based on condition specific transcription factors (input for CrossTalker)
+#6. CTR_input_cluster -> for each condition a table with receptor-transcription factor and transcription factor-ligand interactions based on cluster specific transcription factors (input for CrossTalker)
+#7. intracellular_network_condition -> for each condition a table with receptor-transcription factor and transcription factor-target gene interactions based on condition specific transcription factors
+#8. intracellular_network_cluster -> for each condition a table with receptor-transcription factor and transcription factor-target gene interactions based on cluster specific transcription factors
 
 
 write.csv(results@CTR_input_condition[["control"]], "R_ctr_input_wo_exp_ctr_tables.csv")
@@ -52,7 +51,6 @@ exp_input <- LR2TF::combine_LR_and_TF(results@CTR_input_condition[["PMF_MF2"]], 
 ctr_input_cluster <- LR2TF::combine_LR_and_TF(results@CTR_input_cluster[["control"]], table_ctr, parameters$out_path, "control_cluster")
 exp_input_cluster <- LR2TF::combine_LR_and_TF(results@CTR_input_cluster[["PMF_MF2"]], table_exp, parameters$out_path, "PMF_MF2_cluster")
 
-```
 ########################
 #WINDOWS:
 
@@ -75,41 +73,45 @@ parameters <- list("out_path" = "new_test\\",
 
 
 
-results <- LR2TF::tf_activity_analysis(seuratobject = seurat_object,
+results <- LR2TF::IntraTalker_analysis(seuratobject = seurat_object,
                                        tf_activities = "LR2TF_test_run\\decoupler_results.csv",
                                        arguments_list = parameters)
 
 
-1. tf_activities_condition -> tables with condition significant transcription factors for each compared condition
-2. tf_activities_cluster -> tables with cluster specific transcription factors for all conditions in the data
-3. average_gene_expression -> matrices for each condition with average gene expressions
-4. regulon -> regulon used for the analysis as specified by the user
-5. CTR_input_condition -> for each condition a table with receptor-transcription factor and transcription factor-ligand interactions based on condition specific transcription factors (input for CrossTalker)
-6. CTR_input_cluster -> for each condition a table with receptor-transcription factor and transcription factor-ligand interactions based on cluster specific transcription factors (input for CrossTalker)
-7. intracellular_network_condition -> for each condition a table with receptor-transcription factor and transcription factor-target gene interactions based on condition specific transcription factors
-8. intracellular_network_cluster -> for each condition a table with receptor-transcription factor and transcription factor-target gene interactions based on cluster specific transcription factors
+#1. tf_activities_condition -> tables with condition significant transcription factors for each compared condition
+#2. tf_activities_cluster -> tables with cluster specific transcription factors for all conditions in the data
+#3. average_gene_expression -> matrices for each condition with average gene expressions
+#4. regulon -> regulon used for the analysis as specified by the user
+#5. CTR_input_condition -> for each condition a table with receptor-transcription factor and transcription factor-ligand interactions based on condition specific transcription factors (input for CrossTalker)
+#6. CTR_input_cluster -> for each condition a table with receptor-transcription factor and transcription factor-ligand interactions based on cluster specific transcription factors (input for CrossTalker)
+#7. intracellular_network_condition -> for each condition a table with receptor-transcription factor and transcription factor-target gene interactions based on condition specific transcription factors
+#8. intracellular_network_cluster -> for each condition a table with receptor-transcription factor and transcription factor-target gene interactions based on cluster specific transcription factors
 
 save(results, file='new_test\\my_data.rda')
+results <- load(file='new_test\\my_data.rda')
+
 
 write.csv(results@CTR_input_condition[["control"]], "R_ctr_input_wo_exp_ctr_tables.csv")
 
-print(results@intracellular_network_condition[["control"]])
+#print(results@intracellular_network_condition[["control"]])
 write.csv(results@intracellular_network_condition[["control"]], "R_intra_network_ctrl.csv")
 write.csv(results@intracellular_network_condition[["PMF_MF2"]], "R_intra_network_PMF.csv")
 
+write.csv(results@intracellular_network_cluster[["control"]], "R_intra_network_ctrl_cluster.csv")
+write.csv(results@intracellular_network_cluster[["PMF_MF2"]], "R_intra_network_PMF_cluster.csv")
 
 table_ctr <- read.csv("LR2TF_test_run\\CTR_LR.csv")
 table_exp <- read.csv("LR2TF_test_run\\EXP_LR.csv")
 
-ctr_inptu <- LR2TF::combine_LR_and_TF(results@CTR_input_condition[["control"]], table_ctr, parameters$out_path, "control")
+ctr_inptu <- LR2TF::combine_LR_and_TF_complexes(results@CTR_input_condition[["control"]], table_ctr, parameters$out_path, "control")
 exp_input <- LR2TF::combine_LR_and_TF(results@CTR_input_condition[["PMF_MF2"]], table_exp, parameters$out_path, "PMF_MF2")
 
-ctr_input_cluster <- LR2TF::combine_LR_and_TF(results@CTR_input_cluster[["control"]], table_ctr, parameters$out_path, "control_cluster")
+ctr_input_cluster <- LR2TF::combine_LR_and_TF_complexes()(results@CTR_input_cluster[["control"]], table_ctr, parameters$out_path, "control_cluster")
 exp_input_cluster <- LR2TF::combine_LR_and_TF(results@CTR_input_cluster[["PMF_MF2"]], table_exp, parameters$out_path, "PMF_MF2_cluster")
 
-```
 
 
+####################################################
 library(dplyr)
 library(tibble)
 library(tidyr)
