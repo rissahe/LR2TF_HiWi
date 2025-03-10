@@ -5,7 +5,7 @@ library(VennDiagram)
 #CTRL
 #########
 
-csv1 <- read.csv("new_test\\CrossTalkeR_input_control.csv")
+csv1 <- read.csv("new_test/CrossTalkeR_input_control.csv")
 #row.names(csv1) <- NULL
 csv1 <- csv1[c(1:193),]
 csv1 <- csv1[csv1$MeanLR > 0,]
@@ -29,6 +29,8 @@ length(csv1_list)
 csv2 <- read.csv("script_test/CrossTalkeR_input_control.csv")
 row.names(csv2) <- NULL
 csv2 <- csv2[c(1:342),]
+csv2 <- csv2[csv2$MeanLR > 0,]
+
 #csv2 <- read.csv("py_ctr_input_wo_ctr_exp_tables.csv")
 
 csv2 <- csv2[c("source", "gene_A", "gene_B")]
@@ -61,7 +63,7 @@ grid.draw(v)
 setdiff1 <- t(as.data.frame(setdiff(SET1, intersect(SET1, SET2))))
 setdiff2 <- t(as.data.frame(setdiff(SET2, intersect(SET1, SET2))))
 
-#genes_filtered_w_LR_table_no_neg_score
+#genes_filtered_w_LR_table_no_neg_score & R results main scaled too
 write.csv(setdiff1, "Venn_Diagrams_and_csvs/decoupler_main_scaled/R_unique_CTR_control_condition.csv", row.names = FALSE)
 write.csv(setdiff2, "Venn_Diagrams_and_csvs/decoupler_main_scaled/Py_unique_CTR_control_condition.csv", row.names = FALSE)
 
@@ -79,9 +81,10 @@ dev.off()
 #PMF
 ####################
 
-csv1 <- read.csv("new_test\\CrossTalkeR_input_PMF_MF2.csv")
+csv1 <- read.csv("new_test/CrossTalkeR_input_PMF_MF2.csv")
 row.names(csv1) <- NULL
 csv1 <- csv1[c(1:269),]
+csv1 <- csv1[csv1$MeanLR > 0,]
 
 #csv1 <- read.csv("R_ctr_input_wo_exp_ctr_tables.csv")
 #csv1 <- results@CTR_input_condition[["control"]]
@@ -101,6 +104,8 @@ SET1 <- csv1_list
 csv2 <- read.csv("script_test/CrossTalkeR_input_PMF_MF2.csv")
 row.names(csv2) <- NULL
 csv2 <- csv2[c(1:277),]
+csv2 <- csv2[csv2$MeanLR > 0,]
+
 #csv2 <- read.csv("py_ctr_input_wo_ctr_exp_tables.csv")
 
 csv2 <- csv2[c("source", "gene_A", "gene_B")]
@@ -148,7 +153,7 @@ dev.off()
 #CRT input cluster control
 #R and py are both scaled in main function
 
-csv1 <- read.csv("new_test\\CrossTalkeR_input_control_cluster.csv")
+csv1 <- read.csv("new_test/CrossTalkeR_input_control_cluster.csv")
 #row.names(csv1) <- NULL
 csv1 <- csv1[c(1:754),]
 csv1 <- csv1[csv1$MeanLR > 0,]
@@ -224,7 +229,7 @@ dev.off()
 #CRT input cluster PMF MF2
 #R and py are both scaled in main function
 
-csv1 <- read.csv("new_test\\CrossTalkeR_input_PMF_MF2_cluster.csv")
+csv1 <- read.csv("new_test/CrossTalkeR_input_PMF_MF2_cluster.csv")
 #row.names(csv1) <- NULL
 csv1 <- csv1[c(1:741),]
 csv1 <- csv1[csv1$MeanLR > 0,]
@@ -472,7 +477,7 @@ setdiff2 <- t(as.data.frame(setdiff(SET2, intersect(SET1, SET2))))
 
 #also no negative z score and filtered via LR table
 write.csv(setdiff1, "Venn_Diagrams_and_csvs/decoupler_main_scaled/R_significant_TF_control_cluster.csv", row.names = FALSE)
-write.csv(setdiff2, "Venn_Diagrams_and_csvs/decoupler_main_scaled/PY_R_significant_TF_control_cluster.csv", row.names = FALSE)
+write.csv(setdiff2, "Venn_Diagrams_and_csvs/decoupler_main_scaled/PY_significant_TF_control_cluster.csv", row.names = FALSE)
 
 
 grid.newpage()

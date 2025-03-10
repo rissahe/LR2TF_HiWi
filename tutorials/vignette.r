@@ -2,7 +2,7 @@ library(LR2TF)
 #library(SeuratObject)
 library(Seurat)
 
-#remotes::install_github("CostaLab/LR2TF", ref="dev_cleanup")
+#remotes::install_github("CostaLab/LR2TF", ref="dev_cleanup", force =TRUE)
 
 
 #test dataset from package:
@@ -40,6 +40,8 @@ write.csv(results@CTR_input_condition[["control"]], "R_ctr_input_wo_exp_ctr_tabl
 write.csv(results@intracellular_network_condition[["control"]], "R_intra_network_ctrl.csv")
 write.csv(results@intracellular_network_condition[["PMF_MF2"]], "R_intra_network_PMF.csv")
 
+write.csv(results@intracellular_network_cluster[["control"]], "R_intra_network_ctrl_cluster.csv")
+write.csv(results@intracellular_network_cluster[["PMF_MF2"]], "R_intra_network_PMF_cluster.csv")
 
 table_ctr <- read.csv("/home/larissa/Documents/LR2TF_HiWi/LR2TF_test_run/CTR_LR.csv")
 table_exp <- read.csv("/home/larissa/Documents/LR2TF_HiWi/LR2TF_test_run/EXP_LR.csv")
