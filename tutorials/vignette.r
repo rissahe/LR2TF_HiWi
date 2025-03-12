@@ -65,7 +65,7 @@ seurat_object <- bone_marrow_stromal_cell_example
 
 
 parameters <- list("out_path" = "new_test\\",
-                   reg = "LR2TF_test_run\\filterd_regulon.csv",
+                   "reg" = "LR2TF_test_run\\filterd_regulon.csv",
                    "organism" = "human",
                    "celltype" = "new_annotation", #name of the meta data field defining cell identities
                    "condition" = "protocol", #name of the meta data field defining conditions
@@ -90,8 +90,7 @@ results <- LR2TF::IntraTalker_analysis(seuratobject = seurat_object,
 #8. intracellular_network_cluster -> for each condition a table with receptor-transcription factor and transcription factor-target gene interactions based on cluster specific transcription factors
 
 save(results, file='new_test\\my_data.rda')
-results <- load(file='new_test\\my_data.rda')
-
+results <- readRDA(file='new_test\\my_data.rda')
 
 write.csv(results@CTR_input_condition[["control"]], "R_ctr_input_wo_exp_ctr_tables.csv")
 

@@ -147,3 +147,136 @@ test_var <- var(test)
 ############################################################################################################
 ligands <- load(file='ligands_human.rda')
 str(ligands)
+
+
+#################################
+library(dplyr)
+library(tibble)
+
+data <- readRDA("new_test//my_data.rda")
+
+
+generate_CrossTalkeR_input <-
+  function(tf_activities,
+           gene_expression,
+           regulon = NA,
+           organism = "human") {
+    if (any(tf_activities$z_score > 0)) {
+      regulon <- regulon %>%
+        rename(tf = source)
+
+      if(organism == "human") {
+        ligands <- ligands_human
+        R2TF <- aggregate(RTF_DB$receptor ~ RTF_DB$tf, FUN = c)
+      } else if(organism == "mouse") {
+        ligands <- ligands_mouse
+        R2TF <- aggregate(RTF_DB_mouse$receptor ~ RTF_DB_mouse$tf, FUN = c)
+      } else {
+        stop("Invalid organism to generate CrossTalkeR input!")
+      }
+
+      colnames(R2TF) <- c('tf', 'receptors')
+      R2TF <- R2TF %>%
+        remove_rownames %>%
+        tibble::column_to_rownames(var = 'tf')
+
+      sorted_regulon <-
+        aggregate(regulon$target ~ regulon$tf, FUN = c)
+      colnames(sorted_regulon) <- c('tf', 'targets')
+      sorted_regulon <- sorted_regulon %>%
+        remove_rownames %>%
+        tibble::column_to_rownames(var = 'tf')
+
+      tf_activities <- tf_activities %>%
+        filter(z_score > 0)
+
+      output_df <- create_empty_CTR_dataframe()
+
+      for (row in 1:nrow(tf_activities)) {
+
+        r_tf <- create_empty_CTR_dataframe()
+        tf_l <- create_empty_CTR_dataframe()
+
+        #if (tf_activities[row, "z_score"] > 0) {
+        tf <- as.character(tf_activities[row, "gene"])
+        targets <- sorted_regulon[tf,][1]
+        receptors <- R2TF[tf,][1]
+        tf_ligands <- intersect(targets[[1]], ligands)
+        if (length(tf_ligands) > 0) {
+          for (ligand in tf_ligands) {
+            expressed <- FALSE
+            if (ligand %in% rownames(gene_expression)) {
+              ex_value <- gene_expression[ligand, tf_activities[row, "cluster"]]
+              if (ex_value != 0) {
+                expressed <- TRUE
+              }
+            }
+
+            if (expressed == TRUE) {
+              df <- add_entry_to_CTR_dataframe(tf_activities[row, "cluster"],
+                                               tf_activities[row, "cluster"],
+                                               tf_activities[row, "gene"],
+                                               ligand,
+                                               'Transcription Factor',
+                                               'Ligand',
+                                               tf_activities[row, "z_score"])
+              tf_l <- rbind(tf_l, df)
+            }
+          }
+        }
+        if (length(receptors[[1]]) > 0) {
+          for (receptor in receptors[[1]]) {
+            df <- add_entry_to_CTR_dataframe(tf_activities[row, "cluster"],
+                                             tf_activities[row, "cluster"],
+                                             receptor,
+                                             tf_activities[row, "gene"],
+                                             'Receptor',
+                                             'Transcription Factor',
+                                             tf_activities[row, "z_score"])
+            r_tf <- rbind(r_tf, df)
+          }
+        }
+        #}
+
+        r_tf$gene_A <- gsub("_", "+", r_tf$gene_A, fixed = TRUE)
+        r_tf$gene_B <- gsub("_", "+", r_tf$gene_B, fixed = TRUE)
+        tf_l$gene_A <- gsub("_", "+", tf_l$gene_A, fixed = TRUE)
+        tf_l$gene_B <- gsub("_", "+", tf_l$gene_B, fixed = TRUE)
+
+        output_df <- rbind(output_df, r_tf)
+        output_df <- rbind(output_df, tf_l)
+      }
+    } else {
+      output_df = NA
+    }
+
+    return(output_df)
+  }
+
+#tf_activities <- results@tf_activities_condition$control
+tf_activities <- read.csv("script_test/TF_results/control/significant_condition_tf_results_control.csv")
+tf_activities <- tf_activities %>% rename_at('t_value', ~'z_score')
+print(tf_activities)
+
+gene_expression <- results@average_gene_expression$control
+print(gene_expression)
+
+regulon <- read.csv("filterd_regulon.csv")
+
+
+RTF_DB <- read.csv("rtf_db_human.csv")
+
+ligands_human <- read.csv("ligands_human.csv")
+
+
+result_r <- generate_CrossTalkeR_input(tf_activities, gene_expression, regulon, organism = "human")
+print(result_r)
+
+write.csv(result_r, "r_output.csv", row.names = FALSE)
+write.table(result_r, file = "r_output.csv", sep = ",", row.names = FALSE, col.names = TRUE, quote = FALSE)
+
+result_py <- generate_CrossTalkeR_input(tf_activities, gene_expression, regulon, organism = "human")
+write.table(result_py, file = "py_output_in_R.csv", sep = ",", row.names = FALSE, col.names = TRUE, quote = FALSE)
+
+table_ctr <- read.csv("LR2TF_test_run\\CTR_LR.csv")
+ctr_input_py <- LR2TF::combine_LR_and_TF_complexes(result_py, table_ctr, "z", "control_py_in_R")
