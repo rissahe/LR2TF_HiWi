@@ -150,8 +150,7 @@ str(ligands)
 
 
 #################################
-library(dplyr)
-library(tibble)
+
 
 data <- readRDA("new_test//my_data.rda")
 
@@ -179,7 +178,7 @@ generate_CrossTalkeR_input <-
       R2TF <- R2TF %>%
         remove_rownames %>%
         tibble::column_to_rownames(var = 'tf')
-
+      #print(R2TF)
       sorted_regulon <-
         aggregate(regulon$target ~ regulon$tf, FUN = c)
       colnames(sorted_regulon) <- c('tf', 'targets')
@@ -200,8 +199,11 @@ generate_CrossTalkeR_input <-
         #if (tf_activities[row, "z_score"] > 0) {
         tf <- as.character(tf_activities[row, "gene"])
         targets <- sorted_regulon[tf,][1]
+        #print(targets[[1]])
+        #print(ligands)
         receptors <- R2TF[tf,][1]
-        tf_ligands <- intersect(targets[[1]], ligands)
+        tf_ligands <- intersect(targets[[1]], ligands["ligands_human"])
+        print(tf_ligands)
         if (length(tf_ligands) > 0) {
           for (ligand in tf_ligands) {
             expressed <- FALSE
@@ -253,18 +255,28 @@ generate_CrossTalkeR_input <-
     return(output_df)
   }
 
+
+library(dplyr)
+library(tibble)
+
 #tf_activities <- results@tf_activities_condition$control
 tf_activities <- read.csv("script_test/TF_results/control/significant_condition_tf_results_control.csv")
 tf_activities <- tf_activities %>% rename_at('t_value', ~'z_score')
 print(tf_activities)
 
-gene_expression <- results@average_gene_expression$control
+
+#tf_activities <- read.csv("script_test/TF_results/PMF_MF2/significant_condition_tf_results_PMF,MF2.csv")
+#tf_activities <- tf_activities %>% rename_at('t_value', ~'z_score')
+print(tf_activities)
+
+gene_expression <- results@average_gene_expression$control_average_expression
 print(gene_expression)
 
 regulon <- read.csv("filterd_regulon.csv")
 
 
 RTF_DB <- read.csv("rtf_db_human.csv")
+
 
 ligands_human <- read.csv("ligands_human.csv")
 
@@ -276,7 +288,19 @@ write.csv(result_r, "r_output.csv", row.names = FALSE)
 write.table(result_r, file = "r_output.csv", sep = ",", row.names = FALSE, col.names = TRUE, quote = FALSE)
 
 result_py <- generate_CrossTalkeR_input(tf_activities, gene_expression, regulon, organism = "human")
-write.table(result_py, file = "py_output_in_R.csv", sep = ",", row.names = FALSE, col.names = TRUE, quote = FALSE)
+write.table(result_py, file = "py_output_control_cond_in_R.csv", sep = ",", row.names = FALSE, col.names = TRUE, quote = FALSE)
+print(result_py)
 
-table_ctr <- read.csv("LR2TF_test_run\\CTR_LR.csv")
-ctr_input_py <- LR2TF::combine_LR_and_TF_complexes(result_py, table_ctr, "z", "control_py_in_R")
+table_ctr <- read.csv("LR2TF_test_run/CTR_LR.csv")
+table_exp <- read.csv("/home/larissa/Documents/LR2TF_HiWi/LR2TF_test_run/EXP_LR.csv")
+
+ctr_input_py <- LR2TF::combine_LR_and_TF_complexes(result_py, table_ctr, "z", "control_cond_py_in_R_try")
+exp_input_py <- LR2TF::combine_LR_and_TF_complexes(result_py, table_exp, "z", "PMF_cond_py_in_R")
+
+load(file="RTF_DB_2.rda")
+head(rtf_db_R[1])
+print(RTF_DB_2)
+write.csv(RTF_DB_2, "rtf_db_human.csv", row.names = FALSE)
+
+load(file="ligands_human.rda")
+write.csv(ligands_human, "ligands_human_diff_maybe.csv", row.names = FALSE)

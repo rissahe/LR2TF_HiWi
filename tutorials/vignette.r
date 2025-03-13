@@ -46,8 +46,8 @@ write.csv(results@intracellular_network_cluster[["PMF_MF2"]], "R_intra_network_P
 table_ctr <- read.csv("/home/larissa/Documents/LR2TF_HiWi/LR2TF_test_run/CTR_LR.csv")
 table_exp <- read.csv("/home/larissa/Documents/LR2TF_HiWi/LR2TF_test_run/EXP_LR.csv")
 
-ctr_inptu <- LR2TF::combine_LR_and_TF(results@CTR_input_condition[["control"]], table_ctr, parameters$out_path, "control")
-exp_input <- LR2TF::combine_LR_and_TF(results@CTR_input_condition[["PMF_MF2"]], table_exp, parameters$out_path, "PMF_MF2")
+ctr_inptu <- LR2TF::combine_LR_and_TF_complexes(results@CTR_input_condition[["control"]], table_ctr, parameters$out_path, "control")
+exp_input <- LR2TF::combine_LR_and_TF_complexes(results@CTR_input_condition[["PMF_MF2"]], table_exp, parameters$out_path, "PMF_MF2")
 
 
 ctr_input_cluster <- LR2TF::combine_LR_and_TF(results@CTR_input_cluster[["control"]], table_ctr, parameters$out_path, "control_cluster")

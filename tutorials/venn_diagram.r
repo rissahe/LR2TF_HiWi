@@ -2,6 +2,7 @@
 library(VennDiagram)
 
 folder <- "all_in_R_code"
+#folder <- "decoupler_main_scaled"
 #########
 #CTRL
 #########
@@ -9,6 +10,7 @@ folder <- "all_in_R_code"
 csv1 <- read.csv("new_test/CrossTalkeR_input_control.csv")
 #row.names(csv1) <- NULL
 csv1 <- csv1[c(1:193),]
+
 csv1 <- csv1[csv1$MeanLR > 0,]
 
 
@@ -25,11 +27,12 @@ for (i in 1:nrow(csv1)) {
 
 head(csv1_list)
 SET1 <- csv1_list
+print(SET1)
 length(csv1_list)
 
-csv2 <- read.csv("zCrossTalkeR_input_control_py_in_R.csv")
+csv2 <- read.csv("zCrossTalkeR_input_control_cond_py_in_R.csv")
 row.names(csv2) <- NULL
-csv2 <- csv2[c(1:82),]
+csv2 <- csv2[c(1:193),]
 csv2 <- csv2[csv2$MeanLR > 0,]
 
 #csv2 <- read.csv("py_ctr_input_wo_ctr_exp_tables.csv")
@@ -45,12 +48,13 @@ for (i in 1:nrow(csv2)) {
 
 head(csv2_list)
 SET2 <- csv2_list
-
+print(SET2)
 v <- venn.diagram(
   x = list(SET1, SET2),
   category.names = c("Set R" , "Set PY "),
   filename = NULL,
-  output = TRUE)
+  output = TRUE,
+  disable.logging = TRUE)
 
 
 grid.newpage()
@@ -68,6 +72,8 @@ setdiff2 <- t(as.data.frame(setdiff(SET2, intersect(SET1, SET2))))
 write.csv(setdiff1, paste0("Venn_Diagrams_and_csvs/", folder, "/R_unique_CTR_control_condition.csv"), row.names = FALSE)
 write.csv(setdiff2, paste0("Venn_Diagrams_and_csvs/", folder, "/Py_unique_CTR_control_condition.csv"), row.names = FALSE)
 
+print(setdiff1)
+print(setdiff2)
 
 grid.newpage()
 grid.draw(v)
@@ -102,9 +108,9 @@ head(csv1_list)
 SET1 <- csv1_list
 
 
-csv2 <- read.csv("script_test/CrossTalkeR_input_PMF_MF2.csv")
+csv2 <- read.csv("zCrossTalkeR_input_PMF_cond_py_in_R.csv")
 row.names(csv2) <- NULL
-csv2 <- csv2[c(1:277),]
+csv2 <- csv2[c(1:81),]
 csv2 <- csv2[csv2$MeanLR > 0,]
 
 #csv2 <- read.csv("py_ctr_input_wo_ctr_exp_tables.csv")
@@ -139,14 +145,14 @@ grid.draw(v)
 setdiff1 <- t(as.data.frame(setdiff(SET1, intersect(SET1, SET2))))
 setdiff2 <- t(as.data.frame(setdiff(SET2, intersect(SET1, SET2))))
 
-write.csv(setdiff1, "Venn_Diagrams_and_csvs/decoupler_main_scaled/R_unique_CTR_PMF_condition.csv", row.names = FALSE)
-write.csv(setdiff2, "Venn_Diagrams_and_csvs/decoupler_main_scaled/Py_unique_CTR_PMF_condition.csv", row.names = FALSE)
+write.csv(setdiff1, paste0("Venn_Diagrams_and_csvs/", folder, "/R_unique_CTR_PMF_condition.csv"), row.names = FALSE)
+write.csv(setdiff2, paste0("Venn_Diagrams_and_csvs/", folder, "/Py_unique_CTR_PMF_condition.csv"), row.names = FALSE)
 
 
 grid.newpage()
 grid.draw(v)
 
-pdf("Venn_Diagrams_and_csvs/decoupler_main_scaled/venn_diagram_PY_R_CTR_input_PMF_condition.pdf")
+pdf(paste0("Venn_Diagrams_and_csvs/", folder, "/venn_diagram_PY_R_CTR_input_PMF_condition.pdf"))
 grid.draw(v)
 dev.off()
 
