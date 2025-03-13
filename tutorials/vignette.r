@@ -117,8 +117,11 @@ library(dplyr)
 library(tibble)
 library(tidyr)
 
+result_py <- read.csv("py_output_in_R.csv")
+
 #condition
-  tf_table <- results@CTR_input_condition[["control"]]
+  #tf_table <- results@CTR_input_condition[["control"]]
+  tf_table <- result_py
   lr_table <- table_ctr
   intra_connections <- tf_table[NULL, ]
   for (celltype in unique(append(lr_table$source, lr_table$target))) {
@@ -148,6 +151,7 @@ library(tidyr)
   complete_interactions <- rbind(intra_connections, lr_table)
   
   write.csv(complete_interactions, paste0("new_test/CrossTalkeR_input_control.csv"), row.names = FALSE)
+  write.csv(complete_interactions, paste0("CrossTalkeR_input_control_py_in_R.csv"), row.names = FALSE)
 
 #cluster
 
@@ -183,3 +187,4 @@ library(tidyr)
   complete_interactions <- rbind(intra_connections, lr_table)
   
   write.csv(complete_interactions, paste0("new_test/CrossTalkeR_input_control_cluster.csv"), row.names = FALSE)
+  write.csv(complete_interactions, paste0("CrossTalkeR_input_control_cluster_py_in_R.csv"), row.names = FALSE)
