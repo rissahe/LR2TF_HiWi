@@ -1,15 +1,16 @@
 #install.packages('VennDiagram')
 library(VennDiagram)
 
-folder <- "all_in_R_code"
+#folder <- "all_in_R_code"
 #folder <- "decoupler_main_scaled"
+folder <- "actually_filtered_regulon"
 #########
 #CTRL
 #########
 
 csv1 <- read.csv("new_test/CrossTalkeR_input_control.csv")
 #row.names(csv1) <- NULL
-csv1 <- csv1[c(1:193),]
+csv1 <- csv1[c(1:109),]
 
 csv1 <- csv1[csv1$MeanLR > 0,]
 
@@ -30,9 +31,9 @@ SET1 <- csv1_list
 print(SET1)
 length(csv1_list)
 
-csv2 <- read.csv("zCrossTalkeR_input_control_cond_py_in_R.csv")
+csv2 <- read.csv("script_test/CrossTalkeR_input_control.csv")
 row.names(csv2) <- NULL
-csv2 <- csv2[c(1:193),]
+csv2 <- csv2[c(1:108),]
 csv2 <- csv2[csv2$MeanLR > 0,]
 
 #csv2 <- read.csv("py_ctr_input_wo_ctr_exp_tables.csv")

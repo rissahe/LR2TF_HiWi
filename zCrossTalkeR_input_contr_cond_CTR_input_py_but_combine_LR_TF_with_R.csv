@@ -1,8 +1,8 @@
 "source","target","gene_A","gene_B","type_gene_A","type_gene_B","MeanLR"
 "Megakaryocyte","Megakaryocyte","ITGB1","ZBTB16","Receptor","Transcription Factor",0.49845487
 "Megakaryocyte","Megakaryocyte","ITGB1","STAT4","Receptor","Transcription Factor",0.7644998
-"Megakaryocyte","Megakaryocyte","E2F4","CALR","Transcription Factor","Ligand",0.38161266
-"Megakaryocyte","Megakaryocyte","E2F4","LGALS1","Transcription Factor","Ligand",0.38161266
+"Megakaryocyte","Megakaryocyte","E2F4","CALR","Transcription_Factor","Ligand",0.38161266
+"Megakaryocyte","Megakaryocyte","E2F4","LGALS1","Transcription_Factor","Ligand",0.38161266
 "Fibroblast","Fibroblast","ITGB1","NR4A1","Receptor","Transcription Factor",0.24719983
 "Fibroblast","Fibroblast","MET","NR4A1","Receptor","Transcription Factor",0.24719983
 "Fibroblast","Fibroblast","PDGFRB","NR4A1","Receptor","Transcription Factor",0.24719983
@@ -51,24 +51,27 @@
 "Fibroblast","Fibroblast","ITGB1","HIF1A","Receptor","Transcription Factor",0.13317254
 "Fibroblast","Fibroblast","ITGB1","ZC3H8","Receptor","Transcription Factor",0.47389582
 "Fibroblast","Fibroblast","ITGB1","HOXB7","Receptor","Transcription Factor",0.3765611
-"Fibroblast","Fibroblast","PRDM14","WNT5B","Transcription Factor","Ligand",0.13999541
-"Fibroblast","Fibroblast","TWIST1","VEGFA","Transcription Factor","Ligand",0.40489006
-"Fibroblast","Fibroblast","SMAD3","TGFB1","Transcription Factor","Ligand",0.16733594
-"Fibroblast","Fibroblast","SMAD3","VEGFA","Transcription Factor","Ligand",0.16733594
-"Fibroblast","Fibroblast","SMAD3","COL6A3","Transcription Factor","Ligand",0.16733594
-"Fibroblast","Fibroblast","EPAS1","VEGFA","Transcription Factor","Ligand",0.29035193
-"Fibroblast","Fibroblast","ETV4","VEGFA","Transcription Factor","Ligand",0.32143062
-"Fibroblast","Fibroblast","SP3","VEGFA","Transcription Factor","Ligand",0.43752056
-"Fibroblast","Fibroblast","ARNT","VEGFA","Transcription Factor","Ligand",0.3970888
-"Fibroblast","Fibroblast","GLI2","LUM","Transcription Factor","Ligand",0.72398674
-"Fibroblast","Fibroblast","PGR","VEGFA","Transcription Factor","Ligand",0.2608196
-"Fibroblast","Fibroblast","SMAD1","SPP1","Transcription Factor","Ligand",0.16064432
-"Fibroblast","Fibroblast","SNAI1","THBS1","Transcription Factor","Ligand",0.82728887
-"Fibroblast","Fibroblast","POU2F2","SPP1","Transcription Factor","Ligand",0.07699515
-"Fibroblast","Fibroblast","HIF1A","VEGFA","Transcription Factor","Ligand",0.13317254
-"Fibroblast","Fibroblast","HIF1A","LGALS1","Transcription Factor","Ligand",0.13317254
-"Fibroblast","Fibroblast","HIF1A","MIF","Transcription Factor","Ligand",0.13317254
-"Fibroblast","Fibroblast","HIF1A","VEGFB","Transcription Factor","Ligand",0.13317254
+"Fibroblast","Fibroblast","PRDM14","WNT5B","Transcription_Factor","Ligand",0.13999541
+"Fibroblast","Fibroblast","TWIST1","VEGFA","Transcription_Factor","Ligand",0.40489006
+"Fibroblast","Fibroblast","SMAD3","COL6A3","Transcription_Factor","Ligand",0.16733594
+"Fibroblast","Fibroblast","SMAD3","TGFB1","Transcription_Factor","Ligand",0.16733594
+"Fibroblast","Fibroblast","SMAD3","VEGFA","Transcription_Factor","Ligand",0.16733594
+"Fibroblast","Fibroblast","EPAS1","INHBA","Transcription_Factor","Ligand",0.29035193
+"Fibroblast","Fibroblast","EPAS1","VEGFA","Transcription_Factor","Ligand",0.29035193
+"Fibroblast","Fibroblast","ETV4","VEGFA","Transcription_Factor","Ligand",0.32143062
+"Fibroblast","Fibroblast","SP3","VEGFA","Transcription_Factor","Ligand",0.43752056
+"Fibroblast","Fibroblast","ARNT","VEGFA","Transcription_Factor","Ligand",0.3970888
+"Fibroblast","Fibroblast","GLI2","LUM","Transcription_Factor","Ligand",0.72398674
+"Fibroblast","Fibroblast","ATF3","CCL5","Transcription_Factor","Ligand",0.036452062
+"Fibroblast","Fibroblast","PGR","VEGFA","Transcription_Factor","Ligand",0.2608196
+"Fibroblast","Fibroblast","SMAD1","SPP1","Transcription_Factor","Ligand",0.16064432
+"Fibroblast","Fibroblast","SNAI1","THBS1","Transcription_Factor","Ligand",0.82728887
+"Fibroblast","Fibroblast","POU2F2","SPP1","Transcription_Factor","Ligand",0.07699515
+"Fibroblast","Fibroblast","HIF1A","INHBA","Transcription_Factor","Ligand",0.13317254
+"Fibroblast","Fibroblast","HIF1A","LGALS1","Transcription_Factor","Ligand",0.13317254
+"Fibroblast","Fibroblast","HIF1A","MIF","Transcription_Factor","Ligand",0.13317254
+"Fibroblast","Fibroblast","HIF1A","VEGFA","Transcription_Factor","Ligand",0.13317254
+"Fibroblast","Fibroblast","HIF1A","VEGFB","Transcription_Factor","Ligand",0.13317254
 "Neural","Neural","PTPRF","IKZF1","Receptor","Transcription Factor",0.09619708
 "Neural","Neural","PTPRF","ATF1","Receptor","Transcription Factor",0.24906135
 "Neural","Neural","LRP6","GLI3","Receptor","Transcription Factor",0.20822476
@@ -101,6 +104,9 @@
 "Neural","Neural","LRP6","FOXO1","Receptor","Transcription Factor",0.34755024
 "Neural","Neural","PTPRF","FOXO1","Receptor","Transcription Factor",0.34755024
 "Neural","Neural","PTPRF","ARNT","Receptor","Transcription Factor",0.18313406
+"Neural","Neural","GATA3","LAMC1","Transcription_Factor","Ligand",0.90635717
+"Neural","Neural","E2F1","BMP4","Transcription_Factor","Ligand",0.74915904
+"Neural","Neural","E2F4","CALR","Transcription_Factor","Ligand",0.3577942
 "Megakaryocyte","Megakaryocyte","LGALS9","PTPRC","Ligand","Receptor",0.173903322764713
 "Megakaryocyte","Megakaryocyte","LGALS9","CD47","Ligand","Receptor",0.178258534972786
 "Megakaryocyte","Megakaryocyte","LGALS9","HAVCR2","Ligand","Receptor",0.123144835155697

@@ -145,7 +145,7 @@ test_var <- var(test)
 
 
 ############################################################################################################
-ligands <- load(file='ligands_human.rda')
+ligands_human <- load(file='ligands_human.rda')
 str(ligands)
 
 
@@ -163,6 +163,8 @@ generate_CrossTalkeR_input <-
     if (any(tf_activities$z_score > 0)) {
       regulon <- regulon %>%
         rename(tf = source)
+
+      organism <-"human"
 
       if(organism == "human") {
         ligands <- ligands_human
@@ -189,21 +191,24 @@ generate_CrossTalkeR_input <-
       tf_activities <- tf_activities %>%
         filter(z_score > 0)
 
-      output_df <- create_empty_CTR_dataframe()
+      output_df <- LR2TF::create_empty_CTR_dataframe()
 
       for (row in 1:nrow(tf_activities)) {
 
-        r_tf <- create_empty_CTR_dataframe()
-        tf_l <- create_empty_CTR_dataframe()
+        r_tf <- LR2TF::create_empty_CTR_dataframe()
+        tf_l <- LR2TF::create_empty_CTR_dataframe()
 
         #if (tf_activities[row, "z_score"] > 0) {
         tf <- as.character(tf_activities[row, "gene"])
+        print(paste0("tf", tf))
+
         targets <- sorted_regulon[tf,][1]
-        #print(targets[[1]])
+        print(paste0("targets", targets[[1]]))
         #print(ligands)
         receptors <- R2TF[tf,][1]
-        tf_ligands <- intersect(targets[[1]], ligands["ligands_human"])
-        print(tf_ligands)
+        print(paste0("receptors", receptors))
+        tf_ligands <- intersect(targets[[1]], ligands)
+        print(paste0("tf_ligands", tf_ligands))
         if (length(tf_ligands) > 0) {
           for (ligand in tf_ligands) {
             expressed <- FALSE
@@ -215,7 +220,7 @@ generate_CrossTalkeR_input <-
             }
 
             if (expressed == TRUE) {
-              df <- add_entry_to_CTR_dataframe(tf_activities[row, "cluster"],
+              df <- LR2TF::add_entry_to_CTR_dataframe(tf_activities[row, "cluster"],
                                                tf_activities[row, "cluster"],
                                                tf_activities[row, "gene"],
                                                ligand,
@@ -228,7 +233,7 @@ generate_CrossTalkeR_input <-
         }
         if (length(receptors[[1]]) > 0) {
           for (receptor in receptors[[1]]) {
-            df <- add_entry_to_CTR_dataframe(tf_activities[row, "cluster"],
+            df <- LR2TF::add_entry_to_CTR_dataframe(tf_activities[row, "cluster"],
                                              tf_activities[row, "cluster"],
                                              receptor,
                                              tf_activities[row, "gene"],
@@ -253,6 +258,7 @@ generate_CrossTalkeR_input <-
     }
 
     return(output_df)
+    print(output_df)
   }
 
 
@@ -262,6 +268,7 @@ library(tibble)
 #tf_activities <- results@tf_activities_condition$control
 tf_activities <- read.csv("script_test/TF_results/control/significant_condition_tf_results_control.csv")
 tf_activities <- tf_activities %>% rename_at('t_value', ~'z_score')
+tf_activities <- tf_activities[tf_activities$cluster == "Fibroblast",]
 print(tf_activities)
 
 
@@ -272,8 +279,9 @@ print(tf_activities)
 gene_expression <- results@average_gene_expression$control_average_expression
 print(gene_expression)
 
-regulon <- read.csv("filterd_regulon.csv")
-
+regulon <- read.csv("LR2TF_test_run/filterd_regulon.csv")
+names(regulon)[names(regulon) == 'source'] <- 'tf'
+colnames(regulon) <- c('tf', 'target')
 
 RTF_DB <- read.csv("rtf_db_human.csv")
 
@@ -294,13 +302,18 @@ print(result_py)
 table_ctr <- read.csv("LR2TF_test_run/CTR_LR.csv")
 table_exp <- read.csv("/home/larissa/Documents/LR2TF_HiWi/LR2TF_test_run/EXP_LR.csv")
 
-ctr_input_py <- LR2TF::combine_LR_and_TF_complexes(result_py, table_ctr, "z", "control_cond_py_in_R_try")
+ctr_input_py <- LR2TF::combine_LR_and_TF_complexes(result_py, table_ctr, "z", "control_cond_py_in_R_try2")
 exp_input_py <- LR2TF::combine_LR_and_TF_complexes(result_py, table_exp, "z", "PMF_cond_py_in_R")
 
 load(file="RTF_DB_2.rda")
 head(rtf_db_R[1])
 print(RTF_DB_2)
-write.csv(RTF_DB_2, "rtf_db_human.csv", row.names = FALSE)
+RTF_DB <- RTF_DB_2
+write.csv(RTF_DB_2, "rtf_db_human.csv", row.names = TRUE)
 
-load(file="ligands_human.rda")
-write.csv(ligands_human, "ligands_human_diff_maybe.csv", row.names = FALSE)
+load("ligands_human.rda")
+write.csv(ligands_human, "ligands_human_diff_maybe.csv", row.names = TRUE)
+
+
+result_py_py <- read.csv("py_ctr_input_wo_ctr_exp_tables.csv")
+ctr_input_py <- LR2TF::combine_LR_and_TF_complexes(result_py_py, table_ctr, "z", "contr_cond_CTR_input_py_but_combine_LR_TF_with_R")

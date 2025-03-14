@@ -59,7 +59,7 @@ The file "anndata_object.h5ad" will be saved into the user defined path and can 
 
 regulon <- read.csv(system.file("regulons", "human_dorothea_reg.csv", package = "LR2TF"), row.names = 1)
 filtered_regulon <- regulon[regulon$confidence %in% c("A","B"),]
-write.csv("/home/larissa/Documents/Larissa_HiWi/LR2TF_test/filterd_regulon.csv")
+write.csv(filtered_regulon, "/home/larissa/Documents/LR2TF_HiWi/LR2TF_test_run/filterd_regulon.csv")
 
 ```
 
