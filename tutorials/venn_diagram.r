@@ -3,14 +3,16 @@ library(VennDiagram)
 
 #folder <- "all_in_R_code"
 #folder <- "decoupler_main_scaled"
-folder <- "actually_filtered_regulon"
+#folder <- "actually_filtered_regulon"
+folder <- "new_CTR_csvs"
 #########
 #CTRL
 #########
 
-csv1 <- read.csv("new_test/CrossTalkeR_input_control.csv")
+#csv1 <- read.csv("new_test/CrossTalkeR_input_control.csv")
+csv1 <- read.csv("CrossTalkeR_input_control_Vanessa.csv")
 #row.names(csv1) <- NULL
-csv1 <- csv1[c(1:109),]
+csv1 <- csv1[c(1:14),]
 
 csv1 <- csv1[csv1$MeanLR > 0,]
 
@@ -33,7 +35,7 @@ length(csv1_list)
 
 csv2 <- read.csv("script_test/CrossTalkeR_input_control.csv")
 row.names(csv2) <- NULL
-csv2 <- csv2[c(1:108),]
+csv2 <- csv2[c(1:23),]
 csv2 <- csv2[csv2$MeanLR > 0,]
 
 #csv2 <- read.csv("py_ctr_input_wo_ctr_exp_tables.csv")
@@ -89,9 +91,9 @@ dev.off()
 #PMF
 ####################
 
-csv1 <- read.csv("new_test/CrossTalkeR_input_PMF_MF2.csv")
+csv1 <- read.csv("CrossTalkeR_input_PMF_MF2_Vanessa.csv")
 row.names(csv1) <- NULL
-csv1 <- csv1[c(1:269),]
+csv1 <- csv1[c(1:45),]
 csv1 <- csv1[csv1$MeanLR > 0,]
 
 #csv1 <- read.csv("R_ctr_input_wo_exp_ctr_tables.csv")
@@ -109,9 +111,9 @@ head(csv1_list)
 SET1 <- csv1_list
 
 
-csv2 <- read.csv("zCrossTalkeR_input_PMF_cond_py_in_R.csv")
+csv2 <- read.csv("script_test/CrossTalkeR_input_PMF_MF2.csv")
 row.names(csv2) <- NULL
-csv2 <- csv2[c(1:81),]
+csv2 <- csv2[c(1:35),]
 csv2 <- csv2[csv2$MeanLR > 0,]
 
 #csv2 <- read.csv("py_ctr_input_wo_ctr_exp_tables.csv")
@@ -562,16 +564,19 @@ dev.off()
 library(VennDiagram)
 library(data.table)
 
-csv1 <- fread("R_intra_network_ctrl.csv")
+csv1 <- intra_control
+#csv1 <- fread("R_intra_network_ctrl.csv")
 #csv1 <- results@intracellular_network_condition[["control"]]
+
 csv2 <- data.table::fread("py_intra_network_ctrl.csv")
 
 csv1 <- csv1[csv1$TF_Score > 0,]
 csv2 <- csv2[csv2$TF_Score > 0,]
 head(csv1)
 head(csv2)
-csv1 <- csv1[, !c("V1","TF_Score")]
-#csv1$TF_Score <- NULL
+
+#csv1 <- csv1[, !c("V1","TF_Score")]
+csv1$TF_Score <- NULL
 csv2 <- csv2[, !c("V1","TF_Score")]
 
 
@@ -597,10 +602,10 @@ grid.draw(v)
 setdiff1 <- setdiff(SET1, SET2)
 setdiff2 <- setdiff(SET2, SET1)
 
-fwrite(data.table(setdiff1), "Venn_Diagrams_and_csvs/decoupler_main_scaled/R_set_diff_intra_network_control_condition.csv", col.names = FALSE)
-fwrite(data.table(setdiff2), "Venn_Diagrams_and_csvs/decoupler_main_scaled/PY_set_diff_intra_network_control_condition.csv", col.names = FALSE)
+fwrite(data.table(setdiff1), paste0("Venn_Diagrams_and_csvs/", folder, "/R_set_diff_intra_network_control_condition.csv"), col.names = FALSE)
+fwrite(data.table(setdiff2), paste0("Venn_Diagrams_and_csvs/", folder "/PY_set_diff_intra_network_control_condition.csv"), col.names = FALSE)
 
-pdf("Venn_Diagrams_and_csvs/decoupler_main_scaled/venn_diagram_PY_R_intra_network_diff_control_condition.pdf")
+pdf(paste0("Venn_Diagrams_and_csvs/", folder, "/venn_diagram_PY_R_intra_network_diff_control_condition.pdf"))
 grid.draw(v)
 dev.off()
 
@@ -609,12 +614,13 @@ dev.off()
 #PMF MF2
 ########
 
-csv1 <- fread("R_intra_network_PMF.csv")
+csv1 <- intra_pmf
+#csv1 <- fread("R_intra_network_PMF.csv")
 #csv1 <- results@intracellular_network_condition[["PMF_MF2"]]
 csv2 <- fread("py_intra_network_PMF.csv")
 
-csv1 <- csv1[, !c("V1","TF_Score")]
-#csv1$TF_Score <- NULL
+#csv1 <- csv1[, !c("V1","TF_Score")]
+csv1$TF_Score <- NULL
 
 csv2 <- csv2[, !c("V1","TF_Score")]
 
@@ -641,11 +647,11 @@ setdiff1 <- setdiff(SET1, SET2)
 setdiff2 <- setdiff(SET2, SET1)
 
 
-fwrite(data.table(setdiff1), "Venn_Diagrams_and_csvs/decoupler_main_scaled/R_set_diff_intra_network_PMF_condition.csv", col.names = FALSE)
-fwrite(data.table(setdiff2), "Venn_Diagrams_and_csvs/decoupler_main_scaled/PY_set_diff_intra_network_PMF_condition.csv", col.names = FALSE)
+fwrite(data.table(setdiff1), paste0("Venn_Diagrams_and_csvs/" folder, "/R_set_diff_intra_network_PMF_condition.csv"), col.names = FALSE)
+fwrite(data.table(setdiff2), paste0("Venn_Diagrams_and_csvs/", folder, "/PY_set_diff_intra_network_PMF_condition.csv"), col.names = FALSE)
 
 
-pdf("Venn_Diagrams_and_csvs/decoupler_main_scaled/venn_diagram_PY_R_intra_network_diff_PMF_condition.pdf")
+pdf(paste0("Venn_Diagrams_and_csvs/", folder, "/venn_diagram_PY_R_intra_network_diff_PMF_condition.pdf"))
 grid.draw(v)
 dev.off()
 

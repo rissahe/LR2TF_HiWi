@@ -295,7 +295,7 @@ print(result_r)
 write.csv(result_r, "r_output.csv", row.names = FALSE)
 write.table(result_r, file = "r_output.csv", sep = ",", row.names = FALSE, col.names = TRUE, quote = FALSE)
 
-result_py <- generate_CrossTalkeR_input(tf_activities, gene_expression, regulon, organism = "human")
+result_py <- LR2TF::generate_CrossTalkeR_input(tf_activities, gene_expression, regulon, organism = "human")
 write.table(result_py, file = "py_output_control_cond_in_R.csv", sep = ",", row.names = FALSE, col.names = TRUE, quote = FALSE)
 print(result_py)
 
@@ -317,3 +317,11 @@ write.csv(ligands_human, "ligands_human_diff_maybe.csv", row.names = TRUE)
 
 result_py_py <- read.csv("py_ctr_input_wo_ctr_exp_tables.csv")
 ctr_input_py <- LR2TF::combine_LR_and_TF_complexes(result_py_py, table_ctr, "z", "contr_cond_CTR_input_py_but_combine_LR_TF_with_R")
+
+
+##################################################################################################################
+
+library(Seurat)
+tf_results_van <- readRDS("result_TF_object_Vanessa.RDS")
+intra_control <- tf_results_van@intracellular_network_condition$control
+intra_pmf <- tf_results_van@intracellular_network_condition$PMF_MF2
