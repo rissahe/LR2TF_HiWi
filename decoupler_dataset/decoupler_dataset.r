@@ -1,10 +1,11 @@
 library(Seurat)
 library(decoupleR)
 library(LR2TF)
+
 inputs_dir <- system.file("extdata", package = "decoupleR")
 data <- readRDS(file.path(inputs_dir, "sc_data.rds"))
 
-#LR2TF::convert_seurat_to_anndata(data, "/home/larissa/Documents/LR2TF_HiWi/decoupler_test/")
+LR2TF::convert_seurat_to_anndata(data, "D:\\studium\\LR2TF_HiWi\\decoupler_dataset\\")
 
 p <- Seurat::DimPlot(data, 
                      reduction = "umap", 
@@ -115,3 +116,5 @@ pheatmap::pheatmap(mat = top_acts_mat,
                    cellheight = 15,
                    treeheight_row = 20,
                    treeheight_col = 20) 
+
+data <- data@active.ident
