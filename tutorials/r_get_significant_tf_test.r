@@ -325,3 +325,190 @@ library(Seurat)
 tf_results_van <- readRDS("result_TF_object_Vanessa.RDS")
 intra_control <- tf_results_van@intracellular_network_condition$control
 intra_pmf <- tf_results_van@intracellular_network_condition$PMF_MF2
+
+###################################################################
+
+generate_intracellular_network <-
+  function(tf_activities,
+           gene_expression,
+           regulon,
+           organism = "human") {
+    if (dim(tf_activities)[1] > 0) {
+      if (any(tf_activities$z_score > 0)) {
+        if (organism == "human") {
+          R2TF <- aggregate(RTF_DB$receptor ~ RTF_DB$tf, FUN = c)
+          colnames(R2TF) <- c('tf', 'receptors')
+          R2TF <- R2TF %>%
+            tibble::remove_rownames() %>%
+            tibble::column_to_rownames(var = 'tf')
+        } else {
+          R2TF <- aggregate(RTF_DB_mouse$receptor ~ RTF_DB_mouse$tf, FUN = c)
+          colnames(R2TF) <- c('tf', 'receptors')
+          R2TF <- R2TF %>%
+            tibble::remove_rownames() %>%
+            tibble::column_to_rownames(var = 'tf')
+        }
+
+        regulon <- regulon %>%
+          rename(tf = source)
+        sorted_regulon <-
+          aggregate(regulon$target ~ regulon$tf, FUN = c)
+        colnames(sorted_regulon) <- c('tf', 'targets')
+        sorted_regulon <- sorted_regulon %>%
+          tibble::remove_rownames() %>%
+          tibble::column_to_rownames(var = 'tf')
+
+        #recept_regulon <- create_empty_Regulon_dataframe()
+
+        tf_activities <- tf_activities %>%
+          filter(z_score > 0)
+
+        RTF_df <- data.frame(
+          Receptor = character(),
+          TF = character()
+        )
+
+        TFTG_df <- data.frame(
+          celltype = character(),
+          TF = character(),
+          Target_Gene = character(),
+          TF_Score = numeric()
+        )
+
+        for (row in 1:nrow(tf_activities)) {
+          #if (tf_activities[row, "z_score"] > 0) {
+          tf <- as.character(tf_activities[row, "gene"])
+          targets <- sorted_regulon[tf,][[1]]
+          print(targets)
+          receptors <- R2TF[tf,][1]
+          if (length(targets) > 0) {
+            if (length(receptors[[1]]) > 0) {
+              for (target in targets) {
+                expressed <- FALSE
+                if (target %in% rownames(gene_expression)) {
+                  ex_value <- gene_expression[target, tf_activities[row, "cluster"]]
+                  if (ex_value != 0) {
+                    expressed <- TRUE
+                  }
+                }
+                if (expressed == TRUE) {
+                  TFTG_tmp <-
+                    data.frame(
+                      tf_activities[row, "cluster"],
+                      tf_activities[row, "gene"],
+                      target,
+                      tf_activities[row, "z_score"]
+                    )
+                  names(TFTG_tmp) <-
+                    c(
+                      'celltype',
+                      'TF',
+                      'Target_Gene',
+                      'TF_Score'
+                    )
+                  TFTG_df <- rbind(TFTG_df, TFTG_tmp)
+                }
+              }
+              for (receptor in receptors[[1]]) {
+                RTF_tmp <-
+                  data.frame(
+                    receptor,
+                    tf_activities[row, "gene"]
+                  )
+                names(RTF_tmp) <-
+                  c(
+                    'Receptor',
+                    'TF'
+                  )
+                RTF_df <- rbind(RTF_df, RTF_tmp)
+              }
+            }
+          }
+          #}
+        }
+        recept_regulon <- merge(x = RTF_df, y = TFTG_df,
+                                by = "TF", all = TRUE)
+
+      } else {
+        recept_regulon = NA
+      }
+      return(recept_regulon)
+    }
+  }
+
+
+
+
+library(dplyr)
+library(tibble)
+
+tf_activities <- read.csv("script_test/TF_results/control/significant_condition_tf_results_control.csv")
+tf_activities <- tf_activities %>% rename_at('t_value', ~'z_score')
+#tf_activities <- tf_activities[tf_activities$cluster == "Fibroblast",]
+#print(tf_activities)
+#tf_activities <- read.csv("script_test/TF_results/PMF_MF2/significant_condition_tf_results_PMF,MF2.csv")
+#tf_activities <- tf_activities %>% rename_at('t_value', ~'z_score')
+
+gene_expression <- results@average_gene_expression$control_average_expression
+write.csv(gene_expression, "gene_expression.csv")
+#print(gene_expression)
+
+regulon <- read.csv("LR2TF_test_run/filterd_regulon.csv")
+#names(regulon)[names(regulon) == 'source'] <- 'tf'
+#colnames(regulon) <- c('tf', 'target')
+
+
+resulty <- generate_intracellular_network(tf_activities, gene_expression, regulon, organism = "human")
+
+############################
+data(bone_marrow_stromal_cell_example, package = "LR2TF")
+seuratobject <- bone_marrow_stromal_cell_example
+library(Seurat)
+
+  if (!is.na(tf_activities)[[1]]) {
+    if (is.character(tf_activities)) {
+      tf_activities <- t(read.csv(tf_activities, header = TRUE, row.names = 1))
+    }
+    ## TODO check if the matrix is in the right format
+    tf_activities <- CreateAssayObject(data = tf_activities)
+    seuratobject[["tf_activities"]] <- tf_activities
+  }
+
+  DefaultAssay(object = seuratobject) <- "tf_activities"
+  seuratobject <- ScaleData(seuratobject)
+
+  Idents(object = seuratobject) <- "protocol"
+  seuratobject[["tf_condition"]] <- Idents(object = seuratobject)
+  Idents(object = seuratobject) <- "new_annotation"
+  seuratobject[["tf_annotation"]] <- Idents(object = seuratobject)
+
+    result_list <- list()
+    gene_expression_list <- list()
+    CTR_cluster_list <- list()
+    intranet_cluster_list <- list()
+
+    Idents(object = seuratobject) <- "tf_condition"
+    seuratobject_list <- SplitObject(seuratobject,
+      split.by = "tf_condition"
+    )
+      sub_object <- seuratobject_list[[1]]
+
+      name <- str_replace_all(name, "[,;.:-]", "_")
+
+      sub_object.averages <- AverageExpression(sub_object,
+        group.by = "new_annotation",
+        assays = "RNA"
+      )
+      write.csv(sub_object.averages[["RNA"]], file =paste0('R_average_gene_expression_by_cluster_ctrl.csv'))
+
+
+      arguments_list <- list("out_path" = "new_test\\",
+                   "reg" = "LR2TF_test_run\\filterd_regulon.csv",
+                   "organism" = "human",
+                   "celltype" = "new_annotation", #name of the meta data field defining cell identities
+                   "condition" = "protocol", #name of the meta data field defining conditions
+                   "comparison_list" = list(c("PMF,MF2", "control")), #list of condition comparison to consider
+                   "logfc" = 0.5,
+                   "pval" = 0.05) #thresholds for logfc and pval used in differential transcription factor analysis
+
+colnames(sub_object.averages[["RNA"]]) <- unique(sub_object[["new_annotation"]][[1]])
