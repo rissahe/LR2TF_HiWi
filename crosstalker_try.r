@@ -18,7 +18,7 @@ library(CrossTalkeR)
 library(igraph)
 library(stringr)
 library(tibble)
-library(pandoc)
+#library(pandoc)
 
 ctr_input <- read.csv("/home/larissa/Documents/LR2TF_HiWi/script_test/CrossTalkeR_input_control.csv")
 exp_input <- read.csv("/home/larissa/Documents/LR2TF_HiWi/script_test/CrossTalkeR_input_PMF_MF2.csv")
@@ -37,7 +37,7 @@ conds <- names(paths)
 is.character(paths[[conds[1]]])
 #yes was considered character even when reading the csvs beforehand amd r showing the objects as dataframe
 
-output <- ("/home/larissa/Documents/LR2TF_HiWi/ctr_results")
+output <- ("ctr_results")
 data <- generate_report(paths,
   out_path = paste0(output, "/"),
   out_file = "HumanMyfib_TF_example.html",
