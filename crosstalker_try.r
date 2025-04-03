@@ -7,17 +7,18 @@
 #BiocManager::install("fgsea")
 #BiocManager::install("clusterProfiler")
 #library(clusterProfiler)
+
 pandoc_install("default")
 pandoc_version()
 
 library(devtools)
-install_github("CostaLab/CrossTalkeR", ref="dev")
+install_github("CostaLab/CrossTalkeR", ref="dev", force = TRUE)
 remove.packages("BiocManager")
 
 library(CrossTalkeR)
 library(igraph)
 library(stringr)
-library(tibble)
+#library(tibble)
 #library(pandoc)
 
 ctr_input <- read.csv("/home/larissa/Documents/LR2TF_HiWi/script_test/CrossTalkeR_input_control.csv")
@@ -33,8 +34,8 @@ paths <- c(
 )
 
 
-conds <- names(paths)
-is.character(paths[[conds[1]]])
+#conds <- names(paths)
+#is.character(paths[[conds[1]]])
 #yes was considered character even when reading the csvs beforehand amd r showing the objects as dataframe
 
 output <- ("ctr_results")

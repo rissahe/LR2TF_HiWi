@@ -8,19 +8,21 @@ library(VennDiagram)
 #folder <- "R_scran_wilcox_py_unscaled/cluster"
 #folder <- "new_CTR_csvs_and_py_mainscaled"
 #folder <- "R_scran_wilcox_py_mainscaled/cluster"
-folder <- "fixed_tfs_R_binom_py_unscaled/cluster"
+#folder <- "fixed_tfs_R_binom_py_unscaled/cluster"
 #folder <- "seurat_FindMarkers_py_mainscaled/cluster"
 #folder <- "seurat_FindMarkers_py_unscaled/cluster"
+#folder <- "t_test_filter_by_condition"
+folder <- "fixed_celltype_annot"
 #########
 #CTRL
 #########
 
-#csv1 <- read.csv("new_test/CrossTalkeR_input_control.csv")
+csv1 <- read.csv("new_test/CrossTalkeR_input_control.csv")
 #csv1 <- read.csv("CrossTalkeR_input_control_Vanessa_wilcoxon.csv")
-csv1 <- read.csv("IntraTalker_Seurat_WilcoxCrossTalkeR_input_control.csv")
+#csv1 <- read.csv("IntraTalker_Seurat_WilcoxCrossTalkeR_input_control.csv")
 
 #row.names(csv1) <- NULL
-csv1 <- csv1[c(1:26),]
+csv1 <- csv1[c(1:25),]
 
 csv1 <- csv1[csv1$MeanLR > 0,]
 
@@ -43,7 +45,7 @@ length(csv1_list)
 
 csv2 <- read.csv("script_test/CrossTalkeR_input_control.csv")
 row.names(csv2) <- NULL
-csv2 <- csv2[c(1:24),]
+csv2 <- csv2[c(1:25),]
 csv2 <- csv2[csv2$MeanLR > 0,]
 
 #csv2 <- read.csv("py_ctr_input_wo_ctr_exp_tables.csv")
@@ -99,12 +101,12 @@ dev.off()
 #PMF
 ####################
 
-#csv1 <- read.csv("new_test/CrossTalkeR_input_PMF_MF2.csv")
-csv1 <- read.csv("IntraTalker_Seurat_WilcoxCrossTalkeR_input_PMF_MF2.csv")
+csv1 <- read.csv("new_test/CrossTalkeR_input_PMF_MF2.csv")
+#csv1 <- read.csv("IntraTalker_Seurat_WilcoxCrossTalkeR_input_PMF_MF2.csv")
 #csv1 <- read.csv("CrossTalkeR_input_PMF_MF2_Vanessa_wilcoxon.csv")
 
 row.names(csv1) <- NULL
-csv1 <- csv1[c(1:60),]
+csv1 <- csv1[c(1:37),]
 csv1 <- csv1[csv1$MeanLR > 0,]
 
 #csv1 <- read.csv("R_ctr_input_wo_exp_ctr_tables.csv")
@@ -124,7 +126,7 @@ SET1 <- csv1_list
 
 csv2 <- read.csv("script_test/CrossTalkeR_input_PMF_MF2.csv")
 row.names(csv2) <- NULL
-csv2 <- csv2[c(1:67),]
+csv2 <- csv2[c(1:37),]
 csv2 <- csv2[csv2$MeanLR > 0,]
 
 #csv2 <- read.csv("py_ctr_input_wo_ctr_exp_tables.csv")
@@ -576,15 +578,19 @@ library(VennDiagram)
 library(data.table)
 
 #csv1 <- intra_control
-csv1 <- fread("R_intra_network_ctrl.csv")
+#csv1 <- fread("R_intra_network_ctrl.csv")
+csv1 <- fread("py_gene_expr_in_R_generate_intracellular_network.csv")
 #csv1 <- results@intracellular_network_condition[["control"]]
 
 csv2 <- fread("py_intra_network_ctrl.csv")
 
-csv1 <- csv1[csv1$TF_Score > 0,]
-csv2 <- csv2[csv2$TF_Score > 0,]
+#csv1 <- csv1[csv1$TF_Score > 0,]
+#csv2 <- csv2[csv2$TF_Score > 0,]
 head(csv1)
 head(csv2)
+num_rows_with_na <- sum(apply(csv1, 1, function(row) any(is.na(row))))
+num_rows_with_blank <- sum(apply(csv2, 1, function(row) any(row == "" | is.na(row))))
+
 
 csv1 <- csv1[, !c("V1","TF_Score")]
 #csv1$TF_Score <- NULL
@@ -595,6 +601,8 @@ csv1_list <- apply(csv1, 1, paste, collapse = ",")
 csv2_list <- apply(csv2, 1, paste, collapse = ",")
 #head(csv1_list, n=50)
 #head(csv2_list)
+
+
 
 SET1 <- csv1_list 
 SET2 <- csv2_list
@@ -626,7 +634,8 @@ dev.off()
 ########
 
 #csv1 <- intra_pmf
-csv1 <- fread("R_intra_network_PMF.csv")
+
+#csv1 <- fread("R_intra_network_PMF.csv")
 #csv1 <- results@intracellular_network_condition[["PMF_MF2"]]
 csv2 <- fread("py_intra_network_PMF.csv")
 
@@ -843,8 +852,12 @@ dev.off()
 library(LR2TF)
 
 #seurat_ob <- readRDS("result_TF_object_SCRAN_wilcox.RDS")
-seurat_ob <- readRDS("result_TF_object_seurat_findmarkers.RDS")
+#seurat_ob <- readRDS("result_TF_object_seurat_findmarkers.RDS")
+#seurat_ob <- readRDS("result_TF_object_fixed_celltype_anno.RDS")
+seurat_ob <- readRDS("result_TF_object_fixed_cellypte_annot_2.RDS")
 
+new_gene_exp <- seurat_ob@average_gene_expression$control
+write.csv(new_gene_exp, "R_new_gene_expr_2_Vanessa.csv")
 ########################################################################
 #folder <- "R_scran_wilcox_py_unscaled"
 #folder <- "R_scran_wilcox_py_mainscaled"
@@ -983,10 +996,12 @@ csv1 <- seurat_ob@intracellular_network_condition$control
 
 csv2 <- data.table::fread("py_intra_network_ctrl.csv")
 
-csv1 <- csv1[csv1$TF_Score > 0,]
+#csv1 <- csv1[csv1$TF_Score > 0,]
+#this also gets rid of "invalid number"
 csv2 <- csv2[csv2$TF_Score > 0,]
-head(csv1)
-head(csv2)
+#there are 1298 invalid numbers/empty rows/(receptors w/o target gene?)
+#head(csv1)
+#head(csv2)
 
 csv1$TF_Score <- NULL
 csv2 <- csv2[, !c("V1","TF_Score")]

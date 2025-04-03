@@ -444,42 +444,33 @@ library(tibble)
 
 tf_activities <- read.csv("script_test/TF_results/control/significant_condition_tf_results_control.csv")
 tf_activities <- tf_activities %>% rename_at('t_value', ~'z_score')
-#tf_activities <- tf_activities[tf_activities$cluster == "Fibroblast",]
-#print(tf_activities)
-#tf_activities <- read.csv("script_test/TF_results/PMF_MF2/significant_condition_tf_results_PMF,MF2.csv")
-#tf_activities <- tf_activities %>% rename_at('t_value', ~'z_score')
 
-gene_expression <- results@average_gene_expression$control_average_expression
-write.csv(gene_expression, "gene_expression.csv")
-#print(gene_expression)
+
+tf_activities <- read.csv("script_test/TF_results/PMF_MF2/significant_condition_tf_results_PMF,MF2.csv")
+tf_activities <- tf_activities %>% rename_at('t_value', ~'z_score')
+
+gene_expression <- read.csv("R_average_gene_expression_by_cluster_ctrl.csv")
+gene_expression <- read.csv("R_average_gene_expression_by_cluster_PMF.csv")
+
+rownames(gene_expression) <- gene_expression$X
+gene_expression$X <- NULL
 
 regulon <- read.csv("LR2TF_test_run/filterd_regulon.csv")
 #names(regulon)[names(regulon) == 'source'] <- 'tf'
 #colnames(regulon) <- c('tf', 'target')
 
 
-resulty <- generate_intracellular_network(tf_activities, gene_expression, regulon, organism = "human")
-
+resulty <- LR2TF::generate_intracellular_network(tf_activities, gene_expression, regulon, organism = "human")
+write.csv(resulty, "py_gene_expr_in_R_generate_intracellular_network.csv")
 ############################
 data(bone_marrow_stromal_cell_example, package = "LR2TF")
 seuratobject <- bone_marrow_stromal_cell_example
 library(Seurat)
 
-  if (!is.na(tf_activities)[[1]]) {
-    if (is.character(tf_activities)) {
-      tf_activities <- t(read.csv(tf_activities, header = TRUE, row.names = 1))
-    }
-    ## TODO check if the matrix is in the right format
-    tf_activities <- CreateAssayObject(data = tf_activities)
-    seuratobject[["tf_activities"]] <- tf_activities
-  }
-
-  DefaultAssay(object = seuratobject) <- "tf_activities"
-  seuratobject <- ScaleData(seuratobject)
 
   Idents(object = seuratobject) <- "protocol"
   seuratobject[["tf_condition"]] <- Idents(object = seuratobject)
-  Idents(object = seuratobject) <- "new_annotation"
+  Idents(object = seuratobject) <- "tf_annotation"
   seuratobject[["tf_annotation"]] <- Idents(object = seuratobject)
 
     result_list <- list()
@@ -491,21 +482,21 @@ library(Seurat)
     seuratobject_list <- SplitObject(seuratobject,
       split.by = "tf_condition"
     )
-      sub_object <- seuratobject_list[[1]]
+      sub_object <- seuratobject_list[[2]]
 
       name <- str_replace_all(name, "[,;.:-]", "_")
 
       sub_object.averages <- AverageExpression(sub_object,
-        group.by = "new_annotation",
+        group.by = "tf_annotation",
         assays = "RNA"
       )
-      write.csv(sub_object.averages[["RNA"]], file =paste0('R_average_gene_expression_by_cluster_ctrl.csv'))
+      write.csv(sub_object.averages[["RNA"]], file =paste0('R_average_gene_expression_by_cluster_PMF.csv'))
 
 
       arguments_list <- list("out_path" = "new_test\\",
                    "reg" = "LR2TF_test_run\\filterd_regulon.csv",
                    "organism" = "human",
-                   "celltype" = "new_annotation", #name of the meta data field defining cell identities
+                   "celltype" = "tf_annotation", #name of the meta data field defining cell identities
                    "condition" = "protocol", #name of the meta data field defining conditions
                    "comparison_list" = list(c("PMF,MF2", "control")), #list of condition comparison to consider
                    "logfc" = 0.5,

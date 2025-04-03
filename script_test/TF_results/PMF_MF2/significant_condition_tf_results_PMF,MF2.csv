@@ -40,8 +40,8 @@ ZNF24,*,Megakaryocyte,0.34055364
 TAL1,*,Megakaryocyte,0.13124849
 GFI1B,*,Megakaryocyte,0.10027447
 DNMT1,*,Megakaryocyte,1.0598376
-NFAT5,*,Megakaryocyte,0.7707605
 STAT4,*,Megakaryocyte,0.15740457
+NFAT5,*,Megakaryocyte,0.7707605
 KLF8,***,Fibroblast,0.1917655
 ZNF197,**,Fibroblast,0.18469794
 SP2,**,Fibroblast,0.42944425
@@ -132,9 +132,9 @@ BHLHE40,***,Neural,0.49439105
 ZBTB16,***,Neural,0.03711316
 ZNF197,***,Neural,0.7619729
 DEAF1,***,Neural,0.5251171
-HNF4A,***,Neural,0.03345492
-E2F1,***,Neural,0.054222368
-GATA2,***,Neural,0.08187979
-SETDB1,***,Neural,0.1733651
-ASCL1,***,Neural,0.048197974
 HSF1,***,Neural,0.18792309
+ASCL1,***,Neural,0.048197974
+SETDB1,***,Neural,0.1733651
+GATA2,***,Neural,0.08187979
+E2F1,***,Neural,0.054222368
+HNF4A,***,Neural,0.03345492
