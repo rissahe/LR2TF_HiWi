@@ -7,19 +7,18 @@
 #BiocManager::install("fgsea")
 #BiocManager::install("clusterProfiler")
 #library(clusterProfiler)
-
 pandoc_install("default")
 pandoc_version()
 
 library(devtools)
-install_github("CostaLab/CrossTalkeR", ref="dev", force = TRUE)
+install_github("CostaLab/CrossTalkeR", ref="dev")
 remove.packages("BiocManager")
 
 library(CrossTalkeR)
 library(igraph)
 library(stringr)
-#library(tibble)
-#library(pandoc)
+library(tibble)
+library(pandoc)
 
 ctr_input <- read.csv("/home/larissa/Documents/LR2TF_HiWi/script_test/CrossTalkeR_input_control.csv")
 exp_input <- read.csv("/home/larissa/Documents/LR2TF_HiWi/script_test/CrossTalkeR_input_PMF_MF2.csv")
@@ -34,11 +33,17 @@ paths <- c(
 )
 
 
+
+paths <- c(
+  "control" = "new_test/CrossTalkeR_input_control_new.csv",
+  "PMF_MF2" = "new_test/CrossTalkeR_input_PMF_MF2_new.csv"
+)
+
 #conds <- names(paths)
 #is.character(paths[[conds[1]]])
 #yes was considered character even when reading the csvs beforehand amd r showing the objects as dataframe
 
-output <- ("ctr_results")
+output <- ("/home/larissa/Documents/LR2TF_HiWi/ctr_results")
 data <- generate_report(paths,
   out_path = paste0(output, "/"),
   out_file = "HumanMyfib_TF_example.html",

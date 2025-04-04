@@ -12,7 +12,8 @@ library(VennDiagram)
 #folder <- "seurat_FindMarkers_py_mainscaled/cluster"
 #folder <- "seurat_FindMarkers_py_unscaled/cluster"
 #folder <- "t_test_filter_by_condition"
-folder <- "fixed_celltype_annot"
+#folder <- "fixed_celltype_annot"
+folder <- "fixed_decoupler_input"
 #########
 #CTRL
 #########
@@ -856,7 +857,8 @@ library(LR2TF)
 #seurat_ob <- readRDS("result_TF_object_fixed_celltype_anno.RDS")
 seurat_ob <- readRDS("result_TF_object_fixed_cellypte_annot_2.RDS")
 
-new_gene_exp <- seurat_ob@average_gene_expression$control
+R_intranetwork_Vanessa <- seurat_ob@intracellular_network_condition$control
+write.csv(R_intranetwork_Vanessa, "R_intranetwork.csv")
 write.csv(new_gene_exp, "R_new_gene_expr_2_Vanessa.csv")
 ########################################################################
 #folder <- "R_scran_wilcox_py_unscaled"
@@ -998,7 +1000,7 @@ csv2 <- data.table::fread("py_intra_network_ctrl.csv")
 
 #csv1 <- csv1[csv1$TF_Score > 0,]
 #this also gets rid of "invalid number"
-csv2 <- csv2[csv2$TF_Score > 0,]
+#csv2 <- csv2[csv2$TF_Score > 0,]
 #there are 1298 invalid numbers/empty rows/(receptors w/o target gene?)
 #head(csv1)
 #head(csv2)
@@ -1217,8 +1219,6 @@ csv1 <- seurat_ob@intracellular_network_cluster$control
 
 csv2 <- data.table::fread("py_intra_network_ctrl_cluster.csv")
 
-csv1 <- csv1[csv1$TF_Score > 0,]
-csv2 <- csv2[csv2$TF_Score > 0,]
 #head(csv1)
 #head(csv2)
 

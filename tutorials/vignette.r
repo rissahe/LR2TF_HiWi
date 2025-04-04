@@ -44,13 +44,15 @@ write.csv(results@intracellular_network_cluster[["control"]], "R_intra_network_c
 write.csv(results@intracellular_network_cluster[["PMF_MF2"]], "R_intra_network_PMF_cluster.csv")
 
 table_ctr <- read.csv("/home/larissa/Documents/LR2TF_HiWi/LR2TF_test_run/CTR_LR.csv", row.names = NULL)
-table_exp <- read.csv("/home/larissa/Documents/LR2TF_HiWi/LR2TF_test_run/EXP_LR.csv")
+table_exp <- read.csv("/home/larissa/Documents/LR2TF_HiWi/LR2TF_test_run/EXP_LR.csv", row.names = NULL)
 
 table_ctr$X <- NULL
 table_exp$X <- NULL
 
-ctr_inptu <- LR2TF::combine_LR_and_TF_complexes(results@CTR_input_condition[["control"]], table_ctr, parameters$out_path, "control")
-exp_input <- LR2TF::combine_LR_and_TF_complexes(results@CTR_input_condition[["PMF_MF2"]], table_exp, parameters$out_path, "PMF_MF2")
+#results <- readRDS("result_TF_object_fixed_cellypte_annot_2.RDS")
+
+ctr_inptu <- LR2TF::combine_LR_and_TF_complexes(results@CTR_input_condition[["control"]], table_ctr, parameters$out_path, "control_new")
+exp_input <- LR2TF::combine_LR_and_TF_complexes(results@CTR_input_condition[["PMF_MF2"]], table_exp, parameters$out_path, "PMF_MF2_new")
 
 
 ctr_input_cluster <- LR2TF::combine_LR_and_TF_complexes(results@CTR_input_cluster[["control"]], table_ctr, parameters$out_path, "control_cluster")

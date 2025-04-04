@@ -50,7 +50,7 @@ library(Seurat)
 data(bone_marrow_stromal_cell_example, package = "LR2TF")
 seurat_object <- bone_marrow_stromal_cell_example
 
-LR2TF::convert_seurat_to_anndata(seurat_object, "/home/larissa/Documents/Larissa_HiWi/LR2TF_test/")
+LR2TF::convert_seurat_to_anndata(seurat_object, "/home/larissa/Documents/LR2TF_HiWi/")
 ```
 
 The file "anndata_object.h5ad" will be saved into the user defined path and can then be used to perform the predictions. Beside the scRNA-seq data file, we also need to define a regulon database in form of a csv file with the coloumns "source", "target" and "weight". Within this package we provide the dorothea databases for human and mouse, downloaded from the decoupleR package. These files also contain the column "confidence" (levels A to D) with information on how well described a transcription factor and target gene interaction is in different resources. We recommend using the confidence levels A and B.
