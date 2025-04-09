@@ -13,7 +13,8 @@ library(VennDiagram)
 #folder <- "seurat_FindMarkers_py_unscaled/cluster"
 #folder <- "t_test_filter_by_condition"
 #folder <- "fixed_celltype_annot"
-folder <- "fixed_decoupler_input"
+#folder <- "fixed_decoupler_input"
+folder <- "t_test_py_R_wilcox_seurat_cluster_scaled"
 #########
 #CTRL
 #########
@@ -1085,6 +1086,7 @@ dev.off()
 #type gene = TF
 #CTRL CLUSTER
 ################
+folder <- "py_wilcox_R_fixed_cluster_scaled"
 
 csv1 <- seurat_ob@tf_activities_cluster$control
 write.csv(csv1, "R_scran_wilcox_significant_TFs_control_cluster.csv", row.names = FALSE)
@@ -1338,7 +1340,7 @@ length(csv1_list)
 
 csv2 <- read.csv("script_test/CrossTalkeR_input_control_cluster.csv")
 row.names(csv2) <- NULL
-csv2 <- csv2[c(1:185),]
+csv2 <- csv2[c(1:138),]
 csv2 <- csv2[csv2$MeanLR > 0,]
 
 #csv2 <- read.csv("py_ctr_input_wo_ctr_exp_tables.csv")
@@ -1413,7 +1415,7 @@ length(csv1_list)
 
 csv2 <- read.csv("script_test/CrossTalkeR_input_PMF_MF2_cluster.csv")
 row.names(csv2) <- NULL
-csv2 <- csv2[c(1:335),]
+csv2 <- csv2[c(1:203),]
 csv2 <- csv2[csv2$MeanLR > 0,]
 
 #csv2 <- read.csv("py_ctr_input_wo_ctr_exp_tables.csv")
