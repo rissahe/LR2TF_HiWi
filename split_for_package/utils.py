@@ -149,7 +149,7 @@ def validate_input_arguments (arguments_list):
         arguments_list["num_cell_filter"] = 0
 
     if arguments_list["reg"] is None:
-        arguments_list["reg"] = load_dorothea_regulon(arguments_list["organism"])
+        raise ValueError("Please provide a regulon csv.")
 
     elif isinstance(arguments_list["reg"], str):
         arguments_list["reg"] = pd.read_csv(arguments_list["reg"], index_col=0)
