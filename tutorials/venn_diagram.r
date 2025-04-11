@@ -13,8 +13,8 @@ library(VennDiagram)
 #folder <- "seurat_FindMarkers_py_unscaled/cluster"
 #folder <- "t_test_filter_by_condition"
 #folder <- "fixed_celltype_annot"
-#folder <- "fixed_decoupler_input"
-folder <- "t_test_py_R_wilcox_seurat_cluster_scaled"
+folder <- "fixed_decoupler_input"
+#folder <- "t_test_py_R_wilcox_seurat_cluster_scaled"
 #########
 #CTRL
 #########
@@ -1315,6 +1315,22 @@ ctr_input_cluster <- LR2TF::combine_LR_and_TF_complexes(ctr_cluster_result_ctrl,
 exp_input_cluster <- LR2TF::combine_LR_and_TF_complexes(ctr_cluster_result_pmf, table_exp, parameters$out_path, "PMF_MF2_cluster_findmarkers_wilcox")
 
 #########################
+
+
+#crosstalker input condition 
+ctr_cond_result_ctrl <- seurat_ob@CTR_input_condition$control
+ctr_cond_result_pmf <-  seurat_ob@CTR_input_condition$PMF_MF2
+
+table_ctr <- read.csv("LR2TF_test_run/CTR_LR.csv")
+table_exp <- read.csv("LR2TF_test_run/EXP_LR.csv")
+
+table_ctr$X <- NULL
+table_exp$X <- NULL
+
+ctr_input_cond <- LR2TF::combine_LR_and_TF_complexes(ctr_cond_result_ctrl, table_ctr, parameters$out_path, "control_cond_ctr input_fixed")
+exp_input_cond <- LR2TF::combine_LR_and_TF_complexes(ctr_cond_result_pmf, table_exp, parameters$out_path, "PMF_MF2_cond_ctr_input_fixed")
+
+##############################################################################################################################################################
 #ctr input control cluster
 
 csv1 <-read.csv("new_test/CrossTalkeR_input_control_cluster_findmarkers_wilcox.csv")
